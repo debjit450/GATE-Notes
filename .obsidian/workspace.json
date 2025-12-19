@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "61a7e66719160a4c",
+        "id": "a2d418d6972ffdb5",
         "type": "tabs",
         "children": [
           {
-            "id": "646d4eeb45afcadc",
+            "id": "772bd86f5774f471",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "473f50789806acfb",
@@ -176,12 +177,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -199,7 +199,7 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "646d4eeb45afcadc",
+  "active": "772bd86f5774f471",
   "lastOpenFiles": [
     "notes.md",
     "textgenerator/templates/smartConnections/summarize.md",

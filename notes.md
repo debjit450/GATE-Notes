@@ -1,5 +1,140 @@
 # Master GATE CS Notes: Comprehensive Reference Guide for Question Banks (Volume 1 & 2)
 
+## 📚 **COMPREHENSIVE INDEX**
+
+### **Volume 1: Engineering Mathematics, Discrete Mathematics, and General Aptitude**
+
+#### **1. Discrete Mathematics: Combinatory (50 Questions)**
+- [1.1 Balls In Bins (4)](#11-balls-in-bins-4)
+- [1.2 Combinatory (22)](#12-combinatory-22)
+- [1.3 Counting (4)](#13-counting-4)
+- [1.4 Generating Functions (6)](#14-generating-functions-6)
+- [1.5 Modular Arithmetic (2)](#15-modular-arithmetic-2)
+- [1.6 Pigeonhole Principle (2)](#16-pigeonhole-principle-2)
+- [1.7 Recurrence Relation (7)](#17-recurrence-relation-7)
+- [1.8 Summation (3)](#18-summation-3)
+
+#### **2. Discrete Mathematics: Graph Theory (83 Questions)**
+- [2.1 Counting (3)](#21-counting-3)
+- [2.2 Degree of Graph (12)](#22-degree-of-graph-12)
+- [2.3 Graph Coloring (11)](#23-graph-coloring-11)
+- [2.4 Graph Connectivity (40)](#24-graph-connectivity-40)
+- [2.5 Graph Isomorphism (3)](#25-graph-isomorphism-3)
+- [2.6 Graph Matching (1)](#26-graph-matching-1)
+- [2.7 Graph Planarity (13)](#27-graph-planarity-13)
+
+#### **3. Discrete Mathematics: Mathematical Logic (77 Questions)**
+- [3.1 First Order Logic (34)](#31-first-order-logic-34)
+- [3.2 Logical Reasoning (3)](#32-logical-reasoning-3)
+- [3.3 Propositional Logic (40)](#33-propositional-logic-40)
+
+#### **4. Discrete Mathematics: Set Theory & Algebra (171 Questions)**
+- [4.1 Binary Operation (8)](#41-binary-operation-8)
+- [4.2 Countable Uncountable Set (2)](#42-countable-uncountable-set-2)
+- [4.3 Functions (29)](#43-functions-29)
+- [4.4 Group Theory (33)](#44-group-theory-33)
+- [4.5 Identity Function (1)](#45-identity-function-1)
+- [4.6 Lattice (10)](#46-lattice-10)
+- [4.7 Mathematical Induction (2)](#47-mathematical-induction-2)
+- [4.8 Number Theory (7)](#48-number-theory-7)
+- [4.9 Onto (1)](#49-onto-1)
+- [4.10 Partial Order (10)](#410-partial-order-10)
+- [4.11 Polynomials (4)](#411-polynomials-4)
+- [4.12 Relations (37)](#412-relations-37)
+- [4.13 Set Theory (27)](#413-set-theory-27)
+
+#### **5. Engineering Mathematics: Calculus (150 Questions)**
+- [5.1 Limits and Continuity (25)](#51-limits-and-continuity-25)
+- [5.2 Differentiation](#52-differentiation)
+- [5.3 Integration](#53-integration)
+- [5.4 Differential Equations](#54-differential-equations)
+- [5.5 Multivariable Calculus](#55-multivariable-calculus)
+
+#### **6. Engineering Mathematics: Linear Algebra**
+- [6.1 Matrices and Determinants](#61-matrices-and-determinants)
+- [6.2 Eigenvalues and Eigenvectors](#62-eigenvalues-and-eigenvectors)
+- [6.3 Vector Spaces](#63-vector-spaces)
+- [6.4 Linear Transformations](#64-linear-transformations)
+
+#### **7. Engineering Mathematics: Probability and Statistics**
+- [7.1 Probability Theory](#71-probability-theory)
+- [7.2 Random Variables](#72-random-variables)
+- [7.3 Distributions](#73-distributions)
+- [7.4 Statistical Inference](#74-statistical-inference)
+
+#### **8. General Aptitude**
+- [8.1 Verbal Ability](#81-verbal-ability)
+- [8.2 Numerical Ability](#82-numerical-ability)
+- [8.3 Logical Reasoning](#83-logical-reasoning)
+
+### **Volume 2: Core Computer Science Subjects**
+
+#### **9. Theory of Computation**
+- [9.1 Finite Automata](#91-finite-automata)
+- [9.2 Regular Languages](#92-regular-languages)
+- [9.3 Context-Free Languages](#93-context-free-languages)
+- [9.4 Turing Machines](#94-turing-machines)
+- [9.5 Computability](#95-computability)
+- [9.6 Complexity Theory](#96-complexity-theory)
+
+#### **10. Algorithms and Data Structures**
+- [10.1 Algorithm Analysis](#101-algorithm-analysis)
+- [10.2 Sorting and Searching](#102-sorting-and-searching)
+- [10.3 Graph Algorithms](#103-graph-algorithms)
+- [10.4 Dynamic Programming](#104-dynamic-programming)
+- [10.5 Data Structures](#105-data-structures)
+
+#### **11. Computer Organization and Architecture**
+- [11.1 Number Systems](#111-number-systems)
+- [11.2 Boolean Algebra](#112-boolean-algebra)
+- [11.3 Processor Design](#113-processor-design)
+- [11.4 Memory Hierarchy](#114-memory-hierarchy)
+- [11.5 I/O Systems](#115-io-systems)
+
+#### **12. Operating Systems**
+- [12.1 Process Management](#121-process-management)
+- [12.2 Memory Management](#122-memory-management)
+- [12.3 File Systems](#123-file-systems)
+- [12.4 Synchronization](#124-synchronization)
+- [12.5 CPU Scheduling](#125-cpu-scheduling)
+
+#### **13. Database Management Systems**
+- [13.1 ER Model](#131-er-model)
+- [13.2 Relational Model](#132-relational-model)
+- [13.3 SQL](#133-sql)
+- [13.4 Normalization](#134-normalization)
+- [13.5 Transactions](#135-transactions)
+
+#### **14. Computer Networks**
+- [14.1 Network Models](#141-network-models)
+- [14.2 Physical Layer](#142-physical-layer)
+- [14.3 Data Link Layer](#143-data-link-layer)
+- [14.4 Network Layer](#144-network-layer)
+- [14.5 Transport Layer](#145-transport-layer)
+
+#### **15. Software Engineering**
+- [15.1 SDLC Models](#151-sdlc-models)
+- [15.2 Requirements Engineering](#152-requirements-engineering)
+- [15.3 Software Design](#153-software-design)
+- [15.4 Testing](#154-testing)
+
+#### **16. Compiler Design**
+- [16.1 Lexical Analysis](#161-lexical-analysis)
+- [16.2 Syntax Analysis](#162-syntax-analysis)
+- [16.3 Semantic Analysis](#163-semantic-analysis)
+- [16.4 Code Generation](#164-code-generation)
+
+---
+
+## 🔍 **Quick Navigation Guide**
+- **Search**: Use Ctrl+F to find specific topics instantly
+- **Formulas**: Look for $ delimiters around mathematical expressions
+- **GATE Tips**: Search for "GATE trap" and "Common pattern" annotations
+- **Cross-references**: Follow "(See X.Y)" links to related sections
+- **Examples**: Each section includes worked problems and solutions
+
+---
+
 This master note is a compiled, exhaustive reference designed specifically for solving problems from the provided GATE question banks (Volume 1: Engineering Math, Discrete Math, General Aptitude; Volume 2: Core CS Subjects). It covers **every topic and subtopic** from the Tables of Contents in both volumes, drawing from standard GATE syllabus knowledge, key formulas, theorems, proofs, algorithms, examples, and common problem-solving patterns. The structure mirrors the TOCs for easy navigation. Each subtopic includes:
 
 - **Key Concepts**: Core definitions and ideas.
@@ -23,7 +158,7 @@ Use this as a "one-stop recall sheet"—scan for keywords from a problem, review
 
 ### 1. Discrete Mathematics: Combinatory (50 Questions)
 
-### 1.1 Balls In Bins (4)
+### 1.1 Balls In Bins (4) {#11-balls-in-bins-4}
 
 **Key Concepts**: Models distributing indistinguishable/distinguishable objects into bins; stars and bars for indistinguishable cases. Core decision tree: (1) Are balls distinguishable? (2) Are bins distinguishable? (3) Can bins be empty?
 
@@ -49,7 +184,7 @@ Use this as a "one-stop recall sheet"—scan for keywords from a problem, review
 - 4 distinct balls, 3 indistinct bins: $S(4,1)+S(4,2)+S(4,3) = 1+7+6 = 14$
 - Distribute 10 identical items, each person gets at least 2, among 3 people: $\binom{10-6+3-1}{3-1} = \binom{6}{2} = 15$
 
-### 1.2 Combinatory (22)
+### 1.2 Combinatory (22) {#12-combinatory-22}
 
 **Key Concepts**: Combinatorics studies finite or countable discrete structures. Core principle: systematic enumeration without explicit listing.
 
@@ -171,7 +306,7 @@ Let $A_i$ = permutations where element i is in position i
     - Arrange 3 vowels within: $3!$
     - Total: $6! \cdot 3! = 720 \cdot 6 = 4320$
 
-### 1.3 Counting (4)
+### 1.3 Counting (4) {#13-counting-4}
 
 **Key Concepts**: Fundamental enumeration techniques form the basis of combinatorial analysis. Bijections establish equinumerosity between sets.
 
@@ -288,7 +423,7 @@ $\phi(n)$ counts integers in $\{1,\ldots,n\}$ coprime to n
     - Div by 6: $\lfloor 100/6 \rfloor = 16$
     - By PIE: $50 + 33 - 16 = 67$
 
-### 1.4 Generating Functions (6)
+### 1.4 Generating Functions (6) {#14-generating-functions-6}
 
 **Key Concepts**: Generating functions transform counting problems into algebraic manipulations of formal power series. They encode sequences as coefficients of polynomials or infinite series.
 
@@ -438,7 +573,7 @@ $\hat{G}(x) = \sum_{n=0}^{\infty} a_n \frac{x^n}{n!}$
     - $[x^5]\prod_{i=1}^{5} \frac{1}{1-x^i} = [x^5]\frac{1}{(1-x)(1-x^2)(1-x^3)(1-x^4)(1-x^5)}$
     - Computing: 7 partitions (5, 4+1, 3+2, 3+1+1, 2+2+1, 2+1+1+1, 1+1+1+1+1)
 
-### 1.5 Modular Arithmetic (2)
+### 1.5 Modular Arithmetic (2) {#15-modular-arithmetic-2}
 
 **Key Concepts**: Modular arithmetic is arithmetic "with wraparound" at a modulus. Foundation for number theory, cryptography, hashing, and algorithm design.
 
@@ -650,7 +785,7 @@ Equivalently (for any a): $a^p \equiv a \pmod{p}$
     - $15 \equiv 1 \pmod{7}$, so $y_3 = 1$
     - $x \equiv 2(35)(2) + 3(21)(1) + 2(15)(1) = 140 + 63 + 30 = 233 \equiv 23 \pmod{105}$
 
-### 1.6 Pigeonhole Principle (2)
+### 1.6 Pigeonhole Principle (2) {#16-pigeonhole-principle-2}
 
 **Key Concepts**: One of the most fundamental principles in combinatorics. Despite its simplicity, it yields powerful existence proofs. The principle guarantees existence without construction.
 
@@ -806,7 +941,7 @@ Equivalently (for any a): $a^p \equiv a \pmod{p}$
     - By PHP: One subsquare contains ≥2 points
     - Max distance in subsquare: diagonal = $\frac{\sqrt{2}}{2}$
 
-### 1.7 Recurrence Relation (7)
+### 1.7 Recurrence Relation (7) {#17-recurrence-relation-7}
 
 **Key Concepts**: A recurrence relation defines a sequence recursively - each term as a function of previous terms. Essential for analyzing algorithms and counting problems.
 
@@ -1001,7 +1136,7 @@ Expand recurrence repeatedly:
 3. Catalan numbers: $C_n = \sum_{i=0}^{n-1} C_i C_{n-1-i}, C_0=1$:
     - Generating function technique gives: $C_n = \frac{1}{n+1}\binom{2n}{n}$
 
-### 1.8 Summation (3)
+### 1.8 Summation (3) {#18-summation-3}
 
 **Key Concepts**: Finding closed-form expressions for sums. Essential for algorithm analysis, probability calculations, and mathematical proofs.
 
@@ -1210,7 +1345,7 @@ $= \frac{1}{2}\left[\frac{n(n+1)(2n+1)}{6} + \frac{n(n+1)}{2}\right] = \frac{n(n
 
 ### 2. Discrete Mathematics: Graph Theory (83)
 
-### 2.1 Counting (3)
+### 2.1 Counting (3) {#21-counting-3}
 
 **Key Concepts**: Enumeration problems in graph theory - counting specific graph structures and properties.
 
@@ -1340,7 +1475,7 @@ Number of spanning trees: $m^{n-1} \cdot n^{m-1}$
     - Remove any one edge from cycle → spanning tree
     - Answer: n spanning trees
 
-### 2.2 Degree of Graph (12)
+### 2.2 Degree of Graph (12) {#22-degree-of-graph-12}
 
 **Key Concepts**: The degree of a vertex is the number of edges incident to it. Fundamental for characterizing graph properties and proving theorems.
 
@@ -1588,7 +1723,7 @@ Measures importance of vertex in network (0 to 1 scale)
     - But $\sum \text{deg} = 2n-2$
     - Contradiction! Must have ≥ 2 leaves ✓
 
-### 2.3 Graph Coloring (11)
+### 2.3 Graph Coloring (11) {#23-graph-coloring-11}
 
 **Key Concepts**: Assign colors to vertices so no adjacent vertices share color. Minimum colors needed = chromatic number χ(G).
 
@@ -1771,7 +1906,7 @@ Greedy(G):
     - Center: Connected to all → 3rd color
     - χ = 3
 
-### 2.4 Graph Connectivity (40)
+### 2.4 Graph Connectivity (40) {#24-graph-connectivity-40}
 
 **Key Concepts**: Connectivity measures how well a graph holds together. Understanding minimum cuts, articulation points, and bridges is essential for network reliability.
 
@@ -1969,7 +2104,7 @@ Vertex u is root of SCC ⟺ low[u] = disc[u]
     - DFS from 1: disc = {1:1, 2:2, 4:3, 6:4, 5:5, 3:6}
     - Articulation points: 4, 6 (removing either disconnects graph)
 
-### 2.5 Graph Isomorphism (3)
+### 2.5 Graph Isomorphism (3) {#25-graph-isomorphism-3}
 
 **Key Concepts**: Two graphs are isomorphic if they are structurally identical, differing only in the names (labels) of their vertices. Determining isomorphism is a fundamental problem in computational complexity, with deep theoretical and practical implications.
 
@@ -2053,7 +2188,7 @@ However, the problem remains GI-complete (as hard as the general problem) for cl
 - Isomorphism for $K_n$, $C_n$, $P_n$ is trivial (they are only isomorphic to graphs of the same type and size).
 - $K_{m,n}$ is isomorphic to $K_{n,m}$.
 
-### 2.6 Graph Matching (1)
+### 2.6 Graph Matching (1) {#26-graph-matching-1}
 
 **Key Concepts**: A matching is a set of edges with no common vertices. Maximum matching is the largest such set. Critical for assignment problems and network flows.
 
@@ -2325,7 +2460,7 @@ Maximum matching in bipartite G(X,Y):
     - By König: min vertex cover size = 4
     - Can find vertex cover by taking saturated vertices strategically
 
-### 2.7 Graph Planarity (13)
+### 2.7 Graph Planarity (13) {#27-graph-planarity-13}
 
 **Key Concepts**: A graph is planar if it can be drawn in the plane with no edge crossings. Fundamental for VLSI design, circuit boards, and geographic networks.
 
@@ -2626,7 +2761,7 @@ All satisfy Euler's formula: V - E + F = 2 ✓
 
 ### 3. Discrete Mathematics: Mathematical Logic (77)
 
-### 3.1 First Order Logic (34)
+### 3.1 First Order Logic (34) {#31-first-order-logic-34}
 
 **Key Concepts**: First-Order Logic (FOL), also called Predicate Logic or First-Order Predicate Calculus, extends propositional logic with quantifiers and predicates to express statements about objects and their relationships.
 
@@ -2889,7 +3024,7 @@ $\exists x (Barber(x) \land \forall y (\neg Shaves(y, y) \rightarrow Shaves(x, y
 
 (This leads to Russell's Paradox when asking if the barber shaves himself)
 
-### 3.2 Logical Reasoning (3)
+### 3.2 Logical Reasoning (3) {#32-logical-reasoning-3}
 
 **Key Concepts**: Logical reasoning encompasses the systematic methods for deriving conclusions from premises. It includes valid argument forms, inference rules, and the identification of fallacies.
 
@@ -3109,7 +3244,7 @@ $$\frac{P \rightarrow Q, \quad \neg P}{\neg Q} \quad \text{INVALID!}$$
 
 The implication $((P \rightarrow Q) \land P) \rightarrow Q$ is a tautology, confirming MP is valid.
 
-### 3.3 Propositional Logic (40)
+### 3.3 Propositional Logic (40) {#33-propositional-logic-40}
 
 **Key Concepts**: Propositional logic (also called sentential logic or Boolean logic) is the study of logical relationships between propositions (statements that are either true or false).
 
@@ -3504,7 +3639,7 @@ Proved ✓ (This is called "proof by cases" in natural deduction)
 
 ### 4. Discrete Mathematics: Set Theory & Algebra (171)
 
-### 4.1 Binary Operation (8)
+### 4.1 Binary Operation (8) {#41-binary-operation-8}
 
 **Key Concepts**: A binary operation on a set is a function that combines two elements to produce another element in the same set. Foundation for algebraic structures like groups, rings, and fields.
 
@@ -3590,7 +3725,7 @@ This represents the cyclic group $C_3 = \{e, a, b\}$ where $a^2 = b$, $a^3 = e$
 - Order of group = number of elements
 - Lagrange's theorem: Order of subgroup divides order of group
 
-### 4.2 Countable Uncountable Set (2)
+### 4.2 Countable Uncountable Set (2) {#42-countable-uncountable-set-2}
 
 **Key Concepts**: Cardinality measures the "size" of sets, even infinite ones. Fundamental distinction between countable and uncountable infinities with profound implications for computability theory.
 
@@ -3729,7 +3864,7 @@ $\aleph_0 < 2^{\aleph_0} < 2^{2^{\aleph_0}} < 2^{2^{2^{\aleph_0}}} < \cdots$
 - Diagonalization is key technique for proving uncountability
 - Bijection with $\mathbb{N}$ proves countability
 
-### 4.3 Functions (29)
+### 4.3 Functions (29) {#43-functions-29}
 
 **Key Concepts**: Functions are fundamental mappings between sets that preserve structure and enable mathematical analysis. Understanding their properties is crucial for discrete mathematics and computer science.
 
@@ -3923,7 +4058,7 @@ For finite sets $A$ with $|A| = m$ and $B$ with $|B| = n$:
 - Answer: $6 \cdot 5 \cdot 4 \cdot 3 = 360$
 - Or: $\frac{6!}{(6-4)!} = \frac{6!}{2!} = 360$
 
-### 4.4 Group Theory (33)
+### 4.4 Group Theory (33) {#44-group-theory-33}
 
 **Key Concepts**: Group theory studies algebraic structures with a single associative operation, identity, and inverses. Fundamental to abstract algebra, cryptography, and symmetry analysis.
 
@@ -4171,11 +4306,11 @@ $(aN)(bN) = (ab)N$
 - Generators: elements with order 6
 - $\phi(6) = 2$, so 2 generators: check which elements have order 6
 
-### 4.5 Identity Function (1)
+### 4.5 Identity Function (1) {#45-identity-function-1}
 
 **Key Concepts**: $text{id}(x)=x$, bijective. **Formulas/Theorems**: Always automorphism. **Problem-Solving Tips**: Trivial in compositions.
 
-### 4.6 Lattice (10)
+### 4.6 Lattice (10) {#46-lattice-10}
 
 **Key Concepts**: A lattice is an algebraic structure with two binary operations (meet and join) satisfying specific properties. Fundamental in order theory, logic, and computer science.
 
@@ -4417,7 +4552,7 @@ For lattice with elements {0, a, b, c, 1} where $a, b, c$ incomparable:
 - If $a \wedge (b \vee c) \neq (a \wedge b) \vee (a \wedge c)$, not distributive
 - Pentagon $N_5$ or diamond $M_3$ indicate non-distributive
 
-### 4.7 Mathematical Induction (2)
+### 4.7 Mathematical Induction (2) {#47-mathematical-induction-2}
 
 **Key Concepts**: Mathematical induction is a fundamental proof technique for statements involving natural numbers. It establishes truth for infinitely many cases using finite verification.
 
@@ -4669,7 +4804,7 @@ Conclusion:
 By mathematical induction, P(n) is true for all n ≥ n₀.
 ```
 
-### 4.8 Number Theory (7)
+### 4.8 Number Theory (7) {#48-number-theory-7}
 
 **Key Concepts**: Number theory studies properties of integers, focusing on divisibility, primes, and modular arithmetic. Foundation for cryptography, computer algebra, and discrete mathematics.
 
@@ -4946,11 +5081,11 @@ By Fermat: $3^6 \equiv 1 \pmod{7}$
 $100 = 6 \times 16 + 4$
 So $3^{100} = (3^6)^{16} \times 3^4 \equiv 1^{16} \times 81 \equiv 81 \equiv 4 \pmod{7}$
 
-### 4.9 Onto (1)
+### 4.9 Onto (1) {#49-onto-1}
 
 **Key Concepts**: Surjective: Every codomain hit. **Formulas/Theorems**: $|text{im } f| = |text{codomain}|$. **Problem-Solving Tips**: Count preimages.
 
-### 4.10 Partial Order (10)
+### 4.10 Partial Order (10) {#410-partial-order-10}
 
 **Key Concepts**: Partial orders formalize the notion of "less than or equal to" relationships that may not compare all pairs of elements. Fundamental in discrete mathematics, computer science, and order theory.
 
@@ -5221,7 +5356,7 @@ $a \leq_1 b \Leftrightarrow f(a) \leq_2 f(b)$
 - $(2,2)$ is maximum element
 - Width: 2, Height: 3
 
-### 4.11 Polynomials (4)
+### 4.11 Polynomials (4) {#411-polynomials-4}
 
 **Key Concepts**: Polynomials are algebraic expressions with variables and coefficients. Fundamental in algebra, analysis, and computational mathematics.
 
@@ -5453,7 +5588,7 @@ Using $p = 2$: $2 \nmid 1$, $2 \mid 2$, $4 \nmid 2$ ✓ Irreducible
 - No real roots, so irreducible over $\mathbb{R}$
 - But factors over $\mathbb{C}$: $(x-i)(x+i)$
 
-### 4.12 Relations (37)
+### 4.12 Relations (37) {#412-relations-37}
 
 **Key Concepts**: Relations formalize connections between elements of sets. Fundamental for databases, discrete mathematics, and computer science applications.
 
@@ -5703,7 +5838,7 @@ $$M_R = \begin{bmatrix} 0 & 1 & 0 \\ 1 & 0 & 1 \\ 0 & 0 & 0 \end{bmatrix}$$
 - $R_2 = \{(a,x), (b,y), (b,z)\}$
 - $R_1 \circ R_2 = \{(1,x), (2,y), (2,z)\}$
 
-### 4.13 Set Theory (27)
+### 4.13 Set Theory (27) {#413-set-theory-27}
 
 **Key Concepts**: Set theory provides the foundation for modern mathematics. Sets are collections of distinct objects, forming the basis for defining numbers, functions, and mathematical structures.
 
@@ -5968,1119 +6103,5287 @@ $$\left|\bigcup_{i=1}^{n} A_i\right| = \sum_{i} |A_i| - \sum_{i<j} |A_i \cap A_j
 - Simplify: $\emptyset \cup (A \cap B) \cup (A^c \cap B^c) \cup \emptyset$
 - Result: $(A \cap B) \cup (A^c \cap B^c) = (A \leftrightarrow B)$ (elements where A and B have same membership)
 
-### 5. Engineering Mathematics: Calculus (63)
 
-### 5.1 Continuity (9)
+### 5. Engineering Mathematics: Calculus (150 Questions)
 
-**Key Concepts**: $lim_{x to a} f(x)=f(a)$; epsilon-delta. **Formulas/Theorems**: - Intermediate Value Theorem. **Problem-Solving Tips**: Check removable discontinuities. **Examples**: - $f(x)=\sin(1/x)$ discontinuous at 0.
+### 5.1 Limits and Continuity (25) {#51-limits-and-continuity-25}
 
-### 5.2 Definite Integral (3)
+**Key Concepts**: Limits form the foundation of calculus, formalizing the notion of "approaching" a value. Continuity describes functions without breaks or jumps.
 
-**Key Concepts**: Riemann sums. **Formulas/Theorems**: - $int_a^b f(x) , dx = F(b)-F(a)$. **Problem-Solving Tips**: Substitution u=g(x). **Examples**: - $int x , dx = frac{x^2}{2} + C$.
+**Limit Definition**:
 
-### 5.3 Differentiation (10)
+**Informal Definition**: $\lim_{x \to a} f(x) = L$ means $f(x)$ gets arbitrarily close to $L$ as $x$ approaches $a$
 
-**Key Concepts**: Limits, chain rule. **Formulas/Theorems**: - $(fg)' = f'g + fg'$; $(f/g)' = frac{f'g - fg'}{g^2}$. **Problem-Solving Tips**: Implicit diff for y(x). **Examples**: - $frac{d}{dx} (x^2 sin x) = 2x sin x + x^2 cos x$.
+**Formal Definition (ε-δ)**: $\lim_{x \to a} f(x) = L$ if:
+$$\forall \varepsilon > 0, \exists \delta > 0 \text{ such that } 0 < |x - a| < \delta \Rightarrow |f(x) - L| < \varepsilon$$
 
-### 5.4 Integration (11)
+**Geometric Interpretation**: For any horizontal strip of width $2\varepsilon$ around $L$, there exists vertical strip of width $2\delta$ around $a$ such that graph lies within horizontal strip
 
-**Key Concepts**: Indefinite, techniques (parts, trig sub). **Formulas/Theorems**: - $int e^{ax} , dx = frac{e^{ax}}{a} + C$. **Problem-Solving Tips**: Parts: $int u , dv = uv - int v , du$. **Examples**: - $int x e^x , dx = x e^x - e^x + C$.
+**One-Sided Limits**:
 
-### 5.5 Limits (15)
+**Right-hand limit**: $\lim_{x \to a^+} f(x) = L$ if limit exists as $x$ approaches $a$ from right
+**Left-hand limit**: $\lim_{x \to a^-} f(x) = L$ if limit exists as $x$ approaches $a$ from left
 
-**Key Concepts**: L'Hôpital for ∞/∞. **Formulas/Theorems**: - $\lim \frac{f}{g} = \lim \frac{f'}{g'}$ if form $\frac{0}{0}$ or $frac{infty}{infty}$. **Problem-Solving Tips**: Rationalize or series. **Examples**: - $lim_{x to 0} frac{sin x}{x} = 1$.
+**Theorem**: $\lim_{x \to a} f(x) = L$ iff $\lim_{x \to a^+} f(x) = \lim_{x \to a^-} f(x) = L$
 
-### 5.6 Maxima Minima (13)
+**Limit Laws** (Assuming limits exist):
 
-**Key Concepts**: Critical points f'=0, second derivative test. **Formulas/Theorems**: - $f'' > 0$ min, $f'' < 0$ max. **Problem-Solving Tips**: Endpoints for closed intervals. **Examples**: - $f(x)=x^2$: Min at 0.
+1. **Sum Rule**: $\lim_{x \to a} [f(x) + g(x)] = \lim_{x \to a} f(x) + \lim_{x \to a} g(x)$
 
-### 5.7 Polynomials (2)
+2. **Product Rule**: $\lim_{x \to a} [f(x) \cdot g(x)] = \lim_{x \to a} f(x) \cdot \lim_{x \to a} g(x)$
 
-**Key Concepts**: Taylor expansion. **Formulas/Theorems**: - $f(x) approx sum_{n=0}^{infty} frac{f^{(n)}(a)}{n!} (x-a)^n$. **Problem-Solving Tips**: Remainder for error.
+3. **Quotient Rule**: $\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{\lim_{x \to a} f(x)}{\lim_{x \to a} g(x)}$ (if denominator limit ≠ 0)
 
-### 6. Engineering Mathematics: Linear Algebra (102)
+4. **Power Rule**: $\lim_{x \to a} [f(x)]^n = [\lim_{x \to a} f(x)]^n$
 
-### 6.1 Cartesian Coordinates (1)
+5. **Root Rule**: $\lim_{x \to a} \sqrt[n]{f(x)} = \sqrt[n]{\lim_{x \to a} f(x)}$ (if root is defined)
 
-**Key Concepts**: Vectors in $mathbb{R}^n$. **Formulas/Theorems**: Dot product $u cdot v = |u||v| cos theta$.
+**Standard Limits**:
 
-### 6.2 Determinant (11)
+$$\lim_{x \to 0} \frac{\sin x}{x} = 1$$
 
-**Key Concepts**: Volume, invertibility. **Formulas/Theorems**: - $det(AB)=det(A) det(B)$; $det(A^T) = det(A)$. - 2x2: $ad-bc$. **Problem-Solving Tips**: Cofactor expansion; row reduce. **Examples**: - $det begin{bmatrix} 1 & 2 \ 3 & 4 end{bmatrix} = -2$.
+**Proof**: Use squeeze theorem with $\cos x \leq \frac{\sin x}{x} \leq 1$ for $0 < |x| < \frac{\pi}{2}$
 
-### 6.3 Eigen Value (33)
+$$\lim_{x \to 0} \frac{1 - \cos x}{x^2} = \frac{1}{2}$$
 
-**Key Concepts**: $\lambda$ where $det(A - lambda I)=0$. **Formulas/Theorems**: - $text{Trace} = sum lambda_i$; $det = prod lambda_i$. - Spectral theorem for symmetric. **Problem-Solving Tips**: Characteristic poly; Cayley-Hamilton: $p(A)=0$. **Examples**: - For $begin{bmatrix} 2 & 1 \ 1 & 2 end{bmatrix}$: $lambda=3,1$.
+$$\lim_{x \to 0} (1 + x)^{1/x} = e$$
 
-### 6.4 Gaussian Elimination (1)
+$$\lim_{x \to \infty} \left(1 + \frac{1}{x}\right)^x = e$$
 
-**Key Concepts**: Row echelon form. **Formulas/Theorems**: Pivot for rank. **Problem-Solving Tips**: Back-sub for solutions.
+$$\lim_{x \to 0} \frac{e^x - 1}{x} = 1$$
 
-### 6.5 Lu Decomposition (1)
+$$\lim_{x \to 0} \frac{\ln(1 + x)}{x} = 1$$
 
-**Key Concepts**: A=LU, lower/upper triangular. **Formulas/Theorems**: For solving $Ax=b$: $Ly=b$, $Ux=y$. **Problem-Solving Tips**: No pivoting if diagonal dominant.
+**Indeterminate Forms**:
 
-### 6.6 Matrix (22)
+Forms that require special techniques:
+- $\frac{0}{0}$, $\frac{\infty}{\infty}$, $0 \cdot \infty$, $\infty - \infty$, $0^0$, $1^\infty$, $\infty^0$
 
-**Key Concepts**: Operations, types (symmetric, orthogonal). **Formulas/Theorems**: - $A^{-1} = frac{text{adj}(A)}{det(A)}$. **Problem-Solving Tips**: Trace, norms.
+**L'Hôpital's Rule**: For indeterminate forms $\frac{0}{0}$ or $\frac{\infty}{\infty}$:
+$$\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}$$
+provided the right limit exists
 
-### 6.7 Orthonormality (2)
+**Conditions**:
+1. $\lim_{x \to a} f(x) = \lim_{x \to a} g(x) = 0$ or $\pm\infty$
+2. $f'(x)$ and $g'(x)$ exist in neighborhood of $a$
+3. $g'(x) \neq 0$ in neighborhood of $a$
+4. $\lim_{x \to a} \frac{f'(x)}{g'(x)}$ exists
 
-**Key Concepts**: $Q^T Q = I$. **Formulas/Theorems**: Gram-Schmidt orthogonalization. **Problem-Solving Tips**: Projections.
+**Squeeze Theorem** (Sandwich Theorem):
 
-### 6.8 Rank of Matrix (6)
+If $g(x) \leq f(x) \leq h(x)$ for all $x$ in neighborhood of $a$ and $\lim_{x \to a} g(x) = \lim_{x \to a} h(x) = L$, then $\lim_{x \to a} f(x) = L$
 
-**Key Concepts**: Dim column space. **Formulas/Theorems**: $text{rank}(A) = text{rank}(A^T)$; nullity $+$ rank $= n$. **Problem-Solving Tips**: Row reduce to echelon.
+**Application**: Proving $\lim_{x \to 0} x \sin(1/x) = 0$ using $-|x| \leq x \sin(1/x) \leq |x|$
 
-### 6.9 Singular Value Decomposition (1)
+**Limits at Infinity**:
 
-**Key Concepts**: $A=USigma V^T$, economy SVD. **Formulas/Theorems**: Used for PCA, low-rank approx. **Problem-Solving Tips**: Diagonal Σ with σ_i decreasing.
+$$\lim_{x \to \infty} f(x) = L \text{ means } \forall \varepsilon > 0, \exists M > 0 \text{ such that } x > M \Rightarrow |f(x) - L| < \varepsilon$$
 
-### 6.10 Subspace (1)
+**Rational Functions**: For $f(x) = \frac{a_n x^n + \cdots + a_0}{b_m x^m + \cdots + b_0}$:
 
-**Key Concepts**: Span, basis, dimension. **Formulas/Theorems**: $dim(U cap V) = dim(U) + dim(V) - dim(U+V)$.
+$$\lim_{x \to \infty} f(x) = \begin{cases}
+0 & \text{if } n < m \\
+\frac{a_n}{b_m} & \text{if } n = m \\
+\pm\infty & \text{if } n > m
+\end{cases}$$
 
-### 6.11 System of Equations (17)
+**Continuity**:
 
-**Key Concepts**: Consistent if $text{rank}(A) = text{rank}([A|b])$. **Formulas/Theorems**: RREF for unique/inf/no sol. **Problem-Solving Tips**: Augmented matrix.
+**Definition**: Function $f$ is **continuous at $a$** if:
+1. $f(a)$ is defined
+2. $\lim_{x \to a} f(x)$ exists
+3. $\lim_{x \to a} f(x) = f(a)$
 
-### 6.12 Vector Space (6)
+**Equivalent**: $\lim_{x \to a} f(x) = f(a)$
 
-**Key Concepts**: Axioms, linear independence. **Formulas/Theorems**: Basis size = dim.
+**Types of Discontinuities**:
 
-### 7. Engineering Mathematics: Probability (107)
+1. **Removable**: $\lim_{x \to a} f(x)$ exists but $f(a)$ undefined or $f(a) \neq \lim_{x \to a} f(x)$
+   - Can be "fixed" by redefining $f(a)$
 
-### 7.1 Bayes Theorem (1)
+2. **Jump**: Left and right limits exist but are unequal
+   - $\lim_{x \to a^-} f(x) \neq \lim_{x \to a^+} f(x)$
 
-**Key Concepts**: $P(A|B)= frac{P(B|A)P(A)}{P(B)}$. **Formulas/Theorems**: For updating priors. **Examples**: Disease test: $P(text{disease}|text{pos})$.
+3. **Infinite**: At least one one-sided limit is infinite
 
-### 7.2 Bayesian Network (2)
+4. **Oscillating**: Limit doesn't exist due to oscillation (e.g., $\sin(1/x)$ at $x = 0$)
 
-**Key Concepts**: DAG for conditional independencies. **Formulas/Theorems**: Joint $P = prod P(X_i | text{parents})$.
+**Properties of Continuous Functions**:
 
-### 7.3 Bernoulli Distribution (1)
+**Theorem**: If $f$ and $g$ are continuous at $a$, then:
+- $f + g$, $f - g$, $f \cdot g$ are continuous at $a$
+- $f/g$ is continuous at $a$ if $g(a) \neq 0$
+- $f \circ g$ is continuous at $a$ if $g$ continuous at $a$ and $f$ continuous at $g(a)$
 
-**Key Concepts**: p success, 1-p fail. **Formulas/Theorems**: $E[X]=p$, $text{Var}(X)=p(1-p)$.
+**Intermediate Value Theorem** (IVT):
 
-### 7.4 Binomial Distribution (6)
+**Theorem**: If $f$ is continuous on $[a,b]$ and $k$ is between $f(a)$ and $f(b)$, then $\exists c \in (a,b)$ such that $f(c) = k$
 
-**Key Concepts**: n trials, p success. **Formulas/Theorems**: $P(X=k)= binom{n}{k} p^k (1-p)^{n-k}$; $E[X]=np$. **Problem-Solving Tips**: Normal approx for large n.
+**Applications**:
+- Proving existence of roots
+- Bisection method for root finding
+- Fixed point theorems
 
-### 7.5 Conditional Probability (14)
+**Extreme Value Theorem**:
 
-**Key Concepts**: $P(A|B)=frac{P(A cap B)}{P(B)}$. **Formulas/Theorems**: Law of total prob: $P(A)=sum P(A|B_i)P(B_i)$.
+**Theorem**: If $f$ is continuous on closed interval $[a,b]$, then $f$ attains its maximum and minimum values
 
-### 7.6 Continuous Distribution (1)
+**Uniform Continuity**:
 
-**Key Concepts**: PDF integrates to 1.
+**Definition**: $f$ is **uniformly continuous** on interval $I$ if:
+$$\forall \varepsilon > 0, \exists \delta > 0 \text{ such that } |x - y| < \delta \Rightarrow |f(x) - f(y)| < \varepsilon$$
+for all $x, y \in I$
 
-### 7.7 Expectation (13)
+**Key Difference**: Same $\delta$ works for all points (not dependent on specific point)
 
-**Key Concepts**: $E[X]=sum x P(X=x)$. **Formulas/Theorems**: Linearity $E[aX+bY]=aE[X] + bE[Y]$. **Problem-Solving Tips**: For indicators, E=prob.
+**Theorem**: Every continuous function on closed interval is uniformly continuous
 
-### 7.8 Exponential Distribution (5)
+**Problem-Solving Techniques**:
 
-**Key Concepts**: Memoryless for interarrivals. **Formulas/Theorems**: $f(x)=lambda e^{-lambda x}$; $E[X]=1/lambda$, $text{Var}(X)=1/lambda^2$.
+**For Limits**:
+1. **Direct substitution**: If function continuous at point
+2. **Factoring**: Cancel common factors for $\frac{0}{0}$ forms
+3. **Rationalization**: Multiply by conjugate for radical expressions
+4. **L'Hôpital's rule**: For indeterminate forms
+5. **Squeeze theorem**: When function bounded between two others
+6. **Standard limits**: Memorize key trigonometric and exponential limits
 
-### 7.9 Independent Events (6)
+**For Continuity**:
+1. **Check definition**: Verify $\lim_{x \to a} f(x) = f(a)$
+2. **Piecewise functions**: Check continuity at boundary points
+3. **Composition**: Use continuity of component functions
 
-**Key Concepts**: $P(A cap B)=P(A)P(B)$. **Formulas/Theorems**: For r.v., Cov=0 not indep.
+**GATE Tips**:
+- L'Hôpital's rule only for $\frac{0}{0}$ or $\frac{\infty}{\infty}$ forms
+- Standard limit $\lim_{x \to 0} \frac{\sin x}{x} = 1$ is fundamental
+- IVT guarantees existence, not uniqueness
+- Continuous on closed interval ⟹ bounded and attains extrema
+- For piecewise functions, check left and right limits at boundaries
 
-### 7.10 Normal Distribution (2)
+**Examples**:
 
-**Key Concepts**: Bell curve, 68-95-99.7 rule. **Formulas/Theorems**: $Z=frac{x-mu}{sigma}$; $E[X]=mu$, $text{Var}(X)=sigma^2$.
+1. **Evaluate** $\lim_{x \to 0} \frac{\sin 3x}{x}$:
+   $$\lim_{x \to 0} \frac{\sin 3x}{x} = \lim_{x \to 0} \frac{\sin 3x}{3x} \cdot 3 = 1 \cdot 3 = 3$$
 
-### 7.11 Poisson Distribution (4)
+2. **Find** $\lim_{x \to 1} \frac{x^2 - 1}{x - 1}$:
+   $$\lim_{x \to 1} \frac{x^2 - 1}{x - 1} = \lim_{x \to 1} \frac{(x-1)(x+1)}{x-1} = \lim_{x \to 1} (x+1) = 2$$
 
-**Key Concepts**: Rare events, λ=mean. **Formulas/Theorems**: $P(X=k)= frac{lambda^k e^{-lambda}}{k!}$; approx binomial.
+3. **Check continuity** of $f(x) = \begin{cases} x^2 & x < 1 \\ 2x & x \geq 1 \end{cases}$ at $x = 1$:
+   - $f(1) = 2(1) = 2$
+   - $\lim_{x \to 1^-} f(x) = \lim_{x \to 1^-} x^2 = 1$
+   - $\lim_{x \to 1^+} f(x) = \lim_{x \to 1^+} 2x = 2$
+   - Since $\lim_{x \to 1^-} f(x) \neq \lim_{x \to 1^+} f(x)$, function has jump discontinuity at $x = 1$
 
-### 7.12 Probability (28)
+### 5.2 Differentiation (40)
 
-**Key Concepts**: Axioms: 0≤P≤1, P(Ω)=1, additivity. **Formulas/Theorems**: Inclusion-exclusion for unions.
+**Key Concepts**: Differentiation measures instantaneous rate of change. The derivative is the limit of difference quotients, providing slope of tangent line and velocity interpretation.
 
-### 7.13 Probability Density Function (1)
+**Definition of Derivative**:
 
-**Key Concepts**: $f(x) geq 0$, $int f = 1$; $P(a < X < b)=int_a^b f(x) , dx$.
+**Limit Definition**:
+$$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
 
-### 7.14 Probability Distribution (1)
+**Alternative Form**:
+$$f'(a) = \lim_{x \to a} \frac{f(x) - f(a)}{x - a}$$
 
-**Key Concepts**: PMF for discrete.
+**Geometric Interpretation**: Slope of tangent line to curve $y = f(x)$ at point $(a, f(a))$
 
-### 7.15 Random Variable (8)
+**Physical Interpretation**: Instantaneous rate of change (velocity if $f$ represents position)
 
-**Key Concepts**: Mapping to numbers.
+**Notation**:
+- $f'(x)$, $\frac{df}{dx}$, $\frac{d}{dx}f(x)$, $Df(x)$
 
-### 7.16 Square Invariant (1)
+**Differentiability and Continuity**:
 
-**Key Concepts**: Likely $E[X^2] - (E[X])^2 = text{Var}(X)$.
+**Theorem**: If $f$ is differentiable at $a$, then $f$ is continuous at $a$
 
-### 7.17 Statistics (2)
+**Proof**: 
+$$\lim_{x \to a} [f(x) - f(a)] = \lim_{x \to a} \frac{f(x) - f(a)}{x - a} \cdot (x - a) = f'(a) \cdot 0 = 0$$
 
-**Key Concepts**: Sample mean, variance.
+**Converse is False**: Continuity doesn't imply differentiability
+- Example: $f(x) = |x|$ at $x = 0$
 
-### 7.18 Uniform Distribution (10)
+**Non-differentiable Points**:
+1. **Corner**: Left and right derivatives exist but are unequal
+2. **Cusp**: Tangent line is vertical
+3. **Vertical tangent**: Derivative is infinite
+4. **Discontinuity**: Function not continuous
 
-**Key Concepts**: Constant PDF on [a,b]. **Formulas/Theorems**: $E[X]=frac{a+b}{2}$, $text{Var}(X)=frac{(b-a)^2}{12}$.
+**Basic Differentiation Rules**:
 
-### 7.19 Variance (1)
+**Constant Rule**: $\frac{d}{dx}[c] = 0$
 
-**Key Concepts**: $text{Var}(X) = E[X^2] - (E[X])^2$.
+**Power Rule**: $\frac{d}{dx}[x^n] = nx^{n-1}$ (for any real $n$)
 
-### 8. General Aptitude: Analytical Aptitude (139)
+**Proof for positive integer $n$** (using binomial theorem):
+$$\frac{d}{dx}[x^n] = \lim_{h \to 0} \frac{(x+h)^n - x^n}{h} = \lim_{h \to 0} \frac{\sum_{k=1}^{n} \binom{n}{k} x^{n-k} h^k}{h} = nx^{n-1}$$
 
-### 8.1 Age Relation (2)
+**Constant Multiple Rule**: $\frac{d}{dx}[cf(x)] = c \frac{d}{dx}[f(x)]$
 
-**Key Concepts**: Equations like $\frac{x+5}{y}$ = ratio. **Tips**: Set current ages, add years.
+**Sum Rule**: $\frac{d}{dx}[f(x) + g(x)] = f'(x) + g'(x)$
 
-### 8.2 Code Words (5)
+**Product Rule**: $\frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)$
 
-**Key Concepts**: Letter-to-number mappings. **Tips**: Pattern recognition, e.g., positional.
+**Proof**:
+$$\frac{d}{dx}[f(x)g(x)] = \lim_{h \to 0} \frac{f(x+h)g(x+h) - f(x)g(x)}{h}$$
+$$= \lim_{h \to 0} \frac{f(x+h)g(x+h) - f(x)g(x+h) + f(x)g(x+h) - f(x)g(x)}{h}$$
+$$= \lim_{h \to 0} \left[g(x+h) \frac{f(x+h) - f(x)}{h} + f(x) \frac{g(x+h) - g(x)}{h}\right]$$
+$$= g(x)f'(x) + f(x)g'(x)$$
 
-### 8.3 Coding Decoding (1)
+**Quotient Rule**: $\frac{d}{dx}\left[\frac{f(x)}{g(x)}\right] = \frac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^2}$
 
-**Key Concepts**: Shift ciphers, symbol substitution. **Tips**: Find rule from examples.
+**Memory Aid**: "Low dee-high minus high dee-low, over low squared"
 
-### 8.4 Counting Figure (1)
+**Chain Rule**: $\frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x)$
 
-**Key Concepts**: Embedded shapes. **Tips**: Systematic count lines/vertices.
+**Leibniz Notation**: $\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$ where $y = f(u)$ and $u = g(x)$
 
-### 8.5 Direction Sense (12)
+**Proof**: Let $y = f(u)$ and $u = g(x)$
+$$\frac{dy}{dx} = \lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \lim_{\Delta x \to 0} \frac{\Delta y}{\Delta u} \cdot \frac{\Delta u}{\Delta x}$$
 
-**Key Concepts**: North-South turns. **Tips**: Vector addition or coordinate plot.
+**Derivatives of Elementary Functions**:
 
-### 8.6 Family Relationship (7)
+**Trigonometric Functions**:
+- $\frac{d}{dx}[\sin x] = \cos x$
+- $\frac{d}{dx}[\cos x] = -\sin x$
+- $\frac{d}{dx}[\tan x] = \sec^2 x$
+- $\frac{d}{dx}[\cot x] = -\csc^2 x$
+- $\frac{d}{dx}[\sec x] = \sec x \tan x$
+- $\frac{d}{dx}[\csc x] = -\csc x \cot x$
 
-**Key Concepts**: Pedigree charts. **Tips**: Define generations, use + for siblings.
+**Proof of** $\frac{d}{dx}[\sin x] = \cos x$:
+$$\frac{d}{dx}[\sin x] = \lim_{h \to 0} \frac{\sin(x+h) - \sin x}{h}$$
+$$= \lim_{h \to 0} \frac{\sin x \cos h + \cos x \sin h - \sin x}{h}$$
+$$= \lim_{h \to 0} \left[\sin x \frac{\cos h - 1}{h} + \cos x \frac{\sin h}{h}\right]$$
+$$= \sin x \cdot 0 + \cos x \cdot 1 = \cos x$$
 
-### 8.7 Inequality (1)
+**Exponential and Logarithmic Functions**:
+- $\frac{d}{dx}[e^x] = e^x$
+- $\frac{d}{dx}[a^x] = a^x \ln a$
+- $\frac{d}{dx}[\ln x] = \frac{1}{x}$
+- $\frac{d}{dx}[\log_a x] = \frac{1}{x \ln a}$
 
-**Key Concepts**: Chain like $a > b > c$. **Tips**: Transitivity.
+**Inverse Trigonometric Functions**:
+- $\frac{d}{dx}[\sin^{-1} x] = \frac{1}{\sqrt{1-x^2}}$
+- $\frac{d}{dx}[\cos^{-1} x] = -\frac{1}{\sqrt{1-x^2}}$
+- $\frac{d}{dx}[\tan^{-1} x] = \frac{1}{1+x^2}$
 
-### 8.8 Logical Inference (1)
+**Hyperbolic Functions**:
+- $\frac{d}{dx}[\sinh x] = \cosh x$
+- $\frac{d}{dx}[\cosh x] = \sinh x$
+- $\frac{d}{dx}[\tanh x] = \text{sech}^2 x$
 
-**Key Concepts**: Deduce from premises. **Tips**: Truth tables.
+**Implicit Differentiation**:
 
-### 8.9 Logical Reasoning (39)
+For equations not solved for $y$, differentiate both sides with respect to $x$, treating $y$ as function of $x$
 
-**Key Concepts**: Syllogisms, assumptions. **Tips**: Venn for all/some/no.
+**Example**: Find $\frac{dy}{dx}$ for $x^2 + y^2 = 25$
+$$\frac{d}{dx}[x^2 + y^2] = \frac{d}{dx}[25]$$
+$$2x + 2y\frac{dy}{dx} = 0$$
+$$\frac{dy}{dx} = -\frac{x}{y}$$
 
-### 8.10 Number Relations (3)
+**Logarithmic Differentiation**:
 
-**Key Concepts**: Series, patterns. **Tips**: Arithmetic/geometric diff.
+For functions of form $y = [f(x)]^{g(x)}$ or products/quotients of many terms:
 
-### 8.11 Odd One (6)
+1. Take natural logarithm: $\ln y = g(x) \ln f(x)$
+2. Differentiate implicitly: $\frac{1}{y}\frac{dy}{dx} = g'(x) \ln f(x) + g(x) \frac{f'(x)}{f(x)}$
+3. Solve for $\frac{dy}{dx}$: $\frac{dy}{dx} = y[g'(x) \ln f(x) + g(x) \frac{f'(x)}{f(x)}]$
 
-**Key Concepts**: Find outlier. **Tips**: Property mismatch (e.g., prime).
+**Example**: $y = x^x$
+$$\ln y = x \ln x$$
+$$\frac{1}{y}\frac{dy}{dx} = \ln x + x \cdot \frac{1}{x} = \ln x + 1$$
+$$\frac{dy}{dx} = x^x(\ln x + 1)$$
 
-### 8.12 Passage Reading (6)
+**Higher-Order Derivatives**:
 
-**Key Concepts**: Inference questions. **Tips**: Paraphrase key sentences.
+**Notation**:
+- Second derivative: $f''(x)$, $\frac{d^2f}{dx^2}$, $\frac{d^2y}{dx^2}$
+- $n$-th derivative: $f^{(n)}(x)$, $\frac{d^nf}{dx^n}$
 
-### 8.13 Round Table Arrangement (6)
+**Leibniz Rule** (Product rule for higher derivatives):
+$$\frac{d^n}{dx^n}[f(x)g(x)] = \sum_{k=0}^{n} \binom{n}{k} f^{(k)}(x) g^{(n-k)}(x)$$
 
-**Key Concepts**: Circular perms (n-1)!. **Tips**: Fix one position.
+**Parametric Differentiation**:
 
-### 8.14 Seating Arrangement (4)
+For parametric equations $x = f(t)$, $y = g(t)$:
+$$\frac{dy}{dx} = \frac{dy/dt}{dx/dt} = \frac{g'(t)}{f'(t)}$$
 
-**Key Concepts**: Linear/circular constraints. **Tips**: Draw slots, eliminate.
+**Second derivative**:
+$$\frac{d^2y}{dx^2} = \frac{d}{dx}\left(\frac{dy}{dx}\right) = \frac{d}{dt}\left(\frac{dy}{dx}\right) \cdot \frac{dt}{dx} = \frac{\frac{d}{dt}\left(\frac{dy}{dx}\right)}{dx/dt}$$
 
-### 8.15 Sequence Series (12)
+**Related Rates**:
 
-**Key Concepts**: Fibonacci, arithmetic. **Tips**: Find nth term formula.
+Problems involving rates of change of related quantities
 
-### 8.16 Statements Follow (33)
+**Strategy**:
+1. Identify variables and given rates
+2. Find equation relating variables
+3. Differentiate with respect to time
+4. Substitute known values and solve
 
-**Key Concepts**: Conclusion validity. **Tips**: Check if must be true.
+**Example**: Balloon inflating at 10 cm³/s. Find rate of radius change when $r = 5$ cm
+- Volume: $V = \frac{4}{3}\pi r^3$
+- Given: $\frac{dV}{dt} = 10$
+- Find: $\frac{dr}{dt}$ when $r = 5$
+- Differentiate: $\frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt}$
+- Substitute: $10 = 4\pi(25)\frac{dr}{dt}$
+- Solve: $\frac{dr}{dt} = \frac{10}{100\pi} = \frac{1}{10\pi}$ cm/s
 
-### 9. General Aptitude: Quantitative Aptitude (494)
+**Applications of Derivatives**:
 
-### 9.1 Absolute Value (7)
+**Tangent and Normal Lines**:
+- Tangent line at $(a, f(a))$: $y - f(a) = f'(a)(x - a)$
+- Normal line: $y - f(a) = -\frac{1}{f'(a)}(x - a)$ (if $f'(a) \neq 0$)
 
-**Key Concepts**: $|x| = x$ if $x geq 0$, $-x$ else. **Tips**: Cases for equations.
+**Linear Approximation**:
+$$f(x) \approx f(a) + f'(a)(x - a)$$ for $x$ near $a$
 
-### 9.2 Age Relation (1)
+**Differential**: $dy = f'(x)dx$ approximates $\Delta y = f(x + \Delta x) - f(x)$
 
-(See 8.1)
+**Mean Value Theorem** (MVT):
 
-### 9.3 Algebra (6)
+**Theorem**: If $f$ is continuous on $[a,b]$ and differentiable on $(a,b)$, then $\exists c \in (a,b)$ such that:
+$$f'(c) = \frac{f(b) - f(a)}{b - a}$$
 
-**Key Concepts**: Factor, quadratic formula $x = frac{-b pm sqrt{b^2-4ac}}{2a}$. **Tips**: Discriminant for roots.
+**Geometric Interpretation**: There exists point where tangent line is parallel to secant line
 
-### 9.4 Alligation Mixture (3)
+**Rolle's Theorem** (Special case of MVT):
+If $f$ continuous on $[a,b]$, differentiable on $(a,b)$, and $f(a) = f(b)$, then $\exists c \in (a,b)$ such that $f'(c) = 0$
 
-**Key Concepts**: Ratio $= frac{C_2 - m}{m - C_1} : 1$. **Tips**: Weighted average.
+**Problem-Solving Tips**:
 
-### 9.5 Area (2)
+**For Basic Differentiation**:
+1. Identify which rules apply (product, quotient, chain)
+2. Work from outside in for composite functions
+3. Simplify before differentiating when possible
 
-**Key Concepts**: Triangle $frac{1}{2}bh$, circle $pi r^2$. **Tips**: Heron's $sqrt{s(s-a)(s-b)(s-c)}$.
+**For Implicit Differentiation**:
+1. Differentiate both sides term by term
+2. Remember to multiply by $\frac{dy}{dx}$ when differentiating $y$ terms
+3. Collect all $\frac{dy}{dx}$ terms and solve
 
-### 9.6 Arithmetic Series (9)
+**For Related Rates**:
+1. Draw diagram if geometric
+2. Identify all variables and their relationships
+3. Differentiate the constraint equation
+4. Substitute known values at specific instant
 
-**Key Concepts**: Sum $= frac{n}{2}$(first $+$ last). **Tips**: Common diff $d$.
+**GATE Tips**:
+- Power rule works for any real exponent: $\frac{d}{dx}[x^r] = rx^{r-1}$
+- Chain rule is essential: always identify inner and outer functions
+- Product rule: $(fg)' = f'g + fg'$ (not $f'g'$!)
+- For $\frac{0}{0}$ limits, try L'Hôpital's rule after checking conditions
+- Implicit differentiation: treat $y$ as function of $x$
+- Related rates: differentiate constraint equation with respect to time
+- MVT guarantees existence of point, not uniqueness
 
-### 9.7 Average (3)
+**Examples**:
 
-**Key Concepts**: Sum$/n$. **Tips**: Weighted: $frac{sum w_i x_i}{sum w}$.
+1. **Find** $\frac{d}{dx}[(x^2 + 1)^3 \sin x]$:
+   Using product rule and chain rule:
+   $$\frac{d}{dx}[(x^2 + 1)^3 \sin x] = 3(x^2 + 1)^2 \cdot 2x \cdot \sin x + (x^2 + 1)^3 \cos x$$
+   $$= 6x(x^2 + 1)^2 \sin x + (x^2 + 1)^3 \cos x$$
 
-### 9.8 Bar Graph (18)
+2. **Find** $\frac{dy}{dx}$ for $x^3 + y^3 = 6xy$:
+   Differentiating implicitly:
+   $$3x^2 + 3y^2\frac{dy}{dx} = 6y + 6x\frac{dy}{dx}$$
+   $$3y^2\frac{dy}{dx} - 6x\frac{dy}{dx} = 6y - 3x^2$$
+   $$\frac{dy}{dx} = \frac{6y - 3x^2}{3y^2 - 6x} = \frac{2y - x^2}{y^2 - 2x}$$
 
-**Key Concepts**: Read scales, compute diffs. **Tips**: Total = sum bars.
+3. **Verify MVT** for $f(x) = x^2$ on $[1,3]$:
+   - $f'(x) = 2x$
+   - $\frac{f(3) - f(1)}{3 - 1} = \frac{9 - 1}{2} = 4$
+   - Need $f'(c) = 4$: $2c = 4 \Rightarrow c = 2$
+   - Since $2 \in (1,3)$, MVT is satisfied with $c = 2$
 
-### 9.9 Calendar (2)
+### 5.3 Integration (50)
 
-**Key Concepts**: Leap years, Zeller’s congruence. **Tips**: Days from ref date.
+**Key Concepts**: Integration is the reverse process of differentiation, used to find areas, volumes, and accumulated quantities. The Fundamental Theorem of Calculus connects differentiation and integration.
 
-### 9.10 Cartesian Coordinates (10)
+**Antiderivative Definition**:
 
-**Key Concepts**: Distance $sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$. **Tips**: Midpoint avg.
+**Definition**: Function $F(x)$ is an **antiderivative** of $f(x)$ if $F'(x) = f(x)$
 
-### 9.11 Circle (7)
+**General Antiderivative**: $F(x) + C$ where $C$ is arbitrary constant
 
-**Key Concepts**: Chord length $2sqrt{r^2 - d^2}$. **Tips**: Sector area $frac{theta}{360} cdot pi r^2$.
+**Indefinite Integral**: $\int f(x) dx = F(x) + C$ where $F'(x) = f(x)$
 
-### 9.12 Clock Time (10)
+**Definite Integral**:
 
-**Key Concepts**: Minute hand 6°/min, hour 0.5°/min. **Tips**: Relative speed 5.5°/min.
+**Riemann Sum Definition**:
+$$\int_a^b f(x) dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*) \Delta x$$
+where $\Delta x = \frac{b-a}{n}$ and $x_i^* \in [x_{i-1}, x_i]$
 
-### 9.13 Combinatory (12)
+**Geometric Interpretation**: Signed area between curve and x-axis from $x = a$ to $x = b$
 
-(See 1.2)
+**Properties of Definite Integrals**:
 
-### 9.14 Compound Interest (5)
+1. **Linearity**: $\int_a^b [cf(x) + dg(x)] dx = c\int_a^b f(x) dx + d\int_a^b g(x) dx$
 
-**Key Concepts**: $A = P(1 + frac{r}{n})^{nt}$. **Tips**: Effective rate $(1+frac{r}{n})^n - 1$.
+2. **Additivity**: $\int_a^b f(x) dx + \int_b^c f(x) dx = \int_a^c f(x) dx$
 
-### 9.15 Conditional Probability (6)
+3. **Reversal**: $\int_a^b f(x) dx = -\int_b^a f(x) dx$
 
-(See 7.5)
+4. **Zero width**: $\int_a^a f(x) dx = 0$
 
-### 9.16 Cones (1)
+5. **Comparison**: If $f(x) \leq g(x)$ on $[a,b]$, then $\int_a^b f(x) dx \leq \int_a^b g(x) dx$
 
-**Key Concepts**: Volume $frac{1}{3}pi r^2 h$.
+**Fundamental Theorem of Calculus**:
 
-### 9.17 Contour Plots (4)
+**Part I** (Evaluation Theorem):
+If $f$ is continuous on $[a,b]$ and $F$ is antiderivative of $f$, then:
+$$\int_a^b f(x) dx = F(b) - F(a) = [F(x)]_a^b$$
 
-**Key Concepts**: Level curves $f(x,y)=c$. **Tips**: Gradient perpendicular.
+**Part II** (Derivative of Integral):
+If $f$ is continuous on $[a,b]$, then:
+$$\frac{d}{dx} \int_a^x f(t) dt = f(x)$$
 
-### 9.18 Cost Market Price (6)
+**More General Form**:
+$$\frac{d}{dx} \int_{g(x)}^{h(x)} f(t) dt = f(h(x))h'(x) - f(g(x))g'(x)$$
 
-**Key Concepts**: Profit $=$ SP $-$ CP. **Tips**: % profit $= frac{text{profit}}{text{CP}} times 100$.
+**Basic Integration Formulas**:
 
-### 9.19 Counting (6)
+**Power Rule**: $\int x^n dx = \frac{x^{n+1}}{n+1} + C$ (for $n \neq -1$)
 
-(See 1.3)
+**Logarithmic**: $\int \frac{1}{x} dx = \ln|x| + C$
 
-### 9.20 Cube (2)
+**Exponential**:
+- $\int e^x dx = e^x + C$
+- $\int a^x dx = \frac{a^x}{\ln a} + C$
 
-**Key Concepts**: Surface $6a^2$, volume $a^3$.
+**Trigonometric**:
+- $\int \sin x dx = -\cos x + C$
+- $\int \cos x dx = \sin x + C$
+- $\int \sec^2 x dx = \tan x + C$
+- $\int \csc^2 x dx = -\cot x + C$
+- $\int \sec x \tan x dx = \sec x + C$
+- $\int \csc x \cot x dx = -\csc x + C$
 
-### 9.21 Currency Notes (1)
+**Inverse Trigonometric**:
+- $\int \frac{1}{\sqrt{1-x^2}} dx = \sin^{-1} x + C$
+- $\int \frac{1}{1+x^2} dx = \tan^{-1} x + C$
+- $\int \frac{1}{x\sqrt{x^2-1}} dx = \sec^{-1}|x| + C$
 
-**Key Concepts**: Greedy algorithm for min notes.
+**Integration Techniques**:
 
-### 9.22 Curves (2)
+**1. Substitution Method** (u-substitution):
 
-**Key Concepts**: Arc length $int sqrt{1+(frac{dy}{dx})^2} , dx$.
+**Indefinite**: If $\int f(g(x))g'(x) dx$, let $u = g(x)$, $du = g'(x) dx$
+$$\int f(g(x))g'(x) dx = \int f(u) du$$
 
-### 9.23 Data Interpretation (5)
+**Definite**: $\int_a^b f(g(x))g'(x) dx = \int_{g(a)}^{g(b)} f(u) du$
 
-**Key Concepts**: Ratios from tables/graphs. **Tips**: % change $= frac{text{new}-text{old}}{text{old}} times 100$.
+**Example**: $\int 2x(x^2 + 1)^3 dx$
+- Let $u = x^2 + 1$, $du = 2x dx$
+- $\int (x^2 + 1)^3 \cdot 2x dx = \int u^3 du = \frac{u^4}{4} + C = \frac{(x^2 + 1)^4}{4} + C$
 
-### 9.24 Digital Image Processing (1)
+**2. Integration by Parts**:
 
-**Key Concepts**: Pixel averaging for filters.
+**Formula**: $\int u dv = uv - \int v du$
 
-### 9.25 Factors (4)
+**Choosing u and dv** (LIATE priority):
+- **L**ogarithmic functions
+- **I**nverse trigonometric functions  
+- **A**lgebraic functions (polynomials)
+- **T**rigonometric functions
+- **E**xponential functions
 
-**Key Concepts**: Prime factorization. **Tips**: Trial div up to sqrt(n).
+**Example**: $\int x e^x dx$
+- Let $u = x$, $dv = e^x dx$
+- Then $du = dx$, $v = e^x$
+- $\int x e^x dx = xe^x - \int e^x dx = xe^x - e^x + C = e^x(x-1) + C$
 
-### 9.26 Fractions (4)
+**Repeated Integration by Parts**:
+For $\int x^n e^x dx$, apply parts $n$ times
 
-**Key Concepts**: $frac{a}{b} + frac{c}{d} = frac{ad+bc}{bd}$.
+**3. Trigonometric Integrals**:
 
-### 9.27 Functions (18)
+**Powers of sine and cosine**:
+- $\int \sin^m x \cos^n x dx$ where $m$ or $n$ is odd: substitute for the even power
+- Both even: use half-angle formulas
 
-(See 4.3)
+**Half-angle formulas**:
+- $\sin^2 x = \frac{1 - \cos 2x}{2}$
+- $\cos^2 x = \frac{1 + \cos 2x}{2}$
 
-### 9.28 Geometry (29)
+**Powers of tangent and secant**:
+- $\int \tan^m x \sec^n x dx$ where $n$ is even: substitute $u = \tan x$
+- $m$ is odd: substitute $u = \sec x$
 
-**Key Concepts**: Pythagoras $a^2 + b^2 = c^2$. **Tips**: Similar triangles ratios.
+**4. Trigonometric Substitution**:
 
-### 9.29 Graph Coloring (1)
+For integrals involving:
+- $\sqrt{a^2 - x^2}$: use $x = a\sin\theta$
+- $\sqrt{a^2 + x^2}$: use $x = a\tan\theta$  
+- $\sqrt{x^2 - a^2}$: use $x = a\sec\theta$
 
-(See 2.3)
+**Example**: $\int \frac{1}{\sqrt{4-x^2}} dx$
+- Let $x = 2\sin\theta$, $dx = 2\cos\theta d\theta$
+- $\sqrt{4-x^2} = \sqrt{4-4\sin^2\theta} = 2\cos\theta$
+- $\int \frac{2\cos\theta}{2\cos\theta} d\theta = \int d\theta = \theta + C = \sin^{-1}\frac{x}{2} + C$
 
-### 9.30 Inequality (4)
+**5. Partial Fractions**:
 
-(See 8.7)
+For rational functions $\frac{P(x)}{Q(x)}$ where degree of $P <$ degree of $Q$:
 
-### 9.31 LCM HCF (1)
+**Linear factors**: $\frac{A}{x-a} + \frac{B}{x-b} + \cdots$
 
-**Key Concepts**: $text{LCM}(a,b) times text{HCF}(a,b) = ab$.
+**Repeated linear factors**: $\frac{A_1}{x-a} + \frac{A_2}{(x-a)^2} + \cdots + \frac{A_n}{(x-a)^n}$
 
-### 9.32 Line Graph (12)
+**Quadratic factors**: $\frac{Ax+B}{x^2+px+q}$ (for irreducible quadratics)
 
-**Key Concepts**: Slope trends. **Tips**: Interpolate points.
+**Example**: $\int \frac{x+1}{x^2-x-2} dx = \int \frac{x+1}{(x-2)(x+1)} dx$
+- $\frac{x+1}{(x-2)(x+1)} = \frac{A}{x-2} + \frac{B}{x+1}$
+- $x+1 = A(x+1) + B(x-2)$
+- Setting $x = 2$: $3 = 3A \Rightarrow A = 1$
+- Setting $x = -1$: $0 = -3B \Rightarrow B = 0$
+- $\int \frac{1}{x-2} dx = \ln|x-2| + C$
 
-### 9.33 Lines (1)
+**6. Numerical Integration**:
 
-**Key Concepts**: $y = mx + c$; parallel $m$ same.
+**Trapezoidal Rule**:
+$$\int_a^b f(x) dx \approx \frac{h}{2}[f(x_0) + 2f(x_1) + 2f(x_2) + \cdots + 2f(x_{n-1}) + f(x_n)]$$
+where $h = \frac{b-a}{n}$
 
-### 9.34 Logarithms (14)
+**Simpson's Rule** (n even):
+$$\int_a^b f(x) dx \approx \frac{h}{3}[f(x_0) + 4f(x_1) + 2f(x_2) + 4f(x_3) + \cdots + 4f(x_{n-1}) + f(x_n)]$$
 
-**Key Concepts**: $log_b a = frac{ln a}{ln b}$. **Tips**: $log(ab)=log a + log b$.
+**Error Analysis**:
+- Trapezoidal: Error $\leq \frac{(b-a)^3}{12n^2} \max|f''(x)|$
+- Simpson's: Error $\leq \frac{(b-a)^5}{180n^4} \max|f^{(4)}(x)|$
 
-### 9.35 Maps (1)
+**Improper Integrals**:
 
-**Key Concepts**: Scale distances.
+**Type I** (Infinite limits):
+$$\int_a^{\infty} f(x) dx = \lim_{t \to \infty} \int_a^t f(x) dx$$
 
-### 9.36 Maxima Minima (4)
+**Type II** (Discontinuous integrand):
+$$\int_a^b f(x) dx = \lim_{t \to c^-} \int_a^t f(x) dx + \lim_{t \to c^+} \int_t^b f(x) dx$$
+where $f$ has discontinuity at $x = c \in (a,b)$
 
-(See 5.6)
+**Convergence Tests**:
+- **Comparison Test**: If $0 \leq f(x) \leq g(x)$ and $\int g(x) dx$ converges, then $\int f(x) dx$ converges
+- **Limit Comparison Test**: If $\lim_{x \to \infty} \frac{f(x)}{g(x)} = L > 0$, then both integrals converge or both diverge
 
-### 9.37 Mensuration (1)
+**Applications of Integration**:
 
-**Key Concepts**: Volumes/surfaces formulas.
+**Area between curves**:
+$$A = \int_a^b |f(x) - g(x)| dx$$
 
-### 9.38 Modular Arithmetic (2)
+**Volume by cross-sections**:
+$$V = \int_a^b A(x) dx$$
+where $A(x)$ is area of cross-section at $x$
 
-(See 1.5)
+**Volume of revolution**:
+- **Disk method**: $V = \pi \int_a^b [f(x)]^2 dx$
+- **Washer method**: $V = \pi \int_a^b ([f(x)]^2 - [g(x)]^2) dx$
+- **Shell method**: $V = 2\pi \int_a^b x f(x) dx$
 
-### 9.39 Number Series (10)
+**Arc length**:
+$$L = \int_a^b \sqrt{1 + [f'(x)]^2} dx$$
 
-**Key Concepts**: Patterns like squares, cubes. **Tips**: Differences of differences.
+**Surface area of revolution**:
+$$S = 2\pi \int_a^b f(x) \sqrt{1 + [f'(x)]^2} dx$$
 
-### 9.40 Number System (7)
+**Problem-Solving Strategy**:
 
-**Key Concepts**: Base conversion.
+**For Integration**:
+1. **Identify type**: Basic formula, substitution, parts, trig substitution, partial fractions
+2. **Simplify first**: Factor, expand, or rewrite if helpful
+3. **Check answer**: Differentiate result to verify
 
-### 9.41 Number Theory (6)
+**For Definite Integrals**:
+1. **Find antiderivative** using appropriate technique
+2. **Apply FTC**: Evaluate at bounds and subtract
+3. **Check reasonableness**: Consider sign and magnitude
 
-(See 4.8)
+**GATE Tips**:
+- Master basic formulas and substitution method first
+- Integration by parts: choose $u$ using LIATE
+- Trig substitution: match radical form to substitution
+- Partial fractions: degree of numerator < degree of denominator
+- FTC Part II: $\frac{d}{dx} \int_a^x f(t) dt = f(x)$
+- Improper integrals: check convergence before evaluating
+- Area problems: determine which function is on top
 
-### 9.42 Numerical Computation (14)
+**Examples**:
 
-**Key Concepts**: Approx, rounding.
+1. **Evaluate** $\int x^2 e^{x^3} dx$:
+   - Let $u = x^3$, $du = 3x^2 dx$, so $x^2 dx = \frac{1}{3} du$
+   - $\int x^2 e^{x^3} dx = \frac{1}{3} \int e^u du = \frac{1}{3} e^u + C = \frac{1}{3} e^{x^3} + C$
 
-### 9.43 Percentage (21)
+2. **Evaluate** $\int_0^{\pi/2} x \sin x dx$:
+   - Using integration by parts: $u = x$, $dv = \sin x dx$
+   - $du = dx$, $v = -\cos x$
+   - $\int x \sin x dx = -x \cos x + \int \cos x dx = -x \cos x + \sin x + C$
+   - $\int_0^{\pi/2} x \sin x dx = [-x \cos x + \sin x]_0^{\pi/2} = [0 + 1] - [0 + 0] = 1$
 
-**Key Concepts**: $x$% of $y = frac{xy}{100}$. **Tips**: Successive %: $(1 + frac{r}{100})^n$.
+3. **Find area** between $y = x^2$ and $y = 2x$ from $x = 0$ to $x = 2$:
+   - Intersection points: $x^2 = 2x \Rightarrow x = 0, 2$
+   - For $0 \leq x \leq 2$: $2x \geq x^2$
+   - $A = \int_0^2 (2x - x^2) dx = [x^2 - \frac{x^3}{3}]_0^2 = 4 - \frac{8}{3} = \frac{4}{3}$
 
-### 9.44 Permutation and Combination (4)
+### 5.4 Differential Equations (35)
 
-(See 1.2)
+**Key Concepts**: Differential equations involve functions and their derivatives. They model rates of change in physics, engineering, biology, and economics.
 
-### 9.45 Pie Chart (16)
+**Classification of Differential Equations**:
 
-**Key Concepts**: Angle $= % times 3.6°$. **Tips**: Largest slice max value.
+**By Order**: Highest derivative present
+- **First-order**: $\frac{dy}{dx} = f(x,y)$
+- **Second-order**: $\frac{d^2y}{dx^2} = f(x, y, y')$
+- **n-th order**: Contains $\frac{d^ny}{dx^n}$
 
-### 9.46 Polynomials (4)
+**By Linearity**:
+- **Linear**: Dependent variable and derivatives appear linearly
+- **Nonlinear**: Contains products, powers, or nonlinear functions of $y$ and derivatives
 
-(See 4.11)
+**By Homogeneity**:
+- **Homogeneous**: All terms involve dependent variable or its derivatives
+- **Non-homogeneous**: Contains terms independent of dependent variable
 
-### 9.47 Powers (1)
+**First-Order Differential Equations**:
 
-**Key Concepts**: $a^m times a^n = a^{m+n}$.
+**1. Separable Equations**:
 
-### 9.48 Prime Numbers (1)
+**Form**: $\frac{dy}{dx} = f(x)g(y)$ or $M(x)dx + N(y)dy = 0$
 
-**Key Concepts**: Sieve of Eratosthenes.
+**Solution Method**:
+1. Separate variables: $\frac{dy}{g(y)} = f(x)dx$
+2. Integrate both sides: $\int \frac{dy}{g(y)} = \int f(x)dx$
+3. Solve for $y$ if possible
 
-### 9.49 Probability (29)
+**Example**: $\frac{dy}{dx} = xy$
+- Separate: $\frac{dy}{y} = x dx$
+- Integrate: $\ln|y| = \frac{x^2}{2} + C$
+- Solve: $y = Ae^{x^2/2}$ where $A = \pm e^C$
 
-(See 7.12)
+**2. Linear First-Order Equations**:
 
-### 9.50 Probability Density Function (1)
+**Standard Form**: $\frac{dy}{dx} + P(x)y = Q(x)$
 
-(See 7.13)
+**Solution Method** (Integrating Factor):
+1. Find integrating factor: $\mu(x) = e^{\int P(x)dx}$
+2. Multiply equation by $\mu(x)$: $\mu(x)\frac{dy}{dx} + \mu(x)P(x)y = \mu(x)Q(x)$
+3. Left side becomes $\frac{d}{dx}[\mu(x)y]$
+4. Integrate: $\mu(x)y = \int \mu(x)Q(x)dx$
+5. Solve for $y$: $y = \frac{1}{\mu(x)} \int \mu(x)Q(x)dx$
 
-### 9.51 Profit Loss (6)
+**Example**: $\frac{dy}{dx} + 2y = e^{-x}$
+- $P(x) = 2$, $Q(x) = e^{-x}$
+- $\mu(x) = e^{\int 2dx} = e^{2x}$
+- $e^{2x}\frac{dy}{dx} + 2e^{2x}y = e^{2x} \cdot e^{-x} = e^x$
+- $\frac{d}{dx}[e^{2x}y] = e^x$
+- $e^{2x}y = \int e^x dx = e^x + C$
+- $y = e^{-x} + Ce^{-2x}$
 
-(See 9.18)
+**3. Exact Equations**:
 
-### 9.52 Quadratic Equations (11)
+**Form**: $M(x,y)dx + N(x,y)dy = 0$
 
-(See 9.3)
+**Exactness Condition**: $\frac{\partial M}{\partial y} = \frac{\partial N}{\partial x}$
 
-### 9.53 Radar Chart (1)
+**Solution Method**:
+1. Check exactness condition
+2. Find function $F(x,y)$ such that $\frac{\partial F}{\partial x} = M$ and $\frac{\partial F}{\partial y} = N$
+3. Solution is $F(x,y) = C$
 
-**Key Concepts**: Multi-axis comparison.
+**Finding F(x,y)**:
+- $F(x,y) = \int M(x,y)dx + g(y)$
+- Determine $g(y)$ using $\frac{\partial F}{\partial y} = N$
 
-### 9.54 Ratio Proportion (26)
+**4. Homogeneous Equations**:
 
-**Key Concepts**: $frac{a}{b} = frac{c}{d} Rightarrow ad=bc$. **Tips**: Divide in ratio.
+**Form**: $\frac{dy}{dx} = f\left(\frac{y}{x}\right)$
 
-### 9.55 Scatter Plot (1)
+**Solution Method**:
+1. Substitute $v = \frac{y}{x}$, so $y = vx$ and $\frac{dy}{dx} = v + x\frac{dv}{dx}$
+2. Equation becomes: $v + x\frac{dv}{dx} = f(v)$
+3. Separate: $x\frac{dv}{dx} = f(v) - v$
+4. $\frac{dv}{f(v) - v} = \frac{dx}{x}$
+5. Integrate and substitute back
 
-**Key Concepts**: Correlation from points.
+**Second-Order Linear Differential Equations**:
 
-### 9.56 Seating Arrangement (4)
+**General Form**: $a(x)\frac{d^2y}{dx^2} + b(x)\frac{dy}{dx} + c(x)y = f(x)$
 
-(See 8.14)
+**Constant Coefficients**: $ay'' + by' + cy = f(x)$
 
-### 9.57 Sequence Series (10)
+**Homogeneous Case**: $ay'' + by' + cy = 0$
 
-(See 8.15)
+**Characteristic Equation Method**:
+1. Assume solution $y = e^{rx}$
+2. Substitute: $ar^2 + br + c = 0$
+3. Solve quadratic for $r$
 
-### 9.58 Set Theory (1)
+**Cases for Roots**:
 
-(See 4.13)
+**Case 1**: Two distinct real roots $r_1, r_2$
+- General solution: $y = c_1 e^{r_1 x} + c_2 e^{r_2 x}$
 
-### 9.59 Speed Time Distance (19)
+**Case 2**: Repeated real root $r$
+- General solution: $y = (c_1 + c_2 x)e^{rx}$
 
-**Key Concepts**: $s = frac{d}{t}$; relative speed. **Tips**: Avg speed $\frac{2ab}{a+b}$ for round.
+**Case 3**: Complex roots $r = \alpha \pm \beta i$
+- General solution: $y = e^{\alpha x}(c_1 \cos \beta x + c_2 \sin \beta x)$
 
-### 9.60 Squares (4)
+**Example**: $y'' - 5y' + 6y = 0$
+- Characteristic equation: $r^2 - 5r + 6 = 0$
+- Factor: $(r-2)(r-3) = 0$
+- Roots: $r_1 = 2, r_2 = 3$
+- Solution: $y = c_1 e^{2x} + c_2 e^{3x}$
 
-**Key Concepts**: $n^2$ patterns.
+**Non-homogeneous Equations**: $ay'' + by' + cy = f(x)$
 
-### 9.61 Statistics (9)
+**General Solution**: $y = y_h + y_p$
+- $y_h$: homogeneous solution
+- $y_p$: particular solution
 
-(See 7.17)
+**Method of Undetermined Coefficients**:
 
-### 9.62 System of Equations (1)
+For specific forms of $f(x)$:
 
-(See 6.11)
+| $f(x)$ | Trial $y_p$ |
+|--------|-------------|
+| $ae^{kx}$ | $Ae^{kx}$ |
+| $a\cos kx + b\sin kx$ | $A\cos kx + B\sin kx$ |
+| $ax^n$ | $A_n x^n + A_{n-1}x^{n-1} + \cdots + A_0$ |
+| $ae^{kx}\cos mx$ | $e^{kx}(A\cos mx + B\sin mx)$ |
 
-### 9.63 Tables (1)
+**Modification Rule**: If trial solution is part of homogeneous solution, multiply by $x$ (or $x^2$ if necessary)
 
-**Key Concepts**: Row sums.
+**Example**: $y'' - 3y' + 2y = e^x$
+- Homogeneous: $r^2 - 3r + 2 = 0 \Rightarrow r = 1, 2$
+- $y_h = c_1 e^x + c_2 e^{2x}$
+- Since $e^x$ is in $y_h$, try $y_p = Axe^x$
+- $y_p' = A(e^x + xe^x) = Ae^x(1 + x)$
+- $y_p'' = Ae^x(2 + x)$
+- Substitute: $Ae^x(2 + x) - 3Ae^x(1 + x) + 2Axe^x = e^x$
+- $Ae^x(2 + x - 3 - 3x + 2x) = e^x$
+- $Ae^x(-1) = e^x \Rightarrow A = -1$
+- $y_p = -xe^x$
+- General solution: $y = c_1 e^x + c_2 e^{2x} - xe^x$
 
-### 9.64 Tabular Data (10)
+**Variation of Parameters**:
 
-**Key Concepts**: Extract aggregates.
+For $y'' + p(x)y' + q(x)y = f(x)$ with known homogeneous solutions $y_1, y_2$:
 
-### 9.65 Triangles (11)
+**Particular Solution**:
+$$y_p = -y_1 \int \frac{y_2 f(x)}{W} dx + y_2 \int \frac{y_1 f(x)}{W} dx$$
 
-(See 9.5)
+where $W = y_1 y_2' - y_2 y_1'$ is the Wronskian
 
-### 9.66 Trigonometry (1)
+**Applications of Differential Equations**:
 
-**Key Concepts**: $sin^2theta + cos^2theta = 1$.
+**1. Population Growth**:
+- **Exponential**: $\frac{dP}{dt} = kP \Rightarrow P(t) = P_0 e^{kt}$
+- **Logistic**: $\frac{dP}{dt} = kP(1 - \frac{P}{M}) \Rightarrow P(t) = \frac{M}{1 + Ae^{-kt}}$
 
-### 9.67 Unit Digit (2)
+**2. Newton's Law of Cooling**:
+$$\frac{dT}{dt} = -k(T - T_{\text{ambient}})$$
+Solution: $T(t) = T_{\text{ambient}} + (T_0 - T_{\text{ambient}})e^{-kt}$
 
-**Key Concepts**: Cyclicity (e.g., 2: 4,8,6).
+**3. Simple Harmonic Motion**:
+$$m\frac{d^2x}{dt^2} + kx = 0$$
+Solution: $x(t) = A\cos(\omega t + \phi)$ where $\omega = \sqrt{\frac{k}{m}}$
 
-### 9.68 Venn Diagram (16)
+**4. RLC Circuits**:
+$$L\frac{d^2q}{dt^2} + R\frac{dq}{dt} + \frac{q}{C} = E(t)$$
 
-**Key Concepts**: $|A cup B| = |A| + |B| - |A cap B|$. **Tips**: 3-set formula.
+**5. Mixing Problems**:
+Rate of change = Rate in - Rate out
+$$\frac{dA}{dt} = r_{\text{in}} c_{\text{in}} - r_{\text{out}} \frac{A(t)}{V(t)}$$
 
-### 9.69 Volume (2)
+**Laplace Transform Method**:
 
-(See 9.20)
+**Definition**: $\mathcal{L}\{f(t)\} = F(s) = \int_0^{\infty} e^{-st} f(t) dt$
 
-### 9.70 Work Time (17)
+**Key Properties**:
+- $\mathcal{L}\{f'(t)\} = sF(s) - f(0)$
+- $\mathcal{L}\{f''(t)\} = s^2F(s) - sf(0) - f'(0)$
+- $\mathcal{L}\{e^{at}f(t)\} = F(s-a)$
 
-**Key Concepts**: Rates add; $\frac{1}{A} + \frac{1}{B} = \frac{1}{T}$ where $T$ is combined time. **Tips**: Combined work.
+**Common Transforms**:
+- $\mathcal{L}\{1\} = \frac{1}{s}$
+- $\mathcal{L}\{t^n\} = \frac{n!}{s^{n+1}}$
+- $\mathcal{L}\{e^{at}\} = \frac{1}{s-a}$
+- $\mathcal{L}\{\sin at\} = \frac{a}{s^2 + a^2}$
+- $\mathcal{L}\{\cos at\} = \frac{s}{s^2 + a^2}$
 
-### 10. General Aptitude: Spatial Aptitude (49)
+**Solution Process**:
+1. Take Laplace transform of DE
+2. Solve algebraic equation for $Y(s) = \mathcal{L}\{y(t)\}$
+3. Find inverse transform: $y(t) = \mathcal{L}^{-1}\{Y(s)\}$
 
-### 10.1 Assembling Pieces (4)
+**Problem-Solving Strategy**:
 
-**Key Concepts**: Puzzle fitting. **Tips**: Visualize rotations.
+**For First-Order DEs**:
+1. **Identify type**: Separable, linear, exact, homogeneous
+2. **Apply appropriate method**
+3. **Include arbitrary constant**
+4. **Apply initial conditions** if given
 
-### 10.2 Counting Figure (1)
+**For Second-Order DEs**:
+1. **Find homogeneous solution** using characteristic equation
+2. **Find particular solution** using undetermined coefficients or variation of parameters
+3. **Combine**: $y = y_h + y_p$
+4. **Apply initial conditions**
 
-(See 8.4)
+**GATE Tips**:
+- Separable: $\frac{dy}{dx} = f(x)g(y)$ → separate and integrate
+- Linear first-order: Use integrating factor $\mu(x) = e^{\int P(x)dx}$
+- Characteristic equation: $ar^2 + br + c = 0$ for $ay'' + by' + cy = 0$
+- Complex roots $\alpha \pm \beta i$ give $e^{\alpha x}(c_1 \cos \beta x + c_2 \sin \beta x)$
+- Undetermined coefficients: Match form of non-homogeneous term
+- Initial conditions determine arbitrary constants
+- Check solutions by substitution
 
-### 10.3 Grouping (1)
+**Examples**:
 
-**Key Concepts**: Cluster shapes.
+1. **Solve** $\frac{dy}{dx} = \frac{x}{y}$ with $y(0) = 1$:
+   - Separate: $y dy = x dx$
+   - Integrate: $\frac{y^2}{2} = \frac{x^2}{2} + C$
+   - $y^2 = x^2 + 2C$
+   - Initial condition: $1 = 0 + 2C \Rightarrow C = \frac{1}{2}$
+   - Solution: $y^2 = x^2 + 1 \Rightarrow y = \sqrt{x^2 + 1}$ (taking positive root)
 
-### 10.4 Image Rotation (7)
+2. **Solve** $y'' + 4y = 0$:
+   - Characteristic equation: $r^2 + 4 = 0$
+   - Roots: $r = \pm 2i$
+   - Solution: $y = c_1 \cos 2x + c_2 \sin 2x$
 
-**Key Concepts**: 90/180/270 turns. **Tips**: Clockwise vs. counterclockwise.
+3. **Solve** $y'' - y = e^x$:
+   - Homogeneous: $r^2 - 1 = 0 \Rightarrow r = \pm 1$
+   - $y_h = c_1 e^x + c_2 e^{-x}$
+   - Since $e^x$ is in $y_h$, try $y_p = Axe^x$
+   - $y_p' = A(e^x + xe^x)$, $y_p'' = A(2e^x + xe^x)$
+   - Substitute: $A(2e^x + xe^x) - Axe^x = e^x$
+   - $2Ae^x = e^x \Rightarrow A = \frac{1}{2}$
+   - Solution: $y = c_1 e^x + c_2 e^{-x} + \frac{1}{2}xe^x$
+### 6. Engineering Mathematics: Linear Algebra (120 Questions)
 
-### 10.5 Mirror Image (7)
+### 6.1 Matrices and Determinants (40)
 
-**Key Concepts**: Flip over axis. **Tips**: Reverse left-right.
+**Key Concepts**: Matrices are rectangular arrays of numbers that represent linear transformations and systems of equations. Determinants measure how matrices scale areas and volumes.
 
-### 10.6 Paper Folding (12)
+**Matrix Definitions**:
 
-**Key Concepts**: Punched holes post-fold. **Tips**: Unfold mentally.
+**Matrix**: Rectangular array of numbers arranged in rows and columns
+$$A = \begin{bmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{bmatrix}$$
 
-### 10.7 Patterns In Three Dimensions (8)
+**Notation**: $A = [a_{ij}]_{m \times n}$ where $i$ is row index, $j$ is column index
 
-**Key Concepts**: Cube nets, views. **Tips**: Opposite faces.
+**Special Matrices**:
 
-### 10.8 Patterns In Two Dimensions (9)
+**Square Matrix**: $m = n$ (same number of rows and columns)
 
-**Key Concepts**: Symmetry, tessellations. **Tips**: Rotation/reflection axes.
+**Zero Matrix**: All entries are zero, denoted $O$ or $0$
 
-### 11. General Aptitude: Verbal Aptitude (376)
+**Identity Matrix**: Square matrix with 1's on diagonal, 0's elsewhere
+$$I_n = \begin{bmatrix} 1 & 0 & \cdots & 0 \\ 0 & 1 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & 1 \end{bmatrix}$$
 
-### 11.1 Articles (2)
+**Diagonal Matrix**: Square matrix with non-zero entries only on main diagonal
+$$D = \begin{bmatrix} d_1 & 0 & \cdots & 0 \\ 0 & d_2 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & d_n \end{bmatrix}$$
 
-**Key Concepts**: A/an/the usage. **Tips**: Indefinite for first mention.
+**Upper Triangular**: $a_{ij} = 0$ for $i > j$
+**Lower Triangular**: $a_{ij} = 0$ for $i < j$
 
-### 11.2 Comparative Forms (7)
+**Symmetric Matrix**: $A = A^T$ (equals its transpose)
+**Skew-Symmetric**: $A = -A^T$
 
-**Key Concepts**: -er/est or more/most. **Tips**: Irregular (good-better).
+**Matrix Operations**:
 
-### 11.3 English Grammar (12)
+**Matrix Addition**: $(A + B)_{ij} = a_{ij} + b_{ij}$
+- Only defined for matrices of same size
+- **Commutative**: $A + B = B + A$
+- **Associative**: $(A + B) + C = A + (B + C)$
 
-**Key Concepts**: Subject-verb agreement.
+**Scalar Multiplication**: $(cA)_{ij} = c \cdot a_{ij}$
+- **Distributive**: $c(A + B) = cA + cB$
+- $(c + d)A = cA + dA$
 
-### 11.4 Grammatical Error (9)
+**Matrix Multiplication**: $(AB)_{ij} = \sum_{k=1}^{p} a_{ik} b_{kj}$
 
-**Key Concepts**: Spot tense/mood errors.
+For $A_{m \times p}$ and $B_{p \times n}$, result is $C_{m \times n}$
 
-### 11.5 Incorrect Sentence Part (5)
+**Properties**:
+- **Not commutative**: Generally $AB \neq BA$
+- **Associative**: $(AB)C = A(BC)$
+- **Distributive**: $A(B + C) = AB + AC$
+- **Identity**: $AI = IA = A$
 
-**Key Concepts**: Identify wrong clause.
+**Transpose**: $(A^T)_{ij} = a_{ji}$
 
-### 11.6 Most Appropriate Word (113)
+**Properties of Transpose**:
+- $(A^T)^T = A$
+- $(A + B)^T = A^T + B^T$
+- $(AB)^T = B^T A^T$ (order reverses!)
+- $(cA)^T = cA^T$
 
-**Key Concepts**: Vocabulary in context. **Tips**: Synonyms/antonyms.
+**Determinants**:
 
-### 11.7 Narrative Sequencing (1)
+**2×2 Determinant**:
+$$\det(A) = \begin{vmatrix} a & b \\ c & d \end{vmatrix} = ad - bc$$
 
-**Key Concepts**: Logical order of sentences.
+**3×3 Determinant** (Cofactor expansion along first row):
+$$\det(A) = a_{11}\begin{vmatrix} a_{22} & a_{23} \\ a_{32} & a_{33} \end{vmatrix} - a_{12}\begin{vmatrix} a_{21} & a_{23} \\ a_{31} & a_{33} \end{vmatrix} + a_{13}\begin{vmatrix} a_{21} & a_{22} \\ a_{31} & a_{32} \end{vmatrix}$$
 
-### 11.8 Noun Verb Adjective (3)
+**General Cofactor Expansion**:
+$$\det(A) = \sum_{j=1}^{n} a_{ij} C_{ij} = \sum_{i=1}^{n} a_{ij} C_{ij}$$
 
-**Key Concepts**: Parts of speech.
+where $C_{ij} = (-1)^{i+j} M_{ij}$ is the cofactor and $M_{ij}$ is the minor
 
-### 11.9 Opposite (5)
+**Properties of Determinants**:
 
-**Key Concepts**: Antonyms.
+1. **Row/Column Operations**:
+   - Swapping two rows/columns changes sign
+   - Multiplying row/column by scalar $k$ multiplies determinant by $k$
+   - Adding multiple of one row to another doesn't change determinant
 
-### 11.10 Passage Reading (57)
+2. **Special Cases**:
+   - $\det(I) = 1$
+   - $\det(A^T) = \det(A)$
+   - $\det(AB) = \det(A) \det(B)$
+   - $\det(cA) = c^n \det(A)$ for $n \times n$ matrix
 
-(See 8.12)
+3. **Triangular Matrices**: Determinant equals product of diagonal entries
 
-### 11.11 Phrasal Verb (2)
+4. **Zero Determinant**: Matrix is singular (non-invertible) iff $\det(A) = 0$
 
-**Key Concepts**: Verb + prep (turn down).
+**Cramer's Rule**:
 
-### 11.12 Phrase Meaning (8)
+For system $Ax = b$ where $A$ is $n \times n$ and $\det(A) \neq 0$:
+$$x_i = \frac{\det(A_i)}{\det(A)}$$
 
-**Key Concepts**: Idioms.
+where $A_i$ is matrix $A$ with $i$-th column replaced by $b$
 
-### 11.13 Prepositions (8)
+**Matrix Inverse**:
 
-**Key Concepts**: In/on/at for time/place.
+**Definition**: $A^{-1}$ is inverse of $A$ if $AA^{-1} = A^{-1}A = I$
 
-### 11.14 Pronouns (4)
+**Existence**: $A^{-1}$ exists iff $\det(A) \neq 0$ (A is non-singular)
 
-**Key Concepts**: Agreement/reflexive.
+**2×2 Inverse**:
+$$A^{-1} = \frac{1}{\det(A)} \begin{bmatrix} d & -b \\ -c & a \end{bmatrix} \text{ for } A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$$
 
-### 11.15 Sentence Ordering (5)
+**General Formula** (Adjugate method):
+$$A^{-1} = \frac{1}{\det(A)} \text{adj}(A)$$
 
-(See 11.7)
+where $\text{adj}(A) = [C_{ji}]$ (transpose of cofactor matrix)
 
-### 11.16 Statement Sufficiency (2)
+**Properties of Inverse**:
+- $(A^{-1})^{-1} = A$
+- $(AB)^{-1} = B^{-1}A^{-1}$ (order reverses!)
+- $(A^T)^{-1} = (A^{-1})^T$
+- $\det(A^{-1}) = \frac{1}{\det(A)}$
 
-**Key Concepts**: Data adequacy.
+**Elementary Matrices**:
 
-### 11.17 Statements Follow (2)
+Matrices representing elementary row operations:
+1. **Row swap**: $E_{ij}$ (swaps rows $i$ and $j$)
+2. **Row scaling**: $E_i(c)$ (multiplies row $i$ by $c \neq 0$)
+3. **Row addition**: $E_{ij}(c)$ (adds $c$ times row $j$ to row $i$)
 
-(See 8.16)
+**Theorem**: Every invertible matrix is product of elementary matrices
 
-### 11.18 Synonyms (19)
+**Gauss-Jordan Elimination**:
 
-**Key Concepts**: Word matches.
+Method to find $A^{-1}$ by row operations:
+1. Form augmented matrix $[A | I]$
+2. Use row operations to transform to $[I | A^{-1}]$
+3. If process fails, $A$ is not invertible
 
-### 11.19 Tenses (25)
+**Rank of Matrix**:
 
-**Key Concepts**: Past/present/future forms.
+**Definition**: Rank is maximum number of linearly independent rows (or columns)
 
-### 11.20 Verbal Reasoning (40)
+**Properties**:
+- $\text{rank}(A) = \text{rank}(A^T)$
+- $\text{rank}(A) \leq \min(m,n)$ for $m \times n$ matrix
+- $A$ is invertible iff $\text{rank}(A) = n$ (full rank)
 
-(See 8.9)
+**Computing Rank**:
+1. Use row operations to get row echelon form
+2. Count non-zero rows
 
-### 11.21 Word Meaning (17)
+**Applications**:
 
-(See 11.6)
+**System of Linear Equations**: $Ax = b$
+- **Unique solution**: $\det(A) \neq 0$ (use Cramer's rule or $x = A^{-1}b$)
+- **No solution or infinitely many**: $\det(A) = 0$
 
-### 11.22 Word Pairs (30)
+**Consistency Conditions**:
+- **Consistent**: $\text{rank}(A) = \text{rank}([A|b])$
+- **Unique solution**: $\text{rank}(A) = n$ (number of variables)
+- **Infinitely many solutions**: $\text{rank}(A) < n$
 
-**Key Concepts**: Analogies (big:small :: hot:cold).
+**Geometric Interpretations**:
+- **Determinant**: Signed volume of parallelepiped formed by column vectors
+- **Matrix multiplication**: Composition of linear transformations
+- **Inverse**: Reverse transformation
+
+**Problem-Solving Tips**:
+
+**For Determinants**:
+1. Use row operations to simplify before expanding
+2. Look for zeros to minimize calculation
+3. For large matrices, use LU decomposition
+
+**For Matrix Inverse**:
+1. Check if $\det(A) \neq 0$ first
+2. For 2×2, use direct formula
+3. For larger matrices, use Gauss-Jordan elimination
+
+**For Systems**:
+1. Check consistency using rank
+2. If unique solution exists, use appropriate method
+3. For homogeneous systems, non-trivial solution exists iff $\det(A) = 0$
+
+**GATE Tips**:
+- $(AB)^T = B^T A^T$ and $(AB)^{-1} = B^{-1} A^{-1}$ (order reverses!)
+- $\det(AB) = \det(A) \det(B)$
+- Row operations: swap changes sign, scaling multiplies by scalar
+- Cramer's rule only when $\det(A) \neq 0$
+- Rank determines solution type for linear systems
+- Elementary matrices represent row operations
+
+**Examples**:
+
+1. **Find determinant** of $A = \begin{bmatrix} 2 & 1 & 3 \\ 0 & 4 & 1 \\ 0 & 0 & 5 \end{bmatrix}$:
+   - Upper triangular matrix
+   - $\det(A) = 2 \times 4 \times 5 = 40$
+
+2. **Find inverse** of $A = \begin{bmatrix} 2 & 1 \\ 3 & 2 \end{bmatrix}$:
+   - $\det(A) = 2(2) - 1(3) = 1$
+   - $A^{-1} = \frac{1}{1} \begin{bmatrix} 2 & -1 \\ -3 & 2 \end{bmatrix} = \begin{bmatrix} 2 & -1 \\ -3 & 2 \end{bmatrix}$
+
+3. **Solve system** using Cramer's rule: $2x + y = 5$, $x + 3y = 8$:
+   - $A = \begin{bmatrix} 2 & 1 \\ 1 & 3 \end{bmatrix}$, $b = \begin{bmatrix} 5 \\ 8 \end{bmatrix}$
+   - $\det(A) = 6 - 1 = 5$
+   - $x = \frac{\begin{vmatrix} 5 & 1 \\ 8 & 3 \end{vmatrix}}{5} = \frac{15-8}{5} = \frac{7}{5}$
+   - $y = \frac{\begin{vmatrix} 2 & 5 \\ 1 & 8 \end{vmatrix}}{5} = \frac{16-5}{5} = \frac{11}{5}$
+
+### 6.2 Vector Spaces (25)
+
+**Key Concepts**: Vector spaces are algebraic structures where vectors can be added and scaled. They provide the foundation for linear algebra and functional analysis.
+
+**Vector Space Definition**:
+
+A **vector space** $V$ over field $F$ (usually $\mathbb{R}$ or $\mathbb{C}$) is set with two operations:
+- **Vector addition**: $+: V \times V \to V$
+- **Scalar multiplication**: $\cdot: F \times V \to V$
+
+satisfying these axioms for all $\mathbf{u}, \mathbf{v}, \mathbf{w} \in V$ and $a, b \in F$:
+
+**Addition Axioms**:
+1. **Closure**: $\mathbf{u} + \mathbf{v} \in V$
+2. **Commutativity**: $\mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u}$
+3. **Associativity**: $(\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + (\mathbf{v} + \mathbf{w})$
+4. **Zero vector**: $\exists \mathbf{0} \in V$ such that $\mathbf{v} + \mathbf{0} = \mathbf{v}$
+5. **Additive inverse**: $\forall \mathbf{v} \in V, \exists (-\mathbf{v}) \in V$ such that $\mathbf{v} + (-\mathbf{v}) = \mathbf{0}$
+
+**Scalar Multiplication Axioms**:
+6. **Closure**: $a\mathbf{v} \in V$
+7. **Associativity**: $a(b\mathbf{v}) = (ab)\mathbf{v}$
+8. **Identity**: $1\mathbf{v} = \mathbf{v}$
+9. **Distributivity**: $a(\mathbf{u} + \mathbf{v}) = a\mathbf{u} + a\mathbf{v}$
+10. **Distributivity**: $(a + b)\mathbf{v} = a\mathbf{v} + b\mathbf{v}$
+
+**Examples of Vector Spaces**:
+
+1. **$\mathbb{R}^n$**: n-tuples of real numbers with componentwise operations
+2. **$\mathbb{C}^n$**: n-tuples of complex numbers
+3. **$M_{m \times n}(\mathbb{R})$**: $m \times n$ real matrices
+4. **$P_n(\mathbb{R})$**: Polynomials of degree ≤ n with real coefficients
+5. **$C[a,b]$**: Continuous functions on interval $[a,b]$
+6. **$\{0\}$**: Trivial vector space containing only zero vector
+
+**Subspaces**:
+
+**Definition**: Subset $W \subseteq V$ is **subspace** if:
+1. $\mathbf{0} \in W$ (contains zero vector)
+2. **Closed under addition**: $\mathbf{u}, \mathbf{v} \in W \Rightarrow \mathbf{u} + \mathbf{v} \in W$
+3. **Closed under scalar multiplication**: $\mathbf{v} \in W, a \in F \Rightarrow a\mathbf{v} \in W$
+
+**Subspace Test**: $W$ is subspace iff $a\mathbf{u} + b\mathbf{v} \in W$ for all $\mathbf{u}, \mathbf{v} \in W$ and $a, b \in F$
+
+**Examples of Subspaces**:
+- Lines through origin in $\mathbb{R}^2$
+- Planes through origin in $\mathbb{R}^3$
+- Solution space of homogeneous system $A\mathbf{x} = \mathbf{0}$
+- Even polynomials in $P_n(\mathbb{R})$
+
+**Linear Combinations**:
+
+**Definition**: Vector $\mathbf{v}$ is **linear combination** of vectors $\mathbf{v}_1, \ldots, \mathbf{v}_k$ if:
+$$\mathbf{v} = a_1\mathbf{v}_1 + a_2\mathbf{v}_2 + \cdots + a_k\mathbf{v}_k$$
+for some scalars $a_1, \ldots, a_k$
+
+**Span**: $\text{span}\{\mathbf{v}_1, \ldots, \mathbf{v}_k\}$ is set of all linear combinations of $\mathbf{v}_1, \ldots, \mathbf{v}_k$
+
+**Properties**:
+- $\text{span}\{\mathbf{v}_1, \ldots, \mathbf{v}_k\}$ is always a subspace
+- Smallest subspace containing $\mathbf{v}_1, \ldots, \mathbf{v}_k$
+
+**Linear Independence**:
+
+**Definition**: Vectors $\mathbf{v}_1, \ldots, \mathbf{v}_k$ are **linearly independent** if:
+$$a_1\mathbf{v}_1 + a_2\mathbf{v}_2 + \cdots + a_k\mathbf{v}_k = \mathbf{0} \Rightarrow a_1 = a_2 = \cdots = a_k = 0$$
+
+**Linear Dependence**: Not linearly independent; some non-trivial linear combination equals zero
+
+**Tests for Linear Independence**:
+1. **Matrix method**: Form matrix with vectors as columns; independent iff columns are linearly independent
+2. **Determinant**: For square matrix, independent iff $\det \neq 0$
+3. **Row reduction**: Independent iff no free variables in reduced form
+
+**Properties**:
+- Any set containing zero vector is linearly dependent
+- Two vectors are dependent iff one is scalar multiple of other
+- In $\mathbb{R}^n$, at most $n$ vectors can be linearly independent
+
+**Basis and Dimension**:
+
+**Basis**: Set of vectors $\mathcal{B} = \{\mathbf{v}_1, \ldots, \mathbf{v}_n\}$ is **basis** for $V$ if:
+1. $\mathcal{B}$ is linearly independent
+2. $\text{span}(\mathcal{B}) = V$
+
+**Properties of Bases**:
+- Every vector in $V$ has unique representation as linear combination of basis vectors
+- All bases of finite-dimensional vector space have same number of elements
+
+**Dimension**: $\dim(V)$ is number of vectors in any basis of $V$
+
+**Standard Bases**:
+- $\mathbb{R}^n$: $\{\mathbf{e}_1, \mathbf{e}_2, \ldots, \mathbf{e}_n\}$ where $\mathbf{e}_i$ has 1 in $i$-th position, 0 elsewhere
+- $P_n(\mathbb{R})$: $\{1, x, x^2, \ldots, x^n\}$
+- $M_{2 \times 2}(\mathbb{R})$: $\left\{\begin{bmatrix}1&0\\0&0\end{bmatrix}, \begin{bmatrix}0&1\\0&0\end{bmatrix}, \begin{bmatrix}0&0\\1&0\end{bmatrix}, \begin{bmatrix}0&0\\0&1\end{bmatrix}\right\}$
+
+**Fundamental Theorems**:
+
+**Dimension Theorem**: If $V$ is finite-dimensional with $\dim(V) = n$, then:
+- Any linearly independent set has at most $n$ vectors
+- Any spanning set has at least $n$ vectors
+- Any linearly independent set of $n$ vectors is a basis
+- Any spanning set of $n$ vectors is a basis
+
+**Rank-Nullity Theorem**: For linear transformation $T: V \to W$:
+$$\dim(V) = \dim(\ker(T)) + \dim(\text{range}(T))$$
+
+**Coordinate Systems**:
+
+Given basis $\mathcal{B} = \{\mathbf{v}_1, \ldots, \mathbf{v}_n\}$ for $V$, every $\mathbf{v} \in V$ has unique representation:
+$$\mathbf{v} = c_1\mathbf{v}_1 + c_2\mathbf{v}_2 + \cdots + c_n\mathbf{v}_n$$
+
+**Coordinate vector**: $[\mathbf{v}]_{\mathcal{B}} = \begin{bmatrix} c_1 \\ c_2 \\ \vdots \\ c_n \end{bmatrix}$
+
+**Change of Basis**:
+
+For bases $\mathcal{B}$ and $\mathcal{C}$, **change of basis matrix** $P_{\mathcal{C} \leftarrow \mathcal{B}}$ satisfies:
+$$[\mathbf{v}]_{\mathcal{C}} = P_{\mathcal{C} \leftarrow \mathcal{B}} [\mathbf{v}]_{\mathcal{B}}$$
+
+**Construction**: Columns of $P_{\mathcal{C} \leftarrow \mathcal{B}}$ are coordinate vectors of $\mathcal{B}$-basis vectors with respect to $\mathcal{C}$
+
+**Row Space and Column Space**:
+
+For matrix $A$:
+- **Row space**: $\text{row}(A) = \text{span of row vectors}$
+- **Column space**: $\text{col}(A) = \text{span of column vectors}$
+- **Null space**: $\text{null}(A) = \{\mathbf{x} : A\mathbf{x} = \mathbf{0}\}$
+
+**Properties**:
+- $\text{rank}(A) = \dim(\text{row}(A)) = \dim(\text{col}(A))$
+- $\text{nullity}(A) = \dim(\text{null}(A))$
+- $\text{rank}(A) + \text{nullity}(A) = n$ (number of columns)
+
+**Inner Product Spaces**:
+
+**Inner Product**: Function $\langle \cdot, \cdot \rangle: V \times V \to F$ satisfying:
+1. **Linearity**: $\langle a\mathbf{u} + b\mathbf{v}, \mathbf{w} \rangle = a\langle \mathbf{u}, \mathbf{w} \rangle + b\langle \mathbf{v}, \mathbf{w} \rangle$
+2. **Conjugate symmetry**: $\langle \mathbf{u}, \mathbf{v} \rangle = \overline{\langle \mathbf{v}, \mathbf{u} \rangle}$
+3. **Positive definiteness**: $\langle \mathbf{v}, \mathbf{v} \rangle \geq 0$ with equality iff $\mathbf{v} = \mathbf{0}$
+
+**Standard Inner Products**:
+- $\mathbb{R}^n$: $\langle \mathbf{u}, \mathbf{v} \rangle = \mathbf{u} \cdot \mathbf{v} = \sum_{i=1}^n u_i v_i$
+- $\mathbb{C}^n$: $\langle \mathbf{u}, \mathbf{v} \rangle = \sum_{i=1}^n u_i \overline{v_i}$
+- $C[a,b]$: $\langle f, g \rangle = \int_a^b f(x)g(x) dx$
+
+**Norm**: $\|\mathbf{v}\| = \sqrt{\langle \mathbf{v}, \mathbf{v} \rangle}$
+
+**Orthogonality**: Vectors $\mathbf{u}, \mathbf{v}$ are **orthogonal** if $\langle \mathbf{u}, \mathbf{v} \rangle = 0$
+
+**Orthogonal and Orthonormal Sets**:
+
+**Orthogonal set**: Pairwise orthogonal vectors
+**Orthonormal set**: Orthogonal set where each vector has norm 1
+
+**Properties**:
+- Orthogonal sets are linearly independent (except for zero vector)
+- Orthonormal basis simplifies calculations
+
+**Gram-Schmidt Process**:
+
+Algorithm to convert basis $\{\mathbf{v}_1, \ldots, \mathbf{v}_n\}$ to orthonormal basis $\{\mathbf{u}_1, \ldots, \mathbf{u}_n\}$:
+
+1. $\mathbf{u}_1 = \frac{\mathbf{v}_1}{\|\mathbf{v}_1\|}$
+
+2. For $k = 2, 3, \ldots, n$:
+   - $\mathbf{w}_k = \mathbf{v}_k - \sum_{j=1}^{k-1} \langle \mathbf{v}_k, \mathbf{u}_j \rangle \mathbf{u}_j$
+   - $\mathbf{u}_k = \frac{\mathbf{w}_k}{\|\mathbf{w}_k\|}$
+
+**Problem-Solving Tips**:
+
+**For Subspaces**:
+1. Check if zero vector is included
+2. Verify closure under addition and scalar multiplication
+3. Use subspace test: $a\mathbf{u} + b\mathbf{v} \in W$
+
+**For Linear Independence**:
+1. Set up equation $a_1\mathbf{v}_1 + \cdots + a_k\mathbf{v}_k = \mathbf{0}$
+2. Solve for coefficients
+3. Independent iff only trivial solution
+
+**For Basis**:
+1. Check linear independence
+2. Check if span equals the space
+3. Count vectors (should equal dimension)
+
+**GATE Tips**:
+- Subspace must contain zero vector and be closed under operations
+- Linear independence: only trivial combination gives zero
+- Basis: linearly independent spanning set
+- Dimension: number of vectors in basis
+- Rank-nullity: $\text{rank} + \text{nullity} = \text{number of columns}$
+- Orthogonal vectors are linearly independent
+- Gram-Schmidt produces orthonormal basis
+
+**Examples**:
+
+1. **Check if subspace**: $W = \{(x, y, z) \in \mathbb{R}^3 : x + y + z = 0\}$
+   - Contains $(0,0,0)$: $0 + 0 + 0 = 0$ ✓
+   - Closed under addition: If $x_1 + y_1 + z_1 = 0$ and $x_2 + y_2 + z_2 = 0$, then $(x_1 + x_2) + (y_1 + y_2) + (z_1 + z_2) = 0$ ✓
+   - Closed under scalar multiplication: If $x + y + z = 0$, then $cx + cy + cz = c(x + y + z) = 0$ ✓
+   - Therefore $W$ is subspace
+
+2. **Test linear independence**: $\mathbf{v}_1 = (1,2,1)$, $\mathbf{v}_2 = (2,1,3)$, $\mathbf{v}_3 = (1,-1,2)$
+   - Set up: $a(1,2,1) + b(2,1,3) + c(1,-1,2) = (0,0,0)$
+   - System: $a + 2b + c = 0$, $2a + b - c = 0$, $a + 3b + 2c = 0$
+   - Solving: $a = b = c = 0$ (only solution)
+   - Therefore vectors are linearly independent
+
+3. **Find basis for null space** of $A = \begin{bmatrix} 1 & 2 & 1 & 0 \\ 2 & 4 & 1 & 1 \end{bmatrix}$:
+   - Row reduce: $\begin{bmatrix} 1 & 2 & 0 & -1 \\ 0 & 0 & 1 & 2 \end{bmatrix}$
+   - Free variables: $x_2, x_4$
+   - General solution: $x_1 = -2x_2 + x_4$, $x_3 = -2x_4$
+   - Basis: $\{(-2,1,0,0), (1,0,-2,1)\}$
+
+### 6.3 Eigenvalues and Eigenvectors (30)
+
+**Key Concepts**: Eigenvalues and eigenvectors reveal the fundamental directions and scaling factors of linear transformations. They are crucial for understanding matrix behavior and solving differential equations.
+
+**Definitions**:
+
+**Eigenvector**: Non-zero vector $\mathbf{v}$ such that $A\mathbf{v} = \lambda\mathbf{v}$ for some scalar $\lambda$
+
+**Eigenvalue**: Scalar $\lambda$ such that $A\mathbf{v} = \lambda\mathbf{v}$ for some non-zero vector $\mathbf{v}$
+
+**Geometric Interpretation**: Eigenvectors are directions that remain unchanged (only scaled) under the linear transformation represented by $A$
+
+**Characteristic Equation**:
+
+From $A\mathbf{v} = \lambda\mathbf{v}$:
+$$(A - \lambda I)\mathbf{v} = \mathbf{0}$$
+
+For non-trivial solution, $(A - \lambda I)$ must be singular:
+$$\det(A - \lambda I) = 0$$
+
+This is the **characteristic equation** or **characteristic polynomial**
+
+**Finding Eigenvalues and Eigenvectors**:
+
+**Step 1**: Find eigenvalues by solving $\det(A - \lambda I) = 0$
+
+**Step 2**: For each eigenvalue $\lambda_i$, find eigenvectors by solving $(A - \lambda_i I)\mathbf{v} = \mathbf{0}$
+
+**Example**: Find eigenvalues and eigenvectors of $A = \begin{bmatrix} 3 & 1 \\ 0 & 2 \end{bmatrix}$
+
+**Step 1**: Characteristic equation
+$$\det(A - \lambda I) = \det\begin{bmatrix} 3-\lambda & 1 \\ 0 & 2-\lambda \end{bmatrix} = (3-\lambda)(2-\lambda) = 0$$
+
+Eigenvalues: $\lambda_1 = 3, \lambda_2 = 2$
+
+**Step 2**: Find eigenvectors
+
+For $\lambda_1 = 3$:
+$$(A - 3I)\mathbf{v} = \begin{bmatrix} 0 & 1 \\ 0 & -1 \end{bmatrix}\begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}$$
+
+This gives $v_2 = 0$, so eigenvector: $\mathbf{v}_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix}$ (or any scalar multiple)
+
+For $\lambda_2 = 2$:
+$$(A - 2I)\mathbf{v} = \begin{bmatrix} 1 & 1 \\ 0 & 0 \end{bmatrix}\begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}$$
+
+This gives $v_1 + v_2 = 0$, so eigenvector: $\mathbf{v}_2 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}$
+
+**Properties of Eigenvalues**:
+
+1. **Sum of eigenvalues** = trace of matrix: $\sum \lambda_i = \text{tr}(A) = \sum a_{ii}$
+
+2. **Product of eigenvalues** = determinant: $\prod \lambda_i = \det(A)$
+
+3. **Eigenvalues of special matrices**:
+   - Triangular matrix: eigenvalues are diagonal entries
+   - Symmetric matrix: all eigenvalues are real
+   - Orthogonal matrix: $|\lambda_i| = 1$
+
+4. **Powers**: If $\lambda$ is eigenvalue of $A$, then $\lambda^k$ is eigenvalue of $A^k$
+
+5. **Inverse**: If $A$ is invertible and $\lambda \neq 0$ is eigenvalue of $A$, then $1/\lambda$ is eigenvalue of $A^{-1}$
+
+**Algebraic and Geometric Multiplicity**:
+
+**Algebraic Multiplicity**: Multiplicity of eigenvalue as root of characteristic polynomial
+
+**Geometric Multiplicity**: Dimension of eigenspace (null space of $A - \lambda I$)
+
+**Relationship**: $1 \leq \text{geometric multiplicity} \leq \text{algebraic multiplicity}$
+
+**Eigenspaces**:
+
+**Eigenspace** $E_\lambda$: Set of all eigenvectors corresponding to eigenvalue $\lambda$, plus zero vector
+$$E_\lambda = \text{null}(A - \lambda I) = \{\mathbf{v} : (A - \lambda I)\mathbf{v} = \mathbf{0}\}$$
+
+**Properties**:
+- $E_\lambda$ is subspace
+- $\dim(E_\lambda)$ = geometric multiplicity of $\lambda$
+- Eigenvectors from different eigenspaces are linearly independent
+
+**Diagonalization**:
+
+**Definition**: Matrix $A$ is **diagonalizable** if there exists invertible matrix $P$ such that:
+$$P^{-1}AP = D$$
+where $D$ is diagonal matrix
+
+**Diagonalization Theorem**: $n \times n$ matrix $A$ is diagonalizable iff:
+- $A$ has $n$ linearly independent eigenvectors
+- For each eigenvalue, geometric multiplicity = algebraic multiplicity
+
+**Diagonalization Process**:
+1. Find all eigenvalues and eigenvectors
+2. Check if there are $n$ linearly independent eigenvectors
+3. Form matrix $P$ with eigenvectors as columns
+4. $D = P^{-1}AP$ has eigenvalues on diagonal
+
+**Benefits of Diagonalization**:
+- **Powers**: $A^k = PD^kP^{-1}$ where $D^k$ is easy to compute
+- **Matrix functions**: $f(A) = Pf(D)P^{-1}$
+- **Systems of differential equations**: Decouples the system
+
+**Symmetric Matrices**:
+
+**Spectral Theorem**: Every real symmetric matrix is orthogonally diagonalizable
+$$A = QDQ^T$$
+where $Q$ is orthogonal ($Q^TQ = I$) and $D$ is diagonal
+
+**Properties**:
+- All eigenvalues are real
+- Eigenvectors from different eigenvalues are orthogonal
+- Always diagonalizable
+
+**Orthogonal Diagonalization Process**:
+1. Find eigenvalues and eigenvectors
+2. Use Gram-Schmidt to orthonormalize eigenvectors within each eigenspace
+3. Form orthogonal matrix $Q$ with orthonormal eigenvectors as columns
+
+**Quadratic Forms**:
+
+**Quadratic form**: $Q(\mathbf{x}) = \mathbf{x}^T A \mathbf{x}$ where $A$ is symmetric
+
+**Classification** (based on eigenvalues of $A$):
+- **Positive definite**: All eigenvalues > 0
+- **Positive semidefinite**: All eigenvalues ≥ 0
+- **Negative definite**: All eigenvalues < 0
+- **Negative semidefinite**: All eigenvalues ≤ 0
+- **Indefinite**: Both positive and negative eigenvalues
+
+**Principal Component Analysis (PCA)**:
+
+Statistical technique using eigenvalue decomposition:
+1. Center data by subtracting mean
+2. Compute covariance matrix $C$
+3. Find eigenvalues and eigenvectors of $C$
+4. Principal components are eigenvectors with largest eigenvalues
+
+**Applications**:
+
+**1. Systems of Differential Equations**:
+For $\mathbf{x}' = A\mathbf{x}$, if $A$ is diagonalizable:
+- Solution: $\mathbf{x}(t) = c_1 e^{\lambda_1 t}\mathbf{v}_1 + \cdots + c_n e^{\lambda_n t}\mathbf{v}_n$
+
+**2. Markov Chains**:
+- Steady state corresponds to eigenvector with eigenvalue 1
+- Convergence rate determined by second-largest eigenvalue
+
+**3. Vibration Analysis**:
+- Natural frequencies are square roots of eigenvalues
+- Mode shapes are eigenvectors
+
+**4. Google PageRank**:
+- Web page importance from dominant eigenvector of link matrix
+
+**Computational Methods**:
+
+**Power Method**: Iterative method for finding dominant eigenvalue
+1. Start with initial vector $\mathbf{x}_0$
+2. Iterate: $\mathbf{x}_{k+1} = A\mathbf{x}_k$ (with normalization)
+3. Converges to eigenvector of largest eigenvalue
+
+**QR Algorithm**: Advanced method for finding all eigenvalues
+- Repeatedly applies QR decomposition
+- Converges to upper triangular form with eigenvalues on diagonal
+
+**Problem-Solving Tips**:
+
+**For Finding Eigenvalues**:
+1. Set up characteristic equation $\det(A - \lambda I) = 0$
+2. Expand determinant carefully
+3. Solve polynomial equation
+
+**For Finding Eigenvectors**:
+1. Substitute each eigenvalue into $(A - \lambda I)\mathbf{v} = \mathbf{0}$
+2. Solve homogeneous system
+3. Express solution in terms of free variables
+
+**For Diagonalization**:
+1. Check if $n$ linearly independent eigenvectors exist
+2. Form matrix $P$ with eigenvectors as columns
+3. Verify $AP = PD$
+
+**GATE Tips**:
+- Sum of eigenvalues = trace, product = determinant
+- Symmetric matrices have real eigenvalues and orthogonal eigenvectors
+- Geometric multiplicity ≤ algebraic multiplicity
+- Matrix is diagonalizable iff geometric = algebraic multiplicity for all eigenvalues
+- Eigenvectors from different eigenvalues are linearly independent
+- For triangular matrices, eigenvalues are diagonal entries
+
+**Examples**:
+
+1. **Find eigenvalues** of $A = \begin{bmatrix} 4 & -2 \\ 1 & 1 \end{bmatrix}$:
+   - $\det(A - \lambda I) = \det\begin{bmatrix} 4-\lambda & -2 \\ 1 & 1-\lambda \end{bmatrix} = (4-\lambda)(1-\lambda) + 2 = \lambda^2 - 5\lambda + 6 = (\lambda-2)(\lambda-3)$
+   - Eigenvalues: $\lambda_1 = 2, \lambda_2 = 3$
+
+2. **Check diagonalizability** of $A = \begin{bmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 0 & 0 & 1 \end{bmatrix}$:
+   - Characteristic polynomial: $(1-\lambda)^3$
+   - Only eigenvalue: $\lambda = 1$ (algebraic multiplicity 3)
+   - $(A - I) = \begin{bmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \end{bmatrix}$
+   - Null space has dimension 1 (geometric multiplicity 1)
+   - Since $1 < 3$, matrix is not diagonalizable
+
+3. **Orthogonally diagonalize** $A = \begin{bmatrix} 3 & 1 \\ 1 & 3 \end{bmatrix}$:
+   - Eigenvalues: $\lambda_1 = 4, \lambda_2 = 2$
+   - Eigenvectors: $\mathbf{v}_1 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \mathbf{v}_2 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}$
+   - Normalize: $\mathbf{u}_1 = \frac{1}{\sqrt{2}}\begin{bmatrix} 1 \\ 1 \end{bmatrix}, \mathbf{u}_2 = \frac{1}{\sqrt{2}}\begin{bmatrix} 1 \\ -1 \end{bmatrix}$
+   - $Q = \frac{1}{\sqrt{2}}\begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix}, D = \begin{bmatrix} 4 & 0 \\ 0 & 2 \end{bmatrix}$
+
+### 6.4 Linear Transformations (25)
+
+**Key Concepts**: Linear transformations are functions between vector spaces that preserve vector addition and scalar multiplication. They provide the connection between abstract linear algebra and concrete matrix operations.
+
+**Definition**:
+
+**Linear Transformation**: Function $T: V \to W$ between vector spaces satisfying:
+1. **Additivity**: $T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v})$
+2. **Homogeneity**: $T(c\mathbf{v}) = cT(\mathbf{v})$
+
+**Equivalent condition**: $T(c\mathbf{u} + d\mathbf{v}) = cT(\mathbf{u}) + dT(\mathbf{v})$
+
+**Properties**:
+- $T(\mathbf{0}) = \mathbf{0}$ (zero vector maps to zero vector)
+- $T(-\mathbf{v}) = -T(\mathbf{v})$
+- $T$ preserves linear combinations
+
+**Matrix Representation**:
+
+For finite-dimensional spaces with bases $\mathcal{B} = \{\mathbf{v}_1, \ldots, \mathbf{v}_n\}$ for $V$ and $\mathcal{C} = \{\mathbf{w}_1, \ldots, \mathbf{w}_m\}$ for $W$:
+
+**Matrix of transformation**: $[T]_{\mathcal{C}}^{\mathcal{B}}$ is $m \times n$ matrix where column $j$ is $[T(\mathbf{v}_j)]_{\mathcal{C}}$
+
+**Coordinate relationship**: $[T(\mathbf{v})]_{\mathcal{C}} = [T]_{\mathcal{C}}^{\mathcal{B}} [\mathbf{v}]_{\mathcal{B}}$
+
+**Standard Matrix**: For $T: \mathbb{R}^n \to \mathbb{R}^m$ with standard bases:
+$$[T] = [T(\mathbf{e}_1) | T(\mathbf{e}_2) | \cdots | T(\mathbf{e}_n)]$$
+
+**Examples of Linear Transformations**:
+
+**1. Geometric Transformations in $\mathbb{R}^2$**:
+
+**Rotation by angle $\theta$**:
+$$R_\theta = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix}$$
+
+**Reflection across x-axis**:
+$$\text{Ref}_x = \begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}$$
+
+**Scaling by factors $s_x, s_y$**:
+$$S = \begin{bmatrix} s_x & 0 \\ 0 & s_y \end{bmatrix}$$
+
+**Shear parallel to x-axis**:
+$$\text{Shear}_x = \begin{bmatrix} 1 & k \\ 0 & 1 \end{bmatrix}$$
+
+**Projection onto x-axis**:
+$$P_x = \begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix}$$
+
+**2. Differentiation**: $D: P_n(\mathbb{R}) \to P_{n-1}(\mathbb{R})$ where $D(p(x)) = p'(x)$
+
+**3. Integration**: $I: C[a,b] \to \mathbb{R}$ where $I(f) = \int_a^b f(x) dx$
+
+**4. Matrix Multiplication**: $T_A: \mathbb{R}^n \to \mathbb{R}^m$ where $T_A(\mathbf{x}) = A\mathbf{x}$
+
+**Kernel and Range**:
+
+**Kernel (Null Space)**: $\ker(T) = \{\mathbf{v} \in V : T(\mathbf{v}) = \mathbf{0}\}$
+- Always a subspace of $V$
+- $T$ is injective iff $\ker(T) = \{\mathbf{0}\}$
+
+**Range (Image)**: $\text{range}(T) = \{T(\mathbf{v}) : \mathbf{v} \in V\}$
+- Always a subspace of $W$
+- $T$ is surjective iff $\text{range}(T) = W$
+
+**Rank-Nullity Theorem**:
+$$\dim(V) = \dim(\ker(T)) + \dim(\text{range}(T))$$
+$$\text{nullity}(T) + \text{rank}(T) = \dim(V)$$
+
+**Proof Idea**: Choose basis for $\ker(T)$, extend to basis for $V$, show images of extension vectors form basis for $\text{range}(T)$
+
+**Isomorphisms**:
+
+**Isomorphism**: Bijective linear transformation
+- $T$ is isomorphism iff $T$ is both injective and surjective
+- Equivalent: $\ker(T) = \{\mathbf{0}\}$ and $\text{range}(T) = W$
+
+**Properties**:
+- If $T: V \to W$ is isomorphism, then $\dim(V) = \dim(W)$
+- Inverse $T^{-1}: W \to V$ is also linear transformation
+- Composition of isomorphisms is isomorphism
+
+**Fundamental Theorem**: Two finite-dimensional vector spaces over same field are isomorphic iff they have same dimension
+
+**Change of Basis for Linear Transformations**:
+
+If $T: V \to V$ with bases $\mathcal{B}$ and $\mathcal{C}$:
+$$[T]_{\mathcal{C}} = P^{-1}[T]_{\mathcal{B}}P$$
+where $P$ is change of basis matrix from $\mathcal{B}$ to $\mathcal{C}$
+
+**Similar Matrices**: Matrices $A$ and $B$ are **similar** if $B = P^{-1}AP$ for some invertible $P$
+
+**Properties of Similar Matrices**:
+- Same eigenvalues (with same multiplicities)
+- Same determinant and trace
+- Same rank
+- Represent same linear transformation in different bases
+
+**Composition of Linear Transformations**:
+
+For $T: U \to V$ and $S: V \to W$:
+**Composition**: $(S \circ T): U \to W$ where $(S \circ T)(\mathbf{u}) = S(T(\mathbf{u}))$
+
+**Matrix representation**: $[S \circ T] = [S][T]$
+
+**Properties**:
+- Composition is associative: $(R \circ S) \circ T = R \circ (S \circ T)$
+- Generally not commutative: $S \circ T \neq T \circ S$
+
+**Inverse Transformations**:
+
+If $T: V \to W$ is isomorphism, then $T^{-1}: W \to V$ exists and:
+- $T^{-1}$ is linear
+- $T \circ T^{-1} = I_W$ and $T^{-1} \circ T = I_V$
+- $[T^{-1}] = [T]^{-1}$
+
+**Orthogonal Transformations**:
+
+**Definition**: Linear transformation $T: \mathbb{R}^n \to \mathbb{R}^n$ is **orthogonal** if it preserves inner products:
+$$\langle T(\mathbf{u}), T(\mathbf{v}) \rangle = \langle \mathbf{u}, \mathbf{v} \rangle$$
+
+**Equivalent conditions**:
+- $T$ preserves lengths: $\|T(\mathbf{v})\| = \|\mathbf{v}\|$
+- Matrix representation is orthogonal: $A^TA = I$
+- Columns (and rows) form orthonormal set
+
+**Examples**: Rotations, reflections
+
+**Projections**:
+
+**Orthogonal Projection** onto subspace $W$:
+For $\mathbf{v} \in V$, $\text{proj}_W(\mathbf{v})$ is closest point in $W$ to $\mathbf{v}$
+
+**Formula**: If $\{\mathbf{u}_1, \ldots, \mathbf{u}_k\}$ is orthonormal basis for $W$:
+$$\text{proj}_W(\mathbf{v}) = \sum_{i=1}^k \langle \mathbf{v}, \mathbf{u}_i \rangle \mathbf{u}_i$$
+
+**Matrix form**: $P = UU^T$ where $U$ has orthonormal basis vectors as columns
+
+**Properties**:
+- $P^2 = P$ (idempotent)
+- $P^T = P$ (symmetric)
+- $\text{range}(P) = W$, $\ker(P) = W^\perp$
+
+**Least Squares Solutions**:
+
+For inconsistent system $A\mathbf{x} = \mathbf{b}$, **least squares solution** minimizes $\|A\mathbf{x} - \mathbf{b}\|^2$
+
+**Normal equation**: $A^TA\mathbf{x} = A^T\mathbf{b}$
+
+**Solution**: $\mathbf{x} = (A^TA)^{-1}A^T\mathbf{b}$ (if $A^TA$ is invertible)
+
+**Geometric interpretation**: Project $\mathbf{b}$ onto column space of $A$
+
+**Applications**:
+
+**1. Computer Graphics**:
+- Transformations for 2D/3D graphics
+- Homogeneous coordinates for translations
+- Perspective projections
+
+**2. Data Analysis**:
+- Principal Component Analysis (PCA)
+- Linear regression
+- Dimensionality reduction
+
+**3. Differential Equations**:
+- Systems of linear ODEs
+- Stability analysis using eigenvalues
+
+**4. Signal Processing**:
+- Fourier transforms
+- Filter design
+- Image processing
+
+**5. Quantum Mechanics**:
+- State transformations
+- Measurement operators
+- Unitary evolution
+
+**Problem-Solving Tips**:
+
+**To verify linearity**:
+1. Check $T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v})$
+2. Check $T(c\mathbf{v}) = cT(\mathbf{v})$
+3. Or verify combined condition
+
+**To find matrix representation**:
+1. Apply $T$ to each basis vector
+2. Express results in terms of target basis
+3. Use coefficients as matrix columns
+
+**To find kernel and range**:
+1. Kernel: Solve $T(\mathbf{v}) = \mathbf{0}$ or $A\mathbf{x} = \mathbf{0}$
+2. Range: Find span of $T$ applied to basis vectors
+
+**GATE Tips**:
+- Linear transformation preserves linear combinations
+- Matrix columns are images of standard basis vectors
+- Rank-nullity: $\dim(V) = \text{nullity} + \text{rank}$
+- Isomorphism iff bijective iff $\ker(T) = \{\mathbf{0}\}$ and onto
+- Similar matrices have same eigenvalues
+- Orthogonal transformations preserve lengths and angles
+- Projection matrices are idempotent and symmetric
+
+**Examples**:
+
+1. **Find matrix** of rotation by $90°$ in $\mathbb{R}^2$:
+   - $T(\mathbf{e}_1) = T\begin{bmatrix}1\\0\end{bmatrix} = \begin{bmatrix}0\\1\end{bmatrix}$
+   - $T(\mathbf{e}_2) = T\begin{bmatrix}0\\1\end{bmatrix} = \begin{bmatrix}-1\\0\end{bmatrix}$
+   - Matrix: $\begin{bmatrix}0 & -1\\1 & 0\end{bmatrix}$
+
+2. **Find kernel** of $T: \mathbb{R}^3 \to \mathbb{R}^2$ where $T\begin{bmatrix}x\\y\\z\end{bmatrix} = \begin{bmatrix}x+y\\y+z\end{bmatrix}$:
+   - Matrix: $A = \begin{bmatrix}1 & 1 & 0\\0 & 1 & 1\end{bmatrix}$
+   - Solve $A\mathbf{x} = \mathbf{0}$: $x + y = 0$, $y + z = 0$
+   - Solution: $x = -y$, $z = -y$
+   - Kernel: $\text{span}\left\{\begin{bmatrix}-1\\1\\-1\end{bmatrix}\right\}$
+
+3. **Verify rank-nullity** for above transformation:
+   - $\dim(\mathbb{R}^3) = 3$
+   - $\text{nullity}(T) = 1$ (dimension of kernel)
+   - $\text{rank}(T) = 2$ (dimension of range)
+   - Check: $3 = 1 + 2$ ✓
+### 7. Engineering Mathematics: Probability and Statistics (100 Questions)
+
+### 7.1 Probability Theory (40)
+
+**Key Concepts**: Probability theory provides mathematical framework for analyzing uncertainty and randomness. It forms the foundation for statistics, machine learning, and decision theory.
+
+**Sample Space and Events**:
+
+**Sample Space** $\Omega$: Set of all possible outcomes of an experiment
+- **Discrete**: Finite or countably infinite (coin flips, dice rolls)
+- **Continuous**: Uncountably infinite (measurements, time intervals)
+
+**Event**: Subset of sample space
+- **Elementary event**: Single outcome
+- **Compound event**: Union of elementary events
+- **Certain event**: $\Omega$ (always occurs)
+- **Impossible event**: $\emptyset$ (never occurs)
+
+**Event Operations**:
+- **Union**: $A \cup B$ (A or B occurs)
+- **Intersection**: $A \cap B$ (both A and B occur)
+- **Complement**: $A^c$ (A does not occur)
+- **Difference**: $A - B = A \cap B^c$
+
+**De Morgan's Laws**:
+- $(A \cup B)^c = A^c \cap B^c$
+- $(A \cap B)^c = A^c \cup B^c$
+
+**Probability Axioms** (Kolmogorov):
+
+For probability function $P: \mathcal{F} \to [0,1]$ where $\mathcal{F}$ is $\sigma$-algebra of events:
+
+1. **Non-negativity**: $P(A) \geq 0$ for all events $A$
+2. **Normalization**: $P(\Omega) = 1$
+3. **Countable additivity**: For disjoint events $A_1, A_2, \ldots$:
+   $$P\left(\bigcup_{i=1}^{\infty} A_i\right) = \sum_{i=1}^{\infty} P(A_i)$$
+
+**Basic Properties**:
+- $P(\emptyset) = 0$
+- $P(A^c) = 1 - P(A)$
+- If $A \subseteq B$, then $P(A) \leq P(B)$
+- $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+
+**Inclusion-Exclusion Principle**:
+$$P(A_1 \cup A_2 \cup A_3) = \sum P(A_i) - \sum P(A_i \cap A_j) + P(A_1 \cap A_2 \cap A_3)$$
+
+**Classical Probability**:
+
+For finite sample space with equally likely outcomes:
+$$P(A) = \frac{|A|}{|\Omega|} = \frac{\text{number of favorable outcomes}}{\text{total number of outcomes}}$$
+
+**Examples**:
+- Fair coin: $P(\text{Heads}) = \frac{1}{2}$
+- Fair die: $P(\text{even number}) = \frac{3}{6} = \frac{1}{2}$
+- Card from deck: $P(\text{Ace}) = \frac{4}{52} = \frac{1}{13}$
+
+**Conditional Probability**:
+
+**Definition**: Probability of event $A$ given that event $B$ has occurred:
+$$P(A|B) = \frac{P(A \cap B)}{P(B)} \quad \text{provided } P(B) > 0$$
+
+**Interpretation**: Restricts sample space to outcomes where $B$ occurs
+
+**Properties**:
+- $P(A|B) \geq 0$
+- $P(\Omega|B) = 1$
+- $P(A_1 \cup A_2|B) = P(A_1|B) + P(A_2|B) - P(A_1 \cap A_2|B)$
+
+**Multiplication Rule**:
+$$P(A \cap B) = P(A|B) \cdot P(B) = P(B|A) \cdot P(A)$$
+
+**Chain Rule**: For events $A_1, A_2, \ldots, A_n$:
+$$P(A_1 \cap A_2 \cap \cdots \cap A_n) = P(A_1) \cdot P(A_2|A_1) \cdot P(A_3|A_1 \cap A_2) \cdots P(A_n|A_1 \cap \cdots \cap A_{n-1})$$
+
+**Independence**:
+
+**Definition**: Events $A$ and $B$ are **independent** if:
+$$P(A \cap B) = P(A) \cdot P(B)$$
+
+**Equivalent conditions** (when $P(B) > 0$):
+- $P(A|B) = P(A)$
+- $P(B|A) = P(B)$
+
+**Mutual Independence**: Events $A_1, \ldots, A_n$ are mutually independent if for every subset $\{i_1, \ldots, i_k\}$:
+$$P(A_{i_1} \cap \cdots \cap A_{i_k}) = P(A_{i_1}) \cdots P(A_{i_k})$$
+
+**Pairwise vs Mutual Independence**: Pairwise independence doesn't imply mutual independence
+
+**Law of Total Probability**:
+
+If $\{B_1, B_2, \ldots, B_n\}$ is partition of $\Omega$ (disjoint and exhaustive), then:
+$$P(A) = \sum_{i=1}^{n} P(A|B_i) \cdot P(B_i)$$
+
+**Continuous version**: $P(A) = \int P(A|B_x) \cdot f_B(x) dx$
+
+**Bayes' Theorem**:
+
+**Statement**: For partition $\{B_1, \ldots, B_n\}$ and event $A$ with $P(A) > 0$:
+$$P(B_j|A) = \frac{P(A|B_j) \cdot P(B_j)}{\sum_{i=1}^{n} P(A|B_i) \cdot P(B_i)}$$
+
+**Interpretation**:
+- $P(B_j)$: **Prior probability** (before observing $A$)
+- $P(A|B_j)$: **Likelihood** (probability of evidence given hypothesis)
+- $P(B_j|A)$: **Posterior probability** (after observing $A$)
+
+**Applications**:
+- Medical diagnosis
+- Spam filtering
+- Machine learning classification
+
+**Random Variables**:
+
+**Definition**: Function $X: \Omega \to \mathbb{R}$ that assigns real number to each outcome
+
+**Types**:
+- **Discrete**: Takes countable values
+- **Continuous**: Takes uncountable values
+
+**Probability Mass Function (PMF)** (discrete):
+$$p_X(x) = P(X = x)$$
+
+**Properties**:
+- $p_X(x) \geq 0$ for all $x$
+- $\sum_x p_X(x) = 1$
+
+**Probability Density Function (PDF)** (continuous):
+$$P(a \leq X \leq b) = \int_a^b f_X(x) dx$$
+
+**Properties**:
+- $f_X(x) \geq 0$ for all $x$
+- $\int_{-\infty}^{\infty} f_X(x) dx = 1$
+- $P(X = x) = 0$ for any specific $x$
+
+**Cumulative Distribution Function (CDF)**:
+$$F_X(x) = P(X \leq x)$$
+
+**Properties**:
+- $0 \leq F_X(x) \leq 1$
+- $F_X$ is non-decreasing
+- $\lim_{x \to -\infty} F_X(x) = 0$, $\lim_{x \to \infty} F_X(x) = 1$
+- Right-continuous
+
+**Relationship to PDF**: $f_X(x) = \frac{d}{dx} F_X(x)$ (where derivative exists)
+
+**Common Discrete Distributions**:
+
+**1. Bernoulli Distribution** $\text{Ber}(p)$:
+- Single trial with success probability $p$
+- PMF: $P(X = 1) = p$, $P(X = 0) = 1-p$
+- Mean: $p$, Variance: $p(1-p)$
+
+**2. Binomial Distribution** $\text{Bin}(n,p)$:
+- Number of successes in $n$ independent Bernoulli trials
+- PMF: $P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$
+- Mean: $np$, Variance: $np(1-p)$
+
+**3. Geometric Distribution** $\text{Geom}(p)$:
+- Number of trials until first success
+- PMF: $P(X = k) = (1-p)^{k-1} p$ for $k = 1, 2, 3, \ldots$
+- Mean: $\frac{1}{p}$, Variance: $\frac{1-p}{p^2}$
+- **Memoryless property**: $P(X > m+n | X > m) = P(X > n)$
+
+**4. Poisson Distribution** $\text{Pois}(\lambda)$:
+- Number of events in fixed interval
+- PMF: $P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}$ for $k = 0, 1, 2, \ldots$
+- Mean: $\lambda$, Variance: $\lambda$
+- **Poisson approximation**: $\text{Bin}(n,p) \approx \text{Pois}(np)$ when $n$ large, $p$ small
+
+**Common Continuous Distributions**:
+
+**1. Uniform Distribution** $\text{Unif}(a,b)$:
+- Constant density over interval $[a,b]$
+- PDF: $f(x) = \frac{1}{b-a}$ for $a \leq x \leq b$, 0 otherwise
+- Mean: $\frac{a+b}{2}$, Variance: $\frac{(b-a)^2}{12}$
+
+**2. Exponential Distribution** $\text{Exp}(\lambda)$:
+- Time between events in Poisson process
+- PDF: $f(x) = \lambda e^{-\lambda x}$ for $x \geq 0$
+- CDF: $F(x) = 1 - e^{-\lambda x}$ for $x \geq 0$
+- Mean: $\frac{1}{\lambda}$, Variance: $\frac{1}{\lambda^2}$
+- **Memoryless property**: $P(X > s+t | X > s) = P(X > t)$
+
+**3. Normal Distribution** $\mathcal{N}(\mu, \sigma^2)$:
+- Bell-shaped curve, most important distribution
+- PDF: $f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$
+- Mean: $\mu$, Variance: $\sigma^2$
+
+**Standard Normal** $\mathcal{N}(0,1)$:
+- PDF: $\phi(z) = \frac{1}{\sqrt{2\pi}} e^{-z^2/2}$
+- CDF: $\Phi(z) = \int_{-\infty}^z \phi(t) dt$
+
+**Standardization**: If $X \sim \mathcal{N}(\mu, \sigma^2)$, then $Z = \frac{X-\mu}{\sigma} \sim \mathcal{N}(0,1)$
+
+**Expectation and Variance**:
+
+**Expected Value** (Mean):
+
+**Discrete**: $E[X] = \sum_x x \cdot P(X = x)$
+
+**Continuous**: $E[X] = \int_{-\infty}^{\infty} x \cdot f_X(x) dx$
+
+**Properties**:
+- **Linearity**: $E[aX + bY] = aE[X] + bE[Y]$
+- **Law of Total Expectation**: $E[X] = E[E[X|Y]]$
+
+**Variance**:
+$$\text{Var}(X) = E[(X - E[X])^2] = E[X^2] - (E[X])^2$$
+
+**Properties**:
+- $\text{Var}(aX + b) = a^2 \text{Var}(X)$
+- If $X$ and $Y$ independent: $\text{Var}(X + Y) = \text{Var}(X) + \text{Var}(Y)$
+
+**Standard Deviation**: $\sigma_X = \sqrt{\text{Var}(X)}$
+
+**Moment Generating Function**:
+$$M_X(t) = E[e^{tX}]$$
+
+**Properties**:
+- Uniquely determines distribution
+- $M_{aX+b}(t) = e^{bt} M_X(at)$
+- If $X$ and $Y$ independent: $M_{X+Y}(t) = M_X(t) M_Y(t)$
+
+**Joint Distributions**:
+
+**Joint PMF** (discrete): $p_{X,Y}(x,y) = P(X = x, Y = y)$
+
+**Joint PDF** (continuous): $P((X,Y) \in A) = \iint_A f_{X,Y}(x,y) dx dy$
+
+**Marginal Distributions**:
+- **Discrete**: $p_X(x) = \sum_y p_{X,Y}(x,y)$
+- **Continuous**: $f_X(x) = \int_{-\infty}^{\infty} f_{X,Y}(x,y) dy$
+
+**Independence**: $X$ and $Y$ are independent if:
+- **Discrete**: $p_{X,Y}(x,y) = p_X(x) \cdot p_Y(y)$ for all $x,y$
+- **Continuous**: $f_{X,Y}(x,y) = f_X(x) \cdot f_Y(y)$ for all $x,y$
+
+**Covariance**:
+$$\text{Cov}(X,Y) = E[(X - E[X])(Y - E[Y])] = E[XY] - E[X]E[Y]$$
+
+**Properties**:
+- $\text{Cov}(X,X) = \text{Var}(X)$
+- $\text{Cov}(X,Y) = \text{Cov}(Y,X)$
+- If $X$ and $Y$ independent, then $\text{Cov}(X,Y) = 0$ (converse not true)
+
+**Correlation Coefficient**:
+$$\rho_{X,Y} = \frac{\text{Cov}(X,Y)}{\sqrt{\text{Var}(X)\text{Var}(Y)}}$$
+
+**Properties**:
+- $-1 \leq \rho_{X,Y} \leq 1$
+- $|\rho_{X,Y}| = 1$ iff $Y = aX + b$ for some constants $a \neq 0, b$
+- $\rho_{X,Y} = 0$ means uncorrelated (weaker than independence)
+
+**Limit Theorems**:
+
+**Law of Large Numbers** (LLN):
+If $X_1, X_2, \ldots$ are i.i.d. with finite mean $\mu$, then:
+$$\frac{X_1 + X_2 + \cdots + X_n}{n} \to \mu \text{ as } n \to \infty$$
+
+**Central Limit Theorem** (CLT):
+If $X_1, X_2, \ldots$ are i.i.d. with mean $\mu$ and variance $\sigma^2$, then:
+$$\frac{\bar{X}_n - \mu}{\sigma/\sqrt{n}} \to \mathcal{N}(0,1) \text{ as } n \to \infty$$
+
+where $\bar{X}_n = \frac{X_1 + \cdots + X_n}{n}$
+
+**Applications**:
+- Approximating binomial with normal when $n$ large
+- Confidence intervals
+- Hypothesis testing
+
+**Problem-Solving Tips**:
+
+**For Basic Probability**:
+1. Identify sample space and events clearly
+2. Check if events are disjoint for addition rule
+3. Use complement when "at least one" appears
+4. Draw tree diagrams for sequential experiments
+
+**For Conditional Probability**:
+1. Identify given information (condition)
+2. Use definition: $P(A|B) = \frac{P(A \cap B)}{P(B)}$
+3. For Bayes: identify prior, likelihood, and evidence
+
+**For Random Variables**:
+1. Identify distribution type from problem context
+2. Use appropriate formulas for mean and variance
+3. For normal distribution, standardize to use tables
+
+**GATE Tips**:
+- $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ (inclusion-exclusion)
+- Independence: $P(A \cap B) = P(A) \cdot P(B)$
+- Bayes: $P(B|A) = \frac{P(A|B) \cdot P(B)}{P(A)}$
+- Binomial: $n$ trials, constant $p$, count successes
+- Poisson: rare events, $\lambda$ = rate parameter
+- Normal: symmetric, bell-shaped, use standardization
+- CLT: sample mean approximately normal for large $n$
+
+**Examples**:
+
+1. **Probability with cards**: Draw 2 cards without replacement. Find $P(\text{both aces})$.
+   - $P(\text{1st ace}) = \frac{4}{52}$
+   - $P(\text{2nd ace | 1st ace}) = \frac{3}{51}$
+   - $P(\text{both aces}) = \frac{4}{52} \times \frac{3}{51} = \frac{1}{221}$
+
+2. **Bayes' theorem**: Disease affects 1% of population. Test is 95% accurate (both sensitivity and specificity). If test positive, what's probability of having disease?
+   - Let $D$ = disease, $T$ = positive test
+   - $P(D) = 0.01$, $P(T|D) = 0.95$, $P(T|D^c) = 0.05$
+   - $P(T) = P(T|D)P(D) + P(T|D^c)P(D^c) = 0.95(0.01) + 0.05(0.99) = 0.0590$
+   - $P(D|T) = \frac{P(T|D)P(D)}{P(T)} = \frac{0.95 \times 0.01}{0.0590} = \frac{0.0095}{0.0590} \approx 0.161$
+
+3. **Normal distribution**: $X \sim \mathcal{N}(100, 15^2)$. Find $P(85 < X < 115)$.
+   - Standardize: $Z_1 = \frac{85-100}{15} = -1$, $Z_2 = \frac{115-100}{15} = 1$
+   - $P(85 < X < 115) = P(-1 < Z < 1) = \Phi(1) - \Phi(-1) = 0.8413 - 0.1587 = 0.6826$
+
+### 7.2 Statistics and Hypothesis Testing (35)
+
+**Key Concepts**: Statistics involves collecting, analyzing, and interpreting data. Hypothesis testing provides framework for making decisions under uncertainty using sample data.
+
+**Descriptive Statistics**:
+
+**Measures of Central Tendency**:
+
+**Sample Mean**: $\bar{x} = \frac{1}{n} \sum_{i=1}^n x_i$
+
+**Sample Median**: Middle value when data ordered
+- If $n$ odd: median = $x_{(n+1)/2}$
+- If $n$ even: median = $\frac{x_{n/2} + x_{n/2+1}}{2}$
+
+**Sample Mode**: Most frequently occurring value
+
+**Properties**:
+- Mean affected by outliers, median robust
+- For symmetric distributions: mean ≈ median
+- For right-skewed: mean > median
+- For left-skewed: mean < median
+
+**Measures of Variability**:
+
+**Sample Variance**: $s^2 = \frac{1}{n-1} \sum_{i=1}^n (x_i - \bar{x})^2$
+
+**Sample Standard Deviation**: $s = \sqrt{s^2}$
+
+**Range**: $\max(x_i) - \min(x_i)$
+
+**Interquartile Range (IQR)**: $Q_3 - Q_1$
+- $Q_1$: 25th percentile, $Q_3$: 75th percentile
+- Robust to outliers
+
+**Coefficient of Variation**: $CV = \frac{s}{\bar{x}}$ (relative variability)
+
+**Sampling Distributions**:
+
+**Population vs Sample**:
+- **Population**: Entire group of interest
+- **Sample**: Subset of population
+- **Parameter**: Population characteristic (μ, σ, p)
+- **Statistic**: Sample characteristic ($\bar{x}$, s, $\hat{p}$)
+
+**Sampling Distribution**: Distribution of sample statistic across all possible samples
+
+**Central Limit Theorem for Sample Mean**:
+If $X_1, \ldots, X_n$ are i.i.d. with mean $\mu$ and variance $\sigma^2$, then:
+$$\bar{X} \sim \mathcal{N}\left(\mu, \frac{\sigma^2}{n}\right) \text{ approximately for large } n$$
+
+**Standard Error**: $SE(\bar{X}) = \frac{\sigma}{\sqrt{n}}$
+
+**Key Distributions for Inference**:
+
+**1. Standard Normal Distribution** $\mathcal{N}(0,1)$:
+- Used when $\sigma$ known or $n$ large
+- $Z = \frac{\bar{X} - \mu}{\sigma/\sqrt{n}}$
+
+**2. t-Distribution** $t_{\nu}$:
+- Used when $\sigma$ unknown and $n$ small
+- Parameter: degrees of freedom $\nu = n-1$
+- $T = \frac{\bar{X} - \mu}{S/\sqrt{n}}$ where $S$ is sample standard deviation
+- Approaches standard normal as $\nu \to \infty$
+- Heavier tails than normal
+
+**3. Chi-Square Distribution** $\chi^2_{\nu}$:
+- Used for variance testing and goodness-of-fit
+- $\chi^2 = \frac{(n-1)S^2}{\sigma^2}$ has $\chi^2_{n-1}$ distribution
+- Right-skewed, non-negative
+
+**4. F-Distribution** $F_{\nu_1, \nu_2}$:
+- Used for comparing variances, ANOVA
+- Ratio of two chi-square random variables
+- Parameters: numerator df $\nu_1$, denominator df $\nu_2$
+
+**Point Estimation**:
+
+**Estimator**: Function of sample data used to estimate parameter
+- $\hat{\theta} = g(X_1, \ldots, X_n)$
+
+**Properties of Estimators**:
+
+**1. Unbiasedness**: $E[\hat{\theta}] = \theta$
+- Sample mean is unbiased for population mean
+- Sample variance $s^2$ is unbiased for $\sigma^2$ (uses $n-1$ denominator)
+
+**2. Consistency**: $\hat{\theta}_n \to \theta$ as $n \to \infty$
+
+**3. Efficiency**: Among unbiased estimators, one with smallest variance
+
+**Method of Moments**: Set sample moments equal to population moments
+- For normal distribution: $\hat{\mu} = \bar{X}$, $\hat{\sigma}^2 = S^2$
+
+**Maximum Likelihood Estimation (MLE)**:
+- Choose parameter value that maximizes likelihood of observed data
+- Often involves solving $\frac{d}{d\theta} \ln L(\theta) = 0$
+
+**Interval Estimation**:
+
+**Confidence Interval**: Range of plausible values for parameter
+
+**Interpretation**: If we construct 95% confidence intervals repeatedly, 95% will contain true parameter
+
+**Confidence Interval for Mean**:
+
+**Case 1**: $\sigma$ known or $n \geq 30$
+$$\bar{x} \pm z_{\alpha/2} \frac{\sigma}{\sqrt{n}}$$
+
+**Case 2**: $\sigma$ unknown and $n < 30$ (assume normal population)
+$$\bar{x} \pm t_{\alpha/2, n-1} \frac{s}{\sqrt{n}}$$
+
+**Confidence Interval for Proportion**:
+$$\hat{p} \pm z_{\alpha/2} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$$
+
+where $\hat{p} = \frac{x}{n}$ (sample proportion)
+
+**Confidence Interval for Variance**:
+$$\frac{(n-1)s^2}{\chi^2_{\alpha/2, n-1}} \leq \sigma^2 \leq \frac{(n-1)s^2}{\chi^2_{1-\alpha/2, n-1}}$$
+
+**Factors Affecting Interval Width**:
+- **Confidence level**: Higher confidence → wider interval
+- **Sample size**: Larger $n$ → narrower interval
+- **Population variability**: Larger $\sigma$ → wider interval
+
+**Hypothesis Testing**:
+
+**Components**:
+- **Null hypothesis** $H_0$: Status quo, no effect
+- **Alternative hypothesis** $H_1$ (or $H_a$): What we want to prove
+- **Test statistic**: Function of sample data
+- **Critical region**: Values leading to rejection of $H_0$
+- **Significance level** $\alpha$: Probability of Type I error
+
+**Types of Tests**:
+- **Two-tailed**: $H_1: \theta \neq \theta_0$
+- **Right-tailed**: $H_1: \theta > \theta_0$
+- **Left-tailed**: $H_1: \theta < \theta_0$
+
+**Types of Errors**:
+- **Type I Error**: Reject true $H_0$ (probability = $\alpha$)
+- **Type II Error**: Fail to reject false $H_0$ (probability = $\beta$)
+- **Power**: $1 - \beta$ (probability of correctly rejecting false $H_0$)
+
+**Testing Procedure**:
+1. State hypotheses
+2. Choose significance level $\alpha$
+3. Calculate test statistic
+4. Find p-value or critical value
+5. Make decision and interpret
+
+**Tests for One Sample**:
+
+**1. Test for Mean** ($\sigma$ known):
+- Test statistic: $Z = \frac{\bar{X} - \mu_0}{\sigma/\sqrt{n}}$
+- Reject $H_0$ if $|Z| > z_{\alpha/2}$ (two-tailed)
+
+**2. Test for Mean** ($\sigma$ unknown):
+- Test statistic: $T = \frac{\bar{X} - \mu_0}{S/\sqrt{n}}$
+- Reject $H_0$ if $|T| > t_{\alpha/2, n-1}$ (two-tailed)
+
+**3. Test for Proportion**:
+- Test statistic: $Z = \frac{\hat{p} - p_0}{\sqrt{p_0(1-p_0)/n}}$
+- Reject $H_0$ if $|Z| > z_{\alpha/2}$ (two-tailed)
+
+**4. Test for Variance**:
+- Test statistic: $\chi^2 = \frac{(n-1)S^2}{\sigma_0^2}$
+- Reject $H_0$ if $\chi^2 > \chi^2_{\alpha/2, n-1}$ or $\chi^2 < \chi^2_{1-\alpha/2, n-1}$ (two-tailed)
+
+**Tests for Two Samples**:
+
+**1. Comparison of Two Means** (independent samples):
+
+**Case 1**: $\sigma_1, \sigma_2$ known
+- Test statistic: $Z = \frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)}{\sqrt{\sigma_1^2/n_1 + \sigma_2^2/n_2}}$
+
+**Case 2**: $\sigma_1 = \sigma_2 = \sigma$ (unknown)
+- Pooled variance: $s_p^2 = \frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1 + n_2 - 2}$
+- Test statistic: $T = \frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)}{s_p\sqrt{1/n_1 + 1/n_2}}$
+- df = $n_1 + n_2 - 2$
+
+**Case 3**: $\sigma_1 \neq \sigma_2$ (Welch's t-test)
+- Test statistic: $T = \frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)}{\sqrt{s_1^2/n_1 + s_2^2/n_2}}$
+- df = $\frac{(s_1^2/n_1 + s_2^2/n_2)^2}{(s_1^2/n_1)^2/(n_1-1) + (s_2^2/n_2)^2/(n_2-1)}$
+
+**2. Paired t-test**:
+- For dependent samples (before/after, matched pairs)
+- Test statistic: $T = \frac{\bar{D} - \mu_D}{S_D/\sqrt{n}}$
+- where $D_i = X_i - Y_i$ are differences
+
+**3. Comparison of Two Proportions**:
+- Pooled proportion: $\hat{p} = \frac{x_1 + x_2}{n_1 + n_2}$
+- Test statistic: $Z = \frac{\hat{p}_1 - \hat{p}_2}{\sqrt{\hat{p}(1-\hat{p})(1/n_1 + 1/n_2)}}$
+
+**4. F-test for Equality of Variances**:
+- Test statistic: $F = \frac{S_1^2}{S_2^2}$ (larger variance in numerator)
+- df = $(n_1-1, n_2-1)$
+
+**Chi-Square Tests**:
+
+**1. Goodness of Fit Test**:
+- Tests if sample follows specified distribution
+- Test statistic: $\chi^2 = \sum_{i=1}^k \frac{(O_i - E_i)^2}{E_i}$
+- where $O_i$ = observed frequency, $E_i$ = expected frequency
+- df = $k - 1 - \text{number of estimated parameters}$
+
+**2. Test of Independence**:
+- Tests if two categorical variables are independent
+- Test statistic: $\chi^2 = \sum_{i=1}^r \sum_{j=1}^c \frac{(O_{ij} - E_{ij})^2}{E_{ij}}$
+- where $E_{ij} = \frac{\text{row}_i \text{ total} \times \text{column}_j \text{ total}}{\text{grand total}}$
+- df = $(r-1)(c-1)$
+
+**Analysis of Variance (ANOVA)**:
+
+**One-Way ANOVA**: Compare means of $k$ groups
+- $H_0: \mu_1 = \mu_2 = \cdots = \mu_k$
+- $H_1$: At least one mean differs
+
+**Test Statistic**: $F = \frac{MST}{MSE} = \frac{SST/(k-1)}{SSE/(n-k)}$
+
+where:
+- $SST = \sum_{i=1}^k n_i(\bar{x}_i - \bar{x})^2$ (between groups)
+- $SSE = \sum_{i=1}^k \sum_{j=1}^{n_i} (x_{ij} - \bar{x}_i)^2$ (within groups)
+- $MST = SST/(k-1)$, $MSE = SSE/(n-k)$
+
+**Assumptions**:
+- Normality within each group
+- Equal variances (homoscedasticity)
+- Independence of observations
+
+**Regression Analysis**:
+
+**Simple Linear Regression**: $Y = \beta_0 + \beta_1 X + \epsilon$
+
+**Least Squares Estimates**:
+- $\hat{\beta}_1 = \frac{\sum(x_i - \bar{x})(y_i - \bar{y})}{\sum(x_i - \bar{x})^2}$
+- $\hat{\beta}_0 = \bar{y} - \hat{\beta}_1\bar{x}$
+
+**Coefficient of Determination**: $R^2 = \frac{SSR}{SST} = 1 - \frac{SSE}{SST}$
+- Proportion of variance explained by regression
+
+**Testing Significance of Regression**:
+- $H_0: \beta_1 = 0$ vs $H_1: \beta_1 \neq 0$
+- Test statistic: $T = \frac{\hat{\beta}_1}{SE(\hat{\beta}_1)}$
+
+**Non-parametric Tests**:
+
+**1. Sign Test**: Tests median of population
+- Uses only signs of differences from hypothesized median
+- Distribution-free
+
+**2. Wilcoxon Signed-Rank Test**: Tests median (uses ranks)
+- More powerful than sign test
+- Assumes symmetric distribution
+
+**3. Mann-Whitney U Test**: Compares two independent samples
+- Non-parametric alternative to two-sample t-test
+- Tests if populations have same distribution
+
+**4. Kruskal-Wallis Test**: Compares multiple groups
+- Non-parametric alternative to one-way ANOVA
+
+**Problem-Solving Tips**:
+
+**For Confidence Intervals**:
+1. Identify parameter of interest
+2. Check conditions (normality, sample size)
+3. Choose appropriate distribution (z, t, χ²)
+4. Calculate margin of error
+5. Interpret in context
+
+**For Hypothesis Testing**:
+1. State hypotheses clearly
+2. Check assumptions
+3. Calculate test statistic
+4. Find p-value or compare to critical value
+5. Make decision and interpret in context
+
+**GATE Tips**:
+- Use t-distribution when σ unknown and n < 30
+- Chi-square for variance tests and categorical data
+- F-distribution for comparing variances and ANOVA
+- p-value < α ⟹ reject H₀
+- Type I error = α, Type II error = β, Power = 1-β
+- Larger sample size ⟹ narrower confidence interval
+- ANOVA tests equality of means across groups
+- R² measures proportion of variance explained
+
+**Examples**:
+
+1. **Confidence interval for mean**: Sample of 25 students has mean score 78 with standard deviation 12. Find 95% CI for population mean.
+   - Use t-distribution: $n = 25 < 30$, $\sigma$ unknown
+   - $t_{0.025,24} = 2.064$
+   - CI: $78 \pm 2.064 \times \frac{12}{\sqrt{25}} = 78 \pm 4.95 = (73.05, 82.95)$
+
+2. **Hypothesis test for proportion**: Company claims 90% customer satisfaction. Sample of 200 shows 170 satisfied. Test at α = 0.05.
+   - $H_0: p = 0.9$ vs $H_1: p \neq 0.9$
+   - $\hat{p} = 170/200 = 0.85$
+   - $Z = \frac{0.85 - 0.9}{\sqrt{0.9 \times 0.1 / 200}} = \frac{-0.05}{0.0212} = -2.36$
+   - p-value = $2 \times P(Z < -2.36) = 2 \times 0.0091 = 0.0182$
+   - Since p-value < 0.05, reject $H_0$
+
+3. **Chi-square goodness of fit**: Test if die is fair. Observed frequencies: 1:8, 2:12, 3:10, 4:15, 5:9, 6:6 (total 60 rolls).
+   - Expected frequency for each face: 60/6 = 10
+   - $\chi^2 = \frac{(8-10)^2}{10} + \frac{(12-10)^2}{10} + \cdots + \frac{(6-10)^2}{10} = 0.4 + 0.4 + 0 + 2.5 + 0.1 + 1.6 = 5.0$
+   - df = 6 - 1 = 5
+   - Critical value at α = 0.05: $\chi^2_{0.05,5} = 11.07$
+   - Since 5.0 < 11.07, fail to reject $H_0$ (die appears fair)
+
+### 7.3 Regression Analysis (25)
+
+**Key Concepts**: Regression analysis studies relationships between variables, allowing prediction and understanding of how one variable affects another. It's fundamental in data science, economics, and engineering.
+
+**Simple Linear Regression**:
+
+**Model**: $Y = \beta_0 + \beta_1 X + \epsilon$
+
+where:
+- $Y$: dependent (response) variable
+- $X$: independent (predictor) variable  
+- $\beta_0$: y-intercept (value of Y when X = 0)
+- $\beta_1$: slope (change in Y per unit change in X)
+- $\epsilon$: random error term
+
+**Assumptions**:
+1. **Linearity**: Relationship between X and Y is linear
+2. **Independence**: Observations are independent
+3. **Homoscedasticity**: Constant variance of errors
+4. **Normality**: Errors are normally distributed
+5. **No measurement error** in X
+
+**Least Squares Estimation**:
+
+**Objective**: Minimize sum of squared residuals
+$$\text{SSE} = \sum_{i=1}^n (y_i - \hat{y}_i)^2 = \sum_{i=1}^n (y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i)^2$$
+
+**Normal Equations**:
+$$\frac{\partial \text{SSE}}{\partial \beta_0} = 0, \quad \frac{\partial \text{SSE}}{\partial \beta_1} = 0$$
+
+**Solutions**:
+$$\hat{\beta}_1 = \frac{\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^n (x_i - \bar{x})^2} = \frac{S_{xy}}{S_{xx}}$$
+
+$$\hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x}$$
+
+where:
+- $S_{xy} = \sum(x_i - \bar{x})(y_i - \bar{y})$ (sum of cross-products)
+- $S_{xx} = \sum(x_i - \bar{x})^2$ (sum of squares for X)
+- $S_{yy} = \sum(y_i - \bar{y})^2$ (sum of squares for Y)
+
+**Alternative Formulas**:
+$$\hat{\beta}_1 = \frac{n\sum x_i y_i - \sum x_i \sum y_i}{n\sum x_i^2 - (\sum x_i)^2}$$
+
+$$\hat{\beta}_0 = \frac{\sum y_i - \hat{\beta}_1 \sum x_i}{n}$$
+
+**Fitted Values and Residuals**:
+
+**Fitted value**: $\hat{y}_i = \hat{\beta}_0 + \hat{\beta}_1 x_i$
+
+**Residual**: $e_i = y_i - \hat{y}_i$ (observed - predicted)
+
+**Properties of Residuals**:
+- $\sum e_i = 0$ (sum to zero)
+- $\sum x_i e_i = 0$ (uncorrelated with X)
+- $\sum \hat{y}_i e_i = 0$ (uncorrelated with fitted values)
+
+**Analysis of Variance (ANOVA) for Regression**:
+
+**Total Sum of Squares**: $\text{SST} = \sum(y_i - \bar{y})^2$ (total variation)
+
+**Regression Sum of Squares**: $\text{SSR} = \sum(\hat{y}_i - \bar{y})^2$ (explained variation)
+
+**Error Sum of Squares**: $\text{SSE} = \sum(y_i - \hat{y}_i)^2$ (unexplained variation)
+
+**Fundamental Identity**: $\text{SST} = \text{SSR} + \text{SSE}$
+
+**Degrees of Freedom**:
+- SST: $n - 1$
+- SSR: $1$ (one predictor)
+- SSE: $n - 2$
+
+**Mean Squares**:
+- $\text{MSR} = \text{SSR}/1$
+- $\text{MSE} = \text{SSE}/(n-2)$
+
+**Coefficient of Determination**:
+$$R^2 = \frac{\text{SSR}}{\text{SST}} = 1 - \frac{\text{SSE}}{\text{SST}}$$
+
+**Interpretation**: Proportion of total variation in Y explained by X
+- $0 \leq R^2 \leq 1$
+- $R^2 = 1$: Perfect fit
+- $R^2 = 0$: No linear relationship
+
+**Relationship to Correlation**: $R^2 = r_{xy}^2$ where $r_{xy}$ is sample correlation coefficient
+
+**Statistical Inference**:
+
+**Standard Error of Regression**: $s = \sqrt{\text{MSE}} = \sqrt{\frac{\text{SSE}}{n-2}}$
+
+**Standard Errors of Coefficients**:
+$$SE(\hat{\beta}_1) = \frac{s}{\sqrt{S_{xx}}}, \quad SE(\hat{\beta}_0) = s\sqrt{\frac{1}{n} + \frac{\bar{x}^2}{S_{xx}}}$$
+
+**Confidence Intervals**:
+- For $\beta_1$: $\hat{\beta}_1 \pm t_{\alpha/2, n-2} \cdot SE(\hat{\beta}_1)$
+- For $\beta_0$: $\hat{\beta}_0 \pm t_{\alpha/2, n-2} \cdot SE(\hat{\beta}_0)$
+
+**Hypothesis Tests**:
+
+**Test for Slope**:
+- $H_0: \beta_1 = 0$ vs $H_1: \beta_1 \neq 0$
+- Test statistic: $t = \frac{\hat{\beta}_1}{SE(\hat{\beta}_1)}$
+- Reject if $|t| > t_{\alpha/2, n-2}$
+
+**F-test for Overall Regression**:
+- $H_0: \beta_1 = 0$ vs $H_1: \beta_1 \neq 0$
+- Test statistic: $F = \frac{\text{MSR}}{\text{MSE}}$
+- Reject if $F > F_{\alpha, 1, n-2}$
+- Note: $F = t^2$ for simple linear regression
+
+**Prediction**:
+
+**Point Prediction**: $\hat{y}_0 = \hat{\beta}_0 + \hat{\beta}_1 x_0$
+
+**Prediction Interval** (for new observation):
+$$\hat{y}_0 \pm t_{\alpha/2, n-2} \cdot s \sqrt{1 + \frac{1}{n} + \frac{(x_0 - \bar{x})^2}{S_{xx}}}$$
+
+**Confidence Interval for Mean Response**:
+$$\hat{y}_0 \pm t_{\alpha/2, n-2} \cdot s \sqrt{\frac{1}{n} + \frac{(x_0 - \bar{x})^2}{S_{xx}}}$$
+
+**Note**: Prediction interval is wider than confidence interval
+
+**Multiple Linear Regression**:
+
+**Model**: $Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_k X_k + \epsilon$
+
+**Matrix Form**: $\mathbf{Y} = \mathbf{X}\boldsymbol{\beta} + \boldsymbol{\epsilon}$
+
+where:
+- $\mathbf{Y}$: $n \times 1$ response vector
+- $\mathbf{X}$: $n \times (k+1)$ design matrix
+- $\boldsymbol{\beta}$: $(k+1) \times 1$ parameter vector
+- $\boldsymbol{\epsilon}$: $n \times 1$ error vector
+
+**Least Squares Solution**:
+$$\hat{\boldsymbol{\beta}} = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{Y}$$
+
+**Properties**:
+- Unbiased: $E[\hat{\boldsymbol{\beta}}] = \boldsymbol{\beta}$
+- Covariance: $\text{Cov}(\hat{\boldsymbol{\beta}}) = \sigma^2(\mathbf{X}^T\mathbf{X})^{-1}$
+
+**ANOVA for Multiple Regression**:
+
+**Degrees of Freedom**:
+- SSR: $k$ (number of predictors)
+- SSE: $n - k - 1$
+- SST: $n - 1$
+
+**F-test for Overall Model**:
+- $H_0: \beta_1 = \beta_2 = \cdots = \beta_k = 0$
+- Test statistic: $F = \frac{\text{MSR}}{\text{MSE}} = \frac{\text{SSR}/k}{\text{SSE}/(n-k-1)}$
+
+**Adjusted R-squared**:
+$$R_{adj}^2 = 1 - \frac{\text{SSE}/(n-k-1)}{\text{SST}/(n-1)} = 1 - (1-R^2)\frac{n-1}{n-k-1}$$
+
+**Purpose**: Penalizes for adding variables that don't improve fit significantly
+
+**Individual t-tests**:
+- $H_0: \beta_j = 0$ vs $H_1: \beta_j \neq 0$
+- Test statistic: $t = \frac{\hat{\beta}_j}{SE(\hat{\beta}_j)}$
+
+**Multicollinearity**:
+
+**Problem**: High correlation among predictor variables
+- Makes coefficient estimates unstable
+- Inflates standard errors
+- Doesn't affect prediction accuracy
+
+**Detection**:
+- **Correlation matrix**: High pairwise correlations (|r| > 0.8)
+- **Variance Inflation Factor (VIF)**: $\text{VIF}_j = \frac{1}{1-R_j^2}$
+  where $R_j^2$ is R² from regressing $X_j$ on other predictors
+- VIF > 10 indicates serious multicollinearity
+
+**Solutions**:
+- Remove highly correlated variables
+- Principal component regression
+- Ridge regression
+
+**Model Selection**:
+
+**Forward Selection**: Start with no variables, add significant ones
+
+**Backward Elimination**: Start with all variables, remove non-significant ones
+
+**Stepwise Regression**: Combination of forward and backward
+
+**Information Criteria**:
+- **AIC**: $\text{AIC} = n \ln(\text{SSE}/n) + 2(k+1)$
+- **BIC**: $\text{BIC} = n \ln(\text{SSE}/n) + (k+1) \ln(n)$
+- Lower values indicate better models
+
+**Cross-Validation**: Split data into training and validation sets
+
+**Residual Analysis**:
+
+**Purposes**:
+- Check model assumptions
+- Identify outliers and influential points
+- Suggest model improvements
+
+**Diagnostic Plots**:
+
+1. **Residuals vs Fitted Values**:
+   - Check linearity and homoscedasticity
+   - Should show random scatter around zero
+
+2. **Normal Q-Q Plot**:
+   - Check normality of residuals
+   - Points should lie approximately on straight line
+
+3. **Residuals vs Predictor Variables**:
+   - Check for non-linear relationships
+   - May suggest transformations
+
+4. **Residuals vs Order**:
+   - Check independence assumption
+   - Look for patterns or trends
+
+**Standardized Residuals**:
+$$r_i = \frac{e_i}{s\sqrt{1-h_{ii}}}$$
+
+where $h_{ii}$ is leverage (diagonal element of hat matrix)
+
+**Outliers and Influential Points**:
+
+**Outlier**: Observation with large residual
+- Standardized residual $|r_i| > 2$ or $3$
+
+**High Leverage Point**: Observation with unusual X values
+- Leverage $h_{ii} > 2(k+1)/n$
+
+**Influential Point**: Observation that greatly affects fitted model
+- **Cook's Distance**: $D_i = \frac{r_i^2}{k+1} \cdot \frac{h_{ii}}{1-h_{ii}}$
+- $D_i > 1$ indicates influential point
+
+**Transformations**:
+
+**Box-Cox Transformation**: $Y^{(\lambda)} = \frac{Y^\lambda - 1}{\lambda}$ (λ ≠ 0)
+- λ = 1: No transformation
+- λ = 0: Log transformation
+- λ = 0.5: Square root transformation
+- λ = -1: Reciprocal transformation
+
+**Polynomial Regression**:
+
+**Model**: $Y = \beta_0 + \beta_1 X + \beta_2 X^2 + \cdots + \beta_k X^k + \epsilon$
+
+**Considerations**:
+- Higher-order terms can cause overfitting
+- Extrapolation beyond data range dangerous
+- Orthogonal polynomials reduce multicollinearity
+
+**Logistic Regression**:
+
+**Model**: For binary response (0/1)
+$$\ln\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1 X_1 + \cdots + \beta_k X_k$$
+
+where $p = P(Y = 1)$
+
+**Logistic Function**: $p = \frac{e^{\beta_0 + \beta_1 X_1 + \cdots + \beta_k X_k}}{1 + e^{\beta_0 + \beta_1 X_1 + \cdots + \beta_k X_k}}$
+
+**Estimation**: Maximum likelihood (not least squares)
+
+**Problem-Solving Tips**:
+
+**For Simple Linear Regression**:
+1. Plot data to check linearity
+2. Calculate slope and intercept using formulas
+3. Compute R² to assess fit quality
+4. Check residual plots for assumption violations
+
+**For Multiple Regression**:
+1. Check for multicollinearity (VIF)
+2. Use F-test for overall model significance
+3. Use t-tests for individual coefficients
+4. Consider model selection techniques
+
+**For Model Diagnostics**:
+1. Always plot residuals vs fitted values
+2. Check normal Q-Q plot of residuals
+3. Look for outliers and influential points
+4. Consider transformations if assumptions violated
+
+**GATE Tips**:
+- Least squares minimizes sum of squared residuals
+- R² = proportion of variance explained (0 to 1)
+- Higher R² doesn't always mean better model
+- Check assumptions through residual analysis
+- Multicollinearity affects coefficient stability, not predictions
+- F-test for overall model, t-tests for individual coefficients
+- Prediction intervals wider than confidence intervals
+- Adjusted R² penalizes for additional variables
+
+**Examples**:
+
+1. **Simple linear regression**: Data points (1,2), (2,4), (3,5), (4,7), (5,8)
+   - $\bar{x} = 3, \bar{y} = 5.2$
+   - $S_{xx} = \sum(x_i - \bar{x})^2 = 10$
+   - $S_{xy} = \sum(x_i - \bar{x})(y_i - \bar{y}) = 11.2$
+   - $\hat{\beta}_1 = 11.2/10 = 1.12$
+   - $\hat{\beta}_0 = 5.2 - 1.12(3) = 1.84$
+   - Equation: $\hat{y} = 1.84 + 1.12x$
+
+2. **R² calculation**: 
+   - $\text{SST} = \sum(y_i - \bar{y})^2 = 16.8$
+   - $\text{SSR} = \hat{\beta}_1^2 S_{xx} = (1.12)^2(10) = 12.544$
+   - $R^2 = 12.544/16.8 = 0.747$
+   - 74.7% of variation in Y explained by X
+
+3. **Hypothesis test for slope**:
+   - $\text{SSE} = \text{SST} - \text{SSR} = 16.8 - 12.544 = 4.256$
+   - $s = \sqrt{4.256/3} = 1.191$
+   - $SE(\hat{\beta}_1) = 1.191/\sqrt{10} = 0.377$
+   - $t = 1.12/0.377 = 2.97$
+   - With df = 3, critical value $t_{0.025,3} = 3.182$
+   - Since $|2.97| < 3.182$, fail to reject $H_0: \beta_1 = 0$ at α = 0.05
+### 8. General Aptitude (200 Questions)
+
+### 8.1 Verbal Ability (100)
+
+**Key Concepts**: Verbal ability tests comprehension, vocabulary, grammar, and communication skills essential for technical professionals.
+
+**Reading Comprehension (25)**:
+
+**Types of Passages**:
+- **Factual**: Presents information, data, or research findings
+- **Analytical**: Examines cause-effect relationships, comparisons
+- **Argumentative**: Presents viewpoint with supporting evidence
+- **Narrative**: Tells story or describes sequence of events
+
+**Question Types**:
+
+**1. Main Idea Questions**:
+- "The primary purpose of the passage is..."
+- "The passage is primarily concerned with..."
+- **Strategy**: Look for thesis statement, topic sentences, concluding remarks
+
+**2. Detail Questions**:
+- "According to the passage..."
+- "The author mentions X in order to..."
+- **Strategy**: Locate specific information, avoid inferences
+
+**3. Inference Questions**:
+- "It can be inferred that..."
+- "The passage suggests that..."
+- **Strategy**: Draw logical conclusions from stated information
+
+**4. Tone/Attitude Questions**:
+- "The author's attitude toward X is..."
+- "The tone of the passage is..."
+- **Options**: Critical, supportive, neutral, skeptical, optimistic, pessimistic
+
+**5. Vocabulary in Context**:
+- "In line X, 'word' most nearly means..."
+- **Strategy**: Consider surrounding context, not just dictionary meaning
+
+**6. Structure Questions**:
+- "The organization of the passage is..."
+- "The author develops the argument by..."
+
+**Reading Strategies**:
+
+**Active Reading**:
+1. **Preview**: Scan title, first/last paragraphs, topic sentences
+2. **Purpose**: Identify why you're reading (main idea, specific detail)
+3. **Predict**: Anticipate content based on preview
+4. **Read**: Focus on key ideas, not every detail
+5. **Review**: Summarize main points
+
+**Time Management**:
+- Spend 2-3 minutes reading passage
+- 1-2 minutes per question
+- Don't get stuck on difficult questions
+
+**Common Traps**:
+- **Extreme language**: "always," "never," "all," "none"
+- **Out of scope**: Information not in passage
+- **Opposite answers**: Contradicts passage information
+- **Distortion**: Twists passage information
+
+**Grammar and Usage (25)**:
+
+**Subject-Verb Agreement**:
+
+**Basic Rule**: Singular subjects take singular verbs; plural subjects take plural verbs
+
+**Tricky Cases**:
+- **Collective nouns**: "The team is/are playing" (depends on context)
+- **Compound subjects**: "John and Mary are..." (plural)
+- **Either/or, neither/nor**: Verb agrees with nearest subject
+- **Indefinite pronouns**: 
+  - Singular: each, every, either, neither, one, someone, anyone, everyone
+  - Plural: both, few, many, several
+  - Variable: all, some, most, none (depends on object)
+
+**Examples**:
+- "Each of the students has submitted their assignment." (Incorrect - pronoun disagreement)
+- "Each of the students has submitted his or her assignment." (Correct)
+- "Neither the teacher nor the students were ready." (Correct - agrees with "students")
+
+**Pronoun Usage**:
+
+**Pronoun-Antecedent Agreement**:
+- Pronoun must agree with antecedent in number, gender, person
+- "Every student must bring their book." (Incorrect)
+- "Every student must bring his or her book." (Correct)
+
+**Pronoun Case**:
+- **Subjective**: I, you, he, she, it, we, they
+- **Objective**: me, you, him, her, it, us, them
+- **Possessive**: my, your, his, her, its, our, their
+
+**Common Errors**:
+- "Between you and I" (Incorrect - should be "me")
+- "Who/Whom": Who = subject, Whom = object
+- "Its/It's": Its = possessive, It's = it is
+
+**Verb Tenses**:
+
+**Simple Tenses**:
+- **Present**: "I write"
+- **Past**: "I wrote"
+- **Future**: "I will write"
+
+**Perfect Tenses**:
+- **Present Perfect**: "I have written" (completed action with present relevance)
+- **Past Perfect**: "I had written" (completed before another past action)
+- **Future Perfect**: "I will have written" (will be completed by future time)
+
+**Progressive Tenses**:
+- **Present Progressive**: "I am writing" (ongoing now)
+- **Past Progressive**: "I was writing" (ongoing in past)
+- **Future Progressive**: "I will be writing" (ongoing in future)
+
+**Sequence of Tenses**:
+- Main clause past → subordinate clause past
+- "He said that he was tired." (Not "He said that he is tired.")
+
+**Modifiers**:
+
+**Misplaced Modifiers**:
+- "I saw a man with binoculars walking down the street." (Ambiguous)
+- "Walking down the street, I saw a man with binoculars." (Clear)
+
+**Dangling Modifiers**:
+- "Having finished the assignment, the TV was turned on." (Incorrect)
+- "Having finished the assignment, I turned on the TV." (Correct)
+
+**Parallel Structure**:
+
+**Lists**: Items in series should have same grammatical form
+- "I like reading, writing, and to swim." (Incorrect)
+- "I like reading, writing, and swimming." (Correct)
+
+**Correlative Conjunctions**: Both...and, either...or, neither...nor, not only...but also
+- "She is not only intelligent but also has creativity." (Incorrect)
+- "She is not only intelligent but also creative." (Correct)
+
+**Sentence Structure**:
+
+**Fragments**: Incomplete sentences missing subject or verb
+- "Because I was tired." (Fragment)
+- "I went home because I was tired." (Complete)
+
+**Run-on Sentences**: Two or more independent clauses incorrectly joined
+- "I was tired I went home." (Run-on)
+- "I was tired, so I went home." (Correct)
+
+**Comma Splices**: Two independent clauses joined only by comma
+- "I was tired, I went home." (Comma splice)
+- "I was tired; I went home." (Correct)
+
+**Vocabulary (25)**:
+
+**Word Roots, Prefixes, Suffixes**:
+
+**Common Prefixes**:
+- **Anti-**: against (antibiotic, antisocial)
+- **Pre-**: before (preview, prehistoric)
+- **Post-**: after (postwar, postpone)
+- **Sub-**: under (submarine, substandard)
+- **Super-**: above (superhuman, supervisor)
+- **Inter-**: between (international, interact)
+- **Intra-**: within (intramural, intravenous)
+- **Extra-**: beyond (extraordinary, extraterrestrial)
+
+**Common Suffixes**:
+- **-tion/-sion**: action/state (creation, decision)
+- **-ment**: result/state (development, agreement)
+- **-ness**: quality (happiness, darkness)
+- **-ful**: full of (helpful, beautiful)
+- **-less**: without (hopeless, careless)
+- **-able/-ible**: capable of (readable, visible)
+
+**Common Roots**:
+- **Bene-**: good (benefit, benevolent)
+- **Mal-**: bad (malfunction, malicious)
+- **Chron-**: time (chronology, chronic)
+- **Graph-**: write (biography, telegraph)
+- **Phon-**: sound (telephone, phonics)
+- **Geo-**: earth (geography, geology)
+
+**Context Clues**:
+
+**Definition**: Word meaning explained in sentence
+- "The edifice, a large imposing building, dominated the skyline."
+
+**Example**: Specific instances given
+- "Citrus fruits, such as oranges and lemons, are rich in vitamin C."
+
+**Contrast**: Opposite meaning indicated
+- "Unlike his gregarious brother, Tom was quite introverted."
+
+**Cause and Effect**: Relationship shows meaning
+- "The drought caused the crops to desiccate and wither away."
+
+**Synonyms and Antonyms**:
+
+**High-Frequency GATE Words**:
+
+**Positive Connotation**:
+- Acclaim, commend, extol, laud, praise
+- Abundant, copious, plentiful, profuse
+- Astute, discerning, perceptive, shrewd
+- Benevolent, charitable, magnanimous, philanthropic
+
+**Negative Connotation**:
+- Censure, condemn, denounce, reproach
+- Meager, paltry, scanty, sparse
+- Gullible, naive, credulous
+- Malevolent, vindictive, spiteful
+
+**Neutral/Technical**:
+- Analyze, scrutinize, examine, investigate
+- Hypothesis, theory, conjecture, postulate
+- Implement, execute, accomplish, achieve
+- Significant, substantial, considerable, notable
+
+**Analogies**:
+
+**Common Relationship Types**:
+
+**1. Synonyms**: HAPPY : JOYFUL
+**2. Antonyms**: HOT : COLD
+**3. Part to Whole**: WHEEL : CAR
+**4. Cause to Effect**: RAIN : FLOOD
+**5. Function**: SCISSORS : CUT
+**6. Category**: ROSE : FLOWER
+**7. Degree**: WARM : HOT
+**8. Location**: BOOK : LIBRARY
+**9. Worker to Tool**: PAINTER : BRUSH
+**10. Characteristic**: ICE : COLD
+
+**Strategy**:
+1. Identify relationship between first pair
+2. Look for same relationship in answer choices
+3. Make sentence: "A is to B as C is to D"
+4. Check if sentence makes sense
+
+**Sentence Completion (25)**:
+
+**Types of Clues**:
+
+**1. Definition/Restatement**:
+- Signal words: that is, in other words, namely
+- "The professor's lecture was so _____ that students fell asleep; in other words, it was extremely boring."
+
+**2. Contrast/Opposition**:
+- Signal words: but, however, although, despite, nevertheless
+- "Although she appeared confident, she was actually quite _____."
+
+**3. Cause and Effect**:
+- Signal words: because, since, therefore, consequently, as a result
+- "Because of the severe drought, the harvest was _____."
+
+**4. Examples**:
+- Signal words: such as, for example, including
+- "The museum displayed various artifacts, including _____ pottery and ancient tools."
+
+**5. Comparison**:
+- Signal words: like, similar to, just as
+- "Like his mentor, the young scientist was _____ in his research methods."
+
+**Strategy**:
+1. Read entire sentence for context
+2. Identify signal words and clue types
+3. Predict word before looking at choices
+4. Eliminate obviously wrong answers
+5. Check answer in context
+
+**Common Patterns**:
+- **Positive/Negative**: Look for words that indicate tone
+- **Degree**: Mild vs. extreme words
+- **Time sequence**: Before/after relationships
+- **Logic flow**: Cause leads to logical effect
+
+**Problem-Solving Tips**:
+
+**For Reading Comprehension**:
+1. Read questions first to know what to look for
+2. Focus on first and last paragraphs for main ideas
+3. Pay attention to transition words (however, therefore, moreover)
+4. Eliminate extreme or absolute answer choices
+5. Stay within scope of passage
+
+**For Grammar**:
+1. Read sentence aloud to catch errors
+2. Identify subject and verb first
+3. Check for parallel structure in lists
+4. Watch for pronoun-antecedent agreement
+5. Be careful with modifier placement
+
+**For Vocabulary**:
+1. Use word roots to deduce meanings
+2. Consider context clues carefully
+3. Eliminate choices that don't fit context
+4. Don't choose words just because they sound sophisticated
+5. Practice with high-frequency GATE vocabulary
+
+**GATE Tips**:
+- Time management crucial: don't spend too long on any question
+- Process of elimination often more effective than direct selection
+- Read all answer choices before selecting
+- Trust first instinct if unsure
+- Practice regularly with previous years' questions
+- Focus on commonly tested grammar rules
+- Build vocabulary through reading and word lists
+- Pay attention to question types and develop specific strategies
+
+**Common Mistakes to Avoid**:
+- Overthinking simple questions
+- Choosing answers based on partial information
+- Ignoring context clues in vocabulary questions
+- Misreading question stems
+- Not checking answers in context
+- Spending too much time on difficult passages
+- Confusing similar-looking answer choices
+
+### 8.2 Quantitative Aptitude (100)
+
+**Key Concepts**: Quantitative aptitude tests mathematical reasoning, numerical ability, and problem-solving skills using basic mathematical concepts.
+
+**Arithmetic (30)**:
+
+**Number Systems**:
+
+**Natural Numbers**: 1, 2, 3, 4, ... (counting numbers)
+**Whole Numbers**: 0, 1, 2, 3, 4, ... (natural numbers + 0)
+**Integers**: ..., -2, -1, 0, 1, 2, ... (positive and negative whole numbers)
+**Rational Numbers**: Numbers that can be expressed as p/q where p, q are integers, q ≠ 0
+**Irrational Numbers**: Cannot be expressed as fraction (√2, π, e)
+**Real Numbers**: All rational and irrational numbers
+
+**Properties of Numbers**:
+
+**Even Numbers**: Divisible by 2 (2, 4, 6, 8, ...)
+**Odd Numbers**: Not divisible by 2 (1, 3, 5, 7, ...)
+
+**Operations**:
+- Even ± Even = Even
+- Odd ± Odd = Even  
+- Even ± Odd = Odd
+- Even × Even = Even
+- Odd × Odd = Odd
+- Even × Odd = Even
+
+**Prime Numbers**: Natural numbers > 1 with exactly two factors (1 and itself)
+- First few primes: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47...
+- 2 is only even prime number
+- All primes > 2 are odd
+
+**Composite Numbers**: Natural numbers > 1 that are not prime
+- Have more than two factors
+- Can be expressed as product of primes (fundamental theorem of arithmetic)
+
+**Divisibility Rules**:
+- **2**: Last digit is even (0, 2, 4, 6, 8)
+- **3**: Sum of digits divisible by 3
+- **4**: Last two digits divisible by 4
+- **5**: Last digit is 0 or 5
+- **6**: Divisible by both 2 and 3
+- **8**: Last three digits divisible by 8
+- **9**: Sum of digits divisible by 9
+- **10**: Last digit is 0
+- **11**: Alternating sum of digits divisible by 11
+
+**HCF and LCM**:
+
+**Highest Common Factor (HCF)**: Largest number that divides all given numbers
+**Least Common Multiple (LCM)**: Smallest number divisible by all given numbers
+
+**Methods**:
+1. **Prime Factorization**:
+   - HCF = Product of lowest powers of common prime factors
+   - LCM = Product of highest powers of all prime factors
+
+2. **Euclidean Algorithm** (for HCF):
+   - HCF(a,b) = HCF(b, a mod b)
+   - Continue until remainder is 0
+
+**Relationship**: For two numbers a and b:
+$$a \times b = \text{HCF}(a,b) \times \text{LCM}(a,b)$$
+
+**Fractions**:
+
+**Types**:
+- **Proper fraction**: Numerator < Denominator (3/5)
+- **Improper fraction**: Numerator ≥ Denominator (7/5)
+- **Mixed number**: Whole number + proper fraction (1 2/5)
+
+**Operations**:
+- **Addition/Subtraction**: Find common denominator
+  $$\frac{a}{b} \pm \frac{c}{d} = \frac{ad \pm bc}{bd}$$
+
+- **Multiplication**: Multiply numerators and denominators
+  $$\frac{a}{b} \times \frac{c}{d} = \frac{ac}{bd}$$
+
+- **Division**: Multiply by reciprocal
+  $$\frac{a}{b} \div \frac{c}{d} = \frac{a}{b} \times \frac{d}{c} = \frac{ad}{bc}$$
+
+**Decimals**:
+
+**Types**:
+- **Terminating**: Finite decimal places (0.25, 0.125)
+- **Non-terminating recurring**: Infinite decimal places with repeating pattern (0.333..., 0.142857142857...)
+- **Non-terminating non-recurring**: Infinite non-repeating (π, √2)
+
+**Conversion**:
+- **Fraction to Decimal**: Divide numerator by denominator
+- **Decimal to Fraction**: 
+  - 0.25 = 25/100 = 1/4
+  - 0.333... = 1/3
+  - 0.142857... = 1/7
+
+**Percentages**:
+
+**Basic Concepts**:
+- Percent means "per hundred"
+- 25% = 25/100 = 0.25 = 1/4
+
+**Important Conversions**:
+- 1/2 = 50%, 1/3 = 33.33%, 1/4 = 25%, 1/5 = 20%
+- 1/6 = 16.67%, 1/8 = 12.5%, 1/10 = 10%
+
+**Percentage Change**:
+$$\text{Percentage Change} = \frac{\text{New Value - Old Value}}{\text{Old Value}} \times 100\%$$
+
+**Successive Percentage Changes**:
+If quantity changes by a% then b%:
+$$\text{Net Change} = a + b + \frac{ab}{100}$$
+
+**Applications**:
+- **Profit/Loss**: Based on cost price
+- **Discount**: Reduction from marked price
+- **Tax**: Addition to base amount
+- **Interest**: Earning on principal
+
+**Ratio and Proportion**:
+
+**Ratio**: Comparison of two quantities
+- a : b = a/b
+- Properties: a:b = ka:kb (k ≠ 0)
+
+**Proportion**: Equality of two ratios
+- a : b :: c : d means a/b = c/d
+- Cross multiplication: ad = bc
+
+**Types**:
+- **Direct Proportion**: As one increases, other increases
+- **Inverse Proportion**: As one increases, other decreases
+
+**Applications**:
+- **Mixture problems**: Combining different ratios
+- **Partnership**: Profit sharing based on investment ratios
+- **Time and work**: Work rates in proportion to efficiency
+
+**Average and Weighted Average**:
+
+**Simple Average**:
+$$\text{Average} = \frac{\text{Sum of all values}}{\text{Number of values}}$$
+
+**Properties**:
+- If all values increase by k, average increases by k
+- If all values are multiplied by k, average is multiplied by k
+
+**Weighted Average**:
+$$\text{Weighted Average} = \frac{\sum (w_i \times x_i)}{\sum w_i}$$
+
+where $w_i$ are weights and $x_i$ are values
+
+**Applications**:
+- **Academic grades**: Different subjects with different credits
+- **Speed problems**: Average speed over different segments
+- **Age problems**: Average age of groups
+
+**Algebra (25)**:
+
+**Linear Equations**:
+
+**One Variable**: ax + b = 0
+- Solution: x = -b/a (if a ≠ 0)
+
+**Two Variables**: 
+- ax + by = c
+- dx + ey = f
+
+**Solution Methods**:
+1. **Substitution**: Solve one equation for one variable, substitute in other
+2. **Elimination**: Add/subtract equations to eliminate one variable
+3. **Cross multiplication**: For a₁x + b₁y = c₁ and a₂x + b₂y = c₂
+   $$x = \frac{b₁c₂ - b₂c₁}{a₁b₂ - a₂b₁}, \quad y = \frac{a₂c₁ - a₁c₂}{a₁b₂ - a₂b₁}$$
+
+**Quadratic Equations**:
+
+**Standard Form**: ax² + bx + c = 0 (a ≠ 0)
+
+**Solution Methods**:
+1. **Factoring**: Express as (px + q)(rx + s) = 0
+2. **Quadratic Formula**: 
+   $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+3. **Completing the Square**: Convert to (x + p)² = q form
+
+**Discriminant**: Δ = b² - 4ac
+- Δ > 0: Two distinct real roots
+- Δ = 0: One repeated real root  
+- Δ < 0: No real roots (complex roots)
+
+**Relationship between Roots**:
+For roots α and β:
+- Sum: α + β = -b/a
+- Product: αβ = c/a
+
+**Inequalities**:
+
+**Linear Inequalities**: ax + b > 0, ax + b < 0, etc.
+- Solution is range of values
+- Multiplication/division by negative number reverses inequality sign
+
+**Quadratic Inequalities**: ax² + bx + c > 0, etc.
+- Find roots of corresponding equation
+- Test intervals between roots
+- Consider sign of leading coefficient
+
+**Sequences and Series**:
+
+**Arithmetic Progression (AP)**:
+- General term: aₙ = a + (n-1)d
+- Sum of n terms: Sₙ = n/2[2a + (n-1)d] = n/2(first term + last term)
+
+**Geometric Progression (GP)**:
+- General term: aₙ = ar^(n-1)
+- Sum of n terms: Sₙ = a(r^n - 1)/(r - 1) for r ≠ 1
+- Sum to infinity: S∞ = a/(1-r) for |r| < 1
+
+**Special Series**:
+- Sum of first n natural numbers: 1 + 2 + ... + n = n(n+1)/2
+- Sum of squares: 1² + 2² + ... + n² = n(n+1)(2n+1)/6
+- Sum of cubes: 1³ + 2³ + ... + n³ = [n(n+1)/2]²
+
+**Logarithms**:
+
+**Definition**: If aˣ = b, then x = log_a(b)
+- a is base, b is argument, x is logarithm
+
+**Properties**:
+- log_a(xy) = log_a(x) + log_a(y)
+- log_a(x/y) = log_a(x) - log_a(y)
+- log_a(x^n) = n·log_a(x)
+- log_a(a) = 1, log_a(1) = 0
+
+**Change of Base**: log_a(x) = log_b(x)/log_b(a)
+
+**Common Logarithms**:
+- Natural logarithm: ln(x) = log_e(x)
+- Common logarithm: log(x) = log₁₀(x)
+
+**Geometry (20)**:
+
+**Basic Concepts**:
+
+**Point**: Has no dimension, represents location
+**Line**: Extends infinitely in both directions
+**Ray**: Has one endpoint, extends infinitely in one direction
+**Line Segment**: Has two endpoints
+
+**Angles**:
+- **Acute**: < 90°
+- **Right**: = 90°
+- **Obtuse**: > 90° and < 180°
+- **Straight**: = 180°
+- **Reflex**: > 180° and < 360°
+- **Complete**: = 360°
+
+**Angle Relationships**:
+- **Complementary**: Sum = 90°
+- **Supplementary**: Sum = 180°
+- **Vertically opposite**: Equal when two lines intersect
+- **Corresponding**: Equal when parallel lines cut by transversal
+- **Alternate interior**: Equal when parallel lines cut by transversal
+
+**Triangles**:
+
+**Classification by Sides**:
+- **Equilateral**: All sides equal, all angles 60°
+- **Isosceles**: Two sides equal, two angles equal
+- **Scalene**: All sides different, all angles different
+
+**Classification by Angles**:
+- **Acute**: All angles < 90°
+- **Right**: One angle = 90°
+- **Obtuse**: One angle > 90°
+
+**Properties**:
+- Sum of angles = 180°
+- Exterior angle = sum of two non-adjacent interior angles
+- Sum of any two sides > third side (triangle inequality)
+
+**Area Formulas**:
+- General: Area = (1/2) × base × height
+- Heron's formula: Area = √[s(s-a)(s-b)(s-c)] where s = (a+b+c)/2
+- Equilateral: Area = (√3/4) × side²
+
+**Special Triangles**:
+- **30-60-90**: Sides in ratio 1 : √3 : 2
+- **45-45-90**: Sides in ratio 1 : 1 : √2
+
+**Quadrilaterals**:
+
+**Types**:
+- **Square**: All sides equal, all angles 90°
+- **Rectangle**: Opposite sides equal, all angles 90°
+- **Rhombus**: All sides equal, opposite angles equal
+- **Parallelogram**: Opposite sides parallel and equal
+- **Trapezium**: One pair of parallel sides
+
+**Properties**:
+- Sum of interior angles = 360°
+- Diagonals of rectangle are equal
+- Diagonals of rhombus bisect at right angles
+- Diagonals of square are equal and bisect at right angles
+
+**Area Formulas**:
+- Square: side²
+- Rectangle: length × width
+- Parallelogram: base × height
+- Rhombus: (1/2) × d₁ × d₂ (d₁, d₂ are diagonals)
+- Trapezium: (1/2) × (sum of parallel sides) × height
+
+**Circles**:
+
+**Basic Elements**:
+- **Radius**: Distance from center to circumference
+- **Diameter**: Twice the radius, passes through center
+- **Chord**: Line segment joining two points on circle
+- **Arc**: Part of circumference
+- **Sector**: Region bounded by two radii and arc
+- **Segment**: Region bounded by chord and arc
+
+**Formulas**:
+- Circumference: 2πr
+- Area: πr²
+- Arc length: (θ/360°) × 2πr (θ in degrees)
+- Sector area: (θ/360°) × πr²
+
+**Properties**:
+- Angle in semicircle = 90°
+- Angles subtended by same arc are equal
+- Tangent perpendicular to radius at point of contact
+- Two tangents from external point are equal
+
+**Coordinate Geometry**:
+
+**Distance Formula**: Distance between (x₁, y₁) and (x₂, y₂)
+$$d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$
+
+**Section Formula**: Point dividing line segment in ratio m:n
+$$\left(\frac{mx_2 + nx_1}{m + n}, \frac{my_2 + ny_1}{m + n}\right)$$
+
+**Midpoint Formula**: 
+$$\left(\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2}\right)$$
+
+**Slope of Line**: 
+$$m = \frac{y_2 - y_1}{x_2 - x_1}$$
+
+**Equation of Line**:
+- Point-slope form: y - y₁ = m(x - x₁)
+- Slope-intercept form: y = mx + c
+- Two-point form: (y - y₁)/(y₂ - y₁) = (x - x₁)/(x₂ - x₁)
+
+**Mensuration (15)**:
+
+**2D Figures**:
+
+**Triangle**: Area = (1/2) × base × height
+**Rectangle**: Area = length × width, Perimeter = 2(length + width)
+**Square**: Area = side², Perimeter = 4 × side
+**Circle**: Area = πr², Circumference = 2πr
+**Parallelogram**: Area = base × height
+**Rhombus**: Area = (1/2) × d₁ × d₂
+**Trapezium**: Area = (1/2) × (a + b) × h
+
+**3D Figures**:
+
+**Cube**: 
+- Volume = side³
+- Surface area = 6 × side²
+
+**Cuboid (Rectangular Prism)**:
+- Volume = length × width × height
+- Surface area = 2(lw + wh + lh)
+
+**Cylinder**:
+- Volume = πr²h
+- Curved surface area = 2πrh
+- Total surface area = 2πr(r + h)
+
+**Cone**:
+- Volume = (1/3)πr²h
+- Curved surface area = πrl (l = slant height)
+- Total surface area = πr(r + l)
+
+**Sphere**:
+- Volume = (4/3)πr³
+- Surface area = 4πr²
+
+**Hemisphere**:
+- Volume = (2/3)πr³
+- Curved surface area = 2πr²
+- Total surface area = 3πr²
+
+**Data Interpretation (10)**:
+
+**Types of Data Representation**:
+
+**Tables**: Data arranged in rows and columns
+- Read row and column headers carefully
+- Look for totals, subtotals, percentages
+- Calculate missing values using given information
+
+**Bar Charts**: 
+- **Vertical**: Categories on x-axis, values on y-axis
+- **Horizontal**: Categories on y-axis, values on x-axis
+- **Grouped**: Multiple bars for each category
+- **Stacked**: Parts of whole shown in single bar
+
+**Line Graphs**: Show trends over time
+- Identify increasing/decreasing trends
+- Find maximum/minimum points
+- Calculate rate of change between points
+
+**Pie Charts**: Show parts of whole
+- Each sector represents percentage of total
+- Central angle = (value/total) × 360°
+- Compare sectors by size
+
+**Histograms**: Show frequency distribution
+- Bars touch each other (continuous data)
+- Width represents class interval
+- Height represents frequency
+
+**Common Calculations**:
+
+**Percentage**: (Part/Whole) × 100
+**Percentage Change**: ((New - Old)/Old) × 100
+**Average**: Sum of values / Number of values
+**Ratio**: Comparison between quantities
+**Growth Rate**: ((Final - Initial)/Initial) × 100
+
+**Problem-Solving Tips**:
+
+**For Arithmetic**:
+1. Learn divisibility rules and multiplication tables
+2. Practice mental calculation techniques
+3. Use approximation for complex calculations
+4. Remember common fraction-decimal-percentage conversions
+5. Break complex problems into simpler steps
+
+**For Algebra**:
+1. Identify the type of equation/inequality
+2. Use appropriate solution method
+3. Check solutions by substitution
+4. Be careful with signs when manipulating inequalities
+5. Practice word problems to improve translation skills
+
+**For Geometry**:
+1. Draw diagrams for visualization
+2. Identify given information and what to find
+3. Use appropriate formulas and theorems
+4. Check if answer makes geometric sense
+5. Remember special triangle ratios
+
+**For Data Interpretation**:
+1. Read titles, labels, and legends carefully
+2. Understand scale and units
+3. Look for patterns and trends
+4. Use approximation for quick calculations
+5. Double-check calculations
+
+**GATE Tips**:
+- Time management crucial: allocate time based on marks
+- Use elimination method for multiple choice questions
+- Don't spend too much time on any single question
+- Practice mental math for speed
+- Learn shortcuts and tricks for common calculations
+- Review basic formulas regularly
+- Solve previous years' questions for pattern recognition
+- Focus on accuracy over speed initially, then build speed
+
+**Common Shortcuts**:
+
+**Multiplication**:
+- (a + b)(a - b) = a² - b²
+- (a + b)² = a² + 2ab + b²
+- (a - b)² = a² - 2ab + b²
+
+**Percentage**:
+- 10% of x = x/10
+- 25% of x = x/4
+- 50% of x = x/2
+
+**Squares**:
+- (50 + a)² = 2500 + 100a + a²
+- Numbers ending in 5: 25² = 625, 35² = 1225
+
+**Division**:
+- Divisibility by 4: Last two digits divisible by 4
+- Divisibility by 8: Last three digits divisible by 8
+- Divisibility by 25: Last two digits are 00, 25, 50, or 75
+
+---
+
 
 ---
 
 ## Volume 2: Core Computer Science Subjects
 
-### 1. Algorithms (334)
+# Volume 2: Core Computer Science Subjects
 
-### 1.1 Algorithm Design (8)
+## 1. Algorithms (334)
 
-**Key Concepts**: Paradigm choice (greedy, DP). **Tips**: Analyze optimality.
+### 1.1 Algorithm Design Paradigms (8)
 
-### 1.2 Algorithm Design Technique (9)
+**Key Concepts**: Systematic approach to problem-solving using algorithmic paradigms.
 
-**Key Concepts**: Divide-conquer, backtrack.
+#### Greedy Algorithms
+**Definition**: Makes locally optimal choices at each step with the hope of finding a global optimum.
 
-### 1.3 Asymptotic Notation (7)
+**Characteristics**:
+- **Greedy Choice Property**: A globally optimal solution can be arrived at by making a locally optimal (greedy) choice
+- **Optimal Substructure**: An optimal solution to the problem contains optimal solutions to subproblems
 
-**Key Concepts**: Big-O, Θ, Ω. **Formulas**: $f=O(g)$ if $\exists c, n_0$ such that $f(n) \leq c \cdot g(n)$ for all $n geq n_0$. **Tips**: Master theorem for rec $T(n)=a T(n/b) + f(n)$: compare $\log_b a$ vs $f$.
+**Algorithm Framework**:
+1. Make a greedy choice
+2. Reduce the problem to a smaller subproblem
+3. Solve the subproblem recursively/iteratively
 
-### 1.4 Asymptotic Notations (14)
+**Common Greedy Algorithms**:
+- **Dijkstra's Algorithm**: Single-source shortest paths
+- **Prim's & Kruskal's**: Minimum Spanning Tree
+- **Huffman Coding**: Data compression
+- **Activity Selection**: Maximum number of non-overlapping activities
+- **Fractional Knapsack**: Maximize value with weight constraint
 
-(See 1.3)
-
-### 1.5 Bellman Ford (2)
-
-**Key Concepts**: Shortest path with neg weights. **Algorithm**: Relax $|V|-1$ times; $O(VE)$. **Tips**: Detect neg cycles if extra relax.
-
-### 1.6 Binary Search (3)
-
-**Key Concepts**: Binary search is a fundamental divide-and-conquer algorithm for searching in sorted arrays. It repeatedly eliminates half of the search space, achieving logarithmic time complexity.
-
-**Prerequisites**: Array must be **sorted** (or have some monotonic property)
-
-**Basic Algorithm**:
-
-```cpp
-int binarySearch(int arr[], int n, int target) {
-    int low = 0, high = n - 1;
+**Activity Selection Problem**:
+```python
+def activity_selection(activities):
+    # Sort by finish time
+    activities.sort(key=lambda x: x[1])
+    selected = [activities[0]]
+    last_finish = activities[0][1]
     
-    while (low <= high) {
-        int mid = low + (high - low) / 2;  // Prevent overflow
-        
-        if (arr[mid] == target)
-            return mid;  // Found at index mid
-        else if (arr[mid] < target)
-            low = mid + 1;   // Search right half
-        else
-            high = mid - 1;  // Search left half
-    }
+    for i in range(1, len(activities)):
+        if activities[i][0] >= last_finish:  # Start time >= last finish
+            selected.append(activities[i])
+            last_finish = activities[i][1]
     
-    return -1;  // Not found
-}
+    return selected
 ```
 
-**Recursive Implementation**:
-
-```cpp
-int binarySearchRecursive(int arr[], int low, int high, int target) {
-    if (low > high)
-        return -1;  // Base case: not found
+**Fractional Knapsack**:
+```python
+def fractional_knapsack(items, capacity):
+    # Items: (value, weight)
+    items.sort(key=lambda x: x[0]/x[1], reverse=True)  # Sort by value/weight ratio
+    total_value = 0
+    current_weight = 0
     
-    int mid = low + (high - low) / 2;
+    for value, weight in items:
+        if current_weight + weight <= capacity:
+            total_value += value
+            current_weight += weight
+        else:
+            remaining = capacity - current_weight
+            fraction = remaining / weight
+            total_value += value * fraction
+            break
     
-    if (arr[mid] == target)
-        return mid;
-    else if (arr[mid] < target)
-        return binarySearchRecursive(arr, mid + 1, high, target);
-    else
-        return binarySearchRecursive(arr, low, mid - 1, target);
-}
+    return total_value
 ```
 
-**Complexity Analysis**:
+**When Greedy Fails**:
+- **0/1 Knapsack**: Cannot take fractions, greedy by value/weight ratio fails
+- **Traveling Salesman Problem**: Greedy nearest neighbor doesn't guarantee optimal solution
+- **Longest Path Problem**: Greedy choices can lead to suboptimal paths
 
-**Time Complexity**: $O(\log n)$
-- **Recurrence**: $T(n) = T(n/2) + O(1)$
-- **Master Theorem**: $a = 1, b = 2, f(n) = O(1)$
-- Since $\log_b a = 0$ and $f(n) = O(n^0)$, we have $T(n) = O(\log n)$
-- **Intuition**: Search space halved each iteration
-
-**Space Complexity**: 
-- **Iterative**: $O(1)$ - only uses constant extra space
-- **Recursive**: $O(\log n)$ - due to recursion stack depth
-
-**Loop Invariant**: At start of each iteration, if target exists in array, it must be in range `[low, high]`
-
-**Correctness Proof**:
-1. **Initialization**: Initially `low = 0, high = n-1`, so target (if exists) is in `[0, n-1]`
-2. **Maintenance**: Each iteration maintains invariant by eliminating half that cannot contain target
-3. **Termination**: Loop terminates when `low > high`, meaning target not found, or when `arr[mid] == target`
-
-**Advanced Variants**:
-
-**1. First Occurrence (Lower Bound)**:
-Find leftmost position where element appears
-
-```cpp
-int firstOccurrence(int arr[], int n, int target) {
-    int low = 0, high = n - 1, result = -1;
-    
-    while (low <= high) {
-        int mid = low + (high - low) / 2;
-        
-        if (arr[mid] == target) {
-            result = mid;
-            high = mid - 1;  // Continue searching left
-        }
-        else if (arr[mid] < target)
-            low = mid + 1;
-        else
-            high = mid - 1;
-    }
-    
-    return result;
-}
-```
-
-**2. Last Occurrence (Upper Bound - 1)**:
-Find rightmost position where element appears
-
-```cpp
-int lastOccurrence(int arr[], int n, int target) {
-    int low = 0, high = n - 1, result = -1;
-    
-    while (low <= high) {
-        int mid = low + (high - low) / 2;
-        
-        if (arr[mid] == target) {
-            result = mid;
-            low = mid + 1;  // Continue searching right
-        }
-        else if (arr[mid] < target)
-            low = mid + 1;
-        else
-            high = mid - 1;
-    }
-    
-    return result;
-}
-```
-
-**3. Lower Bound**: Smallest index where `arr[i] >= target`
-
-```cpp
-int lowerBound(int arr[], int n, int target) {
-    int low = 0, high = n;
-    
-    while (low < high) {
-        int mid = low + (high - low) / 2;
-        
-        if (arr[mid] < target)
-            low = mid + 1;
-        else
-            high = mid;
-    }
-    
-    return low;
-}
-```
-
-**4. Upper Bound**: Smallest index where `arr[i] > target`
-
-```cpp
-int upperBound(int arr[], int n, int target) {
-    int low = 0, high = n;
-    
-    while (low < high) {
-        int mid = low + (high - low) / 2;
-        
-        if (arr[mid] <= target)
-            low = mid + 1;
-        else
-            high = mid;
-    }
-    
-    return low;
-}
-```
-
-**Binary Search on Answer**:
-When answer space is monotonic, binary search on possible answers
-
-**Template**:
-```cpp
-int binarySearchOnAnswer(int low, int high) {
-    int result = -1;
-    
-    while (low <= high) {
-        int mid = low + (high - low) / 2;
-        
-        if (isPossible(mid)) {
-            result = mid;
-            // Depending on problem: search for better answer
-            high = mid - 1;  // or low = mid + 1
-        }
-        else {
-            low = mid + 1;   // or high = mid - 1
-        }
-    }
-    
-    return result;
-}
-```
-
-**Applications of Binary Search on Answer**:
-1. **Square root**: Find largest integer whose square ≤ n
-2. **Allocation problems**: Minimize maximum allocation
-3. **Capacity problems**: Find minimum capacity needed
-4. **Rate problems**: Find optimal rate/speed
-
-**Special Cases and Variations**:
-
-**1. Search in Rotated Sorted Array**:
-```cpp
-int searchRotated(int arr[], int n, int target) {
-    int low = 0, high = n - 1;
-    
-    while (low <= high) {
-        int mid = low + (high - low) / 2;
-        
-        if (arr[mid] == target)
-            return mid;
-        
-        // Check which half is sorted
-        if (arr[low] <= arr[mid]) {  // Left half sorted
-            if (target >= arr[low] && target < arr[mid])
-                high = mid - 1;
-            else
-                low = mid + 1;
-        }
-        else {  // Right half sorted
-            if (target > arr[mid] && target <= arr[high])
-                low = mid + 1;
-            else
-                high = mid - 1;
-        }
-    }
-    
-    return -1;
-}
-```
-
-**2. Search in 2D Matrix** (sorted row-wise and column-wise):
-```cpp
-bool searchMatrix(int matrix[][MAX_COL], int m, int n, int target) {
-    int row = 0, col = n - 1;  // Start from top-right
-    
-    while (row < m && col >= 0) {
-        if (matrix[row][col] == target)
-            return true;
-        else if (matrix[row][col] > target)
-            col--;  // Move left
-        else
-            row++;  // Move down
-    }
-    
-    return false;
-}
-```
-
-**3. Peak Element**: Element greater than its neighbors
-```cpp
-int findPeak(int arr[], int n) {
-    int low = 0, high = n - 1;
-    
-    while (low < high) {
-        int mid = low + (high - low) / 2;
-        
-        if (arr[mid] < arr[mid + 1])
-            low = mid + 1;  // Peak is on right
-        else
-            high = mid;     // Peak is on left or at mid
-    }
-    
-    return low;
-}
-```
-
-**Common Pitfalls and GATE Traps**:
-
-**1. Integer Overflow**:
-- **Wrong**: `mid = (low + high) / 2`
-- **Correct**: `mid = low + (high - low) / 2`
-- **Alternative**: `mid = (low + high) >>> 1` (unsigned right shift)
-
-**2. Infinite Loops**:
-- Ensure loop variables are updated correctly
-- For `while (low < high)`, use `high = mid` or `low = mid + 1`
-- For `while (low <= high)`, use `high = mid - 1` or `low = mid + 1`
-
-**3. Off-by-One Errors**:
-- Carefully handle boundary conditions
-- Test with arrays of size 1, 2, and edge cases
-
-**4. Termination Conditions**:
-- `low <= high` vs `low < high` depends on problem
-- Ensure loop terminates and gives correct answer
-
-**Performance Characteristics**:
-
-**Best Case**: $O(1)$ - target at middle position
-**Average Case**: $O(\log n)$ - expected number of comparisons
-**Worst Case**: $O(\log n)$ - target at end or not present
-
-**Comparison with Linear Search**:
-- **Linear Search**: $O(n)$ time, works on unsorted arrays
-- **Binary Search**: $O(\log n)$ time, requires sorted array
-- **Break-even**: For small arrays (n < 10), linear search might be faster due to simplicity
-
-**Memory Access Pattern**:
-- **Cache-friendly**: Accesses elements in predictable pattern
-- **Branch prediction**: Modern CPUs can predict branches well
-- **Prefetching**: CPU can prefetch likely-to-be-accessed elements
-
-**Problem-Solving Strategy**:
-
-**1. Identify if Binary Search Applicable**:
-- Array is sorted (or has monotonic property)
-- Search space can be divided into two parts
-- One part can be eliminated based on comparison
-
-**2. Choose Correct Variant**:
-- **Exact match**: Standard binary search
-- **First/last occurrence**: Modified binary search
-- **Range queries**: Lower and upper bounds
-- **Optimization problems**: Binary search on answer
-
-**3. Handle Edge Cases**:
-- Empty array
-- Single element array
-- Target smaller/larger than all elements
-- Duplicate elements
-
-**4. Verify Correctness**:
-- Test with small examples
-- Check boundary conditions
-- Ensure loop terminates
+**Proof Techniques**:
+1. **Exchange Argument**: Show that any optimal solution can be transformed into greedy solution without decreasing quality
+2. **Stay Ahead**: Show that greedy solution is at least as good as optimal solution at every step
+3. **Cut and Paste**: If greedy choice leads to suboptimal solution, replace part with better choice
 
 **GATE Tips**:
-- Time complexity is always $O(\log n)$ for binary search
-- Space complexity: $O(1)$ iterative, $O(\log n)$ recursive
-- Array must be sorted for standard binary search
-- Use `mid = low + (high - low) / 2` to avoid overflow
-- For first occurrence: continue searching left after finding
-- For last occurrence: continue searching right after finding
-- Binary search on answer: when answer space is monotonic
-- Rotated array: check which half is sorted first
-- Peak element: move towards the side with larger neighbor
+- Always verify greedy choice property and optimal substructure
+- Counterexamples are powerful tools to disprove greedy approaches
+- Time complexity often dominated by sorting step: O(n log n)
+- Space complexity typically O(1) or O(n) for storing results
 
-**Example Problems**:
+#### Dynamic Programming
+**Definition**: Solves problems by breaking them down into overlapping subproblems and storing solutions to avoid recomputation.
 
-**Example 1**: Find √n using binary search
-```cpp
-int sqrt(int n) {
-    if (n == 0) return 0;
+**Characteristics**:
+- **Optimal Substructure**: Optimal solution contains optimal solutions to subproblems
+- **Overlapping Subproblems**: Subproblems recur multiple times
+
+**Algorithm Framework**:
+1. Characterize structure of optimal solution
+2. Define value of optimal solution recursively
+3. Compute value bottom-up (tabulation) or top-down with memoization
+4. Construct optimal solution from computed information
+
+**Approaches**:
+- **Top-Down (Memoization)**: Recursive with caching
+- **Bottom-Up (Tabulation)**: Iterative, fill table systematically
+
+**Common DP Problems**:
+- **Matrix Chain Multiplication**: Minimize scalar multiplications
+- **Longest Common Subsequence (LCS)**: Find longest common subsequence
+- **0/1 Knapsack**: Maximize value with weight constraint
+- **All Pairs Shortest Paths (Floyd-Warshall)**: Shortest paths between all pairs
+- **Optimal Binary Search Tree**: Minimize expected search cost
+
+**Matrix Chain Multiplication**:
+```python
+def matrix_chain_order(p):
+    n = len(p) - 1  # Number of matrices
+    m = [[0] * (n + 1) for _ in range(n + 1)]
+    s = [[0] * (n + 1) for _ in range(n + 1)]
     
-    int low = 1, high = n, result = 0;
+    for l in range(2, n + 1):  # l = chain length
+        for i in range(1, n - l + 2):
+            j = i + l - 1
+            m[i][j] = float('inf')
+            for k in range(i, j):
+                cost = m[i][k] + m[k + 1][j] + p[i-1] * p[k] * p[j]
+                if cost < m[i][j]:
+                    m[i][j] = cost
+                    s[i][j] = k
     
-    while (low <= high) {
-        int mid = low + (high - low) / 2;
+    return m, s
+```
+
+**Longest Common Subsequence**:
+```python
+def lcs(X, Y):
+    m, n = len(X), len(Y)
+    dp = [[0] * (n + 1) for _ in range(m + 1)]
+    
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
+            if X[i-1] == Y[j-1]:
+                dp[i][j] = dp[i-1][j-1] + 1
+            else:
+                dp[i][j] = max(dp[i-1][j], dp[i][j-1])
+    
+    # Reconstruct LCS
+    lcs_str = []
+    i, j = m, n
+    while i > 0 and j > 0:
+        if X[i-1] == Y[j-1]:
+            lcs_str.append(X[i-1])
+            i -= 1
+            j -= 1
+        elif dp[i-1][j] > dp[i][j-1]:
+            i -= 1
+        else:
+            j -= 1
+    
+    return ''.join(reversed(lcs_str)), dp[m][n]
+```
+
+**Space Optimization Techniques**:
+- **Rolling Array**: Use only previous row/column instead of entire table
+- **State Compression**: Reduce dimensionality using bit masks
+- **Divide and Conquer DP**: For specific recurrence structures
+
+**GATE Tips**:
+- Identify if problem has optimal substructure and overlapping subproblems
+- Define state clearly: what does dp[i][j] represent?
+- Transition: How to compute current state from previous states?
+- Base cases: Initialize properly
+- Time complexity: O(states × transitions)
+- Space complexity: Can often be optimized from O(n²) to O(n)
+
+#### Comparison: Greedy vs DP
+| **Aspect** | **Greedy** | **Dynamic Programming** |
+|------------|------------|-------------------------|
+| **Choice** | Makes irrevocable choice at each step | Considers all choices, picks optimal |
+| **Subproblems** | No overlapping subproblems | Has overlapping subproblems |
+| **Optimality** | Not always optimal | Always optimal (when applicable) |
+| **Complexity** | Usually faster: O(n log n) | Slower: O(n²) to O(n³) |
+| **Memory** | O(1) or O(n) | O(n²) or more |
+| **Examples** | Dijkstra, MST | Knapsack, LCS, Matrix Chain |
+
+### 1.2 Algorithm Design Techniques (9)
+
+#### Divide and Conquer
+**Definition**: Breaks problem into independent subproblems of same type, solves them recursively, and combines solutions.
+
+**Algorithm Framework**:
+1. **Divide**: Partition problem into smaller subproblems
+2. **Conquer**: Solve subproblems recursively (base case if small enough)
+3. **Combine**: Merge solutions of subproblems into final solution
+
+**Recurrence Relations**:
+- General form: T(n) = aT(n/b) + f(n)
+- a = number of subproblems
+- n/b = size of each subproblem
+- f(n) = cost of divide and combine steps
+
+**Common Algorithms**:
+- **Merge Sort**: T(n) = 2T(n/2) + O(n) = O(n log n)
+- **Quick Sort**: T(n) = T(k) + T(n-k-1) + O(n), average O(n log n), worst O(n²)
+- **Binary Search**: T(n) = T(n/2) + O(1) = O(log n)
+- **Strassen's Matrix Multiplication**: T(n) = 7T(n/2) + O(n²) = O(n^2.81)
+- **Closest Pair of Points**: T(n) = 2T(n/2) + O(n log n) = O(n log n)
+
+**Merge Sort Implementation**:
+```python
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    
+    mid = len(arr) // 2
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+    
+    return merge(left, right)
+
+def merge(left, right):
+    result = []
+    i = j = 0
+    
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            result.append(left[i])
+            i += 1
+        else:
+            result.append(right[j])
+            j += 1
+    
+    result.extend(left[i:])
+    result.extend(right[j:])
+    return result
+```
+
+**Quick Sort Implementation**:
+```python
+def quick_sort(arr, low=0, high=None):
+    if high is None:
+        high = len(arr) - 1
+    
+    if low < high:
+        pi = partition(arr, low, high)
+        quick_sort(arr, low, pi - 1)
+        quick_sort(arr, pi + 1, high)
+
+def partition(arr, low, high):
+    pivot = arr[high]  # Choose last element as pivot
+    i = low - 1  # Index of smaller element
+    
+    for j in range(low, high):
+        if arr[j] <= pivot:
+            i += 1
+            arr[i], arr[j] = arr[j], arr[i]
+    
+    arr[i + 1], arr[high] = arr[high], arr[i + 1]
+    return i + 1
+```
+
+**Master Theorem Applications**:
+| **Case** | **Condition** | **Solution** | **Examples** |
+|----------|---------------|--------------|--------------|
+| **Case 1** | f(n) = O(n^log_b(a-ε)) | T(n) = Θ(n^log_b(a)) | Merge Sort: f(n)=O(n), log₂2=1 |
+| **Case 2** | f(n) = Θ(n^log_b(a)) | T(n) = Θ(n^log_b(a) log n) | Binary Search: f(n)=O(1), log₂1=0 |
+| **Case 3** | f(n) = Ω(n^log_b(a+ε)) and af(n/b) ≤ cf(n) | T(n) = Θ(f(n)) | Strassen: f(n)=O(n²), log₂7≈2.81 |
+
+#### Backtracking
+**Definition**: Systematic way to iterate through all possible configurations of a problem, abandoning ("backtracking") partial candidates that cannot lead to valid solutions.
+
+**Algorithm Framework**:
+1. Start with empty solution
+2. Add next candidate to partial solution
+3. Check if partial solution can lead to valid solution
+4. If yes, continue recursively
+5. If no, backtrack and try next candidate
+6. If all candidates exhausted, backtrack further
+
+**Key Components**:
+- **Solution Vector**: x[1..n] represents current partial solution
+- **Constraint Function**: Checks if partial solution is promising
+- **Objective Function**: Evaluates quality of complete solution
+- **Bounding Function**: Prunes unpromising branches
+
+**Common Algorithms**:
+- **N-Queens Problem**: Place N queens on NxN chessboard
+- **Graph Coloring**: Color vertices with minimum colors
+- **Subset Sum**: Find subset with given sum
+- **Hamiltonian Cycle**: Find cycle visiting each vertex exactly once
+- **Sudoku Solver**: Fill Sudoku grid following rules
+
+**N-Queens Implementation**:
+```python
+def solve_n_queens(n):
+    solutions = []
+    board = [-1] * n  # board[i] = column of queen in row i
+    
+    def is_safe(row, col):
+        for r in range(row):
+            c = board[r]
+            if c == col or abs(r - row) == abs(c - col):
+                return False
+        return True
+    
+    def backtrack(row):
+        if row == n:
+            solutions.append(board.copy())
+            return
         
-        if (mid <= n / mid) {  // Avoid overflow: mid * mid <= n
-            result = mid;
-            low = mid + 1;
-        }
-        else {
-            high = mid - 1;
-        }
-    }
+        for col in range(n):
+            if is_safe(row, col):
+                board[row] = col
+                backtrack(row + 1)
+                board[row] = -1  # Backtrack
     
-    return result;
-}
+    backtrack(0)
+    return solutions
 ```
 
-**Example 2**: Count occurrences in sorted array
-```cpp
-int countOccurrences(int arr[], int n, int target) {
-    int first = firstOccurrence(arr, n, target);
-    if (first == -1) return 0;
-    
-    int last = lastOccurrence(arr, n, target);
-    return last - first + 1;
-}
-```
+**Branch and Bound Optimization**:
+- **Lower Bound**: Minimum possible cost from current state
+- **Upper Bound**: Best solution found so far
+- **Pruning**: Skip branches where lower bound ≥ upper bound
 
-**Example 3**: Minimum in rotated sorted array
-```cpp
-int findMin(int arr[], int n) {
-    int low = 0, high = n - 1;
-    
-    while (low < high) {
-        int mid = low + (high - low) / 2;
-        
-        if (arr[mid] > arr[high])
-            low = mid + 1;  // Minimum is in right half
-        else
-            high = mid;     // Minimum is in left half or at mid
-    }
-    
-    return arr[low];
-}
-```
+**GATE Tips**:
+- Time complexity often exponential: O(b^d) where b=branching factor, d=depth
+- Space complexity: O(n) for recursion stack
+- Backtracking is complete (finds all solutions) but not efficient for large n
+- Branch and bound improves efficiency but still exponential in worst case
+- Look for symmetry and pruning opportunities to reduce search space
 
-**Applications in Computer Science**:
-1. **Database indexing**: B-trees use binary search principles
-2. **Memory management**: Finding free blocks
-3. **Computational geometry**: Point location, range queries
-4. **Machine learning**: Hyperparameter tuning
-5. **Game development**: Collision detection, pathfinding
-6. **Compiler optimization**: Symbol table lookups
-7. **Network protocols**: Congestion control algorithms
+#### Transform and Conquer
+**Definition**: Transforms problem into a different representation that is easier to solve.
 
-### 1.7 Bitonic Array (1)
-
-**Key Concepts**: A bitonic array first increases then decreases (or is entirely increasing/decreasing). Special binary search techniques can find elements efficiently.
-
-**Definition**: Array is **bitonic** if:
-- Elements first increase up to peak, then decrease, OR
-- Entirely increasing (peak at end), OR  
-- Entirely decreasing (peak at start)
-- Can be rotated version of above
+**Techniques**:
+- **Instance Simplification**: Reduce to simpler instance of same problem
+- **Representation Change**: Change data representation
+- **Problem Reduction**: Reduce to different problem
 
 **Examples**:
-- `[1, 3, 8, 12, 4, 2]` - increases to 12, then decreases
-- `[1, 2, 3, 4, 5]` - entirely increasing
-- `[5, 4, 3, 2, 1]` - entirely decreasing
-- `[4, 2, 1, 3, 8, 12]` - rotated bitonic
+- **Presorting**: Sort array before processing (e.g., finding duplicates)
+- **AVL Trees**: Self-balancing BSTs for efficient operations
+- **Fast Fourier Transform (FFT)**: Converts convolution to multiplication
+- **Reduction to Max Flow**: Many problems can be reduced to max flow
 
-**Finding Peak Element**: $O(\log n)$
-```cpp
-int findPeak(int arr[], int n) {
-    int low = 0, high = n - 1;
+### 1.3-1.4 Asymptotic Notation (21)
+
+#### Formal Definitions
+**Big-O Notation (Upper Bound)**:
+- **Definition**: f(n) = O(g(n)) if ∃ positive constants c and n₀ such that 0 ≤ f(n) ≤ c·g(n) for all n ≥ n₀
+- **Intuition**: f(n) grows no faster than g(n) asymptotically
+- **Example**: 3n² + 2n + 1 = O(n²)
+
+**Big-Ω Notation (Lower Bound)**:
+- **Definition**: f(n) = Ω(g(n)) if ∃ positive constants c and n₀ such that 0 ≤ c·g(n) ≤ f(n) for all n ≥ n₀
+- **Intuition**: f(n) grows at least as fast as g(n) asymptotically
+- **Example**: 3n² + 2n + 1 = Ω(n²)
+
+**Big-Θ Notation (Tight Bound)**:
+- **Definition**: f(n) = Θ(g(n)) if ∃ positive constants c₁, c₂ and n₀ such that 0 ≤ c₁·g(n) ≤ f(n) ≤ c₂·g(n) for all n ≥ n₀
+- **Intuition**: f(n) grows exactly like g(n) asymptotically
+- **Example**: 3n² + 2n + 1 = Θ(n²)
+
+**Little-o Notation (Strict Upper Bound)**:
+- **Definition**: f(n) = o(g(n)) if ∀ positive constants c > 0, ∃ n₀ such that 0 ≤ f(n) < c·g(n) for all n ≥ n₀
+- **Intuition**: f(n) grows strictly slower than g(n)
+- **Example**: n = o(n²), but n² ≠ o(n²)
+
+**Little-ω Notation (Strict Lower Bound)**:
+- **Definition**: f(n) = ω(g(n)) if ∀ positive constants c > 0, ∃ n₀ such that 0 ≤ c·g(n) < f(n) for all n ≥ n₀
+- **Intuition**: f(n) grows strictly faster than g(n)
+- **Example**: n² = ω(n), but n² ≠ ω(n²)
+
+#### Properties and Theorems
+**Transitivity**:
+- If f = O(g) and g = O(h), then f = O(h)
+- If f = Ω(g) and g = Ω(h), then f = Ω(h)
+- If f = Θ(g) and g = Θ(h), then f = Θ(h)
+
+**Reflexivity**:
+- f = O(f), f = Ω(f), f = Θ(f)
+
+**Symmetry**:
+- f = Θ(g) iff g = Θ(f)
+- f = O(g) iff g = Ω(f)
+
+**Common Function Growth Rates**:
+| **Order** | **Function** | **Example Algorithm** |
+|-----------|--------------|------------------------|
+| O(1) | Constant | Array access |
+| O(log log n) | Double logarithmic | Van Emde Boas tree |
+| O(log n) | Logarithmic | Binary search |
+| O(√n) | Square root | Trial division primality |
+| O(n) | Linear | Linear search |
+| O(n log n) | Linearithmic | Merge sort, Heap sort |
+| O(n²) | Quadratic | Bubble sort, Insertion sort |
+| O(n³) | Cubic | Matrix multiplication (naive) |
+| O(2ⁿ) | Exponential | Subset generation |
+| O(n!) | Factorial | Permutation generation |
+
+#### Master Theorem (Detailed)
+**Standard Form**: T(n) = aT(n/b) + f(n), where a ≥ 1, b > 1
+
+**Case 1**: If f(n) = O(n^log_b(a-ε)) for some ε > 0
+- **Solution**: T(n) = Θ(n^log_b(a))
+- **Example**: T(n) = 2T(n/2) + O(1) → a=2, b=2, log₂2=1, f(n)=O(1)=O(n^0)
+  Since 0 < 1, T(n) = Θ(n)
+
+**Case 2**: If f(n) = Θ(n^log_b(a) log^k n) for k ≥ 0
+- **Solution**: T(n) = Θ(n^log_b(a) log^(k+1) n)
+- **Example**: T(n) = 2T(n/2) + O(n) → a=2, b=2, log₂2=1, f(n)=O(n)=Θ(n^1)
+  T(n) = Θ(n log n)
+
+**Case 3**: If f(n) = Ω(n^log_b(a+ε)) for some ε > 0, and af(n/b) ≤ cf(n) for some c < 1 and large n
+- **Solution**: T(n) = Θ(f(n))
+- **Example**: T(n) = T(n/2) + O(n) → a=1, b=2, log₂1=0, f(n)=O(n)=Ω(n^0+ε)
+  T(n) = Θ(n)
+
+**Extensions**:
+- **Akra-Bazzi Method**: For recurrences like T(n) = Σa_iT(b_in) + f(n)
+- **Recursion Tree Method**: Visualize and sum costs at each level
+- **Substitution Method**: Guess solution and prove by induction
+
+#### Practical Analysis Techniques
+**Amortized Analysis**:
+- **Aggregate Method**: Total cost of n operations / n
+- **Accounting Method**: Assign amortized cost to operations
+- **Potential Method**: Define potential function Φ, amortized cost = actual cost + ΔΦ
+
+**Example - Dynamic Array**:
+- Insert operation: O(1) amortized
+- When array full, double size: O(n) operation
+- Amortized cost: 3 per insertion (2 for insertion, 1 stored for future resizing)
+
+**Probabilistic Analysis**:
+- **Expected Running Time**: Average over all possible inputs
+- **Randomized Algorithms**: Use randomness to achieve good expected performance
+
+**GATE Tips**:
+- Always specify which case of Master Theorem you're using
+- For Θ notation, both O and Ω bounds must hold
+- When comparing functions, use limits: lim(n→∞) f(n)/g(n)
+- Common mistakes: confusing O with Θ, ignoring lower-order terms
+- For recursive algorithms, write recurrence first, then solve
+- For iterative algorithms, count loop iterations and operations per iteration
+
+### 1.5 Bellman-Ford Algorithm (2)
+
+**Key Concepts**: Single-source shortest paths algorithm that handles negative edge weights and detects negative cycles.
+
+**Problem Statement**: Given weighted directed graph G = (V, E) with weight function w: E → ℝ, and source vertex s, find shortest paths from s to all other vertices.
+
+**Algorithm**:
+```python
+def bellman_ford(graph, source):
+    # Initialize distances
+    dist = {v: float('inf') for v in graph.vertices}
+    dist[source] = 0
+    predecessor = {v: None for v in graph.vertices}
     
-    while (low < high) {
-        int mid = low + (high - low) / 2;
-        
-        if (arr[mid] < arr[mid + 1])
-            low = mid + 1;  // Peak is on right
-        else
-            high = mid;     // Peak is on left or at mid
-    }
+    # Relax all edges |V|-1 times
+    for i in range(len(graph.vertices) - 1):
+        for u, v, weight in graph.edges:
+            if dist[u] + weight < dist[v]:
+                dist[v] = dist[u] + weight
+                predecessor[v] = u
     
-    return low;  // Index of peak
-}
+    # Check for negative cycles
+    for u, v, weight in graph.edges:
+        if dist[u] + weight < dist[v]:
+            raise ValueError("Graph contains negative cycle")
+    
+    return dist, predecessor
 ```
 
-**Searching in Bitonic Array**: $O(\log n)$
-```cpp
-int bitonicSearch(int arr[], int n, int target) {
-    int peak = findPeak(arr, n);
-    
-    // Search in increasing part [0...peak]
-    int result = binarySearch(arr, 0, peak, target);
-    if (result != -1) return result;
-    
-    // Search in decreasing part [peak+1...n-1]
-    return binarySearchDescending(arr, peak + 1, n - 1, target);
-}
+**Correctness Proof**:
+- **Lemma 1**: After k iterations, dist[v] is at most the weight of any path from s to v with at most k edges
+- **Lemma 2**: If no negative cycles reachable from s, then after |V|-1 iterations, dist[v] = δ(s,v) for all v
+- **Lemma 3**: If there exists a negative cycle reachable from s, the algorithm detects it
 
-int binarySearchDescending(int arr[], int low, int high, int target) {
-    while (low <= high) {
-        int mid = low + (high - low) / 2;
-        
-        if (arr[mid] == target) return mid;
-        else if (arr[mid] > target) low = mid + 1;   // Reverse logic
-        else high = mid - 1;
-    }
-    return -1;
-}
+**Time Complexity**: O(VE)
+- |V|-1 iterations
+- Each iteration relaxes all |E| edges
+- Negative cycle check: O(E)
+
+**Space Complexity**: O(V)
+- Distance array: O(V)
+- Predecessor array: O(V)
+
+**Optimizations**:
+- **Early Termination**: Stop if no updates in an iteration
+- **Queue-based (SPFA)**: Only relax edges from vertices whose distance changed
+  - Average case: O(E)
+  - Worst case: O(VE)
+
+**Applications**:
+- **Distance Vector Routing**: Network routing protocols
+- **Currency Arbitrage**: Detect profitable currency exchange cycles
+- **Difference Constraints**: Solve systems of inequalities
+- **Job Scheduling**: Find feasible schedule with precedence constraints
+
+**Comparison with Dijkstra**:
+| **Aspect** | **Bellman-Ford** | **Dijkstra** |
+|------------|------------------|--------------|
+| **Negative Weights** | Handles negative weights | Fails with negative weights |
+| **Negative Cycles** | Detects negative cycles | Cannot detect |
+| **Time Complexity** | O(VE) | O((V+E)log V) with heap |
+| **Data Structure** | Simple arrays | Priority queue |
+| **Use Case** | General graphs | Non-negative weights |
+
+**GATE Tips**:
+- Bellman-Ford can handle negative weights but not negative cycles (detects them)
+- Requires |V|-1 iterations for correctness
+- One extra iteration needed to detect negative cycles
+- Space complexity is O(V), better than Floyd-Warshall's O(V²)
+- For sparse graphs, better than Floyd-Warshall; for dense graphs, worse
+- Can be parallelized easily across edges
+
+### 1.6 Binary Search (Extended Comprehensive Coverage)
+
+#### Core Concepts and Variations
+**Fundamental Principle**: Works on sorted arrays or monotonic functions by repeatedly dividing search space in half.
+
+**Mathematical Foundation**:
+- **Monotonicity**: Function f is monotonic if f(i) ≤ f(j) for all i < j (non-decreasing) or f(i) ≥ f(j) (non-increasing)
+- **Search Space**: [low, high] where solution must lie
+- **Invariant**: At each step, if solution exists, it lies within current search space
+
+**Termination Conditions**:
+- **Standard (Exact Match)**: `while (low <= high)`
+- **Lower/Upper Bound**: `while (low < high)`
+- **Floating Point**: `while (high - low > epsilon)`
+
+#### Advanced Variations and Applications
+
+**1. Binary Search on Real Numbers**
+```python
+def sqrt(x, epsilon=1e-7):
+    if x < 0:
+        raise ValueError("Cannot compute square root of negative number")
+    if x == 0:
+        return 0
+    
+    low, high = 0, max(1, x)
+    
+    while high - low > epsilon:
+        mid = (low + high) / 2
+        if mid * mid <= x:
+            low = mid
+        else:
+            high = mid
+    
+    return (low + high) / 2
 ```
 
-**Applications**: Signal processing, optimization problems where function has single peak
+**2. Binary Search on Unimodal Functions**
+```python
+def find_max_unimodal(f, low, high, epsilon=1e-7):
+    while high - low > epsilon:
+        mid1 = low + (high - low) / 3
+        mid2 = high - (high - low) / 3
+        
+        if f(mid1) < f(mid2):
+            low = mid1
+        else:
+            high = mid2
+    
+    return (low + high) / 2
+```
 
-### 1.8 Depth First Search (1)
+**3. Binary Search with Predicate Functions**
+```python
+def binary_search_predicate(predicate, low, high):
+    """
+    Find smallest x such that predicate(x) is True
+    Predicate must be of form: F, F, ..., F, T, T, ..., T
+    """
+    while low < high:
+        mid = low + (high - low) // 2
+        if predicate(mid):
+            high = mid
+        else:
+            low = mid + 1
+    
+    return low if predicate(low) else -1
+```
 
-**Key Concepts**: Stack traversal, recursion. **Tips**: For cycles, components.
+**4. Binary Search in Rotated Sorted Arrays with Duplicates**
+```python
+def search_rotated_with_duplicates(nums, target):
+    low, high = 0, len(nums) - 1
+    
+    while low <= high:
+        mid = low + (high - low) // 2
+        
+        if nums[mid] == target:
+            return True
+        
+        # Handle duplicates
+        if nums[low] == nums[mid] == nums[high]:
+            low += 1
+            high -= 1
+        # Left half is sorted
+        elif nums[low] <= nums[mid]:
+            if nums[low] <= target < nums[mid]:
+                high = mid - 1
+            else:
+                low = mid + 1
+        # Right half is sorted
+        else:
+            if nums[mid] < target <= nums[high]:
+                low = mid + 1
+            else:
+                high = mid - 1
+    
+    return False
+```
 
-### 1.9 Dijkstras Algorithm (6)
+**5. Binary Search for K-th Smallest Element in Sorted Matrix**
+```python
+def kth_smallest(matrix, k):
+    n = len(matrix)
+    low, high = matrix[0][0], matrix[n-1][n-1]
+    
+    while low < high:
+        mid = low + (high - low) // 2
+        count = 0
+        j = n - 1
+        
+        # Count elements <= mid
+        for i in range(n):
+            while j >= 0 and matrix[i][j] > mid:
+                j -= 1
+            count += j + 1
+        
+        if count < k:
+            low = mid + 1
+        else:
+            high = mid
+    
+    return low
+```
 
-**Key Concepts**: Greedy shortest path, non-neg weights. **Algorithm**: Priority queue, $O((V+E)log V)$. **Tips**: Fibonacci heap opt.
+#### Mathematical Analysis and Proofs
 
-### 1.10 Directed Graph (1)
+**Loop Invariant Proof**:
+For standard binary search:
+- **Invariant**: At start of each iteration, if target exists in array, it must be in range [low, high]
+- **Initialization**: Initially low=0, high=n-1, so target (if exists) is in [0, n-1]
+- **Maintenance**: Each iteration maintains invariant by eliminating half that cannot contain target
+- **Termination**: Loop terminates when low > high (target not found) or when arr[mid] == target
 
-**Key Concepts**: Arcs, topological order.
+**Time Complexity Analysis**:
+- **Recurrence**: T(n) = T(n/2) + O(1)
+- **Master Theorem**: a=1, b=2, f(n)=O(1)
+  - log_b(a) = log₂(1) = 0
+  - f(n) = O(n^0), so Case 2 applies
+  - T(n) = Θ(log n)
+- **Intuitive**: Each iteration halves search space, so after k iterations, space size = n/2^k
+  - When n/2^k = 1, k = log₂(n)
+
+**Space Complexity**:
+- **Iterative**: O(1) - only maintains low, high, mid pointers
+- **Recursive**: O(log n) - recursion depth equals number of iterations
+
+#### GATE-Specific Problem Patterns
+
+**Pattern 1: Minimize Maximum/Maximize Minimum**
+```python
+def minimize_max_allocation(pages, students):
+    def can_allocate(max_pages):
+        current_sum = 0
+        student_count = 1
+        
+        for pages_i in pages:
+            if pages_i > max_pages:
+                return False
+            if current_sum + pages_i > max_pages:
+                student_count += 1
+                current_sum = pages_i
+                if student_count > students:
+                    return False
+            else:
+                current_sum += pages_i
+        
+        return True
+    
+    low, high = max(pages), sum(pages)
+    result = high
+    
+    while low <= high:
+        mid = (low + high) // 2
+        if can_allocate(mid):
+            result = mid
+            high = mid - 1
+        else:
+            low = mid + 1
+    
+    return result
+```
+
+**Pattern 2: Find Transition Point**
+```python
+def find_transition_point(arr):
+    # Find index where 0s end and 1s start
+    low, high = 0, len(arr) - 1
+    
+    while low < high:
+        mid = low + (high - low) // 2
+        if arr[mid] == 0:
+            low = mid + 1
+        else:
+            high = mid
+    
+    return low if arr[low] == 1 else -1
+```
+
+**Pattern 3: Binary Search on Answer with Constraints**
+```python
+def find_min_capacity(weights, days):
+    def can_ship(capacity):
+        current_load = 0
+        day_count = 1
+        
+        for weight in weights:
+            if current_load + weight > capacity:
+                day_count += 1
+                current_load = weight
+                if day_count > days:
+                    return False
+            else:
+                current_load += weight
+        
+        return True
+    
+    low, high = max(weights), sum(weights)
+    
+    while low < high:
+        mid = (low + high) // 2
+        if can_ship(mid):
+            high = mid
+        else:
+            low = mid + 1
+    
+    return low
+```
+
+#### Common Pitfalls and Solutions
+
+**Pitfall 1: Integer Overflow in Mid Calculation**
+- **Wrong**: `mid = (low + high) // 2`
+- **Correct**: `mid = low + (high - low) // 2`
+- **Alternative**: `mid = (low + high) >>> 1` (bitwise right shift)
+
+**Pitfall 2: Infinite Loops**
+- **Cause**: Incorrect update of low/high bounds
+- **Solution**: Ensure progress in each iteration
+- **Pattern**:
+  - For `while (low <= high)`: always update low = mid + 1 or high = mid - 1
+  - For `while (low < high)`: use low = mid + 1 or high = mid
+
+**Pitfall 3: Off-by-One Errors**
+- **Test Cases**: Empty array, single element, target at boundaries
+- **Solution**: Write test cases for edge conditions:
+  - n = 0, n = 1
+  - target < all elements, target > all elements
+  - target at first/last position
+  - duplicate elements
+
+**Pitfall 4: Incorrect Termination Condition**
+- **Lower Bound**: Needs `while (low < high)` to avoid infinite loops
+- **Exact Match**: Needs `while (low <= high)` to check middle element
+- **Solution**: Match termination condition to problem requirements
+
+#### Advanced Applications in Computer Science
+
+**1. Database Indexing (B+ Trees)**
+- Binary search principles applied to disk-based data structures
+- Each node contains multiple keys, binary search within node
+- Time complexity: O(log_B N) where B = branching factor
+
+**2. Memory Management**
+- **Buddy System**: Binary search for free blocks of appropriate size
+- **Slab Allocator**: Binary search for object size classes
+- **Virtual Memory**: Binary search in page tables
+
+**3. Computational Geometry**
+- **Point Location**: Binary search in planar subdivisions
+- **Range Queries**: k-d trees use binary search principles
+- **Convex Hull**: Binary search for tangent points
+
+**4. Machine Learning**
+- **Hyperparameter Tuning**: Binary search for optimal learning rate
+- **Cross-Validation**: Binary search for optimal model complexity
+- **Feature Selection**: Binary search for minimal feature set
+
+**5. Network Protocols**
+- **TCP Congestion Control**: Binary search for optimal window size
+- **Routing**: Binary search in routing tables
+- **Load Balancing**: Binary search for optimal server assignment
+
+#### GATE Exam Strategy
+
+**Time Complexity Questions**:
+- Always O(log n) for standard binary search
+- For modified versions, analyze carefully:
+  - Binary search on matrix: O(n log n) vs O(log n²) = O(log n)
+  - With duplicates: Worst case O(n) when all elements same
+
+**Space Complexity Questions**:
+- Iterative: O(1)
+- Recursive: O(log n) due to call stack
+- With additional data structures: O(n) or more
+
+**Problem Identification**:
+1. **Is the array sorted?** If yes, binary search likely applicable
+2. **Is there a monotonic property?** If function is monotonic, binary search on answer
+3. **Can search space be divided?** If yes/no question can eliminate half, binary search applicable
+4. **Are we optimizing something?** Minimize maximum or maximize minimum often uses binary search
+
+**Common GATE Question Types**:
+- Time complexity of given binary search implementation
+- Correct implementation of binary search variant
+- Finding bugs in binary search code
+- Application to specific problems (allocation, capacity, etc.)
+- Comparison with other search algorithms
+
+### 1.7 Bitonic Array Search (1)
+
+**Extended Coverage**:
+
+#### Definition and Properties
+**Bitonic Sequence**: A sequence that first increases monotonically and then decreases monotonically, or vice versa.
+
+**Mathematical Definition**: Array A[0..n-1] is bitonic if there exists an index k (0 ≤ k < n) such that:
+- A[0] ≤ A[1] ≤ ... ≤ A[k] ≥ A[k+1] ≥ ... ≥ A[n-1] (increasing-then-decreasing)
+- OR A[0] ≥ A[1] ≥ ... ≥ A[k] ≤ A[k+1] ≤ ... ≤ A[n-1] (decreasing-then-increasing)
+
+**Special Cases**:
+- **Entirely Increasing**: k = n-1 (peak at end)
+- **Entirely Decreasing**: k = 0 (peak at start)
+- **Rotated Bitonic**: Circular shift of bitonic sequence
+- **Strict Bitonic**: No equal adjacent elements
+
+**Properties**:
+- **Single Peak/Valley**: Exactly one local maximum/minimum
+- **Unimodal**: Function increases to peak, then decreases
+- **Searchable in O(log n)**: Can find peak and search both halves
+
+#### Algorithms and Implementations
+
+**1. Finding Peak Element in Bitonic Array**
+```python
+def find_peak_bitonic(arr):
+    low, high = 0, len(arr) - 1
+    
+    while low < high:
+        mid = low + (high - low) // 2
+        
+        # If mid element is greater than next element
+        if arr[mid] > arr[mid + 1]:
+            high = mid  # Peak is in left half including mid
+        else:
+            low = mid + 1  # Peak is in right half
+    
+    return low  # low == high is the peak index
+```
+
+**2. Searching in Bitonic Array**
+```python
+def bitonic_search(arr, target):
+    n = len(arr)
+    if n == 0:
+        return -1
+    
+    # Find peak element
+    peak = find_peak_bitonic(arr)
+    
+    # Search in increasing part [0...peak]
+    result = binary_search(arr, 0, peak, target)
+    if result != -1:
+        return result
+    
+    # Search in decreasing part [peak+1...n-1]
+    return binary_search_descending(arr, peak + 1, n - 1, target)
+
+def binary_search_descending(arr, low, high, target):
+    while low <= high:
+        mid = low + (high - low) // 2
+        
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] > target:
+            low = mid + 1  # Search right in decreasing array
+        else:
+            high = mid - 1  # Search left in decreasing array
+    
+    return -1
+```
+
+**3. Searching in Rotated Bitonic Array**
+```python
+def rotated_bitonic_search(arr, target):
+    n = len(arr)
+    if n == 0:
+        return -1
+    
+    # Find the rotation point (minimum element)
+    min_idx = find_min_rotated(arr)
+    
+    # Determine which half is bitonic
+    if arr[0] <= arr[min_idx - 1]:  # Left half is bitonic
+        if min_idx > 0 and arr[0] <= target <= arr[min_idx - 1]:
+            return bitonic_search(arr[:min_idx], target)
+    
+    # Right half must be bitonic
+    if min_idx < n and arr[min_idx] <= target <= arr[-1]:
+        result = bitonic_search(arr[min_idx:], target)
+        return min_idx + result if result != -1 else -1
+    
+    return -1
+
+def find_min_rotated(arr):
+    low, high = 0, len(arr) - 1
+    
+    while low < high:
+        mid = low + (high - low) // 2
+        
+        if arr[mid] > arr[high]:
+            low = mid + 1
+        else:
+            high = mid
+    
+    return low
+```
+
+#### Mathematical Analysis
+
+**Time Complexity**:
+- **Finding Peak**: O(log n) - each step eliminates half the array
+- **Searching**: O(log n) for each half, total O(log n)
+- **Rotated Version**: O(log n) for finding rotation + O(log n) for search = O(log n)
+
+**Space Complexity**: O(1) for iterative implementations
+
+**Correctness Proof**:
+- **Peak Finding**: 
+  - Base case: n=1, peak is the only element
+  - Inductive step: If arr[mid] > arr[mid+1], peak is in left half; else in right half
+  - Termination: low == high when peak found
+
+- **Search Correctness**:
+  - Increasing part: Standard binary search works
+  - Decreasing part: Modified binary search with reversed comparisons
+  - One of the parts must contain target if it exists
+
+#### Applications
+
+**1. Signal Processing**:
+- **Peak Detection**: Finding maximum signal strength
+- **Edge Detection**: Finding transitions in signals
+- **Pattern Recognition**: Identifying characteristic shapes
+
+**2. Optimization Problems**:
+- **Unimodal Function Optimization**: Finding maximum/minimum
+- **Resource Allocation**: Optimal distribution with single peak efficiency
+- **Economic Models**: Finding optimal price/output levels
+
+**3. Computer Graphics**:
+- **Illumination Models**: Finding maximum brightness
+- **Animation Curves**: Smooth transitions with single peak acceleration
+- **Terrain Generation**: Creating natural-looking landscapes
+
+**4. Scientific Computing**:
+- **Molecular Dynamics**: Finding energy minima
+- **Quantum Mechanics**: Finding wavefunction peaks
+- **Statistical Analysis**: Finding mode in unimodal distributions
+
+#### GATE-Specific Insights
+
+**Common Question Types**:
+1. **Time Complexity**: Finding peak in bitonic array - O(log n)
+2. **Algorithm Selection**: Which algorithm to use for bitonic search
+3. **Edge Cases**: Handling entirely increasing/decreasing arrays
+4. **Modified Problems**: Searching in rotated bitonic arrays
+5. **Proof Questions**: Proving correctness of peak finding algorithm
+
+**Tricks and Shortcuts**:
+- **Single Pass Search**: Can sometimes search without finding peak first
+- **Modified Binary Search**: Use property that one side must be sorted
+- **Peak as Pivot**: Use peak to divide array into two sorted subarrays
+
+**Problem-Solving Strategy**:
+1. **Identify Bitonic Property**: Check if array has single peak/valley
+2. **Find Critical Point**: Locate peak/valley first
+3. **Divide and Conquer**: Split into monotonic segments
+4. **Apply Standard Search**: Use binary search on appropriate segment
+5. **Handle Rotation**: If rotated, find rotation point first
+
+**Sample GATE Questions**:
+1. What is time complexity of finding maximum element in bitonic array?
+   - Answer: O(log n)
+
+2. How to search for element in bitonic array?
+   - Answer: Find peak, then binary search in increasing and decreasing parts
+
+3. What is the minimum number of comparisons needed to find peak in bitonic array of size n?
+   - Answer: ⌈log₂ n⌉ in worst case
+
+### 1.8 Depth First Search (DFS) (Extended)
+
+**Key Concepts**: Graph traversal algorithm that explores as far as possible along each branch before backtracking. Uses stack (explicit or implicit via recursion).
+
+#### Algorithm and Implementation
+
+**Recursive DFS**:
+```python
+def dfs_recursive(graph, start, visited=None):
+    if visited is None:
+        visited = set()
+    
+    visited.add(start)
+    print(start, end=' ')  # Process node
+    
+    for neighbor in graph[start]:
+        if neighbor not in visited:
+            dfs_recursive(graph, neighbor, visited)
+    
+    return visited
+```
+
+**Iterative DFS**:
+```python
+def dfs_iterative(graph, start):
+    visited = set()
+    stack = [start]
+    
+    while stack:
+        node = stack.pop()
+        
+        if node not in visited:
+            visited.add(node)
+            print(node, end=' ')  # Process node
+            
+            # Add neighbors in reverse order to maintain same order as recursive
+            for neighbor in reversed(graph[node]):
+                if neighbor not in visited:
+                    stack.append(neighbor)
+    
+    return visited
+```
+
+**DFS with Parent Tracking**:
+```python
+def dfs_with_parent(graph, start):
+    visited = {start: None}  # node: parent
+    stack = [start]
+    
+    while stack:
+        node = stack.pop()
+        
+        for neighbor in graph[node]:
+            if neighbor not in visited:
+                visited[neighbor] = node
+                stack.append(neighbor)
+    
+    return visited
+```
+
+#### Advanced Applications and Variations
+
+**1. Cycle Detection in Directed Graphs**
+```python
+def has_cycle_directed(graph):
+    visited = set()
+    recursion_stack = set()
+    
+    def dfs(node):
+        visited.add(node)
+        recursion_stack.add(node)
+        
+        for neighbor in graph[node]:
+            if neighbor not in visited:
+                if dfs(neighbor):
+                    return True
+            elif neighbor in recursion_stack:
+                return True
+        
+        recursion_stack.remove(node)
+        return False
+    
+    for node in graph:
+        if node not in visited:
+            if dfs(node):
+                return True
+    
+    return False
+```
+
+**2. Topological Sort (DFS-based)**
+```python
+def topological_sort_dfs(graph):
+    visited = set()
+    result = []
+    
+    def dfs(node):
+        visited.add(node)
+        for neighbor in graph[node]:
+            if neighbor not in visited:
+                dfs(neighbor)
+        result.append(node)  # Add after processing all descendants
+    
+    for node in graph:
+        if node not in visited:
+            dfs(node)
+    
+    return result[::-1]  # Reverse to get topological order
+```
+
+**3. Strongly Connected Components (Kosaraju's Algorithm)**
+```python
+def kosaraju_scc(graph):
+    # Step 1: First DFS to get finishing times
+    visited = set()
+    order = []
+    
+    def dfs1(node):
+        visited.add(node)
+        for neighbor in graph[node]:
+            if neighbor not in visited:
+                dfs1(neighbor)
+        order.append(node)
+    
+    for node in graph:
+        if node not in visited:
+            dfs1(node)
+    
+    # Step 2: Transpose graph
+    transpose = {node: [] for node in graph}
+    for u in graph:
+        for v in graph[u]:
+            transpose[v].append(u)
+    
+    # Step 3: Second DFS in reverse order
+    visited.clear()
+    sccs = []
+    
+    def dfs2(node, component):
+        visited.add(node)
+        component.append(node)
+        for neighbor in transpose[node]:
+            if neighbor not in visited:
+                dfs2(neighbor, component)
+    
+    for node in reversed(order):
+        if node not in visited:
+            component = []
+            dfs2(node, component)
+            sccs.append(component)
+    
+    return sccs
+```
+
+**4. Articulation Points (Cut Vertices)**
+```python
+def find_articulation_points(graph):
+    n = len(graph)
+    visited = [False] * n
+    disc = [0] * n  # Discovery time
+    low = [0] * n   # Low value
+    parent = [-1] * n
+    ap = [False] * n  # Articulation points
+    time = 0
+    
+    def dfs(u):
+        nonlocal time
+        children = 0
+        visited[u] = True
+        disc[u] = low[u] = time + 1
+        time += 1
+        
+        for v in graph[u]:
+            if not visited[v]:
+                children += 1
+                parent[v] = u
+                dfs(v)
+                
+                # Update low value of u
+                low[u] = min(low[u], low[v])
+                
+                # Check if u is articulation point
+                if parent[u] == -1 and children > 1:  # Root with multiple children
+                    ap[u] = True
+                if parent[u] != -1 and low[v] >= disc[u]:  # Non-root with child that cannot reach ancestor
+                    ap[u] = True
+            
+            elif v != parent[u]:  # Back edge
+                low[u] = min(low[u], disc[v])
+    
+    for i in range(n):
+        if not visited[i]:
+            dfs(i)
+    
+    return [i for i in range(n) if ap[i]]
+```
+
+#### Mathematical Analysis
+
+**Time Complexity**:
+- **Adjacency List**: O(V + E) - each vertex and edge visited once
+- **Adjacency Matrix**: O(V²) - must check all possible edges
+- **Space Complexity**: O(V) for visited array and recursion stack
+
+**Properties**:
+- **Completeness**: Visits all reachable vertices from start node
+- **Path Finding**: Can find path between two nodes
+- **Depth-First Tree**: Forms a spanning tree of visited vertices
+- **Edge Classification**:
+  - **Tree Edge**: Edge in DFS tree
+  - **Back Edge**: Edge to ancestor in DFS tree (indicates cycle)
+  - **Forward Edge**: Edge to descendant not in DFS tree
+  - **Cross Edge**: Edge between vertices in different subtrees
+
+**Correctness**:
+- **Invariant**: At any point, visited nodes form a connected component
+- **Termination**: Algorithm terminates when all reachable nodes visited
+- **Completeness**: If node v is reachable from u, DFS(u) will visit v
+
+#### Applications in GATE Context
+
+**1. Graph Connectivity**:
+- **Connected Components**: Number of DFS calls needed to visit all nodes
+- **Biconnected Components**: Using articulation points
+- **Bridge Detection**: Edges whose removal increases components
+
+**2. Path Problems**:
+- **Existence of Path**: DFS can determine if path exists between nodes
+- **All Paths**: Can enumerate all paths between nodes (with modifications)
+- **Longest Path**: NP-hard in general graphs, but solvable in DAGs with DFS
+
+**3. Tree Problems**:
+- **Tree Traversal**: Preorder, inorder, postorder are DFS variants
+- **Tree Diameter**: Two DFS passes can find diameter
+- **Lowest Common Ancestor**: Can be found using DFS with binary lifting
+
+**4. Puzzle Solving**:
+- **Maze Solving**: DFS explores all paths systematically
+- **Sudoku**: Backtracking with DFS
+- **N-Queens**: DFS with pruning
+
+**Comparison with BFS**:
+| **Aspect** | **DFS** | **BFS** |
+|------------|---------|---------|
+| **Data Structure** | Stack | Queue |
+| **Space Complexity** | O(V) worst case | O(V) worst case |
+| **Shortest Path** | No (unweighted) | Yes (unweighted) |
+| **Memory Usage** | Less for deep trees | Less for wide trees |
+| **Cycle Detection** | Yes (directed/undirected) | Yes (undirected) |
+| **Topological Sort** | Yes | No (needs modification) |
+| **Connected Components** | Yes | Yes |
+
+**GATE Tips**:
+- DFS uses recursion stack, can cause stack overflow for deep graphs
+- Iterative DFS avoids recursion limits but needs explicit stack
+- For cycle detection in directed graphs, need recursion stack tracking
+- DFS tree edges reveal graph structure (back edges indicate cycles)
+- Time complexity is always O(V + E) for adjacency list representation
+- For disconnected graphs, need to call DFS for each unvisited node
+
+### 1.9 Dijkstra's Algorithm (6)
+
+**Extended Comprehensive Coverage**
+
+#### Core Algorithm and Implementation
+
+**Algorithm**:
+```python
+import heapq
+
+def dijkstra(graph, start):
+    """
+    graph: adjacency list {u: [(v, weight), ...]}
+    start: source node
+    Returns: (distances, predecessors)
+    """
+    # Initialize distances
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    predecessors = {node: None for node in graph}
+    
+    # Priority queue: (distance, node)
+    pq = [(0, start)]
+    visited = set()
+    
+    while pq:
+        current_dist, current_node = heapq.heappop(pq)
+        
+        # Skip if already processed with better distance
+        if current_node in visited:
+            continue
+        
+        visited.add(current_node)
+        
+        # Process neighbors
+        for neighbor, weight in graph[current_node]:
+            if neighbor in visited:
+                continue
+            
+            new_dist = current_dist + weight
+            
+            if new_dist < distances[neighbor]:
+                distances[neighbor] = new_dist
+                predecessors[neighbor] = current_node
+                heapq.heappush(pq, (new_dist, neighbor))
+    
+    return distances, predecessors
+```
+
+#### Variations and Optimizations
+
+**1. Dijkstra with Fibonacci Heap (Theoretical)**
+```python
+# Pseudocode - Fibonacci heap provides better amortized complexity
+def dijkstra_fibonacci(graph, start):
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    fib_heap = FibonacciHeap()
+    
+    # Insert all nodes with initial distances
+    nodes = {}
+    for node in graph:
+        nodes[node] = fib_heap.insert(node, distances[node])
+    
+    while not fib_heap.is_empty():
+        current_node, current_dist = fib_heap.extract_min()
+        
+        for neighbor, weight in graph[current_node]:
+            new_dist = current_dist + weight
+            
+            if new_dist < distances[neighbor]:
+                distances[neighbor] = new_dist
+                fib_heap.decrease_key(nodes[neighbor], new_dist)
+    
+    return distances
+```
+
+**2. Dijkstra for DAGs (Simplified)**
+```python
+def dijkstra_dag(graph, start):
+    # For DAGs, can use topological sort for O(V+E) time
+    topo_order = topological_sort(graph)
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    
+    for node in topo_order:
+        if distances[node] == float('inf'):
+            continue
+        
+        for neighbor, weight in graph[node]:
+            new_dist = distances[node] + weight
+            if new_dist < distances[neighbor]:
+                distances[neighbor] = new_dist
+    
+    return distances
+```
+
+**3. Bidirectional Dijkstra**
+```python
+def bidirectional_dijkstra(graph, start, target):
+    # Run Dijkstra from start and target simultaneously
+    forward_dist = {node: float('inf') for node in graph}
+    backward_dist = {node: float('inf') for node in graph}
+    forward_dist[start] = 0
+    backward_dist[target] = 0
+    
+    forward_pq = [(0, start)]
+    backward_pq = [(0, target)]
+    forward_visited = set()
+    backward_visited = set()
+    
+    best_path = float('inf')
+    best_meeting_node = None
+    
+    while forward_pq and backward_pq:
+        # Process forward search
+        if forward_pq[0][0] <= backward_pq[0][0]:
+            process_node(forward_pq, forward_dist, forward_visited, graph, 
+                        backward_dist, backward_visited, best_path, best_meeting_node)
+        else:
+            process_node(backward_pq, backward_dist, backward_visited, graph,
+                        forward_dist, forward_visited, best_path, best_meeting_node)
+    
+    return best_path if best_path != float('inf') else -1
+```
+
+#### Mathematical Analysis and Correctness
+
+**Time Complexity**:
+- **Binary Heap**: O((V + E) log V)
+  - Each vertex inserted once: O(V log V)
+  - Each edge may cause decrease-key: O(E log V)
+- **Fibonacci Heap**: O(V log V + E) amortized
+  - Insert and extract-min: O(log V) amortized
+  - Decrease-key: O(1) amortized
+- **Array Implementation**: O(V² + E)
+  - Used when graph is dense (E ≈ V²)
+
+**Space Complexity**: O(V + E)
+- Distance array: O(V)
+- Predecessor array: O(V)
+- Priority queue: O(V)
+- Graph representation: O(E)
+
+**Correctness Proof**:
+- **Lemma 1 (Greedy Choice)**: When vertex u is added to S (visited set), dist[u] = δ(s,u)
+- **Lemma 2 (Optimal Substructure)**: Shortest path to u consists of shortest paths to intermediate vertices
+- **Proof by Induction**:
+  - **Base**: dist[s] = 0 = δ(s,s)
+  - **Inductive Step**: Assume all vertices in S have correct distances. Let u be next vertex added. For any path from s to u through v ∉ S, dist[v] ≥ dist[u] (by heap property), so path through v cannot be shorter than dist[u]
+
+**Limitations**:
+- **Negative Weights**: Fails if any edge has negative weight
+- **Negative Cycles**: Cannot detect negative cycles
+- **All-Pairs**: Less efficient than Floyd-Warshall for dense graphs
+
+#### Advanced Applications
+
+**1. A* Search Algorithm (Heuristic Extension)**
+```python
+def a_star(graph, start, goal, heuristic):
+    """
+    heuristic: function h(n) estimating cost from n to goal
+    Must be admissible (never overestimates)
+    """
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    f_scores = {node: float('inf') for node in graph}
+    f_scores[start] = heuristic(start, goal)
+    
+    pq = [(f_scores[start], start)]
+    predecessors = {node: None for node in graph}
+    
+    while pq:
+        _, current = heapq.heappop(pq)
+        
+        if current == goal:
+            return reconstruct_path(predecessors, start, goal)
+        
+        for neighbor, weight in graph[current]:
+            tentative_g = distances[current] + weight
+            
+            if tentative_g < distances[neighbor]:
+                predecessors[neighbor] = current
+                distances[neighbor] = tentative_g
+                f_scores[neighbor] = tentative_g + heuristic(neighbor, goal)
+                
+                if neighbor not in [n for _, n in pq]:
+                    heapq.heappush(pq, (f_scores[neighbor], neighbor))
+    
+    return None
+```
+
+**2. Dial's Algorithm (Integer Weights)**
+```python
+def dijkstra_dial(graph, start, max_weight):
+    """
+    For graphs with small integer weights (≤ C)
+    Time complexity: O(V + E + VC)
+    """
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    
+    # Buckets for each possible distance value
+    buckets = [[] for _ in range(max_weight * len(graph))]
+    buckets[0].append(start)
+    
+    idx = 0  # Current bucket index
+    visited = set()
+    
+    while idx < len(buckets):
+        if not buckets[idx]:
+            idx += 1
+            continue
+        
+        node = buckets[idx].pop()
+        if node in visited:
+            continue
+        
+        visited.add(node)
+        
+        for neighbor, weight in graph[node]:
+            new_dist = distances[node] + weight
+            if new_dist < distances[neighbor]:
+                distances[neighbor] = new_dist
+                buckets[new_dist].append(neighbor)
+        
+        if not buckets[idx]:
+            idx += 1
+    
+    return distances
+```
+
+**3. Contraction Hierarchies (Advanced Routing)**
+```python
+# Conceptual outline for modern routing algorithms
+def preprocess_contraction_hierarchy(graph):
+    """
+    Preprocessing step for fast shortest path queries
+    1. Order nodes by importance
+    2. Contract nodes (remove and add shortcuts)
+    3. Store hierarchy information
+    """
+    # This is a complex preprocessing step used in real navigation systems
+    # Query time becomes O(log V) or better
+    pass
+```
+
+#### GATE-Specific Insights
+
+**Common Question Types**:
+1. **Algorithm Execution**: Trace Dijkstra's algorithm on given graph
+2. **Complexity Analysis**: Time/space complexity questions
+3. **Data Structure Choice**: When to use which priority queue implementation
+4. **Limitations**: Why Dijkstra fails with negative weights
+5. **Comparisons**: Dijkstra vs Bellman-Ford vs Floyd-Warshall
+
+**Key Points to Remember**:
+- **Greedy Algorithm**: Always picks closest unvisited node
+- **Non-negative Weights Only**: Critical constraint
+- **Single Source**: Finds shortest paths from one source to all others
+- **Priority Queue**: Essential for efficiency
+- **Relaxation Step**: Key operation that updates distances
+
+**Comparison Table**:
+| **Algorithm** | **Time Complexity** | **Negative Weights** | **Negative Cycles** | **Use Case** |
+|---------------|---------------------|----------------------|---------------------|--------------|
+| **Dijkstra** | O((V+E)log V) | No | No | Non-negative weights |
+| **Bellman-Ford** | O(VE) | Yes | Detects | General graphs, negative weights |
+| **Floyd-Warshall** | O(V³) | Yes | Detects | All-pairs shortest paths |
+| **SPFA** | O(E) avg, O(VE) worst | Yes | Detects | Sparse graphs with negative weights |
+
+**GATE Problem-Solving Strategy**:
+1. **Check Weights**: If any negative weights, Dijkstra cannot be used
+2. **Identify Source**: Dijkstra is single-source algorithm
+3. **Data Structure**: For dense graphs, array implementation may be better
+4. **Trace Carefully**: When tracing, maintain priority queue state
+5. **Termination**: Algorithm terminates when all reachable nodes processed
+
+**Sample GATE Questions**:
+1. What is time complexity of Dijkstra using binary heap?
+   - Answer: O((V + E) log V)
+
+2. Why does Dijkstra fail with negative weights?
+   - Answer: Greedy choice property fails - a node may be processed before finding shorter path through negative edge
+
+3. How many times is each edge relaxed in Dijkstra?
+   - Answer: At most once (unlike Bellman-Ford which relaxes |V|-1 times)
+
+### 1.10 Directed Graphs (Extended)
+
+#### Core Concepts and Properties
+
+**Definition**: A directed graph (digraph) G = (V, E) consists of:
+- **Vertices (V)**: Set of nodes
+- **Edges (E)**: Set of ordered pairs (u, v) where u, v ∈ V
+- **Direction**: Edge (u, v) goes from u to v, not vice versa unless (v, u) exists
+
+**Key Properties**:
+- **Indegree**: Number of edges entering a vertex
+- **Outdegree**: Number of edges leaving a vertex
+- **Source**: Vertex with indegree 0
+- **Sink**: Vertex with outdegree 0
+- **Strongly Connected**: Path exists between every pair of vertices in both directions
+- **Weakly Connected**: Connected when directions ignored
+
+#### Important Algorithms for Directed Graphs
+
+**1. Topological Sorting**
+```python
+def topological_sort_kahn(graph):
+    """
+    Kahn's algorithm using BFS
+    Returns topological order or empty list if cycle exists
+    """
+    # Calculate indegrees
+    indegree = {node: 0 for node in graph}
+    for u in graph:
+        for v in graph[u]:
+            indegree[v] = indegree.get(v, 0) + 1
+    
+    # Queue for nodes with indegree 0
+    queue = deque([node for node in indegree if indegree[node] == 0])
+    result = []
+    
+    while queue:
+        node = queue.popleft()
+        result.append(node)
+        
+        for neighbor in graph[node]:
+            indegree[neighbor] -= 1
+            if indegree[neighbor] == 0:
+                queue.append(neighbor)
+    
+    # Check if all nodes processed (no cycle)
+    if len(result) != len(graph):
+        return []  # Cycle detected
+    
+    return result
+```
+
+**2. Strongly Connected Components (Tarjan's Algorithm)**
+```python
+def tarjans_scc(graph):
+    """
+    Tarjan's algorithm using single DFS pass
+    Returns list of SCCs
+    """
+    index_counter = [0]
+    stack = []
+    indices = {}
+    lowlink = {}
+    result = []
+    
+    def strongconnect(v):
+        indices[v] = index_counter[0]
+        lowlink[v] = index_counter[0]
+        index_counter[0] += 1
+        stack.append(v)
+        
+        for w in graph[v]:
+            if w not in indices:
+                strongconnect(w)
+                lowlink[v] = min(lowlink[v], lowlink[w])
+            elif w in stack:
+                lowlink[v] = min(lowlink[v], indices[w])
+        
+        # If v is root node, pop stack to generate SCC
+        if lowlink[v] == indices[v]:
+            scc = []
+            while True:
+                w = stack.pop()
+                scc.append(w)
+                if w == v:
+                    break
+            result.append(scc)
+    
+    for v in graph:
+        if v not in indices:
+            strongconnect(v)
+    
+    return result
+```
+
+**3. Transitive Closure (Floyd-Warshall)**
+```python
+def transitive_closure(graph):
+    """
+    Computes transitive closure using Floyd-Warshall
+    Returns reachability matrix
+    """
+    n = len(graph)
+    # Initialize reachability matrix
+    reach = [[False] * n for _ in range(n)]
+    
+    # Set direct edges
+    for i in range(n):
+        reach[i][i] = True  # Self loops
+        for j in graph[i]:
+            reach[i][j] = True
+    
+    # Floyd-Warshall
+    for k in range(n):
+        for i in range(n):
+            for j in range(n):
+                reach[i][j] = reach[i][j] or (reach[i][k] and reach[k][j])
+    
+    return reach
+```
+
+**4. Shortest Paths in DAGs**
+```python
+def dag_shortest_paths(graph, start):
+    """
+    Single-source shortest paths in DAG
+    Time complexity: O(V + E)
+    """
+    # Get topological order
+    topo_order = topological_sort_kahn(graph)
+    if not topo_order:
+        raise ValueError("Graph has cycle, not a DAG")
+    
+    # Initialize distances
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    
+    # Process nodes in topological order
+    for node in topo_order:
+        if distances[node] == float('inf'):
+            continue
+        
+        for neighbor, weight in graph[node]:
+            new_dist = distances[node] + weight
+            if new_dist < distances[neighbor]:
+                distances[neighbor] = new_dist
+    
+    return distances
+```
+
+#### Advanced Concepts and Applications
+
+**1. Dominators and Dominator Trees**
+```python
+def compute_dominators(graph, start):
+    """
+    Computes immediate dominators using Lengauer-Tarjan algorithm
+    Dominator: Node d dominates node n if every path from start to n goes through d
+    """
+    # This is a complex algorithm used in compiler optimization
+    # Implementation omitted for brevity
+    pass
+```
+
+**2. Minimum Spanning Arborescence (Chu-Liu/Edmonds)**
+```python
+def min_spanning_arborescence(graph, root):
+    """
+    Finds minimum spanning tree directed away from root
+    Time complexity: O(VE)
+    """
+    # Implementation involves cycle detection and contraction
+    # Used in network design and parsing
+    pass
+```
+
+**3. PageRank Algorithm (Google)**
+```python
+def pagerank(graph, damping=0.85, iterations=100):
+    """
+    Computes PageRank for directed graph
+    graph: adjacency list where graph[u] = [v1, v2, ...] (outgoing links)
+    """
+    nodes = list(graph.keys())
+    n = len(nodes)
+    rank = {node: 1/n for node in nodes}
+    
+    # Precompute outdegrees
+    outdegree = {node: len(graph[node]) for node in nodes}
+    
+    for _ in range(iterations):
+        new_rank = {node: (1 - damping)/n for node in nodes}
+        
+        for node in nodes:
+            if outdegree[node] == 0:  # Sink node
+                continue
+                
+            contribution = rank[node] / outdegree[node]
+            
+            for neighbor in graph[node]:
+                new_rank[neighbor] += damping * contribution
+        
+        rank = new_rank
+    
+    return rank
+```
+
+#### Mathematical Properties and Theorems
+
+**Euler's Theorem for Directed Graphs**:
+- A directed graph has an Euler circuit iff:
+  - It is strongly connected
+  - For every vertex: indegree = outdegree
+- A directed graph has an Euler path iff:
+  - At most one vertex has outdegree = indegree + 1 (start)
+  - At most one vertex has indegree = outdegree + 1 (end)
+  - All other vertices have equal indegree and outdegree
+  - Graph is connected when directions ignored
+
+**Handshaking Lemma for Directed Graphs**:
+- Sum of all indegrees = Sum of all outdegrees = |E|
+
+**Dilworth's Theorem**:
+- In any finite partially ordered set, the size of the largest antichain equals the minimum number of chains needed to cover the set
+- Application: Minimum path cover in DAGs
+
+#### GATE-Specific Applications
+
+**1. Dependency Resolution**:
+- **Compiler Design**: Instruction scheduling, register allocation
+- **Build Systems**: Make, Gradle dependency graphs
+- **Database Transactions**: Serializability checking
+
+**2. Program Analysis**:
+- **Control Flow Graphs**: Basic blocks and edges represent program flow
+- **Data Flow Analysis**: Reaching definitions, live variables
+- **Call Graphs**: Function call relationships
+
+**3. Network Flow**:
+- **Flow Networks**: Source to sink flow with capacities
+- **Bipartite Matching**: Can be reduced to max flow in directed graphs
+- **Project Selection**: Choosing profitable projects with dependencies
+
+**4. Scheduling Problems**:
+- **Task Scheduling**: Precedence constraints form DAG
+- **Course Prerequisites**: Topological sort for course planning
+- **Manufacturing Processes**: Assembly line scheduling
+
+**GATE Problem-Solving Strategy**:
+1. **Identify Graph Type**: Determine if directed/undirected, cyclic/acyclic
+2. **Check Properties**: Look for DAG properties, strong connectivity
+3. **Algorithm Selection**:
+   - **Topological Sort**: For DAGs with dependencies
+   - **SCC Detection**: For strongly connected components
+   - **Shortest Paths**: Dijkstra (non-negative) or Bellman-Ford (general)
+   - **Transitive Closure**: For reachability queries
+4. **Complexity Analysis**: Consider graph density (sparse vs dense)
+5. **Edge Cases**: Handle disconnected graphs, self-loops, multiple edges
+
+**Common GATE Questions**:
+1. **Topological Sort**: Given DAG, find valid topological order
+2. **Cycle Detection**: Determine if directed graph has cycle
+3. **SCC Count**: Find number of strongly connected components
+4. **Shortest Path**: Compute shortest path in DAG or general directed graph
+5. **Transitive Closure**: Determine if path exists between nodes
+
+**Key Formulas**:
+- **Maximum Edges in DAG**: n(n-1)/2 (complete DAG)
+- **Minimum Edges for Strong Connectivity**: n (cycle)
+- **Topological Sort Existence**: iff graph is acyclic
+- **SCC Property**: Each SCC forms a maximal strongly connected subgraph
 
 ### 1.11 Double Hashing (1)
 
@@ -14519,3479 +18822,2600 @@ L is regular ⟺ The number of equivalence classes of $\equiv_L$ is finite
 - Not considering all possible divisions of w
 - Showing one division fails (need to show ALL fail)
 
-### 5. Engineering Mathematics: Calculus (150 Questions)
 
-### 5.1 Limits and Continuity (25)
+## Missing Topics - Computer Networks
 
-**Key Concepts**: Limits form the foundation of calculus, formalizing the notion of "approaching" a value. Continuity describes functions without breaks or jumps.
+### DHCP (Dynamic Host Configuration Protocol)
 
-**Limit Definition**:
+**Key Concepts**: DHCP automates IP address assignment and network configuration for hosts joining a network. Essential for scalable network management.
 
-**Informal Definition**: $\lim_{x \to a} f(x) = L$ means $f(x)$ gets arbitrarily close to $L$ as $x$ approaches $a$
+**DHCP Overview**:
+- **Purpose**: Automatically assign IP addresses and network parameters to hosts
+- **Port**: UDP 67 (server), UDP 68 (client)
+- **Application Layer Protocol**: Works over UDP/IP
+- **Eliminates**: Manual IP configuration, reduces configuration errors
 
-**Formal Definition (ε-δ)**: $\lim_{x \to a} f(x) = L$ if:
-$$\forall \varepsilon > 0, \exists \delta > 0 \text{ such that } 0 < |x - a| < \delta \Rightarrow |f(x) - L| < \varepsilon$$
+**DHCP Components**:
 
-**Geometric Interpretation**: For any horizontal strip of width $2\varepsilon$ around $L$, there exists vertical strip of width $2\delta$ around $a$ such that graph lies within horizontal strip
+**1. DHCP Server**:
+- Maintains pool of available IP addresses
+- Stores configuration parameters (subnet mask, gateway, DNS servers)
+- Manages lease duration and renewal
 
-**One-Sided Limits**:
+**2. DHCP Client**:
+- Host requesting network configuration
+- Sends DHCP messages to obtain IP address
 
-**Right-hand limit**: $\lim_{x \to a^+} f(x) = L$ if limit exists as $x$ approaches $a$ from right
-**Left-hand limit**: $\lim_{x \to a^-} f(x) = L$ if limit exists as $x$ approaches $a$ from left
+**3. DHCP Relay Agent**:
+- Forwards DHCP messages between clients and servers on different subnets
+- Necessary because DHCP uses broadcast (doesn't cross routers)
 
-**Theorem**: $\lim_{x \to a} f(x) = L$ iff $\lim_{x \to a^+} f(x) = \lim_{x \to a^-} f(x) = L$
+**DHCP Message Types**:
 
-**Limit Laws** (Assuming limits exist):
+1. **DHCPDISCOVER**: Client broadcasts to find DHCP servers
+2. **DHCPOFFER**: Server offers IP address to client
+3. **DHCPREQUEST**: Client requests offered IP address
+4. **DHCPACK**: Server acknowledges and confirms assignment
+5. **DHCPNAK**: Server denies request (address no longer available)
+6. **DHCPRELEASE**: Client releases IP address
+7. **DHCPDECLINE**: Client declines offered address (address already in use)
+8. **DHCPINFORM**: Client requests additional configuration (already has IP)
 
-1. **Sum Rule**: $\lim_{x \to a} [f(x) + g(x)] = \lim_{x \to a} f(x) + \lim_{x \to a} g(x)$
+**DHCP Process (DORA)**:
 
-2. **Product Rule**: $\lim_{x \to a} [f(x) \cdot g(x)] = \lim_{x \to a} f(x) \cdot \lim_{x \to a} g(x)$
+**4-Step Process**:
 
-3. **Quotient Rule**: $\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{\lim_{x \to a} f(x)}{\lim_{x \to a} g(x)}$ (if denominator limit ≠ 0)
+1. **Discover**: Client broadcasts DHCPDISCOVER
+   - Source: 0.0.0.0:68
+   - Destination: 255.255.255.255:67
+   - Message: "I need an IP address"
 
-4. **Power Rule**: $\lim_{x \to a} [f(x)]^n = [\lim_{x \to a} f(x)]^n$
+2. **Offer**: Server responds with DHCPOFFER
+   - Contains: Available IP address, lease time, subnet mask, gateway, DNS
+   - May receive multiple offers from different servers
 
-5. **Root Rule**: $\lim_{x \to a} \sqrt[n]{f(x)} = \sqrt[n]{\lim_{x \to a} f(x)}$ (if root is defined)
+3. **Request**: Client broadcasts DHCPREQUEST
+   - Accepts one offer, implicitly rejects others
+   - Broadcasts so other servers know their offers were declined
 
-**Standard Limits**:
+4. **Acknowledge**: Server sends DHCPACK
+   - Confirms IP address assignment
+   - Client can now use the IP address
 
-$$\lim_{x \to 0} \frac{\sin x}{x} = 1$$
+**DHCP Lease**:
 
-**Proof**: Use squeeze theorem with $\cos x \leq \frac{\sin x}{x} \leq 1$ for $0 < |x| < \frac{\pi}{2}$
+**Lease Duration**: Time period for which IP address is assigned
+- Typical: Hours to days
+- **Lease Renewal**: Client attempts to renew at 50% of lease time (T1)
+- **Rebinding**: If renewal fails, tries at 87.5% of lease time (T2)
+- **Expiration**: If no renewal, client must release IP and restart DORA
 
-$$\lim_{x \to 0} \frac{1 - \cos x}{x^2} = \frac{1}{2}$$
+**DHCP Configuration Parameters**:
 
-$$\lim_{x \to 0} (1 + x)^{1/x} = e$$
+Provided to client:
+- **IP Address**: Assigned to client
+- **Subnet Mask**: Network/host boundary
+- **Default Gateway**: Router IP for external communication
+- **DNS Servers**: Domain name resolution
+- **Lease Time**: Duration of assignment
+- **Domain Name**: Local domain suffix
+- **NTP Servers**: Time synchronization (optional)
 
-$$\lim_{x \to \infty} \left(1 + \frac{1}{x}\right)^x = e$$
+**DHCP Address Allocation**:
 
-$$\lim_{x \to 0} \frac{e^x - 1}{x} = 1$$
+**1. Dynamic Allocation**:
+- IP assigned from pool for limited time
+- Most common method
+- Address returned to pool after lease expires
 
-$$\lim_{x \to 0} \frac{\ln(1 + x)}{x} = 1$$
+**2. Automatic Allocation**:
+- IP assigned permanently from pool
+- Same IP given to client each time (based on MAC)
 
-**Indeterminate Forms**:
+**3. Static Allocation**:
+- Manual binding of IP to MAC address
+- Administrator configures specific IP for specific device
+- Used for servers, printers, network devices
 
-Forms that require special techniques:
-- $\frac{0}{0}$, $\frac{\infty}{\infty}$, $0 \cdot \infty$, $\infty - \infty$, $0^0$, $1^\infty$, $\infty^0$
+**DHCP Relay**:
 
-**L'Hôpital's Rule**: For indeterminate forms $\frac{0}{0}$ or $\frac{\infty}{\infty}$:
-$$\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}$$
-provided the right limit exists
+**Problem**: DHCP uses broadcast, which doesn't cross routers
 
-**Conditions**:
-1. $\lim_{x \to a} f(x) = \lim_{x \to a} g(x) = 0$ or $\pm\infty$
-2. $f'(x)$ and $g'(x)$ exist in neighborhood of $a$
-3. $g'(x) \neq 0$ in neighborhood of $a$
-4. $\lim_{x \to a} \frac{f'(x)}{g'(x)}$ exists
+**Solution**: DHCP Relay Agent
+- Router interface configured as relay
+- Receives broadcast DHCPDISCOVER
+- Converts to unicast and forwards to DHCP server
+- Server responds to relay, which forwards to client
 
-**Squeeze Theorem** (Sandwich Theorem):
+**DHCP Security Issues**:
 
-If $g(x) \leq f(x) \leq h(x)$ for all $x$ in neighborhood of $a$ and $\lim_{x \to a} g(x) = \lim_{x \to a} h(x) = L$, then $\lim_{x \to a} f(x) = L$
+**1. DHCP Spoofing**:
+- Rogue DHCP server provides false configuration
+- Can redirect traffic through attacker
 
-**Application**: Proving $\lim_{x \to 0} x \sin(1/x) = 0$ using $-|x| \leq x \sin(1/x) \leq |x|$
+**2. DHCP Starvation**:
+- Attacker requests all available IPs
+- Legitimate clients cannot obtain addresses
 
-**Limits at Infinity**:
+**3. Mitigation**:
+- **DHCP Snooping**: Switch feature that validates DHCP messages
+- **Port Security**: Limit DHCP servers to trusted ports
+- **Rate Limiting**: Limit DHCP requests per port
 
-$$\lim_{x \to \infty} f(x) = L \text{ means } \forall \varepsilon > 0, \exists M > 0 \text{ such that } x > M \Rightarrow |f(x) - L| < \varepsilon$$
+**DHCP vs Static IP**:
 
-**Rational Functions**: For $f(x) = \frac{a_n x^n + \cdots + a_0}{b_m x^m + \cdots + b_0}$:
-
-$$\lim_{x \to \infty} f(x) = \begin{cases}
-0 & \text{if } n < m \\
-\frac{a_n}{b_m} & \text{if } n = m \\
-\pm\infty & \text{if } n > m
-\end{cases}$$
-
-**Continuity**:
-
-**Definition**: Function $f$ is **continuous at $a$** if:
-1. $f(a)$ is defined
-2. $\lim_{x \to a} f(x)$ exists
-3. $\lim_{x \to a} f(x) = f(a)$
-
-**Equivalent**: $\lim_{x \to a} f(x) = f(a)$
-
-**Types of Discontinuities**:
-
-1. **Removable**: $\lim_{x \to a} f(x)$ exists but $f(a)$ undefined or $f(a) \neq \lim_{x \to a} f(x)$
-   - Can be "fixed" by redefining $f(a)$
-
-2. **Jump**: Left and right limits exist but are unequal
-   - $\lim_{x \to a^-} f(x) \neq \lim_{x \to a^+} f(x)$
-
-3. **Infinite**: At least one one-sided limit is infinite
-
-4. **Oscillating**: Limit doesn't exist due to oscillation (e.g., $\sin(1/x)$ at $x = 0$)
-
-**Properties of Continuous Functions**:
-
-**Theorem**: If $f$ and $g$ are continuous at $a$, then:
-- $f + g$, $f - g$, $f \cdot g$ are continuous at $a$
-- $f/g$ is continuous at $a$ if $g(a) \neq 0$
-- $f \circ g$ is continuous at $a$ if $g$ continuous at $a$ and $f$ continuous at $g(a)$
-
-**Intermediate Value Theorem** (IVT):
-
-**Theorem**: If $f$ is continuous on $[a,b]$ and $k$ is between $f(a)$ and $f(b)$, then $\exists c \in (a,b)$ such that $f(c) = k$
-
-**Applications**:
-- Proving existence of roots
-- Bisection method for root finding
-- Fixed point theorems
-
-**Extreme Value Theorem**:
-
-**Theorem**: If $f$ is continuous on closed interval $[a,b]$, then $f$ attains its maximum and minimum values
-
-**Uniform Continuity**:
-
-**Definition**: $f$ is **uniformly continuous** on interval $I$ if:
-$$\forall \varepsilon > 0, \exists \delta > 0 \text{ such that } |x - y| < \delta \Rightarrow |f(x) - f(y)| < \varepsilon$$
-for all $x, y \in I$
-
-**Key Difference**: Same $\delta$ works for all points (not dependent on specific point)
-
-**Theorem**: Every continuous function on closed interval is uniformly continuous
-
-**Problem-Solving Techniques**:
-
-**For Limits**:
-1. **Direct substitution**: If function continuous at point
-2. **Factoring**: Cancel common factors for $\frac{0}{0}$ forms
-3. **Rationalization**: Multiply by conjugate for radical expressions
-4. **L'Hôpital's rule**: For indeterminate forms
-5. **Squeeze theorem**: When function bounded between two others
-6. **Standard limits**: Memorize key trigonometric and exponential limits
-
-**For Continuity**:
-1. **Check definition**: Verify $\lim_{x \to a} f(x) = f(a)$
-2. **Piecewise functions**: Check continuity at boundary points
-3. **Composition**: Use continuity of component functions
+| Feature | DHCP | Static IP |
+|---------|------|-----------|
+| Configuration | Automatic | Manual |
+| Scalability | High | Low |
+| Management | Centralized | Distributed |
+| Flexibility | High | Low |
+| Use Case | End users | Servers, network devices |
 
 **GATE Tips**:
-- L'Hôpital's rule only for $\frac{0}{0}$ or $\frac{\infty}{\infty}$ forms
-- Standard limit $\lim_{x \to 0} \frac{\sin x}{x} = 1$ is fundamental
-- IVT guarantees existence, not uniqueness
-- Continuous on closed interval ⟹ bounded and attains extrema
-- For piecewise functions, check left and right limits at boundaries
-
-**Examples**:
-
-1. **Evaluate** $\lim_{x \to 0} \frac{\sin 3x}{x}$:
-   $$\lim_{x \to 0} \frac{\sin 3x}{x} = \lim_{x \to 0} \frac{\sin 3x}{3x} \cdot 3 = 1 \cdot 3 = 3$$
-
-2. **Find** $\lim_{x \to 1} \frac{x^2 - 1}{x - 1}$:
-   $$\lim_{x \to 1} \frac{x^2 - 1}{x - 1} = \lim_{x \to 1} \frac{(x-1)(x+1)}{x-1} = \lim_{x \to 1} (x+1) = 2$$
-
-3. **Check continuity** of $f(x) = \begin{cases} x^2 & x < 1 \\ 2x & x \geq 1 \end{cases}$ at $x = 1$:
-   - $f(1) = 2(1) = 2$
-   - $\lim_{x \to 1^-} f(x) = \lim_{x \to 1^-} x^2 = 1$
-   - $\lim_{x \to 1^+} f(x) = \lim_{x \to 1^+} 2x = 2$
-   - Since $\lim_{x \to 1^-} f(x) \neq \lim_{x \to 1^+} f(x)$, function has jump discontinuity at $x = 1$
-
-### 5.2 Differentiation (40)
-
-**Key Concepts**: Differentiation measures instantaneous rate of change. The derivative is the limit of difference quotients, providing slope of tangent line and velocity interpretation.
-
-**Definition of Derivative**:
-
-**Limit Definition**:
-$$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
-
-**Alternative Form**:
-$$f'(a) = \lim_{x \to a} \frac{f(x) - f(a)}{x - a}$$
-
-**Geometric Interpretation**: Slope of tangent line to curve $y = f(x)$ at point $(a, f(a))$
-
-**Physical Interpretation**: Instantaneous rate of change (velocity if $f$ represents position)
-
-**Notation**:
-- $f'(x)$, $\frac{df}{dx}$, $\frac{d}{dx}f(x)$, $Df(x)$
-
-**Differentiability and Continuity**:
-
-**Theorem**: If $f$ is differentiable at $a$, then $f$ is continuous at $a$
-
-**Proof**: 
-$$\lim_{x \to a} [f(x) - f(a)] = \lim_{x \to a} \frac{f(x) - f(a)}{x - a} \cdot (x - a) = f'(a) \cdot 0 = 0$$
-
-**Converse is False**: Continuity doesn't imply differentiability
-- Example: $f(x) = |x|$ at $x = 0$
-
-**Non-differentiable Points**:
-1. **Corner**: Left and right derivatives exist but are unequal
-2. **Cusp**: Tangent line is vertical
-3. **Vertical tangent**: Derivative is infinite
-4. **Discontinuity**: Function not continuous
-
-**Basic Differentiation Rules**:
-
-**Constant Rule**: $\frac{d}{dx}[c] = 0$
-
-**Power Rule**: $\frac{d}{dx}[x^n] = nx^{n-1}$ (for any real $n$)
-
-**Proof for positive integer $n$** (using binomial theorem):
-$$\frac{d}{dx}[x^n] = \lim_{h \to 0} \frac{(x+h)^n - x^n}{h} = \lim_{h \to 0} \frac{\sum_{k=1}^{n} \binom{n}{k} x^{n-k} h^k}{h} = nx^{n-1}$$
-
-**Constant Multiple Rule**: $\frac{d}{dx}[cf(x)] = c \frac{d}{dx}[f(x)]$
-
-**Sum Rule**: $\frac{d}{dx}[f(x) + g(x)] = f'(x) + g'(x)$
-
-**Product Rule**: $\frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)$
-
-**Proof**:
-$$\frac{d}{dx}[f(x)g(x)] = \lim_{h \to 0} \frac{f(x+h)g(x+h) - f(x)g(x)}{h}$$
-$$= \lim_{h \to 0} \frac{f(x+h)g(x+h) - f(x)g(x+h) + f(x)g(x+h) - f(x)g(x)}{h}$$
-$$= \lim_{h \to 0} \left[g(x+h) \frac{f(x+h) - f(x)}{h} + f(x) \frac{g(x+h) - g(x)}{h}\right]$$
-$$= g(x)f'(x) + f(x)g'(x)$$
-
-**Quotient Rule**: $\frac{d}{dx}\left[\frac{f(x)}{g(x)}\right] = \frac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^2}$
-
-**Memory Aid**: "Low dee-high minus high dee-low, over low squared"
-
-**Chain Rule**: $\frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x)$
-
-**Leibniz Notation**: $\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$ where $y = f(u)$ and $u = g(x)$
-
-**Proof**: Let $y = f(u)$ and $u = g(x)$
-$$\frac{dy}{dx} = \lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \lim_{\Delta x \to 0} \frac{\Delta y}{\Delta u} \cdot \frac{\Delta u}{\Delta x}$$
-
-**Derivatives of Elementary Functions**:
-
-**Trigonometric Functions**:
-- $\frac{d}{dx}[\sin x] = \cos x$
-- $\frac{d}{dx}[\cos x] = -\sin x$
-- $\frac{d}{dx}[\tan x] = \sec^2 x$
-- $\frac{d}{dx}[\cot x] = -\csc^2 x$
-- $\frac{d}{dx}[\sec x] = \sec x \tan x$
-- $\frac{d}{dx}[\csc x] = -\csc x \cot x$
-
-**Proof of** $\frac{d}{dx}[\sin x] = \cos x$:
-$$\frac{d}{dx}[\sin x] = \lim_{h \to 0} \frac{\sin(x+h) - \sin x}{h}$$
-$$= \lim_{h \to 0} \frac{\sin x \cos h + \cos x \sin h - \sin x}{h}$$
-$$= \lim_{h \to 0} \left[\sin x \frac{\cos h - 1}{h} + \cos x \frac{\sin h}{h}\right]$$
-$$= \sin x \cdot 0 + \cos x \cdot 1 = \cos x$$
-
-**Exponential and Logarithmic Functions**:
-- $\frac{d}{dx}[e^x] = e^x$
-- $\frac{d}{dx}[a^x] = a^x \ln a$
-- $\frac{d}{dx}[\ln x] = \frac{1}{x}$
-- $\frac{d}{dx}[\log_a x] = \frac{1}{x \ln a}$
-
-**Inverse Trigonometric Functions**:
-- $\frac{d}{dx}[\sin^{-1} x] = \frac{1}{\sqrt{1-x^2}}$
-- $\frac{d}{dx}[\cos^{-1} x] = -\frac{1}{\sqrt{1-x^2}}$
-- $\frac{d}{dx}[\tan^{-1} x] = \frac{1}{1+x^2}$
-
-**Hyperbolic Functions**:
-- $\frac{d}{dx}[\sinh x] = \cosh x$
-- $\frac{d}{dx}[\cosh x] = \sinh x$
-- $\frac{d}{dx}[\tanh x] = \text{sech}^2 x$
-
-**Implicit Differentiation**:
-
-For equations not solved for $y$, differentiate both sides with respect to $x$, treating $y$ as function of $x$
-
-**Example**: Find $\frac{dy}{dx}$ for $x^2 + y^2 = 25$
-$$\frac{d}{dx}[x^2 + y^2] = \frac{d}{dx}[25]$$
-$$2x + 2y\frac{dy}{dx} = 0$$
-$$\frac{dy}{dx} = -\frac{x}{y}$$
-
-**Logarithmic Differentiation**:
-
-For functions of form $y = [f(x)]^{g(x)}$ or products/quotients of many terms:
-
-1. Take natural logarithm: $\ln y = g(x) \ln f(x)$
-2. Differentiate implicitly: $\frac{1}{y}\frac{dy}{dx} = g'(x) \ln f(x) + g(x) \frac{f'(x)}{f(x)}$
-3. Solve for $\frac{dy}{dx}$: $\frac{dy}{dx} = y[g'(x) \ln f(x) + g(x) \frac{f'(x)}{f(x)}]$
-
-**Example**: $y = x^x$
-$$\ln y = x \ln x$$
-$$\frac{1}{y}\frac{dy}{dx} = \ln x + x \cdot \frac{1}{x} = \ln x + 1$$
-$$\frac{dy}{dx} = x^x(\ln x + 1)$$
-
-**Higher-Order Derivatives**:
-
-**Notation**:
-- Second derivative: $f''(x)$, $\frac{d^2f}{dx^2}$, $\frac{d^2y}{dx^2}$
-- $n$-th derivative: $f^{(n)}(x)$, $\frac{d^nf}{dx^n}$
-
-**Leibniz Rule** (Product rule for higher derivatives):
-$$\frac{d^n}{dx^n}[f(x)g(x)] = \sum_{k=0}^{n} \binom{n}{k} f^{(k)}(x) g^{(n-k)}(x)$$
-
-**Parametric Differentiation**:
-
-For parametric equations $x = f(t)$, $y = g(t)$:
-$$\frac{dy}{dx} = \frac{dy/dt}{dx/dt} = \frac{g'(t)}{f'(t)}$$
-
-**Second derivative**:
-$$\frac{d^2y}{dx^2} = \frac{d}{dx}\left(\frac{dy}{dx}\right) = \frac{d}{dt}\left(\frac{dy}{dx}\right) \cdot \frac{dt}{dx} = \frac{\frac{d}{dt}\left(\frac{dy}{dx}\right)}{dx/dt}$$
-
-**Related Rates**:
-
-Problems involving rates of change of related quantities
-
-**Strategy**:
-1. Identify variables and given rates
-2. Find equation relating variables
-3. Differentiate with respect to time
-4. Substitute known values and solve
-
-**Example**: Balloon inflating at 10 cm³/s. Find rate of radius change when $r = 5$ cm
-- Volume: $V = \frac{4}{3}\pi r^3$
-- Given: $\frac{dV}{dt} = 10$
-- Find: $\frac{dr}{dt}$ when $r = 5$
-- Differentiate: $\frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt}$
-- Substitute: $10 = 4\pi(25)\frac{dr}{dt}$
-- Solve: $\frac{dr}{dt} = \frac{10}{100\pi} = \frac{1}{10\pi}$ cm/s
-
-**Applications of Derivatives**:
-
-**Tangent and Normal Lines**:
-- Tangent line at $(a, f(a))$: $y - f(a) = f'(a)(x - a)$
-- Normal line: $y - f(a) = -\frac{1}{f'(a)}(x - a)$ (if $f'(a) \neq 0$)
-
-**Linear Approximation**:
-$$f(x) \approx f(a) + f'(a)(x - a)$$ for $x$ near $a$
-
-**Differential**: $dy = f'(x)dx$ approximates $\Delta y = f(x + \Delta x) - f(x)$
-
-**Mean Value Theorem** (MVT):
-
-**Theorem**: If $f$ is continuous on $[a,b]$ and differentiable on $(a,b)$, then $\exists c \in (a,b)$ such that:
-$$f'(c) = \frac{f(b) - f(a)}{b - a}$$
-
-**Geometric Interpretation**: There exists point where tangent line is parallel to secant line
-
-**Rolle's Theorem** (Special case of MVT):
-If $f$ continuous on $[a,b]$, differentiable on $(a,b)$, and $f(a) = f(b)$, then $\exists c \in (a,b)$ such that $f'(c) = 0$
-
-**Problem-Solving Tips**:
-
-**For Basic Differentiation**:
-1. Identify which rules apply (product, quotient, chain)
-2. Work from outside in for composite functions
-3. Simplify before differentiating when possible
-
-**For Implicit Differentiation**:
-1. Differentiate both sides term by term
-2. Remember to multiply by $\frac{dy}{dx}$ when differentiating $y$ terms
-3. Collect all $\frac{dy}{dx}$ terms and solve
-
-**For Related Rates**:
-1. Draw diagram if geometric
-2. Identify all variables and their relationships
-3. Differentiate the constraint equation
-4. Substitute known values at specific instant
+- DHCP uses UDP ports 67 (server) and 68 (client)
+- DORA process: Discover, Offer, Request, Acknowledge
+- Client broadcasts DISCOVER and REQUEST
+- Lease renewal at 50% (T1), rebinding at 87.5% (T2)
+- DHCP relay needed for clients on different subnet than server
+- Dynamic allocation most common, static for servers
+- Security: DHCP snooping prevents rogue servers
+
+### ICMP (Internet Control Message Protocol)
+
+**Key Concepts**: ICMP provides error reporting and diagnostic functions for IP. Essential for network troubleshooting and management.
+
+**ICMP Overview**:
+- **Layer**: Network Layer (Layer 3)
+- **Protocol Number**: 1 (in IP header)
+- **Purpose**: Error reporting, diagnostics, network testing
+- **Encapsulation**: ICMP message encapsulated in IP datagram
+- **Not for**: Data transfer (control protocol only)
+
+**ICMP Message Format**:
+
+```
+0                   1                   2                   3
+0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|     Type      |     Code      |          Checksum             |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                    Rest of Header (varies)                    |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                    Data (varies)                              |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+```
+
+**Fields**:
+- **Type**: ICMP message type (8 bits)
+- **Code**: Subtype within message type (8 bits)
+- **Checksum**: Error detection for ICMP message (16 bits)
+- **Rest of Header**: Varies by message type
+- **Data**: Original IP header + first 8 bytes of data (for error messages)
+
+**ICMP Message Types**:
+
+**Error Reporting Messages**:
+
+**1. Destination Unreachable (Type 3)**:
+- **Code 0**: Network unreachable
+- **Code 1**: Host unreachable
+- **Code 2**: Protocol unreachable
+- **Code 3**: Port unreachable
+- **Code 4**: Fragmentation needed but DF set
+- **Code 5**: Source route failed
+- **Code 6**: Destination network unknown
+- **Code 7**: Destination host unknown
+
+**2. Time Exceeded (Type 11)**:
+- **Code 0**: TTL expired in transit (used by traceroute)
+- **Code 1**: Fragment reassembly time exceeded
+
+**3. Parameter Problem (Type 12)**:
+- **Code 0**: Pointer indicates error in IP header
+- **Code 1**: Missing required option
+
+**4. Source Quench (Type 4)** - Deprecated:
+- Congestion control (no longer used)
+
+**5. Redirect (Type 5)**:
+- **Code 0**: Redirect for network
+- **Code 1**: Redirect for host
+- Router informs host of better route
+
+**Query Messages**:
+
+**1. Echo Request (Type 8) / Echo Reply (Type 0)**:
+- **Ping utility**: Tests reachability
+- Request sent with identifier and sequence number
+- Reply echoes back same data
+- **Format**:
+  - Identifier: Process ID
+  - Sequence Number: Increments with each ping
+  - Data: Optional payload
+
+**2. Timestamp Request (Type 13) / Timestamp Reply (Type 14)**:
+- Measure round-trip time
+- Synchronize clocks
+- Contains: Originate, Receive, Transmit timestamps
+
+**3. Address Mask Request (Type 17) / Address Mask Reply (Type 18)**:
+- Host queries router for subnet mask
+- Rarely used (DHCP provides this)
+
+**4. Router Solicitation (Type 10) / Router Advertisement (Type 9)**:
+- Host discovers routers on network
+- Router announces its presence
+
+**ICMP Applications**:
+
+**1. Ping**:
+- Tests host reachability
+- Measures round-trip time (RTT)
+- Uses Echo Request/Reply (Type 8/0)
+- **Process**:
+  1. Send Echo Request to destination
+  2. Destination responds with Echo Reply
+  3. Calculate RTT from send/receive times
+- **Output**: Sequence number, TTL, RTT
+
+**2. Traceroute (tracert on Windows)**:
+- Discovers path to destination
+- Uses TTL expiration and ICMP Time Exceeded
+- **Process**:
+  1. Send packet with TTL=1
+  2. First router decrements TTL to 0, sends Time Exceeded
+  3. Send packet with TTL=2
+  4. Second router sends Time Exceeded
+  5. Continue until destination reached
+- **Output**: List of routers (hops) to destination
+
+**3. Path MTU Discovery**:
+- Determines maximum transmission unit along path
+- Uses Destination Unreachable (Fragmentation Needed)
+- **Process**:
+  1. Send packet with DF (Don't Fragment) flag set
+  2. If too large, router sends ICMP Fragmentation Needed
+  3. Reduce packet size and retry
+  4. Converge on maximum MTU
+
+**ICMP Error Message Rules**:
+
+**ICMP errors NOT generated for**:
+1. ICMP error messages (prevents infinite loops)
+2. Fragmented datagrams (except first fragment)
+3. Multicast/broadcast datagrams
+4. Link-layer broadcast frames
+5. Datagrams with source address 0.0.0.0 or loopback
+
+**Why**: Prevent ICMP storms and network congestion
+
+**ICMP and Security**:
+
+**Security Concerns**:
+
+**1. ICMP Flood (Ping Flood)**:
+- Overwhelm target with Echo Requests
+- DDoS attack vector
+
+**2. Ping of Death**:
+- Send oversized ICMP packet
+- Causes buffer overflow (historical vulnerability)
+
+**3. Smurf Attack**:
+- Send Echo Request to broadcast address with spoofed source
+- All hosts reply to victim
+- Amplification attack
+
+**4. ICMP Redirect Attack**:
+- Malicious router sends false redirects
+- Hijacks traffic
+
+**5. ICMP Tunneling**:
+- Covert channel for data exfiltration
+- Embed data in ICMP packets
+
+**Mitigation**:
+- **Rate limiting**: Limit ICMP traffic
+- **Filtering**: Block unnecessary ICMP types
+- **Disable broadcast**: Prevent Smurf attacks
+- **Ingress filtering**: Validate source addresses
+
+**ICMPv6**:
+
+**Differences from ICMPv4**:
+- **Protocol Number**: 58 (instead of 1)
+- **Mandatory**: Required for IPv6 (not optional)
+- **Additional Functions**:
+  - Neighbor Discovery (replaces ARP)
+  - Path MTU Discovery (mandatory)
+  - Multicast Listener Discovery
+
+**New Message Types**:
+- Neighbor Solicitation (Type 135)
+- Neighbor Advertisement (Type 136)
+- Router Solicitation (Type 133)
+- Router Advertisement (Type 134)
 
 **GATE Tips**:
-- Power rule works for any real exponent: $\frac{d}{dx}[x^r] = rx^{r-1}$
-- Chain rule is essential: always identify inner and outer functions
-- Product rule: $(fg)' = f'g + fg'$ (not $f'g'$!)
-- For $\frac{0}{0}$ limits, try L'Hôpital's rule after checking conditions
-- Implicit differentiation: treat $y$ as function of $x$
-- Related rates: differentiate constraint equation with respect to time
-- MVT guarantees existence of point, not uniqueness
-
-**Examples**:
-
-1. **Find** $\frac{d}{dx}[(x^2 + 1)^3 \sin x]$:
-   Using product rule and chain rule:
-   $$\frac{d}{dx}[(x^2 + 1)^3 \sin x] = 3(x^2 + 1)^2 \cdot 2x \cdot \sin x + (x^2 + 1)^3 \cos x$$
-   $$= 6x(x^2 + 1)^2 \sin x + (x^2 + 1)^3 \cos x$$
-
-2. **Find** $\frac{dy}{dx}$ for $x^3 + y^3 = 6xy$:
-   Differentiating implicitly:
-   $$3x^2 + 3y^2\frac{dy}{dx} = 6y + 6x\frac{dy}{dx}$$
-   $$3y^2\frac{dy}{dx} - 6x\frac{dy}{dx} = 6y - 3x^2$$
-   $$\frac{dy}{dx} = \frac{6y - 3x^2}{3y^2 - 6x} = \frac{2y - x^2}{y^2 - 2x}$$
-
-3. **Verify MVT** for $f(x) = x^2$ on $[1,3]$:
-   - $f'(x) = 2x$
-   - $\frac{f(3) - f(1)}{3 - 1} = \frac{9 - 1}{2} = 4$
-   - Need $f'(c) = 4$: $2c = 4 \Rightarrow c = 2$
-   - Since $2 \in (1,3)$, MVT is satisfied with $c = 2$
-
-### 5.3 Integration (50)
-
-**Key Concepts**: Integration is the reverse process of differentiation, used to find areas, volumes, and accumulated quantities. The Fundamental Theorem of Calculus connects differentiation and integration.
-
-**Antiderivative Definition**:
-
-**Definition**: Function $F(x)$ is an **antiderivative** of $f(x)$ if $F'(x) = f(x)$
-
-**General Antiderivative**: $F(x) + C$ where $C$ is arbitrary constant
-
-**Indefinite Integral**: $\int f(x) dx = F(x) + C$ where $F'(x) = f(x)$
-
-**Definite Integral**:
-
-**Riemann Sum Definition**:
-$$\int_a^b f(x) dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*) \Delta x$$
-where $\Delta x = \frac{b-a}{n}$ and $x_i^* \in [x_{i-1}, x_i]$
-
-**Geometric Interpretation**: Signed area between curve and x-axis from $x = a$ to $x = b$
-
-**Properties of Definite Integrals**:
-
-1. **Linearity**: $\int_a^b [cf(x) + dg(x)] dx = c\int_a^b f(x) dx + d\int_a^b g(x) dx$
-
-2. **Additivity**: $\int_a^b f(x) dx + \int_b^c f(x) dx = \int_a^c f(x) dx$
-
-3. **Reversal**: $\int_a^b f(x) dx = -\int_b^a f(x) dx$
-
-4. **Zero width**: $\int_a^a f(x) dx = 0$
-
-5. **Comparison**: If $f(x) \leq g(x)$ on $[a,b]$, then $\int_a^b f(x) dx \leq \int_a^b g(x) dx$
-
-**Fundamental Theorem of Calculus**:
-
-**Part I** (Evaluation Theorem):
-If $f$ is continuous on $[a,b]$ and $F$ is antiderivative of $f$, then:
-$$\int_a^b f(x) dx = F(b) - F(a) = [F(x)]_a^b$$
-
-**Part II** (Derivative of Integral):
-If $f$ is continuous on $[a,b]$, then:
-$$\frac{d}{dx} \int_a^x f(t) dt = f(x)$$
-
-**More General Form**:
-$$\frac{d}{dx} \int_{g(x)}^{h(x)} f(t) dt = f(h(x))h'(x) - f(g(x))g'(x)$$
-
-**Basic Integration Formulas**:
-
-**Power Rule**: $\int x^n dx = \frac{x^{n+1}}{n+1} + C$ (for $n \neq -1$)
-
-**Logarithmic**: $\int \frac{1}{x} dx = \ln|x| + C$
-
-**Exponential**:
-- $\int e^x dx = e^x + C$
-- $\int a^x dx = \frac{a^x}{\ln a} + C$
-
-**Trigonometric**:
-- $\int \sin x dx = -\cos x + C$
-- $\int \cos x dx = \sin x + C$
-- $\int \sec^2 x dx = \tan x + C$
-- $\int \csc^2 x dx = -\cot x + C$
-- $\int \sec x \tan x dx = \sec x + C$
-- $\int \csc x \cot x dx = -\csc x + C$
-
-**Inverse Trigonometric**:
-- $\int \frac{1}{\sqrt{1-x^2}} dx = \sin^{-1} x + C$
-- $\int \frac{1}{1+x^2} dx = \tan^{-1} x + C$
-- $\int \frac{1}{x\sqrt{x^2-1}} dx = \sec^{-1}|x| + C$
-
-**Integration Techniques**:
-
-**1. Substitution Method** (u-substitution):
-
-**Indefinite**: If $\int f(g(x))g'(x) dx$, let $u = g(x)$, $du = g'(x) dx$
-$$\int f(g(x))g'(x) dx = \int f(u) du$$
-
-**Definite**: $\int_a^b f(g(x))g'(x) dx = \int_{g(a)}^{g(b)} f(u) du$
-
-**Example**: $\int 2x(x^2 + 1)^3 dx$
-- Let $u = x^2 + 1$, $du = 2x dx$
-- $\int (x^2 + 1)^3 \cdot 2x dx = \int u^3 du = \frac{u^4}{4} + C = \frac{(x^2 + 1)^4}{4} + C$
-
-**2. Integration by Parts**:
-
-**Formula**: $\int u dv = uv - \int v du$
-
-**Choosing u and dv** (LIATE priority):
-- **L**ogarithmic functions
-- **I**nverse trigonometric functions  
-- **A**lgebraic functions (polynomials)
-- **T**rigonometric functions
-- **E**xponential functions
-
-**Example**: $\int x e^x dx$
-- Let $u = x$, $dv = e^x dx$
-- Then $du = dx$, $v = e^x$
-- $\int x e^x dx = xe^x - \int e^x dx = xe^x - e^x + C = e^x(x-1) + C$
-
-**Repeated Integration by Parts**:
-For $\int x^n e^x dx$, apply parts $n$ times
-
-**3. Trigonometric Integrals**:
-
-**Powers of sine and cosine**:
-- $\int \sin^m x \cos^n x dx$ where $m$ or $n$ is odd: substitute for the even power
-- Both even: use half-angle formulas
-
-**Half-angle formulas**:
-- $\sin^2 x = \frac{1 - \cos 2x}{2}$
-- $\cos^2 x = \frac{1 + \cos 2x}{2}$
-
-**Powers of tangent and secant**:
-- $\int \tan^m x \sec^n x dx$ where $n$ is even: substitute $u = \tan x$
-- $m$ is odd: substitute $u = \sec x$
-
-**4. Trigonometric Substitution**:
-
-For integrals involving:
-- $\sqrt{a^2 - x^2}$: use $x = a\sin\theta$
-- $\sqrt{a^2 + x^2}$: use $x = a\tan\theta$  
-- $\sqrt{x^2 - a^2}$: use $x = a\sec\theta$
-
-**Example**: $\int \frac{1}{\sqrt{4-x^2}} dx$
-- Let $x = 2\sin\theta$, $dx = 2\cos\theta d\theta$
-- $\sqrt{4-x^2} = \sqrt{4-4\sin^2\theta} = 2\cos\theta$
-- $\int \frac{2\cos\theta}{2\cos\theta} d\theta = \int d\theta = \theta + C = \sin^{-1}\frac{x}{2} + C$
-
-**5. Partial Fractions**:
-
-For rational functions $\frac{P(x)}{Q(x)}$ where degree of $P <$ degree of $Q$:
-
-**Linear factors**: $\frac{A}{x-a} + \frac{B}{x-b} + \cdots$
-
-**Repeated linear factors**: $\frac{A_1}{x-a} + \frac{A_2}{(x-a)^2} + \cdots + \frac{A_n}{(x-a)^n}$
-
-**Quadratic factors**: $\frac{Ax+B}{x^2+px+q}$ (for irreducible quadratics)
-
-**Example**: $\int \frac{x+1}{x^2-x-2} dx = \int \frac{x+1}{(x-2)(x+1)} dx$
-- $\frac{x+1}{(x-2)(x+1)} = \frac{A}{x-2} + \frac{B}{x+1}$
-- $x+1 = A(x+1) + B(x-2)$
-- Setting $x = 2$: $3 = 3A \Rightarrow A = 1$
-- Setting $x = -1$: $0 = -3B \Rightarrow B = 0$
-- $\int \frac{1}{x-2} dx = \ln|x-2| + C$
-
-**6. Numerical Integration**:
-
-**Trapezoidal Rule**:
-$$\int_a^b f(x) dx \approx \frac{h}{2}[f(x_0) + 2f(x_1) + 2f(x_2) + \cdots + 2f(x_{n-1}) + f(x_n)]$$
-where $h = \frac{b-a}{n}$
-
-**Simpson's Rule** (n even):
-$$\int_a^b f(x) dx \approx \frac{h}{3}[f(x_0) + 4f(x_1) + 2f(x_2) + 4f(x_3) + \cdots + 4f(x_{n-1}) + f(x_n)]$$
-
-**Error Analysis**:
-- Trapezoidal: Error $\leq \frac{(b-a)^3}{12n^2} \max|f''(x)|$
-- Simpson's: Error $\leq \frac{(b-a)^5}{180n^4} \max|f^{(4)}(x)|$
-
-**Improper Integrals**:
-
-**Type I** (Infinite limits):
-$$\int_a^{\infty} f(x) dx = \lim_{t \to \infty} \int_a^t f(x) dx$$
-
-**Type II** (Discontinuous integrand):
-$$\int_a^b f(x) dx = \lim_{t \to c^-} \int_a^t f(x) dx + \lim_{t \to c^+} \int_t^b f(x) dx$$
-where $f$ has discontinuity at $x = c \in (a,b)$
-
-**Convergence Tests**:
-- **Comparison Test**: If $0 \leq f(x) \leq g(x)$ and $\int g(x) dx$ converges, then $\int f(x) dx$ converges
-- **Limit Comparison Test**: If $\lim_{x \to \infty} \frac{f(x)}{g(x)} = L > 0$, then both integrals converge or both diverge
-
-**Applications of Integration**:
-
-**Area between curves**:
-$$A = \int_a^b |f(x) - g(x)| dx$$
-
-**Volume by cross-sections**:
-$$V = \int_a^b A(x) dx$$
-where $A(x)$ is area of cross-section at $x$
-
-**Volume of revolution**:
-- **Disk method**: $V = \pi \int_a^b [f(x)]^2 dx$
-- **Washer method**: $V = \pi \int_a^b ([f(x)]^2 - [g(x)]^2) dx$
-- **Shell method**: $V = 2\pi \int_a^b x f(x) dx$
-
-**Arc length**:
-$$L = \int_a^b \sqrt{1 + [f'(x)]^2} dx$$
-
-**Surface area of revolution**:
-$$S = 2\pi \int_a^b f(x) \sqrt{1 + [f'(x)]^2} dx$$
-
-**Problem-Solving Strategy**:
-
-**For Integration**:
-1. **Identify type**: Basic formula, substitution, parts, trig substitution, partial fractions
-2. **Simplify first**: Factor, expand, or rewrite if helpful
-3. **Check answer**: Differentiate result to verify
-
-**For Definite Integrals**:
-1. **Find antiderivative** using appropriate technique
-2. **Apply FTC**: Evaluate at bounds and subtract
-3. **Check reasonableness**: Consider sign and magnitude
-
-**GATE Tips**:
-- Master basic formulas and substitution method first
-- Integration by parts: choose $u$ using LIATE
-- Trig substitution: match radical form to substitution
-- Partial fractions: degree of numerator < degree of denominator
-- FTC Part II: $\frac{d}{dx} \int_a^x f(t) dt = f(x)$
-- Improper integrals: check convergence before evaluating
-- Area problems: determine which function is on top
-
-**Examples**:
-
-1. **Evaluate** $\int x^2 e^{x^3} dx$:
-   - Let $u = x^3$, $du = 3x^2 dx$, so $x^2 dx = \frac{1}{3} du$
-   - $\int x^2 e^{x^3} dx = \frac{1}{3} \int e^u du = \frac{1}{3} e^u + C = \frac{1}{3} e^{x^3} + C$
-
-2. **Evaluate** $\int_0^{\pi/2} x \sin x dx$:
-   - Using integration by parts: $u = x$, $dv = \sin x dx$
-   - $du = dx$, $v = -\cos x$
-   - $\int x \sin x dx = -x \cos x + \int \cos x dx = -x \cos x + \sin x + C$
-   - $\int_0^{\pi/2} x \sin x dx = [-x \cos x + \sin x]_0^{\pi/2} = [0 + 1] - [0 + 0] = 1$
-
-3. **Find area** between $y = x^2$ and $y = 2x$ from $x = 0$ to $x = 2$:
-   - Intersection points: $x^2 = 2x \Rightarrow x = 0, 2$
-   - For $0 \leq x \leq 2$: $2x \geq x^2$
-   - $A = \int_0^2 (2x - x^2) dx = [x^2 - \frac{x^3}{3}]_0^2 = 4 - \frac{8}{3} = \frac{4}{3}$
-
-### 5.4 Differential Equations (35)
-
-**Key Concepts**: Differential equations involve functions and their derivatives. They model rates of change in physics, engineering, biology, and economics.
-
-**Classification of Differential Equations**:
-
-**By Order**: Highest derivative present
-- **First-order**: $\frac{dy}{dx} = f(x,y)$
-- **Second-order**: $\frac{d^2y}{dx^2} = f(x, y, y')$
-- **n-th order**: Contains $\frac{d^ny}{dx^n}$
-
-**By Linearity**:
-- **Linear**: Dependent variable and derivatives appear linearly
-- **Nonlinear**: Contains products, powers, or nonlinear functions of $y$ and derivatives
-
-**By Homogeneity**:
-- **Homogeneous**: All terms involve dependent variable or its derivatives
-- **Non-homogeneous**: Contains terms independent of dependent variable
-
-**First-Order Differential Equations**:
-
-**1. Separable Equations**:
-
-**Form**: $\frac{dy}{dx} = f(x)g(y)$ or $M(x)dx + N(y)dy = 0$
-
-**Solution Method**:
-1. Separate variables: $\frac{dy}{g(y)} = f(x)dx$
-2. Integrate both sides: $\int \frac{dy}{g(y)} = \int f(x)dx$
-3. Solve for $y$ if possible
-
-**Example**: $\frac{dy}{dx} = xy$
-- Separate: $\frac{dy}{y} = x dx$
-- Integrate: $\ln|y| = \frac{x^2}{2} + C$
-- Solve: $y = Ae^{x^2/2}$ where $A = \pm e^C$
-
-**2. Linear First-Order Equations**:
-
-**Standard Form**: $\frac{dy}{dx} + P(x)y = Q(x)$
-
-**Solution Method** (Integrating Factor):
-1. Find integrating factor: $\mu(x) = e^{\int P(x)dx}$
-2. Multiply equation by $\mu(x)$: $\mu(x)\frac{dy}{dx} + \mu(x)P(x)y = \mu(x)Q(x)$
-3. Left side becomes $\frac{d}{dx}[\mu(x)y]$
-4. Integrate: $\mu(x)y = \int \mu(x)Q(x)dx$
-5. Solve for $y$: $y = \frac{1}{\mu(x)} \int \mu(x)Q(x)dx$
-
-**Example**: $\frac{dy}{dx} + 2y = e^{-x}$
-- $P(x) = 2$, $Q(x) = e^{-x}$
-- $\mu(x) = e^{\int 2dx} = e^{2x}$
-- $e^{2x}\frac{dy}{dx} + 2e^{2x}y = e^{2x} \cdot e^{-x} = e^x$
-- $\frac{d}{dx}[e^{2x}y] = e^x$
-- $e^{2x}y = \int e^x dx = e^x + C$
-- $y = e^{-x} + Ce^{-2x}$
-
-**3. Exact Equations**:
-
-**Form**: $M(x,y)dx + N(x,y)dy = 0$
-
-**Exactness Condition**: $\frac{\partial M}{\partial y} = \frac{\partial N}{\partial x}$
-
-**Solution Method**:
-1. Check exactness condition
-2. Find function $F(x,y)$ such that $\frac{\partial F}{\partial x} = M$ and $\frac{\partial F}{\partial y} = N$
-3. Solution is $F(x,y) = C$
-
-**Finding F(x,y)**:
-- $F(x,y) = \int M(x,y)dx + g(y)$
-- Determine $g(y)$ using $\frac{\partial F}{\partial y} = N$
-
-**4. Homogeneous Equations**:
-
-**Form**: $\frac{dy}{dx} = f\left(\frac{y}{x}\right)$
-
-**Solution Method**:
-1. Substitute $v = \frac{y}{x}$, so $y = vx$ and $\frac{dy}{dx} = v + x\frac{dv}{dx}$
-2. Equation becomes: $v + x\frac{dv}{dx} = f(v)$
-3. Separate: $x\frac{dv}{dx} = f(v) - v$
-4. $\frac{dv}{f(v) - v} = \frac{dx}{x}$
-5. Integrate and substitute back
-
-**Second-Order Linear Differential Equations**:
-
-**General Form**: $a(x)\frac{d^2y}{dx^2} + b(x)\frac{dy}{dx} + c(x)y = f(x)$
-
-**Constant Coefficients**: $ay'' + by' + cy = f(x)$
-
-**Homogeneous Case**: $ay'' + by' + cy = 0$
-
-**Characteristic Equation Method**:
-1. Assume solution $y = e^{rx}$
-2. Substitute: $ar^2 + br + c = 0$
-3. Solve quadratic for $r$
-
-**Cases for Roots**:
-
-**Case 1**: Two distinct real roots $r_1, r_2$
-- General solution: $y = c_1 e^{r_1 x} + c_2 e^{r_2 x}$
-
-**Case 2**: Repeated real root $r$
-- General solution: $y = (c_1 + c_2 x)e^{rx}$
-
-**Case 3**: Complex roots $r = \alpha \pm \beta i$
-- General solution: $y = e^{\alpha x}(c_1 \cos \beta x + c_2 \sin \beta x)$
-
-**Example**: $y'' - 5y' + 6y = 0$
-- Characteristic equation: $r^2 - 5r + 6 = 0$
-- Factor: $(r-2)(r-3) = 0$
-- Roots: $r_1 = 2, r_2 = 3$
-- Solution: $y = c_1 e^{2x} + c_2 e^{3x}$
-
-**Non-homogeneous Equations**: $ay'' + by' + cy = f(x)$
-
-**General Solution**: $y = y_h + y_p$
-- $y_h$: homogeneous solution
-- $y_p$: particular solution
-
-**Method of Undetermined Coefficients**:
-
-For specific forms of $f(x)$:
-
-| $f(x)$ | Trial $y_p$ |
-|--------|-------------|
-| $ae^{kx}$ | $Ae^{kx}$ |
-| $a\cos kx + b\sin kx$ | $A\cos kx + B\sin kx$ |
-| $ax^n$ | $A_n x^n + A_{n-1}x^{n-1} + \cdots + A_0$ |
-| $ae^{kx}\cos mx$ | $e^{kx}(A\cos mx + B\sin mx)$ |
-
-**Modification Rule**: If trial solution is part of homogeneous solution, multiply by $x$ (or $x^2$ if necessary)
-
-**Example**: $y'' - 3y' + 2y = e^x$
-- Homogeneous: $r^2 - 3r + 2 = 0 \Rightarrow r = 1, 2$
-- $y_h = c_1 e^x + c_2 e^{2x}$
-- Since $e^x$ is in $y_h$, try $y_p = Axe^x$
-- $y_p' = A(e^x + xe^x) = Ae^x(1 + x)$
-- $y_p'' = Ae^x(2 + x)$
-- Substitute: $Ae^x(2 + x) - 3Ae^x(1 + x) + 2Axe^x = e^x$
-- $Ae^x(2 + x - 3 - 3x + 2x) = e^x$
-- $Ae^x(-1) = e^x \Rightarrow A = -1$
-- $y_p = -xe^x$
-- General solution: $y = c_1 e^x + c_2 e^{2x} - xe^x$
-
-**Variation of Parameters**:
-
-For $y'' + p(x)y' + q(x)y = f(x)$ with known homogeneous solutions $y_1, y_2$:
-
-**Particular Solution**:
-$$y_p = -y_1 \int \frac{y_2 f(x)}{W} dx + y_2 \int \frac{y_1 f(x)}{W} dx$$
-
-where $W = y_1 y_2' - y_2 y_1'$ is the Wronskian
-
-**Applications of Differential Equations**:
-
-**1. Population Growth**:
-- **Exponential**: $\frac{dP}{dt} = kP \Rightarrow P(t) = P_0 e^{kt}$
-- **Logistic**: $\frac{dP}{dt} = kP(1 - \frac{P}{M}) \Rightarrow P(t) = \frac{M}{1 + Ae^{-kt}}$
-
-**2. Newton's Law of Cooling**:
-$$\frac{dT}{dt} = -k(T - T_{\text{ambient}})$$
-Solution: $T(t) = T_{\text{ambient}} + (T_0 - T_{\text{ambient}})e^{-kt}$
-
-**3. Simple Harmonic Motion**:
-$$m\frac{d^2x}{dt^2} + kx = 0$$
-Solution: $x(t) = A\cos(\omega t + \phi)$ where $\omega = \sqrt{\frac{k}{m}}$
-
-**4. RLC Circuits**:
-$$L\frac{d^2q}{dt^2} + R\frac{dq}{dt} + \frac{q}{C} = E(t)$$
-
-**5. Mixing Problems**:
-Rate of change = Rate in - Rate out
-$$\frac{dA}{dt} = r_{\text{in}} c_{\text{in}} - r_{\text{out}} \frac{A(t)}{V(t)}$$
-
-**Laplace Transform Method**:
-
-**Definition**: $\mathcal{L}\{f(t)\} = F(s) = \int_0^{\infty} e^{-st} f(t) dt$
-
-**Key Properties**:
-- $\mathcal{L}\{f'(t)\} = sF(s) - f(0)$
-- $\mathcal{L}\{f''(t)\} = s^2F(s) - sf(0) - f'(0)$
-- $\mathcal{L}\{e^{at}f(t)\} = F(s-a)$
-
-**Common Transforms**:
-- $\mathcal{L}\{1\} = \frac{1}{s}$
-- $\mathcal{L}\{t^n\} = \frac{n!}{s^{n+1}}$
-- $\mathcal{L}\{e^{at}\} = \frac{1}{s-a}$
-- $\mathcal{L}\{\sin at\} = \frac{a}{s^2 + a^2}$
-- $\mathcal{L}\{\cos at\} = \frac{s}{s^2 + a^2}$
-
-**Solution Process**:
-1. Take Laplace transform of DE
-2. Solve algebraic equation for $Y(s) = \mathcal{L}\{y(t)\}$
-3. Find inverse transform: $y(t) = \mathcal{L}^{-1}\{Y(s)\}$
-
-**Problem-Solving Strategy**:
-
-**For First-Order DEs**:
-1. **Identify type**: Separable, linear, exact, homogeneous
-2. **Apply appropriate method**
-3. **Include arbitrary constant**
-4. **Apply initial conditions** if given
-
-**For Second-Order DEs**:
-1. **Find homogeneous solution** using characteristic equation
-2. **Find particular solution** using undetermined coefficients or variation of parameters
-3. **Combine**: $y = y_h + y_p$
-4. **Apply initial conditions**
-
-**GATE Tips**:
-- Separable: $\frac{dy}{dx} = f(x)g(y)$ → separate and integrate
-- Linear first-order: Use integrating factor $\mu(x) = e^{\int P(x)dx}$
-- Characteristic equation: $ar^2 + br + c = 0$ for $ay'' + by' + cy = 0$
-- Complex roots $\alpha \pm \beta i$ give $e^{\alpha x}(c_1 \cos \beta x + c_2 \sin \beta x)$
-- Undetermined coefficients: Match form of non-homogeneous term
-- Initial conditions determine arbitrary constants
-- Check solutions by substitution
-
-**Examples**:
-
-1. **Solve** $\frac{dy}{dx} = \frac{x}{y}$ with $y(0) = 1$:
-   - Separate: $y dy = x dx$
-   - Integrate: $\frac{y^2}{2} = \frac{x^2}{2} + C$
-   - $y^2 = x^2 + 2C$
-   - Initial condition: $1 = 0 + 2C \Rightarrow C = \frac{1}{2}$
-   - Solution: $y^2 = x^2 + 1 \Rightarrow y = \sqrt{x^2 + 1}$ (taking positive root)
-
-2. **Solve** $y'' + 4y = 0$:
-   - Characteristic equation: $r^2 + 4 = 0$
-   - Roots: $r = \pm 2i$
-   - Solution: $y = c_1 \cos 2x + c_2 \sin 2x$
-
-3. **Solve** $y'' - y = e^x$:
-   - Homogeneous: $r^2 - 1 = 0 \Rightarrow r = \pm 1$
-   - $y_h = c_1 e^x + c_2 e^{-x}$
-   - Since $e^x$ is in $y_h$, try $y_p = Axe^x$
-   - $y_p' = A(e^x + xe^x)$, $y_p'' = A(2e^x + xe^x)$
-   - Substitute: $A(2e^x + xe^x) - Axe^x = e^x$
-   - $2Ae^x = e^x \Rightarrow A = \frac{1}{2}$
-   - Solution: $y = c_1 e^x + c_2 e^{-x} + \frac{1}{2}xe^x$
-### 6. Engineering Mathematics: Linear Algebra (120 Questions)
-
-### 6.1 Matrices and Determinants (40)
-
-**Key Concepts**: Matrices are rectangular arrays of numbers that represent linear transformations and systems of equations. Determinants measure how matrices scale areas and volumes.
-
-**Matrix Definitions**:
-
-**Matrix**: Rectangular array of numbers arranged in rows and columns
-$$A = \begin{bmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{bmatrix}$$
-
-**Notation**: $A = [a_{ij}]_{m \times n}$ where $i$ is row index, $j$ is column index
-
-**Special Matrices**:
-
-**Square Matrix**: $m = n$ (same number of rows and columns)
-
-**Zero Matrix**: All entries are zero, denoted $O$ or $0$
-
-**Identity Matrix**: Square matrix with 1's on diagonal, 0's elsewhere
-$$I_n = \begin{bmatrix} 1 & 0 & \cdots & 0 \\ 0 & 1 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & 1 \end{bmatrix}$$
-
-**Diagonal Matrix**: Square matrix with non-zero entries only on main diagonal
-$$D = \begin{bmatrix} d_1 & 0 & \cdots & 0 \\ 0 & d_2 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & d_n \end{bmatrix}$$
-
-**Upper Triangular**: $a_{ij} = 0$ for $i > j$
-**Lower Triangular**: $a_{ij} = 0$ for $i < j$
-
-**Symmetric Matrix**: $A = A^T$ (equals its transpose)
-**Skew-Symmetric**: $A = -A^T$
-
-**Matrix Operations**:
-
-**Matrix Addition**: $(A + B)_{ij} = a_{ij} + b_{ij}$
-- Only defined for matrices of same size
-- **Commutative**: $A + B = B + A$
-- **Associative**: $(A + B) + C = A + (B + C)$
-
-**Scalar Multiplication**: $(cA)_{ij} = c \cdot a_{ij}$
-- **Distributive**: $c(A + B) = cA + cB$
-- $(c + d)A = cA + dA$
-
-**Matrix Multiplication**: $(AB)_{ij} = \sum_{k=1}^{p} a_{ik} b_{kj}$
-
-For $A_{m \times p}$ and $B_{p \times n}$, result is $C_{m \times n}$
-
-**Properties**:
-- **Not commutative**: Generally $AB \neq BA$
-- **Associative**: $(AB)C = A(BC)$
-- **Distributive**: $A(B + C) = AB + AC$
-- **Identity**: $AI = IA = A$
-
-**Transpose**: $(A^T)_{ij} = a_{ji}$
-
-**Properties of Transpose**:
-- $(A^T)^T = A$
-- $(A + B)^T = A^T + B^T$
-- $(AB)^T = B^T A^T$ (order reverses!)
-- $(cA)^T = cA^T$
-
-**Determinants**:
-
-**2×2 Determinant**:
-$$\det(A) = \begin{vmatrix} a & b \\ c & d \end{vmatrix} = ad - bc$$
-
-**3×3 Determinant** (Cofactor expansion along first row):
-$$\det(A) = a_{11}\begin{vmatrix} a_{22} & a_{23} \\ a_{32} & a_{33} \end{vmatrix} - a_{12}\begin{vmatrix} a_{21} & a_{23} \\ a_{31} & a_{33} \end{vmatrix} + a_{13}\begin{vmatrix} a_{21} & a_{22} \\ a_{31} & a_{32} \end{vmatrix}$$
-
-**General Cofactor Expansion**:
-$$\det(A) = \sum_{j=1}^{n} a_{ij} C_{ij} = \sum_{i=1}^{n} a_{ij} C_{ij}$$
-
-where $C_{ij} = (-1)^{i+j} M_{ij}$ is the cofactor and $M_{ij}$ is the minor
-
-**Properties of Determinants**:
-
-1. **Row/Column Operations**:
-   - Swapping two rows/columns changes sign
-   - Multiplying row/column by scalar $k$ multiplies determinant by $k$
-   - Adding multiple of one row to another doesn't change determinant
-
-2. **Special Cases**:
-   - $\det(I) = 1$
-   - $\det(A^T) = \det(A)$
-   - $\det(AB) = \det(A) \det(B)$
-   - $\det(cA) = c^n \det(A)$ for $n \times n$ matrix
-
-3. **Triangular Matrices**: Determinant equals product of diagonal entries
-
-4. **Zero Determinant**: Matrix is singular (non-invertible) iff $\det(A) = 0$
-
-**Cramer's Rule**:
-
-For system $Ax = b$ where $A$ is $n \times n$ and $\det(A) \neq 0$:
-$$x_i = \frac{\det(A_i)}{\det(A)}$$
-
-where $A_i$ is matrix $A$ with $i$-th column replaced by $b$
-
-**Matrix Inverse**:
-
-**Definition**: $A^{-1}$ is inverse of $A$ if $AA^{-1} = A^{-1}A = I$
-
-**Existence**: $A^{-1}$ exists iff $\det(A) \neq 0$ (A is non-singular)
-
-**2×2 Inverse**:
-$$A^{-1} = \frac{1}{\det(A)} \begin{bmatrix} d & -b \\ -c & a \end{bmatrix} \text{ for } A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$$
-
-**General Formula** (Adjugate method):
-$$A^{-1} = \frac{1}{\det(A)} \text{adj}(A)$$
-
-where $\text{adj}(A) = [C_{ji}]$ (transpose of cofactor matrix)
-
-**Properties of Inverse**:
-- $(A^{-1})^{-1} = A$
-- $(AB)^{-1} = B^{-1}A^{-1}$ (order reverses!)
-- $(A^T)^{-1} = (A^{-1})^T$
-- $\det(A^{-1}) = \frac{1}{\det(A)}$
-
-**Elementary Matrices**:
-
-Matrices representing elementary row operations:
-1. **Row swap**: $E_{ij}$ (swaps rows $i$ and $j$)
-2. **Row scaling**: $E_i(c)$ (multiplies row $i$ by $c \neq 0$)
-3. **Row addition**: $E_{ij}(c)$ (adds $c$ times row $j$ to row $i$)
-
-**Theorem**: Every invertible matrix is product of elementary matrices
-
-**Gauss-Jordan Elimination**:
-
-Method to find $A^{-1}$ by row operations:
-1. Form augmented matrix $[A | I]$
-2. Use row operations to transform to $[I | A^{-1}]$
-3. If process fails, $A$ is not invertible
-
-**Rank of Matrix**:
-
-**Definition**: Rank is maximum number of linearly independent rows (or columns)
-
-**Properties**:
-- $\text{rank}(A) = \text{rank}(A^T)$
-- $\text{rank}(A) \leq \min(m,n)$ for $m \times n$ matrix
-- $A$ is invertible iff $\text{rank}(A) = n$ (full rank)
-
-**Computing Rank**:
-1. Use row operations to get row echelon form
-2. Count non-zero rows
-
-**Applications**:
-
-**System of Linear Equations**: $Ax = b$
-- **Unique solution**: $\det(A) \neq 0$ (use Cramer's rule or $x = A^{-1}b$)
-- **No solution or infinitely many**: $\det(A) = 0$
-
-**Consistency Conditions**:
-- **Consistent**: $\text{rank}(A) = \text{rank}([A|b])$
-- **Unique solution**: $\text{rank}(A) = n$ (number of variables)
-- **Infinitely many solutions**: $\text{rank}(A) < n$
-
-**Geometric Interpretations**:
-- **Determinant**: Signed volume of parallelepiped formed by column vectors
-- **Matrix multiplication**: Composition of linear transformations
-- **Inverse**: Reverse transformation
-
-**Problem-Solving Tips**:
-
-**For Determinants**:
-1. Use row operations to simplify before expanding
-2. Look for zeros to minimize calculation
-3. For large matrices, use LU decomposition
-
-**For Matrix Inverse**:
-1. Check if $\det(A) \neq 0$ first
-2. For 2×2, use direct formula
-3. For larger matrices, use Gauss-Jordan elimination
-
-**For Systems**:
-1. Check consistency using rank
-2. If unique solution exists, use appropriate method
-3. For homogeneous systems, non-trivial solution exists iff $\det(A) = 0$
-
-**GATE Tips**:
-- $(AB)^T = B^T A^T$ and $(AB)^{-1} = B^{-1} A^{-1}$ (order reverses!)
-- $\det(AB) = \det(A) \det(B)$
-- Row operations: swap changes sign, scaling multiplies by scalar
-- Cramer's rule only when $\det(A) \neq 0$
-- Rank determines solution type for linear systems
-- Elementary matrices represent row operations
-
-**Examples**:
-
-1. **Find determinant** of $A = \begin{bmatrix} 2 & 1 & 3 \\ 0 & 4 & 1 \\ 0 & 0 & 5 \end{bmatrix}$:
-   - Upper triangular matrix
-   - $\det(A) = 2 \times 4 \times 5 = 40$
-
-2. **Find inverse** of $A = \begin{bmatrix} 2 & 1 \\ 3 & 2 \end{bmatrix}$:
-   - $\det(A) = 2(2) - 1(3) = 1$
-   - $A^{-1} = \frac{1}{1} \begin{bmatrix} 2 & -1 \\ -3 & 2 \end{bmatrix} = \begin{bmatrix} 2 & -1 \\ -3 & 2 \end{bmatrix}$
-
-3. **Solve system** using Cramer's rule: $2x + y = 5$, $x + 3y = 8$:
-   - $A = \begin{bmatrix} 2 & 1 \\ 1 & 3 \end{bmatrix}$, $b = \begin{bmatrix} 5 \\ 8 \end{bmatrix}$
-   - $\det(A) = 6 - 1 = 5$
-   - $x = \frac{\begin{vmatrix} 5 & 1 \\ 8 & 3 \end{vmatrix}}{5} = \frac{15-8}{5} = \frac{7}{5}$
-   - $y = \frac{\begin{vmatrix} 2 & 5 \\ 1 & 8 \end{vmatrix}}{5} = \frac{16-5}{5} = \frac{11}{5}$
-
-### 6.2 Vector Spaces (25)
-
-**Key Concepts**: Vector spaces are algebraic structures where vectors can be added and scaled. They provide the foundation for linear algebra and functional analysis.
-
-**Vector Space Definition**:
-
-A **vector space** $V$ over field $F$ (usually $\mathbb{R}$ or $\mathbb{C}$) is set with two operations:
-- **Vector addition**: $+: V \times V \to V$
-- **Scalar multiplication**: $\cdot: F \times V \to V$
-
-satisfying these axioms for all $\mathbf{u}, \mathbf{v}, \mathbf{w} \in V$ and $a, b \in F$:
-
-**Addition Axioms**:
-1. **Closure**: $\mathbf{u} + \mathbf{v} \in V$
-2. **Commutativity**: $\mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u}$
-3. **Associativity**: $(\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + (\mathbf{v} + \mathbf{w})$
-4. **Zero vector**: $\exists \mathbf{0} \in V$ such that $\mathbf{v} + \mathbf{0} = \mathbf{v}$
-5. **Additive inverse**: $\forall \mathbf{v} \in V, \exists (-\mathbf{v}) \in V$ such that $\mathbf{v} + (-\mathbf{v}) = \mathbf{0}$
-
-**Scalar Multiplication Axioms**:
-6. **Closure**: $a\mathbf{v} \in V$
-7. **Associativity**: $a(b\mathbf{v}) = (ab)\mathbf{v}$
-8. **Identity**: $1\mathbf{v} = \mathbf{v}$
-9. **Distributivity**: $a(\mathbf{u} + \mathbf{v}) = a\mathbf{u} + a\mathbf{v}$
-10. **Distributivity**: $(a + b)\mathbf{v} = a\mathbf{v} + b\mathbf{v}$
-
-**Examples of Vector Spaces**:
-
-1. **$\mathbb{R}^n$**: n-tuples of real numbers with componentwise operations
-2. **$\mathbb{C}^n$**: n-tuples of complex numbers
-3. **$M_{m \times n}(\mathbb{R})$**: $m \times n$ real matrices
-4. **$P_n(\mathbb{R})$**: Polynomials of degree ≤ n with real coefficients
-5. **$C[a,b]$**: Continuous functions on interval $[a,b]$
-6. **$\{0\}$**: Trivial vector space containing only zero vector
-
-**Subspaces**:
-
-**Definition**: Subset $W \subseteq V$ is **subspace** if:
-1. $\mathbf{0} \in W$ (contains zero vector)
-2. **Closed under addition**: $\mathbf{u}, \mathbf{v} \in W \Rightarrow \mathbf{u} + \mathbf{v} \in W$
-3. **Closed under scalar multiplication**: $\mathbf{v} \in W, a \in F \Rightarrow a\mathbf{v} \in W$
-
-**Subspace Test**: $W$ is subspace iff $a\mathbf{u} + b\mathbf{v} \in W$ for all $\mathbf{u}, \mathbf{v} \in W$ and $a, b \in F$
-
-**Examples of Subspaces**:
-- Lines through origin in $\mathbb{R}^2$
-- Planes through origin in $\mathbb{R}^3$
-- Solution space of homogeneous system $A\mathbf{x} = \mathbf{0}$
-- Even polynomials in $P_n(\mathbb{R})$
-
-**Linear Combinations**:
-
-**Definition**: Vector $\mathbf{v}$ is **linear combination** of vectors $\mathbf{v}_1, \ldots, \mathbf{v}_k$ if:
-$$\mathbf{v} = a_1\mathbf{v}_1 + a_2\mathbf{v}_2 + \cdots + a_k\mathbf{v}_k$$
-for some scalars $a_1, \ldots, a_k$
-
-**Span**: $\text{span}\{\mathbf{v}_1, \ldots, \mathbf{v}_k\}$ is set of all linear combinations of $\mathbf{v}_1, \ldots, \mathbf{v}_k$
-
-**Properties**:
-- $\text{span}\{\mathbf{v}_1, \ldots, \mathbf{v}_k\}$ is always a subspace
-- Smallest subspace containing $\mathbf{v}_1, \ldots, \mathbf{v}_k$
-
-**Linear Independence**:
-
-**Definition**: Vectors $\mathbf{v}_1, \ldots, \mathbf{v}_k$ are **linearly independent** if:
-$$a_1\mathbf{v}_1 + a_2\mathbf{v}_2 + \cdots + a_k\mathbf{v}_k = \mathbf{0} \Rightarrow a_1 = a_2 = \cdots = a_k = 0$$
-
-**Linear Dependence**: Not linearly independent; some non-trivial linear combination equals zero
-
-**Tests for Linear Independence**:
-1. **Matrix method**: Form matrix with vectors as columns; independent iff columns are linearly independent
-2. **Determinant**: For square matrix, independent iff $\det \neq 0$
-3. **Row reduction**: Independent iff no free variables in reduced form
-
-**Properties**:
-- Any set containing zero vector is linearly dependent
-- Two vectors are dependent iff one is scalar multiple of other
-- In $\mathbb{R}^n$, at most $n$ vectors can be linearly independent
-
-**Basis and Dimension**:
-
-**Basis**: Set of vectors $\mathcal{B} = \{\mathbf{v}_1, \ldots, \mathbf{v}_n\}$ is **basis** for $V$ if:
-1. $\mathcal{B}$ is linearly independent
-2. $\text{span}(\mathcal{B}) = V$
-
-**Properties of Bases**:
-- Every vector in $V$ has unique representation as linear combination of basis vectors
-- All bases of finite-dimensional vector space have same number of elements
-
-**Dimension**: $\dim(V)$ is number of vectors in any basis of $V$
-
-**Standard Bases**:
-- $\mathbb{R}^n$: $\{\mathbf{e}_1, \mathbf{e}_2, \ldots, \mathbf{e}_n\}$ where $\mathbf{e}_i$ has 1 in $i$-th position, 0 elsewhere
-- $P_n(\mathbb{R})$: $\{1, x, x^2, \ldots, x^n\}$
-- $M_{2 \times 2}(\mathbb{R})$: $\left\{\begin{bmatrix}1&0\\0&0\end{bmatrix}, \begin{bmatrix}0&1\\0&0\end{bmatrix}, \begin{bmatrix}0&0\\1&0\end{bmatrix}, \begin{bmatrix}0&0\\0&1\end{bmatrix}\right\}$
-
-**Fundamental Theorems**:
-
-**Dimension Theorem**: If $V$ is finite-dimensional with $\dim(V) = n$, then:
-- Any linearly independent set has at most $n$ vectors
-- Any spanning set has at least $n$ vectors
-- Any linearly independent set of $n$ vectors is a basis
-- Any spanning set of $n$ vectors is a basis
-
-**Rank-Nullity Theorem**: For linear transformation $T: V \to W$:
-$$\dim(V) = \dim(\ker(T)) + \dim(\text{range}(T))$$
-
-**Coordinate Systems**:
-
-Given basis $\mathcal{B} = \{\mathbf{v}_1, \ldots, \mathbf{v}_n\}$ for $V$, every $\mathbf{v} \in V$ has unique representation:
-$$\mathbf{v} = c_1\mathbf{v}_1 + c_2\mathbf{v}_2 + \cdots + c_n\mathbf{v}_n$$
-
-**Coordinate vector**: $[\mathbf{v}]_{\mathcal{B}} = \begin{bmatrix} c_1 \\ c_2 \\ \vdots \\ c_n \end{bmatrix}$
-
-**Change of Basis**:
-
-For bases $\mathcal{B}$ and $\mathcal{C}$, **change of basis matrix** $P_{\mathcal{C} \leftarrow \mathcal{B}}$ satisfies:
-$$[\mathbf{v}]_{\mathcal{C}} = P_{\mathcal{C} \leftarrow \mathcal{B}} [\mathbf{v}]_{\mathcal{B}}$$
-
-**Construction**: Columns of $P_{\mathcal{C} \leftarrow \mathcal{B}}$ are coordinate vectors of $\mathcal{B}$-basis vectors with respect to $\mathcal{C}$
-
-**Row Space and Column Space**:
-
-For matrix $A$:
-- **Row space**: $\text{row}(A) = \text{span of row vectors}$
-- **Column space**: $\text{col}(A) = \text{span of column vectors}$
-- **Null space**: $\text{null}(A) = \{\mathbf{x} : A\mathbf{x} = \mathbf{0}\}$
-
-**Properties**:
-- $\text{rank}(A) = \dim(\text{row}(A)) = \dim(\text{col}(A))$
-- $\text{nullity}(A) = \dim(\text{null}(A))$
-- $\text{rank}(A) + \text{nullity}(A) = n$ (number of columns)
-
-**Inner Product Spaces**:
-
-**Inner Product**: Function $\langle \cdot, \cdot \rangle: V \times V \to F$ satisfying:
-1. **Linearity**: $\langle a\mathbf{u} + b\mathbf{v}, \mathbf{w} \rangle = a\langle \mathbf{u}, \mathbf{w} \rangle + b\langle \mathbf{v}, \mathbf{w} \rangle$
-2. **Conjugate symmetry**: $\langle \mathbf{u}, \mathbf{v} \rangle = \overline{\langle \mathbf{v}, \mathbf{u} \rangle}$
-3. **Positive definiteness**: $\langle \mathbf{v}, \mathbf{v} \rangle \geq 0$ with equality iff $\mathbf{v} = \mathbf{0}$
-
-**Standard Inner Products**:
-- $\mathbb{R}^n$: $\langle \mathbf{u}, \mathbf{v} \rangle = \mathbf{u} \cdot \mathbf{v} = \sum_{i=1}^n u_i v_i$
-- $\mathbb{C}^n$: $\langle \mathbf{u}, \mathbf{v} \rangle = \sum_{i=1}^n u_i \overline{v_i}$
-- $C[a,b]$: $\langle f, g \rangle = \int_a^b f(x)g(x) dx$
-
-**Norm**: $\|\mathbf{v}\| = \sqrt{\langle \mathbf{v}, \mathbf{v} \rangle}$
-
-**Orthogonality**: Vectors $\mathbf{u}, \mathbf{v}$ are **orthogonal** if $\langle \mathbf{u}, \mathbf{v} \rangle = 0$
-
-**Orthogonal and Orthonormal Sets**:
-
-**Orthogonal set**: Pairwise orthogonal vectors
-**Orthonormal set**: Orthogonal set where each vector has norm 1
-
-**Properties**:
-- Orthogonal sets are linearly independent (except for zero vector)
-- Orthonormal basis simplifies calculations
-
-**Gram-Schmidt Process**:
-
-Algorithm to convert basis $\{\mathbf{v}_1, \ldots, \mathbf{v}_n\}$ to orthonormal basis $\{\mathbf{u}_1, \ldots, \mathbf{u}_n\}$:
-
-1. $\mathbf{u}_1 = \frac{\mathbf{v}_1}{\|\mathbf{v}_1\|}$
-
-2. For $k = 2, 3, \ldots, n$:
-   - $\mathbf{w}_k = \mathbf{v}_k - \sum_{j=1}^{k-1} \langle \mathbf{v}_k, \mathbf{u}_j \rangle \mathbf{u}_j$
-   - $\mathbf{u}_k = \frac{\mathbf{w}_k}{\|\mathbf{w}_k\|}$
-
-**Problem-Solving Tips**:
-
-**For Subspaces**:
-1. Check if zero vector is included
-2. Verify closure under addition and scalar multiplication
-3. Use subspace test: $a\mathbf{u} + b\mathbf{v} \in W$
-
-**For Linear Independence**:
-1. Set up equation $a_1\mathbf{v}_1 + \cdots + a_k\mathbf{v}_k = \mathbf{0}$
-2. Solve for coefficients
-3. Independent iff only trivial solution
-
-**For Basis**:
-1. Check linear independence
-2. Check if span equals the space
-3. Count vectors (should equal dimension)
-
-**GATE Tips**:
-- Subspace must contain zero vector and be closed under operations
-- Linear independence: only trivial combination gives zero
-- Basis: linearly independent spanning set
-- Dimension: number of vectors in basis
-- Rank-nullity: $\text{rank} + \text{nullity} = \text{number of columns}$
-- Orthogonal vectors are linearly independent
-- Gram-Schmidt produces orthonormal basis
-
-**Examples**:
-
-1. **Check if subspace**: $W = \{(x, y, z) \in \mathbb{R}^3 : x + y + z = 0\}$
-   - Contains $(0,0,0)$: $0 + 0 + 0 = 0$ ✓
-   - Closed under addition: If $x_1 + y_1 + z_1 = 0$ and $x_2 + y_2 + z_2 = 0$, then $(x_1 + x_2) + (y_1 + y_2) + (z_1 + z_2) = 0$ ✓
-   - Closed under scalar multiplication: If $x + y + z = 0$, then $cx + cy + cz = c(x + y + z) = 0$ ✓
-   - Therefore $W$ is subspace
-
-2. **Test linear independence**: $\mathbf{v}_1 = (1,2,1)$, $\mathbf{v}_2 = (2,1,3)$, $\mathbf{v}_3 = (1,-1,2)$
-   - Set up: $a(1,2,1) + b(2,1,3) + c(1,-1,2) = (0,0,0)$
-   - System: $a + 2b + c = 0$, $2a + b - c = 0$, $a + 3b + 2c = 0$
-   - Solving: $a = b = c = 0$ (only solution)
-   - Therefore vectors are linearly independent
-
-3. **Find basis for null space** of $A = \begin{bmatrix} 1 & 2 & 1 & 0 \\ 2 & 4 & 1 & 1 \end{bmatrix}$:
-   - Row reduce: $\begin{bmatrix} 1 & 2 & 0 & -1 \\ 0 & 0 & 1 & 2 \end{bmatrix}$
-   - Free variables: $x_2, x_4$
-   - General solution: $x_1 = -2x_2 + x_4$, $x_3 = -2x_4$
-   - Basis: $\{(-2,1,0,0), (1,0,-2,1)\}$
-
-### 6.3 Eigenvalues and Eigenvectors (30)
-
-**Key Concepts**: Eigenvalues and eigenvectors reveal the fundamental directions and scaling factors of linear transformations. They are crucial for understanding matrix behavior and solving differential equations.
-
-**Definitions**:
-
-**Eigenvector**: Non-zero vector $\mathbf{v}$ such that $A\mathbf{v} = \lambda\mathbf{v}$ for some scalar $\lambda$
-
-**Eigenvalue**: Scalar $\lambda$ such that $A\mathbf{v} = \lambda\mathbf{v}$ for some non-zero vector $\mathbf{v}$
-
-**Geometric Interpretation**: Eigenvectors are directions that remain unchanged (only scaled) under the linear transformation represented by $A$
-
-**Characteristic Equation**:
-
-From $A\mathbf{v} = \lambda\mathbf{v}$:
-$$(A - \lambda I)\mathbf{v} = \mathbf{0}$$
-
-For non-trivial solution, $(A - \lambda I)$ must be singular:
-$$\det(A - \lambda I) = 0$$
-
-This is the **characteristic equation** or **characteristic polynomial**
-
-**Finding Eigenvalues and Eigenvectors**:
-
-**Step 1**: Find eigenvalues by solving $\det(A - \lambda I) = 0$
-
-**Step 2**: For each eigenvalue $\lambda_i$, find eigenvectors by solving $(A - \lambda_i I)\mathbf{v} = \mathbf{0}$
-
-**Example**: Find eigenvalues and eigenvectors of $A = \begin{bmatrix} 3 & 1 \\ 0 & 2 \end{bmatrix}$
-
-**Step 1**: Characteristic equation
-$$\det(A - \lambda I) = \det\begin{bmatrix} 3-\lambda & 1 \\ 0 & 2-\lambda \end{bmatrix} = (3-\lambda)(2-\lambda) = 0$$
-
-Eigenvalues: $\lambda_1 = 3, \lambda_2 = 2$
-
-**Step 2**: Find eigenvectors
-
-For $\lambda_1 = 3$:
-$$(A - 3I)\mathbf{v} = \begin{bmatrix} 0 & 1 \\ 0 & -1 \end{bmatrix}\begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}$$
-
-This gives $v_2 = 0$, so eigenvector: $\mathbf{v}_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix}$ (or any scalar multiple)
-
-For $\lambda_2 = 2$:
-$$(A - 2I)\mathbf{v} = \begin{bmatrix} 1 & 1 \\ 0 & 0 \end{bmatrix}\begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}$$
-
-This gives $v_1 + v_2 = 0$, so eigenvector: $\mathbf{v}_2 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}$
-
-**Properties of Eigenvalues**:
-
-1. **Sum of eigenvalues** = trace of matrix: $\sum \lambda_i = \text{tr}(A) = \sum a_{ii}$
-
-2. **Product of eigenvalues** = determinant: $\prod \lambda_i = \det(A)$
-
-3. **Eigenvalues of special matrices**:
-   - Triangular matrix: eigenvalues are diagonal entries
-   - Symmetric matrix: all eigenvalues are real
-   - Orthogonal matrix: $|\lambda_i| = 1$
-
-4. **Powers**: If $\lambda$ is eigenvalue of $A$, then $\lambda^k$ is eigenvalue of $A^k$
-
-5. **Inverse**: If $A$ is invertible and $\lambda \neq 0$ is eigenvalue of $A$, then $1/\lambda$ is eigenvalue of $A^{-1}$
-
-**Algebraic and Geometric Multiplicity**:
-
-**Algebraic Multiplicity**: Multiplicity of eigenvalue as root of characteristic polynomial
-
-**Geometric Multiplicity**: Dimension of eigenspace (null space of $A - \lambda I$)
-
-**Relationship**: $1 \leq \text{geometric multiplicity} \leq \text{algebraic multiplicity}$
-
-**Eigenspaces**:
-
-**Eigenspace** $E_\lambda$: Set of all eigenvectors corresponding to eigenvalue $\lambda$, plus zero vector
-$$E_\lambda = \text{null}(A - \lambda I) = \{\mathbf{v} : (A - \lambda I)\mathbf{v} = \mathbf{0}\}$$
-
-**Properties**:
-- $E_\lambda$ is subspace
-- $\dim(E_\lambda)$ = geometric multiplicity of $\lambda$
-- Eigenvectors from different eigenspaces are linearly independent
-
-**Diagonalization**:
-
-**Definition**: Matrix $A$ is **diagonalizable** if there exists invertible matrix $P$ such that:
-$$P^{-1}AP = D$$
-where $D$ is diagonal matrix
-
-**Diagonalization Theorem**: $n \times n$ matrix $A$ is diagonalizable iff:
-- $A$ has $n$ linearly independent eigenvectors
-- For each eigenvalue, geometric multiplicity = algebraic multiplicity
-
-**Diagonalization Process**:
-1. Find all eigenvalues and eigenvectors
-2. Check if there are $n$ linearly independent eigenvectors
-3. Form matrix $P$ with eigenvectors as columns
-4. $D = P^{-1}AP$ has eigenvalues on diagonal
-
-**Benefits of Diagonalization**:
-- **Powers**: $A^k = PD^kP^{-1}$ where $D^k$ is easy to compute
-- **Matrix functions**: $f(A) = Pf(D)P^{-1}$
-- **Systems of differential equations**: Decouples the system
-
-**Symmetric Matrices**:
-
-**Spectral Theorem**: Every real symmetric matrix is orthogonally diagonalizable
-$$A = QDQ^T$$
-where $Q$ is orthogonal ($Q^TQ = I$) and $D$ is diagonal
-
-**Properties**:
-- All eigenvalues are real
-- Eigenvectors from different eigenvalues are orthogonal
-- Always diagonalizable
-
-**Orthogonal Diagonalization Process**:
-1. Find eigenvalues and eigenvectors
-2. Use Gram-Schmidt to orthonormalize eigenvectors within each eigenspace
-3. Form orthogonal matrix $Q$ with orthonormal eigenvectors as columns
-
-**Quadratic Forms**:
-
-**Quadratic form**: $Q(\mathbf{x}) = \mathbf{x}^T A \mathbf{x}$ where $A$ is symmetric
-
-**Classification** (based on eigenvalues of $A$):
-- **Positive definite**: All eigenvalues > 0
-- **Positive semidefinite**: All eigenvalues ≥ 0
-- **Negative definite**: All eigenvalues < 0
-- **Negative semidefinite**: All eigenvalues ≤ 0
-- **Indefinite**: Both positive and negative eigenvalues
-
-**Principal Component Analysis (PCA)**:
-
-Statistical technique using eigenvalue decomposition:
-1. Center data by subtracting mean
-2. Compute covariance matrix $C$
-3. Find eigenvalues and eigenvectors of $C$
-4. Principal components are eigenvectors with largest eigenvalues
-
-**Applications**:
-
-**1. Systems of Differential Equations**:
-For $\mathbf{x}' = A\mathbf{x}$, if $A$ is diagonalizable:
-- Solution: $\mathbf{x}(t) = c_1 e^{\lambda_1 t}\mathbf{v}_1 + \cdots + c_n e^{\lambda_n t}\mathbf{v}_n$
-
-**2. Markov Chains**:
-- Steady state corresponds to eigenvector with eigenvalue 1
-- Convergence rate determined by second-largest eigenvalue
-
-**3. Vibration Analysis**:
-- Natural frequencies are square roots of eigenvalues
-- Mode shapes are eigenvectors
-
-**4. Google PageRank**:
-- Web page importance from dominant eigenvector of link matrix
-
-**Computational Methods**:
-
-**Power Method**: Iterative method for finding dominant eigenvalue
-1. Start with initial vector $\mathbf{x}_0$
-2. Iterate: $\mathbf{x}_{k+1} = A\mathbf{x}_k$ (with normalization)
-3. Converges to eigenvector of largest eigenvalue
-
-**QR Algorithm**: Advanced method for finding all eigenvalues
-- Repeatedly applies QR decomposition
-- Converges to upper triangular form with eigenvalues on diagonal
-
-**Problem-Solving Tips**:
-
-**For Finding Eigenvalues**:
-1. Set up characteristic equation $\det(A - \lambda I) = 0$
-2. Expand determinant carefully
-3. Solve polynomial equation
-
-**For Finding Eigenvectors**:
-1. Substitute each eigenvalue into $(A - \lambda I)\mathbf{v} = \mathbf{0}$
-2. Solve homogeneous system
-3. Express solution in terms of free variables
-
-**For Diagonalization**:
-1. Check if $n$ linearly independent eigenvectors exist
-2. Form matrix $P$ with eigenvectors as columns
-3. Verify $AP = PD$
-
-**GATE Tips**:
-- Sum of eigenvalues = trace, product = determinant
-- Symmetric matrices have real eigenvalues and orthogonal eigenvectors
-- Geometric multiplicity ≤ algebraic multiplicity
-- Matrix is diagonalizable iff geometric = algebraic multiplicity for all eigenvalues
-- Eigenvectors from different eigenvalues are linearly independent
-- For triangular matrices, eigenvalues are diagonal entries
-
-**Examples**:
-
-1. **Find eigenvalues** of $A = \begin{bmatrix} 4 & -2 \\ 1 & 1 \end{bmatrix}$:
-   - $\det(A - \lambda I) = \det\begin{bmatrix} 4-\lambda & -2 \\ 1 & 1-\lambda \end{bmatrix} = (4-\lambda)(1-\lambda) + 2 = \lambda^2 - 5\lambda + 6 = (\lambda-2)(\lambda-3)$
-   - Eigenvalues: $\lambda_1 = 2, \lambda_2 = 3$
-
-2. **Check diagonalizability** of $A = \begin{bmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 0 & 0 & 1 \end{bmatrix}$:
-   - Characteristic polynomial: $(1-\lambda)^3$
-   - Only eigenvalue: $\lambda = 1$ (algebraic multiplicity 3)
-   - $(A - I) = \begin{bmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \end{bmatrix}$
-   - Null space has dimension 1 (geometric multiplicity 1)
-   - Since $1 < 3$, matrix is not diagonalizable
-
-3. **Orthogonally diagonalize** $A = \begin{bmatrix} 3 & 1 \\ 1 & 3 \end{bmatrix}$:
-   - Eigenvalues: $\lambda_1 = 4, \lambda_2 = 2$
-   - Eigenvectors: $\mathbf{v}_1 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \mathbf{v}_2 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}$
-   - Normalize: $\mathbf{u}_1 = \frac{1}{\sqrt{2}}\begin{bmatrix} 1 \\ 1 \end{bmatrix}, \mathbf{u}_2 = \frac{1}{\sqrt{2}}\begin{bmatrix} 1 \\ -1 \end{bmatrix}$
-   - $Q = \frac{1}{\sqrt{2}}\begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix}, D = \begin{bmatrix} 4 & 0 \\ 0 & 2 \end{bmatrix}$
-
-### 6.4 Linear Transformations (25)
-
-**Key Concepts**: Linear transformations are functions between vector spaces that preserve vector addition and scalar multiplication. They provide the connection between abstract linear algebra and concrete matrix operations.
-
-**Definition**:
-
-**Linear Transformation**: Function $T: V \to W$ between vector spaces satisfying:
-1. **Additivity**: $T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v})$
-2. **Homogeneity**: $T(c\mathbf{v}) = cT(\mathbf{v})$
-
-**Equivalent condition**: $T(c\mathbf{u} + d\mathbf{v}) = cT(\mathbf{u}) + dT(\mathbf{v})$
-
-**Properties**:
-- $T(\mathbf{0}) = \mathbf{0}$ (zero vector maps to zero vector)
-- $T(-\mathbf{v}) = -T(\mathbf{v})$
-- $T$ preserves linear combinations
-
-**Matrix Representation**:
-
-For finite-dimensional spaces with bases $\mathcal{B} = \{\mathbf{v}_1, \ldots, \mathbf{v}_n\}$ for $V$ and $\mathcal{C} = \{\mathbf{w}_1, \ldots, \mathbf{w}_m\}$ for $W$:
-
-**Matrix of transformation**: $[T]_{\mathcal{C}}^{\mathcal{B}}$ is $m \times n$ matrix where column $j$ is $[T(\mathbf{v}_j)]_{\mathcal{C}}$
-
-**Coordinate relationship**: $[T(\mathbf{v})]_{\mathcal{C}} = [T]_{\mathcal{C}}^{\mathcal{B}} [\mathbf{v}]_{\mathcal{B}}$
-
-**Standard Matrix**: For $T: \mathbb{R}^n \to \mathbb{R}^m$ with standard bases:
-$$[T] = [T(\mathbf{e}_1) | T(\mathbf{e}_2) | \cdots | T(\mathbf{e}_n)]$$
-
-**Examples of Linear Transformations**:
-
-**1. Geometric Transformations in $\mathbb{R}^2$**:
-
-**Rotation by angle $\theta$**:
-$$R_\theta = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix}$$
-
-**Reflection across x-axis**:
-$$\text{Ref}_x = \begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}$$
-
-**Scaling by factors $s_x, s_y$**:
-$$S = \begin{bmatrix} s_x & 0 \\ 0 & s_y \end{bmatrix}$$
-
-**Shear parallel to x-axis**:
-$$\text{Shear}_x = \begin{bmatrix} 1 & k \\ 0 & 1 \end{bmatrix}$$
-
-**Projection onto x-axis**:
-$$P_x = \begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix}$$
-
-**2. Differentiation**: $D: P_n(\mathbb{R}) \to P_{n-1}(\mathbb{R})$ where $D(p(x)) = p'(x)$
-
-**3. Integration**: $I: C[a,b] \to \mathbb{R}$ where $I(f) = \int_a^b f(x) dx$
-
-**4. Matrix Multiplication**: $T_A: \mathbb{R}^n \to \mathbb{R}^m$ where $T_A(\mathbf{x}) = A\mathbf{x}$
-
-**Kernel and Range**:
-
-**Kernel (Null Space)**: $\ker(T) = \{\mathbf{v} \in V : T(\mathbf{v}) = \mathbf{0}\}$
-- Always a subspace of $V$
-- $T$ is injective iff $\ker(T) = \{\mathbf{0}\}$
-
-**Range (Image)**: $\text{range}(T) = \{T(\mathbf{v}) : \mathbf{v} \in V\}$
-- Always a subspace of $W$
-- $T$ is surjective iff $\text{range}(T) = W$
-
-**Rank-Nullity Theorem**:
-$$\dim(V) = \dim(\ker(T)) + \dim(\text{range}(T))$$
-$$\text{nullity}(T) + \text{rank}(T) = \dim(V)$$
-
-**Proof Idea**: Choose basis for $\ker(T)$, extend to basis for $V$, show images of extension vectors form basis for $\text{range}(T)$
-
-**Isomorphisms**:
-
-**Isomorphism**: Bijective linear transformation
-- $T$ is isomorphism iff $T$ is both injective and surjective
-- Equivalent: $\ker(T) = \{\mathbf{0}\}$ and $\text{range}(T) = W$
-
-**Properties**:
-- If $T: V \to W$ is isomorphism, then $\dim(V) = \dim(W)$
-- Inverse $T^{-1}: W \to V$ is also linear transformation
-- Composition of isomorphisms is isomorphism
-
-**Fundamental Theorem**: Two finite-dimensional vector spaces over same field are isomorphic iff they have same dimension
-
-**Change of Basis for Linear Transformations**:
-
-If $T: V \to V$ with bases $\mathcal{B}$ and $\mathcal{C}$:
-$$[T]_{\mathcal{C}} = P^{-1}[T]_{\mathcal{B}}P$$
-where $P$ is change of basis matrix from $\mathcal{B}$ to $\mathcal{C}$
-
-**Similar Matrices**: Matrices $A$ and $B$ are **similar** if $B = P^{-1}AP$ for some invertible $P$
-
-**Properties of Similar Matrices**:
-- Same eigenvalues (with same multiplicities)
-- Same determinant and trace
-- Same rank
-- Represent same linear transformation in different bases
-
-**Composition of Linear Transformations**:
-
-For $T: U \to V$ and $S: V \to W$:
-**Composition**: $(S \circ T): U \to W$ where $(S \circ T)(\mathbf{u}) = S(T(\mathbf{u}))$
-
-**Matrix representation**: $[S \circ T] = [S][T]$
-
-**Properties**:
-- Composition is associative: $(R \circ S) \circ T = R \circ (S \circ T)$
-- Generally not commutative: $S \circ T \neq T \circ S$
-
-**Inverse Transformations**:
-
-If $T: V \to W$ is isomorphism, then $T^{-1}: W \to V$ exists and:
-- $T^{-1}$ is linear
-- $T \circ T^{-1} = I_W$ and $T^{-1} \circ T = I_V$
-- $[T^{-1}] = [T]^{-1}$
-
-**Orthogonal Transformations**:
-
-**Definition**: Linear transformation $T: \mathbb{R}^n \to \mathbb{R}^n$ is **orthogonal** if it preserves inner products:
-$$\langle T(\mathbf{u}), T(\mathbf{v}) \rangle = \langle \mathbf{u}, \mathbf{v} \rangle$$
-
-**Equivalent conditions**:
-- $T$ preserves lengths: $\|T(\mathbf{v})\| = \|\mathbf{v}\|$
-- Matrix representation is orthogonal: $A^TA = I$
-- Columns (and rows) form orthonormal set
-
-**Examples**: Rotations, reflections
-
-**Projections**:
-
-**Orthogonal Projection** onto subspace $W$:
-For $\mathbf{v} \in V$, $\text{proj}_W(\mathbf{v})$ is closest point in $W$ to $\mathbf{v}$
-
-**Formula**: If $\{\mathbf{u}_1, \ldots, \mathbf{u}_k\}$ is orthonormal basis for $W$:
-$$\text{proj}_W(\mathbf{v}) = \sum_{i=1}^k \langle \mathbf{v}, \mathbf{u}_i \rangle \mathbf{u}_i$$
-
-**Matrix form**: $P = UU^T$ where $U$ has orthonormal basis vectors as columns
-
-**Properties**:
-- $P^2 = P$ (idempotent)
-- $P^T = P$ (symmetric)
-- $\text{range}(P) = W$, $\ker(P) = W^\perp$
-
-**Least Squares Solutions**:
-
-For inconsistent system $A\mathbf{x} = \mathbf{b}$, **least squares solution** minimizes $\|A\mathbf{x} - \mathbf{b}\|^2$
-
-**Normal equation**: $A^TA\mathbf{x} = A^T\mathbf{b}$
-
-**Solution**: $\mathbf{x} = (A^TA)^{-1}A^T\mathbf{b}$ (if $A^TA$ is invertible)
-
-**Geometric interpretation**: Project $\mathbf{b}$ onto column space of $A$
-
-**Applications**:
-
-**1. Computer Graphics**:
-- Transformations for 2D/3D graphics
-- Homogeneous coordinates for translations
-- Perspective projections
-
-**2. Data Analysis**:
-- Principal Component Analysis (PCA)
-- Linear regression
-- Dimensionality reduction
-
-**3. Differential Equations**:
-- Systems of linear ODEs
-- Stability analysis using eigenvalues
-
-**4. Signal Processing**:
-- Fourier transforms
-- Filter design
-- Image processing
-
-**5. Quantum Mechanics**:
-- State transformations
-- Measurement operators
-- Unitary evolution
-
-**Problem-Solving Tips**:
-
-**To verify linearity**:
-1. Check $T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v})$
-2. Check $T(c\mathbf{v}) = cT(\mathbf{v})$
-3. Or verify combined condition
-
-**To find matrix representation**:
-1. Apply $T$ to each basis vector
-2. Express results in terms of target basis
-3. Use coefficients as matrix columns
-
-**To find kernel and range**:
-1. Kernel: Solve $T(\mathbf{v}) = \mathbf{0}$ or $A\mathbf{x} = \mathbf{0}$
-2. Range: Find span of $T$ applied to basis vectors
-
-**GATE Tips**:
-- Linear transformation preserves linear combinations
-- Matrix columns are images of standard basis vectors
-- Rank-nullity: $\dim(V) = \text{nullity} + \text{rank}$
-- Isomorphism iff bijective iff $\ker(T) = \{\mathbf{0}\}$ and onto
-- Similar matrices have same eigenvalues
-- Orthogonal transformations preserve lengths and angles
-- Projection matrices are idempotent and symmetric
-
-**Examples**:
-
-1. **Find matrix** of rotation by $90°$ in $\mathbb{R}^2$:
-   - $T(\mathbf{e}_1) = T\begin{bmatrix}1\\0\end{bmatrix} = \begin{bmatrix}0\\1\end{bmatrix}$
-   - $T(\mathbf{e}_2) = T\begin{bmatrix}0\\1\end{bmatrix} = \begin{bmatrix}-1\\0\end{bmatrix}$
-   - Matrix: $\begin{bmatrix}0 & -1\\1 & 0\end{bmatrix}$
-
-2. **Find kernel** of $T: \mathbb{R}^3 \to \mathbb{R}^2$ where $T\begin{bmatrix}x\\y\\z\end{bmatrix} = \begin{bmatrix}x+y\\y+z\end{bmatrix}$:
-   - Matrix: $A = \begin{bmatrix}1 & 1 & 0\\0 & 1 & 1\end{bmatrix}$
-   - Solve $A\mathbf{x} = \mathbf{0}$: $x + y = 0$, $y + z = 0$
-   - Solution: $x = -y$, $z = -y$
-   - Kernel: $\text{span}\left\{\begin{bmatrix}-1\\1\\-1\end{bmatrix}\right\}$
-
-3. **Verify rank-nullity** for above transformation:
-   - $\dim(\mathbb{R}^3) = 3$
-   - $\text{nullity}(T) = 1$ (dimension of kernel)
-   - $\text{rank}(T) = 2$ (dimension of range)
-   - Check: $3 = 1 + 2$ ✓
-### 7. Engineering Mathematics: Probability and Statistics (100 Questions)
-
-### 7.1 Probability Theory (40)
-
-**Key Concepts**: Probability theory provides mathematical framework for analyzing uncertainty and randomness. It forms the foundation for statistics, machine learning, and decision theory.
-
-**Sample Space and Events**:
-
-**Sample Space** $\Omega$: Set of all possible outcomes of an experiment
-- **Discrete**: Finite or countably infinite (coin flips, dice rolls)
-- **Continuous**: Uncountably infinite (measurements, time intervals)
-
-**Event**: Subset of sample space
-- **Elementary event**: Single outcome
-- **Compound event**: Union of elementary events
-- **Certain event**: $\Omega$ (always occurs)
-- **Impossible event**: $\emptyset$ (never occurs)
-
-**Event Operations**:
-- **Union**: $A \cup B$ (A or B occurs)
-- **Intersection**: $A \cap B$ (both A and B occur)
-- **Complement**: $A^c$ (A does not occur)
-- **Difference**: $A - B = A \cap B^c$
-
-**De Morgan's Laws**:
-- $(A \cup B)^c = A^c \cap B^c$
-- $(A \cap B)^c = A^c \cup B^c$
-
-**Probability Axioms** (Kolmogorov):
-
-For probability function $P: \mathcal{F} \to [0,1]$ where $\mathcal{F}$ is $\sigma$-algebra of events:
-
-1. **Non-negativity**: $P(A) \geq 0$ for all events $A$
-2. **Normalization**: $P(\Omega) = 1$
-3. **Countable additivity**: For disjoint events $A_1, A_2, \ldots$:
-   $$P\left(\bigcup_{i=1}^{\infty} A_i\right) = \sum_{i=1}^{\infty} P(A_i)$$
-
-**Basic Properties**:
-- $P(\emptyset) = 0$
-- $P(A^c) = 1 - P(A)$
-- If $A \subseteq B$, then $P(A) \leq P(B)$
-- $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
-
-**Inclusion-Exclusion Principle**:
-$$P(A_1 \cup A_2 \cup A_3) = \sum P(A_i) - \sum P(A_i \cap A_j) + P(A_1 \cap A_2 \cap A_3)$$
-
-**Classical Probability**:
-
-For finite sample space with equally likely outcomes:
-$$P(A) = \frac{|A|}{|\Omega|} = \frac{\text{number of favorable outcomes}}{\text{total number of outcomes}}$$
-
-**Examples**:
-- Fair coin: $P(\text{Heads}) = \frac{1}{2}$
-- Fair die: $P(\text{even number}) = \frac{3}{6} = \frac{1}{2}$
-- Card from deck: $P(\text{Ace}) = \frac{4}{52} = \frac{1}{13}$
-
-**Conditional Probability**:
-
-**Definition**: Probability of event $A$ given that event $B$ has occurred:
-$$P(A|B) = \frac{P(A \cap B)}{P(B)} \quad \text{provided } P(B) > 0$$
-
-**Interpretation**: Restricts sample space to outcomes where $B$ occurs
-
-**Properties**:
-- $P(A|B) \geq 0$
-- $P(\Omega|B) = 1$
-- $P(A_1 \cup A_2|B) = P(A_1|B) + P(A_2|B) - P(A_1 \cap A_2|B)$
-
-**Multiplication Rule**:
-$$P(A \cap B) = P(A|B) \cdot P(B) = P(B|A) \cdot P(A)$$
-
-**Chain Rule**: For events $A_1, A_2, \ldots, A_n$:
-$$P(A_1 \cap A_2 \cap \cdots \cap A_n) = P(A_1) \cdot P(A_2|A_1) \cdot P(A_3|A_1 \cap A_2) \cdots P(A_n|A_1 \cap \cdots \cap A_{n-1})$$
-
-**Independence**:
-
-**Definition**: Events $A$ and $B$ are **independent** if:
-$$P(A \cap B) = P(A) \cdot P(B)$$
-
-**Equivalent conditions** (when $P(B) > 0$):
-- $P(A|B) = P(A)$
-- $P(B|A) = P(B)$
-
-**Mutual Independence**: Events $A_1, \ldots, A_n$ are mutually independent if for every subset $\{i_1, \ldots, i_k\}$:
-$$P(A_{i_1} \cap \cdots \cap A_{i_k}) = P(A_{i_1}) \cdots P(A_{i_k})$$
-
-**Pairwise vs Mutual Independence**: Pairwise independence doesn't imply mutual independence
-
-**Law of Total Probability**:
-
-If $\{B_1, B_2, \ldots, B_n\}$ is partition of $\Omega$ (disjoint and exhaustive), then:
-$$P(A) = \sum_{i=1}^{n} P(A|B_i) \cdot P(B_i)$$
-
-**Continuous version**: $P(A) = \int P(A|B_x) \cdot f_B(x) dx$
-
-**Bayes' Theorem**:
-
-**Statement**: For partition $\{B_1, \ldots, B_n\}$ and event $A$ with $P(A) > 0$:
-$$P(B_j|A) = \frac{P(A|B_j) \cdot P(B_j)}{\sum_{i=1}^{n} P(A|B_i) \cdot P(B_i)}$$
-
-**Interpretation**:
-- $P(B_j)$: **Prior probability** (before observing $A$)
-- $P(A|B_j)$: **Likelihood** (probability of evidence given hypothesis)
-- $P(B_j|A)$: **Posterior probability** (after observing $A$)
-
-**Applications**:
-- Medical diagnosis
-- Spam filtering
-- Machine learning classification
-
-**Random Variables**:
-
-**Definition**: Function $X: \Omega \to \mathbb{R}$ that assigns real number to each outcome
-
-**Types**:
-- **Discrete**: Takes countable values
-- **Continuous**: Takes uncountable values
-
-**Probability Mass Function (PMF)** (discrete):
-$$p_X(x) = P(X = x)$$
-
-**Properties**:
-- $p_X(x) \geq 0$ for all $x$
-- $\sum_x p_X(x) = 1$
-
-**Probability Density Function (PDF)** (continuous):
-$$P(a \leq X \leq b) = \int_a^b f_X(x) dx$$
-
-**Properties**:
-- $f_X(x) \geq 0$ for all $x$
-- $\int_{-\infty}^{\infty} f_X(x) dx = 1$
-- $P(X = x) = 0$ for any specific $x$
-
-**Cumulative Distribution Function (CDF)**:
-$$F_X(x) = P(X \leq x)$$
-
-**Properties**:
-- $0 \leq F_X(x) \leq 1$
-- $F_X$ is non-decreasing
-- $\lim_{x \to -\infty} F_X(x) = 0$, $\lim_{x \to \infty} F_X(x) = 1$
-- Right-continuous
-
-**Relationship to PDF**: $f_X(x) = \frac{d}{dx} F_X(x)$ (where derivative exists)
-
-**Common Discrete Distributions**:
-
-**1. Bernoulli Distribution** $\text{Ber}(p)$:
-- Single trial with success probability $p$
-- PMF: $P(X = 1) = p$, $P(X = 0) = 1-p$
-- Mean: $p$, Variance: $p(1-p)$
-
-**2. Binomial Distribution** $\text{Bin}(n,p)$:
-- Number of successes in $n$ independent Bernoulli trials
-- PMF: $P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$
-- Mean: $np$, Variance: $np(1-p)$
-
-**3. Geometric Distribution** $\text{Geom}(p)$:
-- Number of trials until first success
-- PMF: $P(X = k) = (1-p)^{k-1} p$ for $k = 1, 2, 3, \ldots$
-- Mean: $\frac{1}{p}$, Variance: $\frac{1-p}{p^2}$
-- **Memoryless property**: $P(X > m+n | X > m) = P(X > n)$
-
-**4. Poisson Distribution** $\text{Pois}(\lambda)$:
-- Number of events in fixed interval
-- PMF: $P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}$ for $k = 0, 1, 2, \ldots$
-- Mean: $\lambda$, Variance: $\lambda$
-- **Poisson approximation**: $\text{Bin}(n,p) \approx \text{Pois}(np)$ when $n$ large, $p$ small
-
-**Common Continuous Distributions**:
-
-**1. Uniform Distribution** $\text{Unif}(a,b)$:
-- Constant density over interval $[a,b]$
-- PDF: $f(x) = \frac{1}{b-a}$ for $a \leq x \leq b$, 0 otherwise
-- Mean: $\frac{a+b}{2}$, Variance: $\frac{(b-a)^2}{12}$
-
-**2. Exponential Distribution** $\text{Exp}(\lambda)$:
-- Time between events in Poisson process
-- PDF: $f(x) = \lambda e^{-\lambda x}$ for $x \geq 0$
-- CDF: $F(x) = 1 - e^{-\lambda x}$ for $x \geq 0$
-- Mean: $\frac{1}{\lambda}$, Variance: $\frac{1}{\lambda^2}$
-- **Memoryless property**: $P(X > s+t | X > s) = P(X > t)$
-
-**3. Normal Distribution** $\mathcal{N}(\mu, \sigma^2)$:
-- Bell-shaped curve, most important distribution
-- PDF: $f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$
-- Mean: $\mu$, Variance: $\sigma^2$
-
-**Standard Normal** $\mathcal{N}(0,1)$:
-- PDF: $\phi(z) = \frac{1}{\sqrt{2\pi}} e^{-z^2/2}$
-- CDF: $\Phi(z) = \int_{-\infty}^z \phi(t) dt$
-
-**Standardization**: If $X \sim \mathcal{N}(\mu, \sigma^2)$, then $Z = \frac{X-\mu}{\sigma} \sim \mathcal{N}(0,1)$
-
-**Expectation and Variance**:
-
-**Expected Value** (Mean):
-
-**Discrete**: $E[X] = \sum_x x \cdot P(X = x)$
-
-**Continuous**: $E[X] = \int_{-\infty}^{\infty} x \cdot f_X(x) dx$
-
-**Properties**:
-- **Linearity**: $E[aX + bY] = aE[X] + bE[Y]$
-- **Law of Total Expectation**: $E[X] = E[E[X|Y]]$
-
-**Variance**:
-$$\text{Var}(X) = E[(X - E[X])^2] = E[X^2] - (E[X])^2$$
-
-**Properties**:
-- $\text{Var}(aX + b) = a^2 \text{Var}(X)$
-- If $X$ and $Y$ independent: $\text{Var}(X + Y) = \text{Var}(X) + \text{Var}(Y)$
-
-**Standard Deviation**: $\sigma_X = \sqrt{\text{Var}(X)}$
-
-**Moment Generating Function**:
-$$M_X(t) = E[e^{tX}]$$
-
-**Properties**:
-- Uniquely determines distribution
-- $M_{aX+b}(t) = e^{bt} M_X(at)$
-- If $X$ and $Y$ independent: $M_{X+Y}(t) = M_X(t) M_Y(t)$
-
-**Joint Distributions**:
-
-**Joint PMF** (discrete): $p_{X,Y}(x,y) = P(X = x, Y = y)$
-
-**Joint PDF** (continuous): $P((X,Y) \in A) = \iint_A f_{X,Y}(x,y) dx dy$
-
-**Marginal Distributions**:
-- **Discrete**: $p_X(x) = \sum_y p_{X,Y}(x,y)$
-- **Continuous**: $f_X(x) = \int_{-\infty}^{\infty} f_{X,Y}(x,y) dy$
-
-**Independence**: $X$ and $Y$ are independent if:
-- **Discrete**: $p_{X,Y}(x,y) = p_X(x) \cdot p_Y(y)$ for all $x,y$
-- **Continuous**: $f_{X,Y}(x,y) = f_X(x) \cdot f_Y(y)$ for all $x,y$
-
-**Covariance**:
-$$\text{Cov}(X,Y) = E[(X - E[X])(Y - E[Y])] = E[XY] - E[X]E[Y]$$
-
-**Properties**:
-- $\text{Cov}(X,X) = \text{Var}(X)$
-- $\text{Cov}(X,Y) = \text{Cov}(Y,X)$
-- If $X$ and $Y$ independent, then $\text{Cov}(X,Y) = 0$ (converse not true)
-
-**Correlation Coefficient**:
-$$\rho_{X,Y} = \frac{\text{Cov}(X,Y)}{\sqrt{\text{Var}(X)\text{Var}(Y)}}$$
-
-**Properties**:
-- $-1 \leq \rho_{X,Y} \leq 1$
-- $|\rho_{X,Y}| = 1$ iff $Y = aX + b$ for some constants $a \neq 0, b$
-- $\rho_{X,Y} = 0$ means uncorrelated (weaker than independence)
-
-**Limit Theorems**:
-
-**Law of Large Numbers** (LLN):
-If $X_1, X_2, \ldots$ are i.i.d. with finite mean $\mu$, then:
-$$\frac{X_1 + X_2 + \cdots + X_n}{n} \to \mu \text{ as } n \to \infty$$
-
-**Central Limit Theorem** (CLT):
-If $X_1, X_2, \ldots$ are i.i.d. with mean $\mu$ and variance $\sigma^2$, then:
-$$\frac{\bar{X}_n - \mu}{\sigma/\sqrt{n}} \to \mathcal{N}(0,1) \text{ as } n \to \infty$$
-
-where $\bar{X}_n = \frac{X_1 + \cdots + X_n}{n}$
-
-**Applications**:
-- Approximating binomial with normal when $n$ large
-- Confidence intervals
-- Hypothesis testing
-
-**Problem-Solving Tips**:
-
-**For Basic Probability**:
-1. Identify sample space and events clearly
-2. Check if events are disjoint for addition rule
-3. Use complement when "at least one" appears
-4. Draw tree diagrams for sequential experiments
-
-**For Conditional Probability**:
-1. Identify given information (condition)
-2. Use definition: $P(A|B) = \frac{P(A \cap B)}{P(B)}$
-3. For Bayes: identify prior, likelihood, and evidence
-
-**For Random Variables**:
-1. Identify distribution type from problem context
-2. Use appropriate formulas for mean and variance
-3. For normal distribution, standardize to use tables
-
-**GATE Tips**:
-- $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ (inclusion-exclusion)
-- Independence: $P(A \cap B) = P(A) \cdot P(B)$
-- Bayes: $P(B|A) = \frac{P(A|B) \cdot P(B)}{P(A)}$
-- Binomial: $n$ trials, constant $p$, count successes
-- Poisson: rare events, $\lambda$ = rate parameter
-- Normal: symmetric, bell-shaped, use standardization
-- CLT: sample mean approximately normal for large $n$
-
-**Examples**:
-
-1. **Probability with cards**: Draw 2 cards without replacement. Find $P(\text{both aces})$.
-   - $P(\text{1st ace}) = \frac{4}{52}$
-   - $P(\text{2nd ace | 1st ace}) = \frac{3}{51}$
-   - $P(\text{both aces}) = \frac{4}{52} \times \frac{3}{51} = \frac{1}{221}$
-
-2. **Bayes' theorem**: Disease affects 1% of population. Test is 95% accurate (both sensitivity and specificity). If test positive, what's probability of having disease?
-   - Let $D$ = disease, $T$ = positive test
-   - $P(D) = 0.01$, $P(T|D) = 0.95$, $P(T|D^c) = 0.05$
-   - $P(T) = P(T|D)P(D) + P(T|D^c)P(D^c) = 0.95(0.01) + 0.05(0.99) = 0.0590$
-   - $P(D|T) = \frac{P(T|D)P(D)}{P(T)} = \frac{0.95 \times 0.01}{0.0590} = \frac{0.0095}{0.0590} \approx 0.161$
-
-3. **Normal distribution**: $X \sim \mathcal{N}(100, 15^2)$. Find $P(85 < X < 115)$.
-   - Standardize: $Z_1 = \frac{85-100}{15} = -1$, $Z_2 = \frac{115-100}{15} = 1$
-   - $P(85 < X < 115) = P(-1 < Z < 1) = \Phi(1) - \Phi(-1) = 0.8413 - 0.1587 = 0.6826$
-
-### 7.2 Statistics and Hypothesis Testing (35)
-
-**Key Concepts**: Statistics involves collecting, analyzing, and interpreting data. Hypothesis testing provides framework for making decisions under uncertainty using sample data.
-
-**Descriptive Statistics**:
-
-**Measures of Central Tendency**:
-
-**Sample Mean**: $\bar{x} = \frac{1}{n} \sum_{i=1}^n x_i$
-
-**Sample Median**: Middle value when data ordered
-- If $n$ odd: median = $x_{(n+1)/2}$
-- If $n$ even: median = $\frac{x_{n/2} + x_{n/2+1}}{2}$
-
-**Sample Mode**: Most frequently occurring value
-
-**Properties**:
-- Mean affected by outliers, median robust
-- For symmetric distributions: mean ≈ median
-- For right-skewed: mean > median
-- For left-skewed: mean < median
-
-**Measures of Variability**:
-
-**Sample Variance**: $s^2 = \frac{1}{n-1} \sum_{i=1}^n (x_i - \bar{x})^2$
-
-**Sample Standard Deviation**: $s = \sqrt{s^2}$
-
-**Range**: $\max(x_i) - \min(x_i)$
-
-**Interquartile Range (IQR)**: $Q_3 - Q_1$
-- $Q_1$: 25th percentile, $Q_3$: 75th percentile
-- Robust to outliers
-
-**Coefficient of Variation**: $CV = \frac{s}{\bar{x}}$ (relative variability)
-
-**Sampling Distributions**:
-
-**Population vs Sample**:
-- **Population**: Entire group of interest
-- **Sample**: Subset of population
-- **Parameter**: Population characteristic (μ, σ, p)
-- **Statistic**: Sample characteristic ($\bar{x}$, s, $\hat{p}$)
-
-**Sampling Distribution**: Distribution of sample statistic across all possible samples
-
-**Central Limit Theorem for Sample Mean**:
-If $X_1, \ldots, X_n$ are i.i.d. with mean $\mu$ and variance $\sigma^2$, then:
-$$\bar{X} \sim \mathcal{N}\left(\mu, \frac{\sigma^2}{n}\right) \text{ approximately for large } n$$
-
-**Standard Error**: $SE(\bar{X}) = \frac{\sigma}{\sqrt{n}}$
-
-**Key Distributions for Inference**:
-
-**1. Standard Normal Distribution** $\mathcal{N}(0,1)$:
-- Used when $\sigma$ known or $n$ large
-- $Z = \frac{\bar{X} - \mu}{\sigma/\sqrt{n}}$
-
-**2. t-Distribution** $t_{\nu}$:
-- Used when $\sigma$ unknown and $n$ small
-- Parameter: degrees of freedom $\nu = n-1$
-- $T = \frac{\bar{X} - \mu}{S/\sqrt{n}}$ where $S$ is sample standard deviation
-- Approaches standard normal as $\nu \to \infty$
-- Heavier tails than normal
-
-**3. Chi-Square Distribution** $\chi^2_{\nu}$:
-- Used for variance testing and goodness-of-fit
-- $\chi^2 = \frac{(n-1)S^2}{\sigma^2}$ has $\chi^2_{n-1}$ distribution
-- Right-skewed, non-negative
-
-**4. F-Distribution** $F_{\nu_1, \nu_2}$:
-- Used for comparing variances, ANOVA
-- Ratio of two chi-square random variables
-- Parameters: numerator df $\nu_1$, denominator df $\nu_2$
-
-**Point Estimation**:
-
-**Estimator**: Function of sample data used to estimate parameter
-- $\hat{\theta} = g(X_1, \ldots, X_n)$
-
-**Properties of Estimators**:
-
-**1. Unbiasedness**: $E[\hat{\theta}] = \theta$
-- Sample mean is unbiased for population mean
-- Sample variance $s^2$ is unbiased for $\sigma^2$ (uses $n-1$ denominator)
-
-**2. Consistency**: $\hat{\theta}_n \to \theta$ as $n \to \infty$
-
-**3. Efficiency**: Among unbiased estimators, one with smallest variance
-
-**Method of Moments**: Set sample moments equal to population moments
-- For normal distribution: $\hat{\mu} = \bar{X}$, $\hat{\sigma}^2 = S^2$
-
-**Maximum Likelihood Estimation (MLE)**:
-- Choose parameter value that maximizes likelihood of observed data
-- Often involves solving $\frac{d}{d\theta} \ln L(\theta) = 0$
-
-**Interval Estimation**:
-
-**Confidence Interval**: Range of plausible values for parameter
-
-**Interpretation**: If we construct 95% confidence intervals repeatedly, 95% will contain true parameter
-
-**Confidence Interval for Mean**:
-
-**Case 1**: $\sigma$ known or $n \geq 30$
-$$\bar{x} \pm z_{\alpha/2} \frac{\sigma}{\sqrt{n}}$$
-
-**Case 2**: $\sigma$ unknown and $n < 30$ (assume normal population)
-$$\bar{x} \pm t_{\alpha/2, n-1} \frac{s}{\sqrt{n}}$$
-
-**Confidence Interval for Proportion**:
-$$\hat{p} \pm z_{\alpha/2} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$$
-
-where $\hat{p} = \frac{x}{n}$ (sample proportion)
-
-**Confidence Interval for Variance**:
-$$\frac{(n-1)s^2}{\chi^2_{\alpha/2, n-1}} \leq \sigma^2 \leq \frac{(n-1)s^2}{\chi^2_{1-\alpha/2, n-1}}$$
-
-**Factors Affecting Interval Width**:
-- **Confidence level**: Higher confidence → wider interval
-- **Sample size**: Larger $n$ → narrower interval
-- **Population variability**: Larger $\sigma$ → wider interval
-
-**Hypothesis Testing**:
-
-**Components**:
-- **Null hypothesis** $H_0$: Status quo, no effect
-- **Alternative hypothesis** $H_1$ (or $H_a$): What we want to prove
-- **Test statistic**: Function of sample data
-- **Critical region**: Values leading to rejection of $H_0$
-- **Significance level** $\alpha$: Probability of Type I error
-
-**Types of Tests**:
-- **Two-tailed**: $H_1: \theta \neq \theta_0$
-- **Right-tailed**: $H_1: \theta > \theta_0$
-- **Left-tailed**: $H_1: \theta < \theta_0$
-
-**Types of Errors**:
-- **Type I Error**: Reject true $H_0$ (probability = $\alpha$)
-- **Type II Error**: Fail to reject false $H_0$ (probability = $\beta$)
-- **Power**: $1 - \beta$ (probability of correctly rejecting false $H_0$)
-
-**Testing Procedure**:
-1. State hypotheses
-2. Choose significance level $\alpha$
-3. Calculate test statistic
-4. Find p-value or critical value
-5. Make decision and interpret
-
-**Tests for One Sample**:
-
-**1. Test for Mean** ($\sigma$ known):
-- Test statistic: $Z = \frac{\bar{X} - \mu_0}{\sigma/\sqrt{n}}$
-- Reject $H_0$ if $|Z| > z_{\alpha/2}$ (two-tailed)
-
-**2. Test for Mean** ($\sigma$ unknown):
-- Test statistic: $T = \frac{\bar{X} - \mu_0}{S/\sqrt{n}}$
-- Reject $H_0$ if $|T| > t_{\alpha/2, n-1}$ (two-tailed)
-
-**3. Test for Proportion**:
-- Test statistic: $Z = \frac{\hat{p} - p_0}{\sqrt{p_0(1-p_0)/n}}$
-- Reject $H_0$ if $|Z| > z_{\alpha/2}$ (two-tailed)
-
-**4. Test for Variance**:
-- Test statistic: $\chi^2 = \frac{(n-1)S^2}{\sigma_0^2}$
-- Reject $H_0$ if $\chi^2 > \chi^2_{\alpha/2, n-1}$ or $\chi^2 < \chi^2_{1-\alpha/2, n-1}$ (two-tailed)
-
-**Tests for Two Samples**:
-
-**1. Comparison of Two Means** (independent samples):
-
-**Case 1**: $\sigma_1, \sigma_2$ known
-- Test statistic: $Z = \frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)}{\sqrt{\sigma_1^2/n_1 + \sigma_2^2/n_2}}$
-
-**Case 2**: $\sigma_1 = \sigma_2 = \sigma$ (unknown)
-- Pooled variance: $s_p^2 = \frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1 + n_2 - 2}$
-- Test statistic: $T = \frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)}{s_p\sqrt{1/n_1 + 1/n_2}}$
-- df = $n_1 + n_2 - 2$
-
-**Case 3**: $\sigma_1 \neq \sigma_2$ (Welch's t-test)
-- Test statistic: $T = \frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)}{\sqrt{s_1^2/n_1 + s_2^2/n_2}}$
-- df = $\frac{(s_1^2/n_1 + s_2^2/n_2)^2}{(s_1^2/n_1)^2/(n_1-1) + (s_2^2/n_2)^2/(n_2-1)}$
-
-**2. Paired t-test**:
-- For dependent samples (before/after, matched pairs)
-- Test statistic: $T = \frac{\bar{D} - \mu_D}{S_D/\sqrt{n}}$
-- where $D_i = X_i - Y_i$ are differences
-
-**3. Comparison of Two Proportions**:
-- Pooled proportion: $\hat{p} = \frac{x_1 + x_2}{n_1 + n_2}$
-- Test statistic: $Z = \frac{\hat{p}_1 - \hat{p}_2}{\sqrt{\hat{p}(1-\hat{p})(1/n_1 + 1/n_2)}}$
-
-**4. F-test for Equality of Variances**:
-- Test statistic: $F = \frac{S_1^2}{S_2^2}$ (larger variance in numerator)
-- df = $(n_1-1, n_2-1)$
-
-**Chi-Square Tests**:
-
-**1. Goodness of Fit Test**:
-- Tests if sample follows specified distribution
-- Test statistic: $\chi^2 = \sum_{i=1}^k \frac{(O_i - E_i)^2}{E_i}$
-- where $O_i$ = observed frequency, $E_i$ = expected frequency
-- df = $k - 1 - \text{number of estimated parameters}$
-
-**2. Test of Independence**:
-- Tests if two categorical variables are independent
-- Test statistic: $\chi^2 = \sum_{i=1}^r \sum_{j=1}^c \frac{(O_{ij} - E_{ij})^2}{E_{ij}}$
-- where $E_{ij} = \frac{\text{row}_i \text{ total} \times \text{column}_j \text{ total}}{\text{grand total}}$
-- df = $(r-1)(c-1)$
-
-**Analysis of Variance (ANOVA)**:
-
-**One-Way ANOVA**: Compare means of $k$ groups
-- $H_0: \mu_1 = \mu_2 = \cdots = \mu_k$
-- $H_1$: At least one mean differs
-
-**Test Statistic**: $F = \frac{MST}{MSE} = \frac{SST/(k-1)}{SSE/(n-k)}$
-
-where:
-- $SST = \sum_{i=1}^k n_i(\bar{x}_i - \bar{x})^2$ (between groups)
-- $SSE = \sum_{i=1}^k \sum_{j=1}^{n_i} (x_{ij} - \bar{x}_i)^2$ (within groups)
-- $MST = SST/(k-1)$, $MSE = SSE/(n-k)$
-
-**Assumptions**:
-- Normality within each group
-- Equal variances (homoscedasticity)
-- Independence of observations
-
-**Regression Analysis**:
-
-**Simple Linear Regression**: $Y = \beta_0 + \beta_1 X + \epsilon$
-
-**Least Squares Estimates**:
-- $\hat{\beta}_1 = \frac{\sum(x_i - \bar{x})(y_i - \bar{y})}{\sum(x_i - \bar{x})^2}$
-- $\hat{\beta}_0 = \bar{y} - \hat{\beta}_1\bar{x}$
-
-**Coefficient of Determination**: $R^2 = \frac{SSR}{SST} = 1 - \frac{SSE}{SST}$
-- Proportion of variance explained by regression
-
-**Testing Significance of Regression**:
-- $H_0: \beta_1 = 0$ vs $H_1: \beta_1 \neq 0$
-- Test statistic: $T = \frac{\hat{\beta}_1}{SE(\hat{\beta}_1)}$
-
-**Non-parametric Tests**:
-
-**1. Sign Test**: Tests median of population
-- Uses only signs of differences from hypothesized median
-- Distribution-free
-
-**2. Wilcoxon Signed-Rank Test**: Tests median (uses ranks)
-- More powerful than sign test
-- Assumes symmetric distribution
-
-**3. Mann-Whitney U Test**: Compares two independent samples
-- Non-parametric alternative to two-sample t-test
-- Tests if populations have same distribution
-
-**4. Kruskal-Wallis Test**: Compares multiple groups
-- Non-parametric alternative to one-way ANOVA
-
-**Problem-Solving Tips**:
-
-**For Confidence Intervals**:
-1. Identify parameter of interest
-2. Check conditions (normality, sample size)
-3. Choose appropriate distribution (z, t, χ²)
-4. Calculate margin of error
-5. Interpret in context
-
-**For Hypothesis Testing**:
-1. State hypotheses clearly
-2. Check assumptions
-3. Calculate test statistic
-4. Find p-value or compare to critical value
-5. Make decision and interpret in context
-
-**GATE Tips**:
-- Use t-distribution when σ unknown and n < 30
-- Chi-square for variance tests and categorical data
-- F-distribution for comparing variances and ANOVA
-- p-value < α ⟹ reject H₀
-- Type I error = α, Type II error = β, Power = 1-β
-- Larger sample size ⟹ narrower confidence interval
-- ANOVA tests equality of means across groups
-- R² measures proportion of variance explained
-
-**Examples**:
-
-1. **Confidence interval for mean**: Sample of 25 students has mean score 78 with standard deviation 12. Find 95% CI for population mean.
-   - Use t-distribution: $n = 25 < 30$, $\sigma$ unknown
-   - $t_{0.025,24} = 2.064$
-   - CI: $78 \pm 2.064 \times \frac{12}{\sqrt{25}} = 78 \pm 4.95 = (73.05, 82.95)$
-
-2. **Hypothesis test for proportion**: Company claims 90% customer satisfaction. Sample of 200 shows 170 satisfied. Test at α = 0.05.
-   - $H_0: p = 0.9$ vs $H_1: p \neq 0.9$
-   - $\hat{p} = 170/200 = 0.85$
-   - $Z = \frac{0.85 - 0.9}{\sqrt{0.9 \times 0.1 / 200}} = \frac{-0.05}{0.0212} = -2.36$
-   - p-value = $2 \times P(Z < -2.36) = 2 \times 0.0091 = 0.0182$
-   - Since p-value < 0.05, reject $H_0$
-
-3. **Chi-square goodness of fit**: Test if die is fair. Observed frequencies: 1:8, 2:12, 3:10, 4:15, 5:9, 6:6 (total 60 rolls).
-   - Expected frequency for each face: 60/6 = 10
-   - $\chi^2 = \frac{(8-10)^2}{10} + \frac{(12-10)^2}{10} + \cdots + \frac{(6-10)^2}{10} = 0.4 + 0.4 + 0 + 2.5 + 0.1 + 1.6 = 5.0$
-   - df = 6 - 1 = 5
-   - Critical value at α = 0.05: $\chi^2_{0.05,5} = 11.07$
-   - Since 5.0 < 11.07, fail to reject $H_0$ (die appears fair)
-
-### 7.3 Regression Analysis (25)
-
-**Key Concepts**: Regression analysis studies relationships between variables, allowing prediction and understanding of how one variable affects another. It's fundamental in data science, economics, and engineering.
-
-**Simple Linear Regression**:
-
-**Model**: $Y = \beta_0 + \beta_1 X + \epsilon$
-
-where:
-- $Y$: dependent (response) variable
-- $X$: independent (predictor) variable  
-- $\beta_0$: y-intercept (value of Y when X = 0)
-- $\beta_1$: slope (change in Y per unit change in X)
-- $\epsilon$: random error term
-
-**Assumptions**:
-1. **Linearity**: Relationship between X and Y is linear
-2. **Independence**: Observations are independent
-3. **Homoscedasticity**: Constant variance of errors
-4. **Normality**: Errors are normally distributed
-5. **No measurement error** in X
-
-**Least Squares Estimation**:
-
-**Objective**: Minimize sum of squared residuals
-$$\text{SSE} = \sum_{i=1}^n (y_i - \hat{y}_i)^2 = \sum_{i=1}^n (y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i)^2$$
-
-**Normal Equations**:
-$$\frac{\partial \text{SSE}}{\partial \beta_0} = 0, \quad \frac{\partial \text{SSE}}{\partial \beta_1} = 0$$
+- ICMP is Network Layer protocol (IP protocol number 1)
+- Ping uses Echo Request (Type 8) and Echo Reply (Type 0)
+- Traceroute uses TTL expiration and Time Exceeded (Type 11)
+- Destination Unreachable (Type 3) has multiple codes
+- ICMP errors include original IP header + 8 bytes of data
+- No ICMP error for ICMP error (prevents loops)
+- Path MTU Discovery uses Fragmentation Needed (Type 3, Code 4)
+- Security: ICMP can be used for attacks (flood, Smurf, tunneling)
+
+### NAT (Network Address Translation)
+
+**Key Concepts**: NAT translates private IP addresses to public IP addresses, enabling multiple devices to share a single public IP. Critical for IPv4 address conservation.
+
+**NAT Overview**:
+- **Purpose**: Map private IPs to public IPs
+- **Location**: Typically on router/gateway
+- **Motivation**: IPv4 address exhaustion
+- **Benefit**: Security (hides internal network structure)
+
+**Private IP Address Ranges** (RFC 1918):
+
+Non-routable on public Internet:
+- **Class A**: 10.0.0.0 to 10.255.255.255 (10.0.0.0/8)
+- **Class B**: 172.16.0.0 to 172.31.255.255 (172.16.0.0/12)
+- **Class C**: 192.168.0.0 to 192.168.255.255 (192.168.0.0/16)
+
+**NAT Types**:
+
+**1. Static NAT (One-to-One)**:
+- **Mapping**: One private IP ↔ One public IP
+- **Permanent**: Mapping configured manually
+- **Use Case**: Servers that need consistent public IP
+- **Example**: 
+  - Internal: 192.168.1.10 → External: 203.0.113.5
+  - Always same mapping
+
+**2. Dynamic NAT (One-to-One Pool)**:
+- **Mapping**: Private IPs mapped to pool of public IPs
+- **Temporary**: Mapping created on-demand
+- **Limitation**: Number of simultaneous connections ≤ pool size
+- **Example**:
+  - Pool: 203.0.113.5 - 203.0.113.10 (6 addresses)
+  - First 6 internal hosts get public IPs
+  - 7th host must wait
+
+**3. PAT (Port Address Translation) / NAT Overload**:
+- **Mapping**: Many private IPs ↔ One public IP (using ports)
+- **Most Common**: Used in home/office routers
+- **Mechanism**: Translate (private IP, private port) to (public IP, public port)
+- **Capacity**: ~65,000 simultaneous connections per public IP
+
+**NAT Translation Table**:
+
+**For PAT/NAT Overload**:
+
+| Inside Local | Inside Local Port | Inside Global | Inside Global Port | Outside Global | Outside Global Port |
+|--------------|-------------------|---------------|-------------------|----------------|---------------------|
+| 192.168.1.10 | 3000 | 203.0.113.5 | 50000 | 93.184.216.34 | 80 |
+| 192.168.1.11 | 3001 | 203.0.113.5 | 50001 | 93.184.216.34 | 80 |
+| 192.168.1.10 | 3002 | 203.0.113.5 | 50002 | 151.101.1.69 | 443 |
+
+**Terminology**:
+- **Inside Local**: Private IP address
+- **Inside Global**: Public IP address (after NAT)
+- **Outside Global**: Destination public IP
+- **Outside Local**: Destination as seen from inside (usually same as Outside Global)
+
+**NAT Operation**:
+
+**Outbound (Inside to Outside)**:
+1. Host 192.168.1.10:3000 sends packet to 93.184.216.34:80
+2. NAT router receives packet
+3. Router creates entry in NAT table
+4. Router replaces source IP:port with public IP:port (203.0.113.5:50000)
+5. Router forwards packet to Internet
+
+**Inbound (Outside to Inside)**:
+1. Reply arrives at router: destination 203.0.113.5:50000
+2. Router looks up port 50000 in NAT table
+3. Router finds mapping to 192.168.1.10:3000
+4. Router replaces destination IP:port with private IP:port
+5. Router forwards packet to internal host
+
+**NAT Advantages**:
+
+1. **Address Conservation**: Multiple devices share one public IP
+2. **Security**: Internal network structure hidden
+3. **Flexibility**: Change ISP without renumbering internal network
+4. **Cost**: Fewer public IPs needed
+
+**NAT Disadvantages**:
+
+1. **Breaks End-to-End Connectivity**: Violates Internet architecture principle
+2. **Port Exhaustion**: Limited to ~65,000 simultaneous connections per public IP
+3. **Protocol Issues**: Some protocols embed IP addresses in payload (FTP, SIP)
+4. **Performance**: Translation overhead
+5. **Complicates Peer-to-Peer**: Incoming connections difficult
+6. **Logging**: Multiple users share same public IP
+
+**NAT Traversal Techniques**:
+
+**Problem**: Incoming connections to NATed hosts
 
 **Solutions**:
-$$\hat{\beta}_1 = \frac{\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^n (x_i - \bar{x})^2} = \frac{S_{xy}}{S_{xx}}$$
 
-$$\hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x}$$
+**1. Port Forwarding (Static Port Mapping)**:
+- Manually configure router to forward specific port to internal host
+- Example: Forward port 80 to 192.168.1.10:80 for web server
 
-where:
-- $S_{xy} = \sum(x_i - \bar{x})(y_i - \bar{y})$ (sum of cross-products)
-- $S_{xx} = \sum(x_i - \bar{x})^2$ (sum of squares for X)
-- $S_{yy} = \sum(y_i - \bar{y})^2$ (sum of squares for Y)
+**2. UPnP (Universal Plug and Play)**:
+- Automatic port forwarding
+- Application requests router to open port
+- Security risk if not controlled
 
-**Alternative Formulas**:
-$$\hat{\beta}_1 = \frac{n\sum x_i y_i - \sum x_i \sum y_i}{n\sum x_i^2 - (\sum x_i)^2}$$
+**3. STUN (Session Traversal Utilities for NAT)**:
+- Discover public IP and port
+- Used for VoIP, video conferencing
+- Works for cone NAT, not symmetric NAT
 
-$$\hat{\beta}_0 = \frac{\sum y_i - \hat{\beta}_1 \sum x_i}{n}$$
+**4. TURN (Traversal Using Relays around NAT)**:
+- Relay server forwards traffic
+- Works for all NAT types
+- Higher latency and cost
 
-**Fitted Values and Residuals**:
+**5. ICE (Interactive Connectivity Establishment)**:
+- Combines STUN and TURN
+- Tries direct connection first, falls back to relay
 
-**Fitted value**: $\hat{y}_i = \hat{\beta}_0 + \hat{\beta}_1 x_i$
+**NAT Types (Behavior)**:
 
-**Residual**: $e_i = y_i - \hat{y}_i$ (observed - predicted)
+**1. Full Cone NAT**:
+- Once internal address mapped, any external host can send to that port
+- Most permissive
 
-**Properties of Residuals**:
-- $\sum e_i = 0$ (sum to zero)
-- $\sum x_i e_i = 0$ (uncorrelated with X)
-- $\sum \hat{y}_i e_i = 0$ (uncorrelated with fitted values)
+**2. Restricted Cone NAT**:
+- External host can send only if internal host sent to that external IP first
+- Port doesn't matter
 
-**Analysis of Variance (ANOVA) for Regression**:
+**3. Port-Restricted Cone NAT**:
+- External host can send only if internal host sent to that exact IP:port
+- Most common in home routers
 
-**Total Sum of Squares**: $\text{SST} = \sum(y_i - \bar{y})^2$ (total variation)
+**4. Symmetric NAT**:
+- Different mapping for each destination
+- Most restrictive, hardest for NAT traversal
 
-**Regression Sum of Squares**: $\text{SSR} = \sum(\hat{y}_i - \bar{y})^2$ (explained variation)
+**NAT and IPv6**:
 
-**Error Sum of Squares**: $\text{SSE} = \sum(y_i - \hat{y}_i)^2$ (unexplained variation)
+**IPv6 Eliminates Need for NAT**:
+- Abundant addresses (2^128)
+- Every device can have public IP
+- Restores end-to-end connectivity
 
-**Fundamental Identity**: $\text{SST} = \text{SSR} + \text{SSE}$
-
-**Degrees of Freedom**:
-- SST: $n - 1$
-- SSR: $1$ (one predictor)
-- SSE: $n - 2$
-
-**Mean Squares**:
-- $\text{MSR} = \text{SSR}/1$
-- $\text{MSE} = \text{SSE}/(n-2)$
-
-**Coefficient of Determination**:
-$$R^2 = \frac{\text{SSR}}{\text{SST}} = 1 - \frac{\text{SSE}}{\text{SST}}$$
-
-**Interpretation**: Proportion of total variation in Y explained by X
-- $0 \leq R^2 \leq 1$
-- $R^2 = 1$: Perfect fit
-- $R^2 = 0$: No linear relationship
-
-**Relationship to Correlation**: $R^2 = r_{xy}^2$ where $r_{xy}$ is sample correlation coefficient
-
-**Statistical Inference**:
-
-**Standard Error of Regression**: $s = \sqrt{\text{MSE}} = \sqrt{\frac{\text{SSE}}{n-2}}$
-
-**Standard Errors of Coefficients**:
-$$SE(\hat{\beta}_1) = \frac{s}{\sqrt{S_{xx}}}, \quad SE(\hat{\beta}_0) = s\sqrt{\frac{1}{n} + \frac{\bar{x}^2}{S_{xx}}}$$
-
-**Confidence Intervals**:
-- For $\beta_1$: $\hat{\beta}_1 \pm t_{\alpha/2, n-2} \cdot SE(\hat{\beta}_1)$
-- For $\beta_0$: $\hat{\beta}_0 \pm t_{\alpha/2, n-2} \cdot SE(\hat{\beta}_0)$
-
-**Hypothesis Tests**:
-
-**Test for Slope**:
-- $H_0: \beta_1 = 0$ vs $H_1: \beta_1 \neq 0$
-- Test statistic: $t = \frac{\hat{\beta}_1}{SE(\hat{\beta}_1)}$
-- Reject if $|t| > t_{\alpha/2, n-2}$
-
-**F-test for Overall Regression**:
-- $H_0: \beta_1 = 0$ vs $H_1: \beta_1 \neq 0$
-- Test statistic: $F = \frac{\text{MSR}}{\text{MSE}}$
-- Reject if $F > F_{\alpha, 1, n-2}$
-- Note: $F = t^2$ for simple linear regression
-
-**Prediction**:
-
-**Point Prediction**: $\hat{y}_0 = \hat{\beta}_0 + \hat{\beta}_1 x_0$
-
-**Prediction Interval** (for new observation):
-$$\hat{y}_0 \pm t_{\alpha/2, n-2} \cdot s \sqrt{1 + \frac{1}{n} + \frac{(x_0 - \bar{x})^2}{S_{xx}}}$$
-
-**Confidence Interval for Mean Response**:
-$$\hat{y}_0 \pm t_{\alpha/2, n-2} \cdot s \sqrt{\frac{1}{n} + \frac{(x_0 - \bar{x})^2}{S_{xx}}}$$
-
-**Note**: Prediction interval is wider than confidence interval
-
-**Multiple Linear Regression**:
-
-**Model**: $Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_k X_k + \epsilon$
-
-**Matrix Form**: $\mathbf{Y} = \mathbf{X}\boldsymbol{\beta} + \boldsymbol{\epsilon}$
-
-where:
-- $\mathbf{Y}$: $n \times 1$ response vector
-- $\mathbf{X}$: $n \times (k+1)$ design matrix
-- $\boldsymbol{\beta}$: $(k+1) \times 1$ parameter vector
-- $\boldsymbol{\epsilon}$: $n \times 1$ error vector
-
-**Least Squares Solution**:
-$$\hat{\boldsymbol{\beta}} = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{Y}$$
-
-**Properties**:
-- Unbiased: $E[\hat{\boldsymbol{\beta}}] = \boldsymbol{\beta}$
-- Covariance: $\text{Cov}(\hat{\boldsymbol{\beta}}) = \sigma^2(\mathbf{X}^T\mathbf{X})^{-1}$
-
-**ANOVA for Multiple Regression**:
-
-**Degrees of Freedom**:
-- SSR: $k$ (number of predictors)
-- SSE: $n - k - 1$
-- SST: $n - 1$
-
-**F-test for Overall Model**:
-- $H_0: \beta_1 = \beta_2 = \cdots = \beta_k = 0$
-- Test statistic: $F = \frac{\text{MSR}}{\text{MSE}} = \frac{\text{SSR}/k}{\text{SSE}/(n-k-1)}$
-
-**Adjusted R-squared**:
-$$R_{adj}^2 = 1 - \frac{\text{SSE}/(n-k-1)}{\text{SST}/(n-1)} = 1 - (1-R^2)\frac{n-1}{n-k-1}$$
-
-**Purpose**: Penalizes for adding variables that don't improve fit significantly
-
-**Individual t-tests**:
-- $H_0: \beta_j = 0$ vs $H_1: \beta_j \neq 0$
-- Test statistic: $t = \frac{\hat{\beta}_j}{SE(\hat{\beta}_j)}$
-
-**Multicollinearity**:
-
-**Problem**: High correlation among predictor variables
-- Makes coefficient estimates unstable
-- Inflates standard errors
-- Doesn't affect prediction accuracy
-
-**Detection**:
-- **Correlation matrix**: High pairwise correlations (|r| > 0.8)
-- **Variance Inflation Factor (VIF)**: $\text{VIF}_j = \frac{1}{1-R_j^2}$
-  where $R_j^2$ is R² from regressing $X_j$ on other predictors
-- VIF > 10 indicates serious multicollinearity
-
-**Solutions**:
-- Remove highly correlated variables
-- Principal component regression
-- Ridge regression
-
-**Model Selection**:
-
-**Forward Selection**: Start with no variables, add significant ones
-
-**Backward Elimination**: Start with all variables, remove non-significant ones
-
-**Stepwise Regression**: Combination of forward and backward
-
-**Information Criteria**:
-- **AIC**: $\text{AIC} = n \ln(\text{SSE}/n) + 2(k+1)$
-- **BIC**: $\text{BIC} = n \ln(\text{SSE}/n) + (k+1) \ln(n)$
-- Lower values indicate better models
-
-**Cross-Validation**: Split data into training and validation sets
-
-**Residual Analysis**:
-
-**Purposes**:
-- Check model assumptions
-- Identify outliers and influential points
-- Suggest model improvements
-
-**Diagnostic Plots**:
-
-1. **Residuals vs Fitted Values**:
-   - Check linearity and homoscedasticity
-   - Should show random scatter around zero
-
-2. **Normal Q-Q Plot**:
-   - Check normality of residuals
-   - Points should lie approximately on straight line
-
-3. **Residuals vs Predictor Variables**:
-   - Check for non-linear relationships
-   - May suggest transformations
-
-4. **Residuals vs Order**:
-   - Check independence assumption
-   - Look for patterns or trends
-
-**Standardized Residuals**:
-$$r_i = \frac{e_i}{s\sqrt{1-h_{ii}}}$$
-
-where $h_{ii}$ is leverage (diagonal element of hat matrix)
-
-**Outliers and Influential Points**:
-
-**Outlier**: Observation with large residual
-- Standardized residual $|r_i| > 2$ or $3$
-
-**High Leverage Point**: Observation with unusual X values
-- Leverage $h_{ii} > 2(k+1)/n$
-
-**Influential Point**: Observation that greatly affects fitted model
-- **Cook's Distance**: $D_i = \frac{r_i^2}{k+1} \cdot \frac{h_{ii}}{1-h_{ii}}$
-- $D_i > 1$ indicates influential point
-
-**Transformations**:
-
-**Box-Cox Transformation**: $Y^{(\lambda)} = \frac{Y^\lambda - 1}{\lambda}$ (λ ≠ 0)
-- λ = 1: No transformation
-- λ = 0: Log transformation
-- λ = 0.5: Square root transformation
-- λ = -1: Reciprocal transformation
-
-**Polynomial Regression**:
-
-**Model**: $Y = \beta_0 + \beta_1 X + \beta_2 X^2 + \cdots + \beta_k X^k + \epsilon$
-
-**Considerations**:
-- Higher-order terms can cause overfitting
-- Extrapolation beyond data range dangerous
-- Orthogonal polynomials reduce multicollinearity
-
-**Logistic Regression**:
-
-**Model**: For binary response (0/1)
-$$\ln\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1 X_1 + \cdots + \beta_k X_k$$
-
-where $p = P(Y = 1)$
-
-**Logistic Function**: $p = \frac{e^{\beta_0 + \beta_1 X_1 + \cdots + \beta_k X_k}}{1 + e^{\beta_0 + \beta_1 X_1 + \cdots + \beta_k X_k}}$
-
-**Estimation**: Maximum likelihood (not least squares)
-
-**Problem-Solving Tips**:
-
-**For Simple Linear Regression**:
-1. Plot data to check linearity
-2. Calculate slope and intercept using formulas
-3. Compute R² to assess fit quality
-4. Check residual plots for assumption violations
-
-**For Multiple Regression**:
-1. Check for multicollinearity (VIF)
-2. Use F-test for overall model significance
-3. Use t-tests for individual coefficients
-4. Consider model selection techniques
-
-**For Model Diagnostics**:
-1. Always plot residuals vs fitted values
-2. Check normal Q-Q plot of residuals
-3. Look for outliers and influential points
-4. Consider transformations if assumptions violated
+**NAT66 (IPv6-to-IPv6 NAT)**:
+- Sometimes used for privacy or multihoming
+- Controversial (defeats IPv6 purpose)
 
 **GATE Tips**:
-- Least squares minimizes sum of squared residuals
-- R² = proportion of variance explained (0 to 1)
-- Higher R² doesn't always mean better model
-- Check assumptions through residual analysis
-- Multicollinearity affects coefficient stability, not predictions
-- F-test for overall model, t-tests for individual coefficients
-- Prediction intervals wider than confidence intervals
-- Adjusted R² penalizes for additional variables
-
-**Examples**:
-
-1. **Simple linear regression**: Data points (1,2), (2,4), (3,5), (4,7), (5,8)
-   - $\bar{x} = 3, \bar{y} = 5.2$
-   - $S_{xx} = \sum(x_i - \bar{x})^2 = 10$
-   - $S_{xy} = \sum(x_i - \bar{x})(y_i - \bar{y}) = 11.2$
-   - $\hat{\beta}_1 = 11.2/10 = 1.12$
-   - $\hat{\beta}_0 = 5.2 - 1.12(3) = 1.84$
-   - Equation: $\hat{y} = 1.84 + 1.12x$
-
-2. **R² calculation**: 
-   - $\text{SST} = \sum(y_i - \bar{y})^2 = 16.8$
-   - $\text{SSR} = \hat{\beta}_1^2 S_{xx} = (1.12)^2(10) = 12.544$
-   - $R^2 = 12.544/16.8 = 0.747$
-   - 74.7% of variation in Y explained by X
-
-3. **Hypothesis test for slope**:
-   - $\text{SSE} = \text{SST} - \text{SSR} = 16.8 - 12.544 = 4.256$
-   - $s = \sqrt{4.256/3} = 1.191$
-   - $SE(\hat{\beta}_1) = 1.191/\sqrt{10} = 0.377$
-   - $t = 1.12/0.377 = 2.97$
-   - With df = 3, critical value $t_{0.025,3} = 3.182$
-   - Since $|2.97| < 3.182$, fail to reject $H_0: \beta_1 = 0$ at α = 0.05
-### 8. General Aptitude (200 Questions)
-
-### 8.1 Verbal Ability (100)
-
-**Key Concepts**: Verbal ability tests comprehension, vocabulary, grammar, and communication skills essential for technical professionals.
-
-**Reading Comprehension (25)**:
-
-**Types of Passages**:
-- **Factual**: Presents information, data, or research findings
-- **Analytical**: Examines cause-effect relationships, comparisons
-- **Argumentative**: Presents viewpoint with supporting evidence
-- **Narrative**: Tells story or describes sequence of events
-
-**Question Types**:
-
-**1. Main Idea Questions**:
-- "The primary purpose of the passage is..."
-- "The passage is primarily concerned with..."
-- **Strategy**: Look for thesis statement, topic sentences, concluding remarks
-
-**2. Detail Questions**:
-- "According to the passage..."
-- "The author mentions X in order to..."
-- **Strategy**: Locate specific information, avoid inferences
-
-**3. Inference Questions**:
-- "It can be inferred that..."
-- "The passage suggests that..."
-- **Strategy**: Draw logical conclusions from stated information
-
-**4. Tone/Attitude Questions**:
-- "The author's attitude toward X is..."
-- "The tone of the passage is..."
-- **Options**: Critical, supportive, neutral, skeptical, optimistic, pessimistic
-
-**5. Vocabulary in Context**:
-- "In line X, 'word' most nearly means..."
-- **Strategy**: Consider surrounding context, not just dictionary meaning
-
-**6. Structure Questions**:
-- "The organization of the passage is..."
-- "The author develops the argument by..."
-
-**Reading Strategies**:
-
-**Active Reading**:
-1. **Preview**: Scan title, first/last paragraphs, topic sentences
-2. **Purpose**: Identify why you're reading (main idea, specific detail)
-3. **Predict**: Anticipate content based on preview
-4. **Read**: Focus on key ideas, not every detail
-5. **Review**: Summarize main points
-
-**Time Management**:
-- Spend 2-3 minutes reading passage
-- 1-2 minutes per question
-- Don't get stuck on difficult questions
-
-**Common Traps**:
-- **Extreme language**: "always," "never," "all," "none"
-- **Out of scope**: Information not in passage
-- **Opposite answers**: Contradicts passage information
-- **Distortion**: Twists passage information
-
-**Grammar and Usage (25)**:
-
-**Subject-Verb Agreement**:
-
-**Basic Rule**: Singular subjects take singular verbs; plural subjects take plural verbs
-
-**Tricky Cases**:
-- **Collective nouns**: "The team is/are playing" (depends on context)
-- **Compound subjects**: "John and Mary are..." (plural)
-- **Either/or, neither/nor**: Verb agrees with nearest subject
-- **Indefinite pronouns**: 
-  - Singular: each, every, either, neither, one, someone, anyone, everyone
-  - Plural: both, few, many, several
-  - Variable: all, some, most, none (depends on object)
-
-**Examples**:
-- "Each of the students has submitted their assignment." (Incorrect - pronoun disagreement)
-- "Each of the students has submitted his or her assignment." (Correct)
-- "Neither the teacher nor the students were ready." (Correct - agrees with "students")
-
-**Pronoun Usage**:
-
-**Pronoun-Antecedent Agreement**:
-- Pronoun must agree with antecedent in number, gender, person
-- "Every student must bring their book." (Incorrect)
-- "Every student must bring his or her book." (Correct)
-
-**Pronoun Case**:
-- **Subjective**: I, you, he, she, it, we, they
-- **Objective**: me, you, him, her, it, us, them
-- **Possessive**: my, your, his, her, its, our, their
-
-**Common Errors**:
-- "Between you and I" (Incorrect - should be "me")
-- "Who/Whom": Who = subject, Whom = object
-- "Its/It's": Its = possessive, It's = it is
-
-**Verb Tenses**:
-
-**Simple Tenses**:
-- **Present**: "I write"
-- **Past**: "I wrote"
-- **Future**: "I will write"
-
-**Perfect Tenses**:
-- **Present Perfect**: "I have written" (completed action with present relevance)
-- **Past Perfect**: "I had written" (completed before another past action)
-- **Future Perfect**: "I will have written" (will be completed by future time)
-
-**Progressive Tenses**:
-- **Present Progressive**: "I am writing" (ongoing now)
-- **Past Progressive**: "I was writing" (ongoing in past)
-- **Future Progressive**: "I will be writing" (ongoing in future)
-
-**Sequence of Tenses**:
-- Main clause past → subordinate clause past
-- "He said that he was tired." (Not "He said that he is tired.")
-
-**Modifiers**:
-
-**Misplaced Modifiers**:
-- "I saw a man with binoculars walking down the street." (Ambiguous)
-- "Walking down the street, I saw a man with binoculars." (Clear)
-
-**Dangling Modifiers**:
-- "Having finished the assignment, the TV was turned on." (Incorrect)
-- "Having finished the assignment, I turned on the TV." (Correct)
-
-**Parallel Structure**:
-
-**Lists**: Items in series should have same grammatical form
-- "I like reading, writing, and to swim." (Incorrect)
-- "I like reading, writing, and swimming." (Correct)
-
-**Correlative Conjunctions**: Both...and, either...or, neither...nor, not only...but also
-- "She is not only intelligent but also has creativity." (Incorrect)
-- "She is not only intelligent but also creative." (Correct)
-
-**Sentence Structure**:
-
-**Fragments**: Incomplete sentences missing subject or verb
-- "Because I was tired." (Fragment)
-- "I went home because I was tired." (Complete)
-
-**Run-on Sentences**: Two or more independent clauses incorrectly joined
-- "I was tired I went home." (Run-on)
-- "I was tired, so I went home." (Correct)
-
-**Comma Splices**: Two independent clauses joined only by comma
-- "I was tired, I went home." (Comma splice)
-- "I was tired; I went home." (Correct)
-
-**Vocabulary (25)**:
-
-**Word Roots, Prefixes, Suffixes**:
-
-**Common Prefixes**:
-- **Anti-**: against (antibiotic, antisocial)
-- **Pre-**: before (preview, prehistoric)
-- **Post-**: after (postwar, postpone)
-- **Sub-**: under (submarine, substandard)
-- **Super-**: above (superhuman, supervisor)
-- **Inter-**: between (international, interact)
-- **Intra-**: within (intramural, intravenous)
-- **Extra-**: beyond (extraordinary, extraterrestrial)
-
-**Common Suffixes**:
-- **-tion/-sion**: action/state (creation, decision)
-- **-ment**: result/state (development, agreement)
-- **-ness**: quality (happiness, darkness)
-- **-ful**: full of (helpful, beautiful)
-- **-less**: without (hopeless, careless)
-- **-able/-ible**: capable of (readable, visible)
-
-**Common Roots**:
-- **Bene-**: good (benefit, benevolent)
-- **Mal-**: bad (malfunction, malicious)
-- **Chron-**: time (chronology, chronic)
-- **Graph-**: write (biography, telegraph)
-- **Phon-**: sound (telephone, phonics)
-- **Geo-**: earth (geography, geology)
-
-**Context Clues**:
-
-**Definition**: Word meaning explained in sentence
-- "The edifice, a large imposing building, dominated the skyline."
-
-**Example**: Specific instances given
-- "Citrus fruits, such as oranges and lemons, are rich in vitamin C."
-
-**Contrast**: Opposite meaning indicated
-- "Unlike his gregarious brother, Tom was quite introverted."
-
-**Cause and Effect**: Relationship shows meaning
-- "The drought caused the crops to desiccate and wither away."
-
-**Synonyms and Antonyms**:
-
-**High-Frequency GATE Words**:
-
-**Positive Connotation**:
-- Acclaim, commend, extol, laud, praise
-- Abundant, copious, plentiful, profuse
-- Astute, discerning, perceptive, shrewd
-- Benevolent, charitable, magnanimous, philanthropic
-
-**Negative Connotation**:
-- Censure, condemn, denounce, reproach
-- Meager, paltry, scanty, sparse
-- Gullible, naive, credulous
-- Malevolent, vindictive, spiteful
-
-**Neutral/Technical**:
-- Analyze, scrutinize, examine, investigate
-- Hypothesis, theory, conjecture, postulate
-- Implement, execute, accomplish, achieve
-- Significant, substantial, considerable, notable
-
-**Analogies**:
-
-**Common Relationship Types**:
-
-**1. Synonyms**: HAPPY : JOYFUL
-**2. Antonyms**: HOT : COLD
-**3. Part to Whole**: WHEEL : CAR
-**4. Cause to Effect**: RAIN : FLOOD
-**5. Function**: SCISSORS : CUT
-**6. Category**: ROSE : FLOWER
-**7. Degree**: WARM : HOT
-**8. Location**: BOOK : LIBRARY
-**9. Worker to Tool**: PAINTER : BRUSH
-**10. Characteristic**: ICE : COLD
-
-**Strategy**:
-1. Identify relationship between first pair
-2. Look for same relationship in answer choices
-3. Make sentence: "A is to B as C is to D"
-4. Check if sentence makes sense
-
-**Sentence Completion (25)**:
-
-**Types of Clues**:
-
-**1. Definition/Restatement**:
-- Signal words: that is, in other words, namely
-- "The professor's lecture was so _____ that students fell asleep; in other words, it was extremely boring."
-
-**2. Contrast/Opposition**:
-- Signal words: but, however, although, despite, nevertheless
-- "Although she appeared confident, she was actually quite _____."
-
-**3. Cause and Effect**:
-- Signal words: because, since, therefore, consequently, as a result
-- "Because of the severe drought, the harvest was _____."
-
-**4. Examples**:
-- Signal words: such as, for example, including
-- "The museum displayed various artifacts, including _____ pottery and ancient tools."
-
-**5. Comparison**:
-- Signal words: like, similar to, just as
-- "Like his mentor, the young scientist was _____ in his research methods."
-
-**Strategy**:
-1. Read entire sentence for context
-2. Identify signal words and clue types
-3. Predict word before looking at choices
-4. Eliminate obviously wrong answers
-5. Check answer in context
-
-**Common Patterns**:
-- **Positive/Negative**: Look for words that indicate tone
-- **Degree**: Mild vs. extreme words
-- **Time sequence**: Before/after relationships
-- **Logic flow**: Cause leads to logical effect
-
-**Problem-Solving Tips**:
-
-**For Reading Comprehension**:
-1. Read questions first to know what to look for
-2. Focus on first and last paragraphs for main ideas
-3. Pay attention to transition words (however, therefore, moreover)
-4. Eliminate extreme or absolute answer choices
-5. Stay within scope of passage
-
-**For Grammar**:
-1. Read sentence aloud to catch errors
-2. Identify subject and verb first
-3. Check for parallel structure in lists
-4. Watch for pronoun-antecedent agreement
-5. Be careful with modifier placement
-
-**For Vocabulary**:
-1. Use word roots to deduce meanings
-2. Consider context clues carefully
-3. Eliminate choices that don't fit context
-4. Don't choose words just because they sound sophisticated
-5. Practice with high-frequency GATE vocabulary
+- NAT translates private IPs to public IPs
+- Private ranges: 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
+- PAT (NAT Overload) uses ports to multiplex connections
+- Static NAT: one-to-one permanent mapping
+- Dynamic NAT: one-to-one from pool
+- PAT: many-to-one using ports
+- NAT table maps (private IP, port) to (public IP, port)
+- Advantages: address conservation, security
+- Disadvantages: breaks end-to-end, complicates P2P
+- Port forwarding enables incoming connections
+- IPv6 eliminates need for NAT
+
+
+### Link State Routing
+
+**Key Concepts**: Link state routing protocols build complete network topology map at each router, enabling optimal path calculation. OSPF is the primary example.
+
+**Link State Overview**:
+- **Philosophy**: Each router knows complete network topology
+- **Method**: Flood link state information, build topology database
+- **Algorithm**: Dijkstra's shortest path algorithm
+- **Examples**: OSPF (Open Shortest Path First), IS-IS
+
+**Comparison with Distance Vector**:
+
+| Feature | Distance Vector | Link State |
+|---------|----------------|------------|
+| Information | Distance to destinations | Complete topology |
+| Updates | Periodic, triggered | Event-driven |
+| Convergence | Slow (count-to-infinity) | Fast |
+| Memory | Low | High |
+| CPU | Low | High |
+| Scalability | Limited | Better |
+| Loop Prevention | Split horizon, poison reverse | Topology knowledge |
+
+**Link State Algorithm Steps**:
+
+**1. Discover Neighbors**:
+- Send Hello packets on all interfaces
+- Learn directly connected neighbors
+- Establish neighbor relationships
+
+**2. Measure Link Costs**:
+- Determine cost to each neighbor
+- Based on bandwidth, delay, or administrative weight
+- **OSPF Cost**: 10^8 / bandwidth (bps)
+
+**3. Build Link State Packet (LSP)**:
+- Contains router ID and list of neighbors with costs
+- Sequence number for freshness
+- Age field for expiration
+
+**4. Flood LSPs**:
+- Send LSP to all neighbors
+- Neighbors forward to their neighbors (except sender)
+- Reliable flooding with acknowledgments
+- Duplicate detection using sequence numbers
+
+**5. Build Topology Database**:
+- Collect LSPs from all routers
+- Build complete network graph
+- All routers have identical database (in steady state)
+
+**6. Run Dijkstra's Algorithm**:
+- Calculate shortest path tree rooted at self
+- Determine next hop for each destination
+- Build forwarding table
+
+**Link State Packet (LSP) Format**:
+
+```
++------------------+
+| Router ID        |
++------------------+
+| Sequence Number  |
++------------------+
+| Age              |
++------------------+
+| Neighbor 1 ID    |
+| Cost to Neighbor 1|
++------------------+
+| Neighbor 2 ID    |
+| Cost to Neighbor 2|
++------------------+
+| ...              |
++------------------+
+```
+
+**Dijkstra's Algorithm for Link State**:
+
+```
+Dijkstra(Graph G, Source s):
+    Initialize:
+        distance[s] = 0
+        distance[v] = ∞ for all v ≠ s
+        previous[v] = undefined for all v
+        Q = set of all vertices
+    
+    while Q is not empty:
+        u = vertex in Q with minimum distance[u]
+        remove u from Q
+        
+        for each neighbor v of u still in Q:
+            alt = distance[u] + weight(u, v)
+            if alt < distance[v]:
+                distance[v] = alt
+                previous[v] = u
+    
+    return distance[], previous[]
+```
+
+**Example Network**:
+```
+    A ----5---- B
+    |           |
+    2           1
+    |           |
+    C ----3---- D
+```
+
+**Router A's LSP**:
+- Router ID: A
+- Neighbors: B (cost 5), C (cost 2)
+
+**Router B's LSP**:
+- Router ID: B  
+- Neighbors: A (cost 5), D (cost 1)
+
+**Dijkstra from A**:
+1. **Initial**: A(0), B(∞), C(∞), D(∞)
+2. **Process A**: A(0), B(5), C(2), D(∞)
+3. **Process C**: A(0), B(5), C(2), D(5)
+4. **Process B**: A(0), B(5), C(2), D(5)
+5. **Process D**: A(0), B(5), C(2), D(5)
+
+**Shortest Paths from A**:
+- A → B: A → B (cost 5) or A → C → D → B (cost 6) → Choose A → B
+- A → C: A → C (cost 2)
+- A → D: A → C → D (cost 5) or A → B → D (cost 6) → Choose A → C → D
+
+**LSP Flooding Process**:
+
+**Reliable Flooding**:
+1. Router generates LSP with new sequence number
+2. Sends LSP to all neighbors
+3. Each neighbor:
+   - Checks if LSP is newer (higher sequence number)
+   - If newer, stores LSP and forwards to all neighbors except sender
+   - Sends acknowledgment back to sender
+4. If no acknowledgment received, retransmit LSP
+
+**Duplicate Detection**:
+- Each LSP has unique (Router ID, Sequence Number)
+- Router maintains database of latest LSP from each router
+- Ignore LSPs with older sequence numbers
+
+**LSP Aging**:
+- Each LSP has age field (time to live)
+- Age decremented periodically
+- When age reaches 0, LSP is purged from database
+- Originating router must refresh LSP before expiration
+
+**Advantages of Link State**:
+
+1. **Fast Convergence**: 
+   - Event-driven updates
+   - No count-to-infinity problem
+   - Convergence time = flood time + computation time
+
+2. **Loop-Free**:
+   - Complete topology knowledge prevents loops
+   - Consistent view of network
+
+3. **Scalable**:
+   - Hierarchical design possible (OSPF areas)
+   - Efficient use of bandwidth (only changes flooded)
+
+4. **Multiple Metrics**:
+   - Can optimize for different criteria
+   - Load balancing over equal-cost paths
+
+5. **Authentication**:
+   - LSPs can be authenticated
+   - Prevents malicious routing updates
+
+**Disadvantages of Link State**:
+
+1. **Memory Requirements**:
+   - Must store complete topology database
+   - O(n²) space for n routers
+
+2. **CPU Intensive**:
+   - Dijkstra algorithm complexity O(n²) or O(n log n)
+   - Must recalculate on topology changes
+
+3. **Bandwidth for Flooding**:
+   - Initial database synchronization
+   - LSP floods during topology changes
+
+4. **Complexity**:
+   - More complex protocol implementation
+   - Harder to debug
+
+**OSPF (Open Shortest Path First)**:
+
+**OSPF Hierarchy**:
+- **Areas**: Logical grouping of routers
+- **Backbone Area (Area 0)**: Central area, all other areas connect to it
+- **Area Border Routers (ABR)**: Connect areas
+- **Autonomous System Boundary Routers (ASBR)**: Connect to other ASes
+
+**OSPF LSA Types**:
+1. **Router LSA (Type 1)**: Router's links within area
+2. **Network LSA (Type 2)**: Multi-access network information
+3. **Summary LSA (Type 3)**: Inter-area routes
+4. **ASBR Summary LSA (Type 4)**: Location of ASBR
+5. **External LSA (Type 5)**: External routes
+
+**OSPF Neighbor States**:
+1. **Down**: No Hello received
+2. **Init**: Hello received, but not bidirectional
+3. **2-Way**: Bidirectional communication established
+4. **ExStart**: Master/slave relationship established
+5. **Exchange**: Database description packets exchanged
+6. **Loading**: Link state request/update packets exchanged
+7. **Full**: Databases synchronized
+
+**Link State vs Distance Vector Summary**:
+
+**Use Link State When**:
+- Fast convergence required
+- Network topology changes frequently
+- Loop-free routing critical
+- Sufficient memory and CPU available
+- Hierarchical design needed
+
+**Use Distance Vector When**:
+- Simple implementation preferred
+- Limited resources (memory, CPU)
+- Small, stable networks
+- Minimal configuration desired
 
 **GATE Tips**:
-- Time management crucial: don't spend too long on any question
-- Process of elimination often more effective than direct selection
-- Read all answer choices before selecting
-- Trust first instinct if unsure
-- Practice regularly with previous years' questions
-- Focus on commonly tested grammar rules
-- Build vocabulary through reading and word lists
-- Pay attention to question types and develop specific strategies
+- Link state routers maintain complete topology database
+- Uses Dijkstra's algorithm for shortest path calculation
+- LSPs flooded reliably with sequence numbers and aging
+- Faster convergence than distance vector (no count-to-infinity)
+- Higher memory and CPU requirements
+- OSPF is main link state protocol
+- Event-driven updates (not periodic)
+- Loop-free due to complete topology knowledge
+- Scalable with hierarchical design (OSPF areas)
 
-**Common Mistakes to Avoid**:
-- Overthinking simple questions
-- Choosing answers based on partial information
-- Ignoring context clues in vocabulary questions
-- Misreading question stems
-- Not checking answers in context
-- Spending too much time on difficult passages
-- Confusing similar-looking answer choices
+### Flooding Routing Algorithm
 
-### 8.2 Quantitative Aptitude (100)
+**Key Concepts**: Flooding sends packets along all possible paths to guarantee delivery. Simple but inefficient algorithm used in specific scenarios.
 
-**Key Concepts**: Quantitative aptitude tests mathematical reasoning, numerical ability, and problem-solving skills using basic mathematical concepts.
+**Flooding Overview**:
+- **Principle**: Send packet copy on every outgoing link except arrival link
+- **Guarantee**: If path exists, packet will reach destination
+- **Efficiency**: Very low (generates many duplicate packets)
+- **Use Cases**: Military networks, sensor networks, link state protocol updates
 
-**Arithmetic (30)**:
+**Basic Flooding Algorithm**:
 
-**Number Systems**:
+```
+FloodingForward(packet, arrival_interface):
+    if packet.destination == my_address:
+        deliver_to_application(packet)
+        return
+    
+    for each interface in outgoing_interfaces:
+        if interface != arrival_interface:
+            send(packet, interface)
+```
 
-**Natural Numbers**: 1, 2, 3, 4, ... (counting numbers)
-**Whole Numbers**: 0, 1, 2, 3, 4, ... (natural numbers + 0)
-**Integers**: ..., -2, -1, 0, 1, 2, ... (positive and negative whole numbers)
-**Rational Numbers**: Numbers that can be expressed as p/q where p, q are integers, q ≠ 0
-**Irrational Numbers**: Cannot be expressed as fraction (√2, π, e)
-**Real Numbers**: All rational and irrational numbers
+**Flooding Example**:
 
-**Properties of Numbers**:
+Network topology:
+```
+    A -------- B
+    |          |
+    |          |
+    C -------- D
+```
 
-**Even Numbers**: Divisible by 2 (2, 4, 6, 8, ...)
-**Odd Numbers**: Not divisible by 2 (1, 3, 5, 7, ...)
+**Packet from A to D**:
+1. A sends to B and C
+2. B receives from A, sends to D
+3. C receives from A, sends to D  
+4. D receives packet twice (from B and C)
+
+**Problems with Basic Flooding**:
+
+**1. Infinite Loops**:
+- Packets circulate forever in cycles
+- Network becomes congested with duplicate packets
+
+**2. Packet Explosion**:
+- Number of packets grows exponentially
+- In network with cycles, packets multiply indefinitely
+
+**3. Resource Waste**:
+- Bandwidth consumed by duplicate packets
+- Processing overhead at each router
+
+**Flooding Control Mechanisms**:
+
+**1. Hop Count (TTL - Time To Live)**:
+- Each packet has maximum hop count
+- Decremented at each router
+- Packet discarded when hop count reaches 0
+- **Problem**: Must estimate network diameter
+
+```
+FloodingWithTTL(packet, arrival_interface):
+    packet.ttl = packet.ttl - 1
+    if packet.ttl <= 0:
+        discard(packet)
+        return
+    
+    if packet.destination == my_address:
+        deliver_to_application(packet)
+        return
+    
+    for each interface in outgoing_interfaces:
+        if interface != arrival_interface:
+            send(packet, interface)
+```
+
+**2. Sequence Numbers**:
+- Each source maintains sequence number
+- Routers track (source, sequence) pairs seen
+- Discard duplicates based on sequence number
+- **Advantage**: Prevents loops completely
+- **Disadvantage**: Requires state at each router
+
+```
+FloodingWithSequence(packet, arrival_interface):
+    key = (packet.source, packet.sequence)
+    if key in seen_packets:
+        discard(packet)  // Duplicate
+        return
+    
+    seen_packets.add(key)
+    
+    if packet.destination == my_address:
+        deliver_to_application(packet)
+        return
+    
+    for each interface in outgoing_interfaces:
+        if interface != arrival_interface:
+            send(packet, interface)
+```
+
+**3. Reverse Path Forwarding (RPF)**:
+- Accept packet only if it arrives on interface toward source
+- Use routing table to determine "best" path to source
+- Forward only if packet came from that direction
+- **Advantage**: Reduces duplicates significantly
+- **Disadvantage**: May not work with asymmetric routing
+
+```
+RPFFlooding(packet, arrival_interface):
+    best_interface = routing_table.lookup(packet.source)
+    if arrival_interface != best_interface:
+        discard(packet)  // Wrong direction
+        return
+    
+    if packet.destination == my_address:
+        deliver_to_application(packet)
+        return
+    
+    for each interface in outgoing_interfaces:
+        if interface != arrival_interface:
+            send(packet, interface)
+```
+
+**Selective Flooding**:
+
+**Concept**: Flood only in "useful" directions
+- Don't flood back toward source
+- Don't flood to networks that don't contain destination
+- Requires some topology knowledge
+
+**Implementation**:
+- Maintain partial routing information
+- Flood only to interfaces that could lead to destination
+- Balance between efficiency and simplicity
+
+**Flooding Applications**:
+
+**1. Link State Routing Protocols**:
+- OSPF floods Link State Advertisements (LSAs)
+- Ensures all routers have consistent topology database
+- Uses sequence numbers and aging for control
+
+**2. Broadcast in LANs**:
+- Ethernet broadcasts use flooding within LAN segment
+- Switches flood unknown unicast frames
+
+**3. Wireless Sensor Networks**:
+- Simple nodes with limited processing
+- Flooding ensures message delivery in dynamic topology
+- Energy efficiency more important than bandwidth
+
+**4. Military/Emergency Networks**:
+- Robustness more important than efficiency
+- Network topology may be unknown or changing rapidly
+- Flooding guarantees delivery if any path exists
+
+**5. Network Discovery**:
+- ARP requests flooded within broadcast domain
+- DHCP discover messages flooded to find servers
+
+**Flooding Variants**:
+
+**1. Controlled Flooding**:
+- Combine multiple control mechanisms
+- Example: TTL + sequence numbers
+- Better performance than basic flooding
+
+**2. Probabilistic Flooding**:
+- Forward packet with probability p < 1
+- Reduces packet explosion
+- May not guarantee delivery
+
+**3. Gossip Protocols**:
+- Forward to random subset of neighbors
+- Used in distributed systems for information dissemination
+- Balance between flooding and unicast
+
+**Performance Analysis**:
+
+**Packet Complexity**:
+- **Basic Flooding**: O(E) packets per message (E = number of edges)
+- **With Cycles**: Exponential growth without control
+- **With Control**: O(E) packets maximum
+
+**Delivery Guarantee**:
+- **Basic Flooding**: 100% if any path exists
+- **With TTL**: Depends on TTL value and network diameter
+- **With RPF**: High probability, not guaranteed
+
+**Bandwidth Usage**:
+- **Worst Case**: Every link carries packet
+- **Typical**: Much higher than optimal routing
+- **Acceptable**: When reliability more important than efficiency
+
+**Flooding vs Other Routing**:
+
+| Algorithm | Delivery | Efficiency | State Required | Convergence |
+|-----------|----------|------------|----------------|-------------|
+| Flooding | Guaranteed | Very Low | Minimal | Instant |
+| Distance Vector | High | Medium | Medium | Slow |
+| Link State | High | High | High | Fast |
+| Source Routing | High | High | None | N/A |
+
+**GATE Tips**:
+- Flooding sends packet on all outgoing links except arrival link
+- Guarantees delivery if any path exists
+- Problems: infinite loops, packet explosion, resource waste
+- Control mechanisms: TTL, sequence numbers, reverse path forwarding
+- Used in link state protocols (OSPF LSA flooding)
+- Applications: broadcast, sensor networks, military networks
+- Trade-off: reliability vs efficiency
+- Packet complexity O(E) where E is number of edges
+- Not practical for regular data forwarding due to inefficiency
+
+### Virtual Circuit Switching
+
+**Key Concepts**: Virtual circuits establish dedicated logical paths through network before data transmission. Combines benefits of circuit and packet switching.
+
+**Virtual Circuit Overview**:
+- **Concept**: Logical connection established before data transfer
+- **Path**: Fixed route through network for duration of connection
+- **State**: Intermediate nodes maintain connection state
+- **Phases**: Connection setup, data transfer, connection teardown
+
+**Circuit Switching vs Packet Switching vs Virtual Circuit**:
+
+| Feature | Circuit Switching | Packet Switching | Virtual Circuit |
+|---------|------------------|------------------|-----------------|
+| Connection | Physical circuit | Connectionless | Logical circuit |
+| Setup | Required | None | Required |
+| State | End-to-end | None | Per-hop |
+| Addressing | Once (setup) | Every packet | Label/VCI |
+| Routing | Fixed path | Per-packet | Fixed path |
+| Guarantees | Bandwidth, delay | None | Possible QoS |
+| Efficiency | Low (unused bandwidth) | High | Medium |
+
+**Virtual Circuit Components**:
+
+**1. Virtual Circuit Identifier (VCI)**:
+- **Purpose**: Label identifying virtual circuit
+- **Scope**: Local significance (per-link)
+- **Size**: Typically 12-16 bits
+- **Mapping**: Different VCI on each link of path
+
+**2. Virtual Circuit Table**:
+- **Location**: Each intermediate router
+- **Contents**: (Input Interface, Input VCI) → (Output Interface, Output VCI)
+- **Function**: Maps incoming VC to outgoing VC
+
+**3. Signaling Protocol**:
+- **Purpose**: Establish and tear down virtual circuits
+- **Messages**: Setup, Connect, Disconnect, Release
+- **Examples**: Q.931 (ISDN), Q.2931 (ATM)
+
+**Virtual Circuit Establishment**:
+
+**Setup Phase**:
+1. **Setup Request**: Source sends setup message with destination address
+2. **Path Selection**: Each router chooses next hop toward destination
+3. **VCI Allocation**: Each router allocates VCI for this connection
+4. **Table Entry**: Each router creates forwarding table entry
+5. **Setup Confirmation**: Destination sends confirmation back to source
+
+**Example Setup**:
+```
+Network: A --- R1 --- R2 --- R3 --- B
+
+Setup Process:
+1. A sends Setup(dest=B) to R1
+2. R1 allocates VCI=5, forwards Setup to R2
+3. R2 allocates VCI=8, forwards Setup to R3  
+4. R3 allocates VCI=3, forwards Setup to B
+5. B sends Connect message back
+6. Each router creates table entry during setup
+```
+
+**Virtual Circuit Tables After Setup**:
+
+**Router R1**:
+| Input Interface | Input VCI | Output Interface | Output VCI |
+|----------------|-----------|------------------|------------|
+| A | 5 | R2 | 8 |
+
+**Router R2**:
+| Input Interface | Input VCI | Output Interface | Output VCI |
+|----------------|-----------|------------------|------------|
+| R1 | 8 | R3 | 3 |
+
+**Data Transfer Phase**:
+
+**Packet Format**:
+```
++--------+--------+------------------+
+|  VCI   | Length |      Data        |
++--------+--------+------------------+
+```
+
+**Forwarding Process**:
+1. Packet arrives with VCI
+2. Router looks up (Input Interface, Input VCI) in table
+3. Router replaces VCI with Output VCI
+4. Router forwards packet on Output Interface
+
+**Example Data Transfer**:
+```
+A sends packet with VCI=5 to R1
+R1 receives on interface A with VCI=5
+R1 looks up table: (A,5) → (R2,8)
+R1 changes VCI to 8, forwards to R2
+R2 receives on interface R1 with VCI=8
+R2 looks up table: (R1,8) → (R3,3)
+R2 changes VCI to 3, forwards to R3
+...continues to destination B
+```
+
+**Connection Teardown**:
+1. Either end sends Disconnect message
+2. Message follows same path as data
+3. Each router removes table entry
+4. VCIs are deallocated for reuse
+5. Resources freed
+
+**Virtual Circuit Types**:
+
+**1. Switched Virtual Circuits (SVC)**:
+- **Dynamic**: Established on-demand
+- **Temporary**: Exist only for duration of communication
+- **Signaling**: Requires signaling protocol
+- **Example**: ATM SVCs, Frame Relay SVCs
+
+**2. Permanent Virtual Circuits (PVC)**:
+- **Static**: Pre-configured by administrator
+- **Persistent**: Always available
+- **No Signaling**: No setup/teardown messages
+- **Example**: Leased lines, ATM PVCs, Frame Relay PVCs
+
+**Advantages of Virtual Circuits**:
+
+**1. Quality of Service (QoS)**:
+- Resources can be reserved during setup
+- Bandwidth, delay, jitter guarantees possible
+- Traffic shaping and policing
+
+**2. Simplified Forwarding**:
+- Fast table lookup using VCI
+- No complex routing decisions per packet
+- Hardware-friendly implementation
+
+**3. Connection State**:
+- Network maintains connection information
+- Error detection and recovery possible
+- Flow control between adjacent nodes
+
+**4. Addressing Efficiency**:
+- Short VCI instead of full destination address
+- Reduces packet header overhead
+
+**5. Traffic Engineering**:
+- Explicit path selection possible
+- Load balancing across multiple paths
+- Network resource optimization
+
+**Disadvantages of Virtual Circuits**:
+
+**1. Setup Overhead**:
+- Connection establishment delay
+- Signaling protocol complexity
+- Not efficient for short communications
+
+**2. State Maintenance**:
+- Routers must maintain per-connection state
+- Memory overhead
+- State consistency issues
+
+**3. Failure Handling**:
+- Connection state lost if router fails
+- Must re-establish connections
+- More complex than stateless packet switching
+
+**4. Scalability**:
+- Limited by number of VCIs
+- State storage requirements grow with connections
+- Signaling load increases with connection rate
+
+**Virtual Circuit Technologies**:
+
+**1. ATM (Asynchronous Transfer Mode)**:
+- **Cell Size**: Fixed 53 bytes (5 header + 48 payload)
+- **VPI/VCI**: Virtual Path/Virtual Channel Identifiers
+- **QoS**: Multiple service categories (CBR, VBR, ABR, UBR)
+- **Applications**: Backbone networks, multimedia
+
+**2. Frame Relay**:
+- **Variable Frames**: Up to 4096 bytes
+- **DLCI**: Data Link Connection Identifier
+- **CIR**: Committed Information Rate
+- **Applications**: WAN connectivity, legacy networks
+
+**3. MPLS (Multi-Protocol Label Switching)**:
+- **Labels**: 20-bit label identifies forwarding equivalence class
+- **LSP**: Label Switched Path (similar to virtual circuit)
+- **Traffic Engineering**: Explicit routing capabilities
+- **Applications**: Service provider networks, VPNs
+
+**Virtual Circuit Implementation**:
+
+**Connection Table Structure**:
+```cpp
+struct VCEntry {
+    int input_interface;
+    int input_vci;
+    int output_interface;
+    int output_vci;
+    QoSParameters qos;
+    Statistics stats;
+};
+
+class VirtualCircuitSwitch {
+    map<pair<int,int>, VCEntry> vc_table;  // (interface, vci) -> entry
+    
+    void forward_packet(Packet& pkt, int input_if) {
+        auto key = make_pair(input_if, pkt.vci);
+        if (vc_table.find(key) != vc_table.end()) {
+            VCEntry& entry = vc_table[key];
+            pkt.vci = entry.output_vci;
+            send_packet(pkt, entry.output_interface);
+            update_statistics(entry);
+        } else {
+            drop_packet(pkt);  // No VC found
+        }
+    }
+};
+```
+
+**Performance Considerations**:
+
+**Forwarding Speed**:
+- Hash table lookup: O(1) average case
+- Hardware implementation possible
+- Faster than IP routing table lookup
+
+**Memory Usage**:
+- Per-connection state: ~100 bytes per VC
+- 1M connections ≈ 100 MB memory
+- Scalability limited by memory
+
+**Setup Time**:
+- Round-trip time for setup
+- Processing delay at each hop
+- Acceptable for long-lived connections
+
+**GATE Tips**:
+- Virtual circuits establish logical connection before data transfer
+- VCI (Virtual Circuit Identifier) labels packets
+- VCI has local significance (different on each link)
+- Three phases: setup, data transfer, teardown
+- Routers maintain per-connection state in VC tables
+- Advantages: QoS support, fast forwarding, traffic engineering
+- Disadvantages: setup overhead, state maintenance, failure complexity
+- Examples: ATM, Frame Relay, MPLS
+- SVC (dynamic) vs PVC (permanent) virtual circuits
+- Combines benefits of circuit and packet switching
+
+### CIDR (Classless Inter-Domain Routing)
+
+**Key Concepts**: CIDR eliminates traditional IP address classes, enabling flexible subnet allocation and route aggregation. Essential for IPv4 address conservation and routing scalability.
+
+**CIDR Overview**:
+- **Purpose**: Replace classful addressing with flexible prefix lengths
+- **Notation**: IP address followed by prefix length (e.g., 192.168.1.0/24)
+- **Benefits**: Efficient address allocation, route aggregation, reduced routing table size
+- **Deployment**: Mandatory in modern Internet (since 1993)
+
+**Classful vs Classless Addressing**:
+
+**Classful Addressing (Legacy)**:
+- **Class A**: 1.0.0.0 to 126.255.255.255 (/8 networks)
+  - Network: 8 bits, Host: 24 bits
+  - 126 networks, 16.7M hosts each
+- **Class B**: 128.0.0.0 to 191.255.255.255 (/16 networks)  
+  - Network: 16 bits, Host: 16 bits
+  - 16,384 networks, 65,534 hosts each
+- **Class C**: 192.0.0.0 to 223.255.255.255 (/24 networks)
+  - Network: 24 bits, Host: 8 bits
+  - 2.1M networks, 254 hosts each
+
+**Problems with Classful**:
+1. **Address Waste**: Organization needing 1000 hosts gets Class B (65,534 hosts)
+2. **Routing Table Growth**: Each network needs separate route
+3. **Inflexibility**: Fixed network sizes don't match requirements
+
+**CIDR Addressing**:
+- **Variable Length**: Network prefix can be any length (1-30 bits)
+- **Notation**: Network/prefix_length (e.g., 203.0.113.0/25)
+- **Subnet Mask**: Derived from prefix length
+- **Flexibility**: Allocate exactly what's needed
+
+**CIDR Notation Examples**:
+
+| CIDR | Subnet Mask | Network Bits | Host Bits | Addresses | Hosts |
+|------|-------------|--------------|-----------|-----------|-------|
+| /8 | 255.0.0.0 | 8 | 24 | 16,777,216 | 16,777,214 |
+| /16 | 255.255.0.0 | 16 | 16 | 65,536 | 65,534 |
+| /24 | 255.255.255.0 | 24 | 8 | 256 | 254 |
+| /25 | 255.255.255.128 | 25 | 7 | 128 | 126 |
+| /26 | 255.255.255.192 | 26 | 6 | 64 | 62 |
+| /27 | 255.255.255.224 | 27 | 5 | 32 | 30 |
+| /28 | 255.255.255.240 | 28 | 4 | 16 | 14 |
+| /30 | 255.255.255.252 | 30 | 2 | 4 | 2 |
+
+**CIDR Calculations**:
+
+**Given CIDR Block 192.168.1.0/26**:
+
+**Network Information**:
+- **Network Address**: 192.168.1.0
+- **Prefix Length**: 26 bits
+- **Subnet Mask**: 255.255.255.192 (11111111.11111111.11111111.11000000)
+- **Host Bits**: 32 - 26 = 6 bits
+- **Total Addresses**: 2^6 = 64
+- **Usable Hosts**: 64 - 2 = 62 (exclude network and broadcast)
+
+**Address Range**:
+- **First Address**: 192.168.1.0 (network address)
+- **First Host**: 192.168.1.1
+- **Last Host**: 192.168.1.62
+- **Broadcast**: 192.168.1.63
+
+**Binary Analysis**:
+```
+Network: 192.168.1.0/26
+Binary:  11000000.10101000.00000001.00000000
+Mask:    11111111.11111111.11111111.11000000
+         |-------- Network (26 bits) -------|Host|
+```
+
+**Subnetting with CIDR**:
+
+**Example**: Subnet 192.168.1.0/24 into smaller networks
+
+**Requirements**:
+- Subnet A: 50 hosts
+- Subnet B: 25 hosts  
+- Subnet C: 10 hosts
+- Subnet D: 5 hosts
+
+**Solution**:
+1. **Subnet A**: Needs 50 hosts → 6 host bits (2^6 = 64) → /26
+   - Network: 192.168.1.0/26 (192.168.1.0 - 192.168.1.63)
+
+2. **Subnet B**: Needs 25 hosts → 5 host bits (2^5 = 32) → /27
+   - Network: 192.168.1.64/27 (192.168.1.64 - 192.168.1.95)
+
+3. **Subnet C**: Needs 10 hosts → 4 host bits (2^4 = 16) → /28
+   - Network: 192.168.1.96/28 (192.168.1.96 - 192.168.1.111)
+
+4. **Subnet D**: Needs 5 hosts → 3 host bits (2^3 = 8) → /29
+   - Network: 192.168.1.112/29 (192.168.1.112 - 192.168.1.119)
+
+**Route Aggregation (Supernetting)**:
+
+**Concept**: Combine multiple networks into single route entry
+
+**Example**: Aggregate these networks:
+- 203.0.113.0/24
+- 203.0.114.0/24  
+- 203.0.115.0/24
+- 203.0.116.0/24
+
+**Binary Analysis**:
+```
+203.0.113.0: 11001011.00000000.01110001.00000000
+203.0.114.0: 11001011.00000000.01110010.00000000
+203.0.115.0: 11001011.00000000.01110011.00000000
+203.0.116.0: 11001011.00000000.01110100.00000000
+             |----Common Prefix----|
+```
+
+**Common Prefix**: 22 bits (11001011.00000000.011100)
+**Aggregate Route**: 203.0.112.0/22
+
+**Verification**:
+- Covers: 203.0.112.0 to 203.0.115.255
+- Includes all four /24 networks
+- Single route entry instead of four
+
+**VLSM (Variable Length Subnet Masking)**:
+
+**Concept**: Use different subnet mask lengths within same network
+
+**Example**: 172.16.0.0/16 network with VLSM
+
+**Subnets**:
+- **WAN Links**: /30 (2 hosts each)
+  - 172.16.1.0/30, 172.16.1.4/30, 172.16.1.8/30
+- **Small LANs**: /27 (30 hosts each)
+  - 172.16.2.0/27, 172.16.2.32/27, 172.16.2.64/27
+- **Large LANs**: /24 (254 hosts each)
+  - 172.16.10.0/24, 172.16.11.0/24
+
+**Benefits**:
+- **Efficient**: Right-size subnets for requirements
+- **Scalable**: Hierarchical addressing
+- **Flexible**: Mix different subnet sizes
+
+**CIDR and Routing**:
+
+**Longest Prefix Match**:
+- Router chooses most specific route (longest prefix)
+- Enables hierarchical routing and aggregation
+
+**Example Routing Table**:
+| Destination | Next Hop | Interface |
+|-------------|----------|-----------|
+| 0.0.0.0/0 | 10.1.1.1 | eth0 | (Default route)
+| 192.168.0.0/16 | 10.1.1.2 | eth1 | (Aggregate)
+| 192.168.1.0/24 | 10.1.1.3 | eth2 | (Specific)
+| 192.168.1.128/25 | 10.1.1.4 | eth3 | (More specific)
+
+**Packet to 192.168.1.200**:
+- Matches: 0.0.0.0/0, 192.168.0.0/16, 192.168.1.0/24
+- **Longest match**: 192.168.1.0/24 → Forward via 10.1.1.3
+
+**Packet to 192.168.1.150**:
+- Matches: 0.0.0.0/0, 192.168.0.0/16, 192.168.1.0/24, 192.168.1.128/25
+- **Longest match**: 192.168.1.128/25 → Forward via 10.1.1.4
+
+**CIDR Benefits**:
+
+**1. Address Efficiency**:
+- Allocate exactly needed addresses
+- Reduce address waste
+- Extend IPv4 lifetime
+
+**2. Routing Scalability**:
+- Route aggregation reduces table size
+- Hierarchical addressing structure
+- Faster routing lookups
+
+**3. Flexibility**:
+- Variable subnet sizes
+- Easy network renumbering
+- Support for different requirements
+
+**4. ISP Allocation**:
+- ISPs get large blocks, subdivide efficiently
+- Customers get right-sized allocations
+- Simplified address management
+
+**CIDR Allocation Hierarchy**:
+
+**Internet Assigned Numbers Authority (IANA)**:
+- Allocates large blocks to Regional Internet Registries (RIRs)
+
+**Regional Internet Registries**:
+- **ARIN**: North America (e.g., 24.0.0.0/8)
+- **RIPE**: Europe (e.g., 80.0.0.0/8)
+- **APNIC**: Asia-Pacific (e.g., 202.0.0.0/8)
+- **LACNIC**: Latin America
+- **AFRINIC**: Africa
+
+**ISPs and Organizations**:
+- Receive allocations from RIRs
+- Further subdivide for customers
+- Maintain hierarchical structure
+
+**CIDR Tools and Calculations**:
+
+**Subnet Calculator**:
+```python
+def cidr_info(network, prefix_len):
+    # Convert to binary
+    net_int = ip_to_int(network)
+    
+    # Calculate mask
+    mask = (0xFFFFFFFF << (32 - prefix_len)) & 0xFFFFFFFF
+    
+    # Network address
+    net_addr = net_int & mask
+    
+    # Broadcast address  
+    broadcast = net_addr | (0xFFFFFFFF >> prefix_len)
+    
+    # Host range
+    first_host = net_addr + 1
+    last_host = broadcast - 1
+    
+    # Number of hosts
+    num_hosts = (1 << (32 - prefix_len)) - 2
+    
+    return {
+        'network': int_to_ip(net_addr),
+        'broadcast': int_to_ip(broadcast),
+        'first_host': int_to_ip(first_host),
+        'last_host': int_to_ip(last_host),
+        'num_hosts': num_hosts,
+        'subnet_mask': int_to_ip(mask)
+    }
+```
+
+**Common CIDR Blocks**:
+- **/8**: 16.7M addresses (Class A equivalent)
+- **/16**: 65K addresses (Class B equivalent)  
+- **/24**: 256 addresses (Class C equivalent)
+- **/25**: 128 addresses (half of /24)
+- **/26**: 64 addresses (quarter of /24)
+- **/27**: 32 addresses
+- **/28**: 16 addresses
+- **/29**: 8 addresses
+- **/30**: 4 addresses (point-to-point links)
+
+**GATE Tips**:
+- CIDR uses variable-length prefixes instead of fixed classes
+- Notation: network/prefix_length (e.g., 192.168.1.0/24)
+- Number of hosts = 2^(32-prefix_length) - 2
+- Subnet mask derived from prefix length
+- Route aggregation combines multiple networks into single route
+- Longest prefix match used for routing decisions
+- VLSM allows different subnet sizes within same network
+- Benefits: address efficiency, routing scalability, flexibility
+- Essential for modern Internet routing and addressing
+
+## Missing Topics - Compiler Design
+
+### Constant Propagation
+
+**Key Concepts**: Constant propagation is a compiler optimization that replaces variables with their constant values when possible. Essential data flow analysis technique for code optimization.
+
+**Constant Propagation Overview**:
+- **Purpose**: Replace variable references with known constant values
+- **Type**: Forward data flow analysis
+- **Goal**: Eliminate unnecessary variable loads and enable further optimizations
+- **Phase**: Typically performed during optimization phase
+
+**Basic Concept**:
+```c
+// Before constant propagation
+int x = 5;
+int y = x + 3;
+int z = y * 2;
+return z;
+
+// After constant propagation  
+int x = 5;
+int y = 5 + 3;    // x replaced with 5
+int z = 8 * 2;    // y replaced with 8
+return 16;        // z replaced with 16
+```
+
+**Data Flow Analysis Framework**:
+
+**Domain**: Each variable can be in one of three states:
+- **⊥ (Bottom)**: Undefined/uninitialized
+- **Constant c**: Variable has definite constant value c
+- **⊤ (Top)**: Variable has unknown/non-constant value
+
+**Lattice Structure**:
+```
+        ⊤ (Non-constant)
+       / | \
+      /  |  \
+    c₁  c₂  c₃  ... (All possible constants)
+      \  |  /
+       \ | /
+        ⊥ (Undefined)
+```
+
+**Meet Operation (∧)**:
+- **⊥ ∧ x = x** (undefined meets anything = that thing)
+- **c ∧ c = c** (same constant meets itself = same constant)
+- **c₁ ∧ c₂ = ⊤** (different constants meet = non-constant)
+- **⊤ ∧ x = ⊤** (non-constant meets anything = non-constant)
+
+**Transfer Functions**:
+
+**Assignment Statements**:
+1. **x = c** (constant assignment):
+   - OUT[x] = c
+   - All other variables unchanged
+
+2. **x = y** (copy assignment):
+   - OUT[x] = IN[y]
+   - All other variables unchanged
+
+3. **x = y op z** (binary operation):
+   - If IN[y] = c₁ and IN[z] = c₂ (both constants):
+     - OUT[x] = c₁ op c₂ (if computable)
+   - Otherwise: OUT[x] = ⊤
+
+4. **x = f(...)** (function call):
+   - OUT[x] = ⊤ (conservative assumption)
+
+**Control Flow Handling**:
+
+**Basic Blocks**: Apply transfer functions sequentially
+```
+IN[s₁] = IN[block]
+OUT[s₁] = transfer(s₁, IN[s₁])
+IN[s₂] = OUT[s₁]
+OUT[s₂] = transfer(s₂, IN[s₂])
+...
+OUT[block] = OUT[sₙ]
+```
+
+**Join Points**: Merge information from multiple predecessors
+```
+IN[block] = ∧ OUT[pred] for all predecessors pred
+```
+
+**Algorithm**:
+
+**Iterative Data Flow Analysis**:
+```
+ConstantPropagation(CFG):
+    // Initialize
+    for each variable v:
+        IN[entry][v] = ⊥
+        for each block B ≠ entry:
+            IN[B][v] = ⊥
+    
+    // Iterate until convergence
+    changed = true
+    while changed:
+        changed = false
+        for each block B in CFG:
+            // Compute IN[B] from predecessors
+            old_in = IN[B]
+            IN[B] = ∧ OUT[pred] for all pred of B
+            
+            // Apply transfer function
+            old_out = OUT[B]
+            OUT[B] = transfer(B, IN[B])
+            
+            if IN[B] ≠ old_in or OUT[B] ≠ old_out:
+                changed = true
+    
+    return IN, OUT
+```
+
+**Example Analysis**:
+
+**Code**:
+```c
+1:  x = 5;
+2:  y = x + 2;
+3:  if (condition)
+4:      z = y * 3;
+5:  else
+6:      z = 10;
+7:  w = z + 1;
+```
+
+**Control Flow Graph**:
+```
+    [1,2,3]
+       |
+    [condition]
+     /     \
+   [4]     [6]
+     \     /
+      [7]
+```
+
+**Data Flow Analysis**:
+
+**Block [1,2,3]**:
+- IN: x=⊥, y=⊥, z=⊥, w=⊥
+- After x=5: x=5, y=⊥, z=⊥, w=⊥
+- After y=x+2: x=5, y=7, z=⊥, w=⊥
+- OUT: x=5, y=7, z=⊥, w=⊥
+
+**Block [4]**:
+- IN: x=5, y=7, z=⊥, w=⊥
+- After z=y*3: x=5, y=7, z=21, w=⊥
+- OUT: x=5, y=7, z=21, w=⊥
+
+**Block [6]**:
+- IN: x=5, y=7, z=⊥, w=⊥
+- After z=10: x=5, y=7, z=10, w=⊥
+- OUT: x=5, y=7, z=10, w=⊥
+
+**Block [7]** (Join point):
+- IN: x=5, y=7, z=(21∧10)=⊤, w=⊥
+- After w=z+1: x=5, y=7, z=⊤, w=⊤
+- OUT: x=5, y=7, z=⊤, w=⊤
+
+**Optimized Code**:
+```c
+1:  x = 5;
+2:  y = 7;        // x+2 = 5+2 = 7
+3:  if (condition)
+4:      z = 21;   // y*3 = 7*3 = 21
+5:  else
+6:      z = 10;
+7:  w = z + 1;    // z is non-constant, can't optimize
+```
+
+**Advanced Constant Propagation**:
+
+**Conditional Constant Propagation**:
+- Consider branch conditions in analysis
+- Propagate constants along feasible paths only
+
+**Example**:
+```c
+x = 5;
+if (x > 3) {    // Always true since x = 5
+    y = 10;
+} else {
+    y = 20;     // Dead code
+}
+z = y + 1;      // y = 10, so z = 11
+```
+
+**Sparse Constant Propagation**:
+- Use SSA (Static Single Assignment) form
+- More efficient than dense analysis
+- Propagate constants through def-use chains
+
+**Interprocedural Constant Propagation**:
+- Analyze across function boundaries
+- Handle parameter passing and return values
+- More complex but more effective
+
+**Implementation Considerations**:
+
+**Representation**:
+```cpp
+enum ConstantValue {
+    BOTTOM,     // Undefined
+    TOP,        // Non-constant
+    CONSTANT    // Has constant value
+};
+
+struct ConstInfo {
+    ConstantValue type;
+    int value;  // Only valid if type == CONSTANT
+};
+
+class ConstantPropagation {
+    map<Variable, ConstInfo> constants;
+    
+    ConstInfo meet(ConstInfo a, ConstInfo b) {
+        if (a.type == BOTTOM) return b;
+        if (b.type == BOTTOM) return a;
+        if (a.type == TOP || b.type == TOP) 
+            return {TOP, 0};
+        if (a.value == b.value) 
+            return a;
+        return {TOP, 0};
+    }
+    
+    ConstInfo transfer(Instruction inst, map<Variable, ConstInfo>& in) {
+        switch (inst.type) {
+            case ASSIGN_CONST:
+                return {CONSTANT, inst.value};
+            case ASSIGN_VAR:
+                return in[inst.src];
+            case BINARY_OP:
+                if (in[inst.left].type == CONSTANT && 
+                    in[inst.right].type == CONSTANT) {
+                    int result = evaluate(inst.op, 
+                                        in[inst.left].value,
+                                        in[inst.right].value);
+                    return {CONSTANT, result};
+                }
+                return {TOP, 0};
+            default:
+                return {TOP, 0};
+        }
+    }
+};
+```
+
+**Benefits of Constant Propagation**:
+
+1. **Direct Benefits**:
+   - Eliminate variable loads
+   - Replace with immediate values
+   - Reduce register pressure
+
+2. **Enable Other Optimizations**:
+   - **Constant Folding**: Evaluate constant expressions at compile time
+   - **Dead Code Elimination**: Remove unreachable branches
+   - **Strength Reduction**: Replace expensive operations with cheaper ones
+   - **Loop Optimizations**: Unroll loops with constant bounds
+
+3. **Performance Impact**:
+   - Faster execution (fewer memory accesses)
+   - Smaller code size (immediate values vs. loads)
+   - Better cache performance
+
+**Limitations**:
+
+1. **Aliasing**: Pointers can create uncertainty
+   ```c
+   int x = 5;
+   int *p = &x;
+   *p = 10;     // x is no longer constant
+   int y = x;   // Can't propagate constant
+   ```
+
+2. **Function Calls**: May modify global variables
+   ```c
+   int x = 5;
+   foo();       // Might modify x
+   int y = x;   // Can't assume x is still 5
+   ```
+
+3. **Arrays**: Array elements difficult to track
+   ```c
+   int a[10];
+   a[0] = 5;
+   int i = 0;
+   int x = a[i];  // Hard to determine a[i] = a[0] = 5
+   ```
+
+**Constant Propagation vs Related Optimizations**:
+
+| Optimization | Purpose | When Applied |
+|--------------|---------|--------------|
+| Constant Propagation | Replace variables with constants | Data flow analysis |
+| Constant Folding | Evaluate constant expressions | During/after propagation |
+| Dead Code Elimination | Remove unreachable code | After propagation |
+| Copy Propagation | Replace x with y when x=y | Similar to constant prop |
+
+**GATE Tips**:
+- Constant propagation replaces variables with known constant values
+- Uses forward data flow analysis with lattice: ⊥ → constants → ⊤
+- Meet operation: same constants merge to same, different merge to ⊤
+- Transfer functions handle assignments, operations, and control flow
+- Enables other optimizations: constant folding, dead code elimination
+- Limitations: aliasing, function calls, arrays create uncertainty
+- Iterative algorithm converges due to monotonic lattice
+- More effective in SSA form (sparse constant propagation)
+- Essential optimization for performance improvement
+
+## Missing Topics - Database Management Systems
+
+### File Organization
+
+**Key Concepts**: File organization determines how records are physically stored and accessed on disk. Critical for database performance and storage efficiency.
+
+**File Organization Overview**:
+- **Purpose**: Organize records for efficient storage and retrieval
+- **Trade-offs**: Space utilization vs. access speed vs. update cost
+- **Factors**: Access patterns, record size, update frequency, storage constraints
+- **Impact**: Directly affects query performance and storage requirements
+
+**Types of File Organization**:
+
+### 1. Heap Files (Unordered Files)
+
+**Characteristics**:
+- **Structure**: Records stored in no particular order
+- **Insertion**: New records added at end of file
+- **Storage**: Simplest organization method
+- **Use Case**: When no specific access pattern dominates
 
 **Operations**:
-- Even ± Even = Even
-- Odd ± Odd = Even  
-- Even ± Odd = Odd
-- Even × Even = Even
-- Odd × Odd = Odd
-- Even × Odd = Even
 
-**Prime Numbers**: Natural numbers > 1 with exactly two factors (1 and itself)
-- First few primes: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47...
-- 2 is only even prime number
-- All primes > 2 are odd
+**Insert**: O(1)
+- Add new record at end of file
+- Update file header with new record count
+- Most efficient insertion method
 
-**Composite Numbers**: Natural numbers > 1 that are not prime
-- Have more than two factors
-- Can be expressed as product of primes (fundamental theorem of arithmetic)
+**Search**: O(n)
+- Linear scan through entire file
+- Must examine every record in worst case
+- No optimization possible without additional structures
 
-**Divisibility Rules**:
-- **2**: Last digit is even (0, 2, 4, 6, 8)
-- **3**: Sum of digits divisible by 3
-- **4**: Last two digits divisible by 4
-- **5**: Last digit is 0 or 5
-- **6**: Divisible by both 2 and 3
-- **8**: Last three digits divisible by 8
-- **9**: Sum of digits divisible by 9
-- **10**: Last digit is 0
-- **11**: Alternating sum of digits divisible by 11
+**Delete**: O(n) + reorganization cost
+- Find record (linear search)
+- Mark as deleted or physically remove
+- May leave gaps requiring periodic reorganization
 
-**HCF and LCM**:
+**Update**: O(n)
+- Find record (linear search)
+- Modify in place if size unchanged
+- If size changes, may need to relocate
 
-**Highest Common Factor (HCF)**: Largest number that divides all given numbers
-**Least Common Multiple (LCM)**: Smallest number divisible by all given numbers
+**Advantages**:
+- Simple implementation
+- Fast insertion
+- No overhead for maintaining order
+- Good when file is small or access is random
 
-**Methods**:
-1. **Prime Factorization**:
-   - HCF = Product of lowest powers of common prime factors
-   - LCM = Product of highest powers of all prime factors
+**Disadvantages**:
+- Slow search and retrieval
+- Inefficient for range queries
+- Wasted space from deleted records
+- Poor performance for large files
 
-2. **Euclidean Algorithm** (for HCF):
-   - HCF(a,b) = HCF(b, a mod b)
-   - Continue until remainder is 0
+**Example Structure**:
+```
+File Header: [Record Count][Free Space Pointer]
+Record 1: [ID=101][Name=Alice][Age=25]
+Record 2: [ID=205][Name=Bob][Age=30]
+Record 3: [ID=150][Name=Carol][Age=28]
+...
+Free Space: [Available for new records]
+```
 
-**Relationship**: For two numbers a and b:
-$$a \times b = \text{HCF}(a,b) \times \text{LCM}(a,b)$$
+### 2. Sorted Files (Sequential Files)
 
-**Fractions**:
-
-**Types**:
-- **Proper fraction**: Numerator < Denominator (3/5)
-- **Improper fraction**: Numerator ≥ Denominator (7/5)
-- **Mixed number**: Whole number + proper fraction (1 2/5)
+**Characteristics**:
+- **Structure**: Records sorted by key field(s)
+- **Ordering**: Maintained physically on disk
+- **Access**: Efficient for range queries and sequential access
+- **Maintenance**: Expensive to maintain sort order
 
 **Operations**:
-- **Addition/Subtraction**: Find common denominator
-  $$\frac{a}{b} \pm \frac{c}{d} = \frac{ad \pm bc}{bd}$$
 
-- **Multiplication**: Multiply numerators and denominators
-  $$\frac{a}{b} \times \frac{c}{d} = \frac{ac}{bd}$$
+**Search**: O(log n) using binary search
+- Divide and conquer approach
+- Much faster than linear search
+- Efficient for exact match and range queries
 
-- **Division**: Multiply by reciprocal
-  $$\frac{a}{b} \div \frac{c}{d} = \frac{a}{b} \times \frac{d}{c} = \frac{ad}{bc}$$
+**Insert**: O(n)
+- Find correct position (binary search)
+- Shift records to make space
+- Insert new record
+- Expensive due to record shifting
 
-**Decimals**:
+**Delete**: O(log n) + O(n) for reorganization
+- Find record using binary search
+- Remove record
+- Shift remaining records to fill gap
 
-**Types**:
-- **Terminating**: Finite decimal places (0.25, 0.125)
-- **Non-terminating recurring**: Infinite decimal places with repeating pattern (0.333..., 0.142857142857...)
-- **Non-terminating non-recurring**: Infinite non-repeating (π, √2)
+**Update**: O(log n) if key unchanged, O(n) if key changes
+- Non-key updates: find and modify in place
+- Key updates: delete old, insert new (expensive)
 
-**Conversion**:
-- **Fraction to Decimal**: Divide numerator by denominator
-- **Decimal to Fraction**: 
-  - 0.25 = 25/100 = 1/4
-  - 0.333... = 1/3
-  - 0.142857... = 1/7
+**Advantages**:
+- Fast search using binary search
+- Excellent for range queries
+- Sequential access is very efficient
+- Good for read-heavy workloads
 
-**Percentages**:
+**Disadvantages**:
+- Expensive insertions and deletions
+- Requires periodic reorganization
+- Poor for write-heavy workloads
+- Overflow handling complex
 
-**Basic Concepts**:
-- Percent means "per hundred"
-- 25% = 25/100 = 0.25 = 1/4
+**Example Structure**:
+```
+Record 1: [ID=101][Name=Alice][Age=25]
+Record 2: [ID=150][Name=Carol][Age=28]
+Record 3: [ID=205][Name=Bob][Age=30]
+Record 4: [ID=301][Name=Dave][Age=35]
+...
+(Sorted by ID field)
+```
 
-**Important Conversions**:
-- 1/2 = 50%, 1/3 = 33.33%, 1/4 = 25%, 1/5 = 20%
-- 1/6 = 16.67%, 1/8 = 12.5%, 1/10 = 10%
+**Binary Search Implementation**:
+```cpp
+int binarySearch(File& file, int key) {
+    int left = 0, right = file.recordCount - 1;
+    
+    while (left <= right) {
+        int mid = (left + right) / 2;
+        Record record = file.readRecord(mid);
+        
+        if (record.key == key)
+            return mid;
+        else if (record.key < key)
+            left = mid + 1;
+        else
+            right = mid - 1;
+    }
+    return -1; // Not found
+}
+```
 
-**Percentage Change**:
-$$\text{Percentage Change} = \frac{\text{New Value - Old Value}}{\text{Old Value}} \times 100\%$$
+### 3. Hash Files
 
-**Successive Percentage Changes**:
-If quantity changes by a% then b%:
-$$\text{Net Change} = a + b + \frac{ab}{100}$$
+**Characteristics**:
+- **Structure**: Records distributed using hash function
+- **Access**: Direct access using hash key
+- **Performance**: O(1) average case for exact match
+- **Collision Handling**: Various techniques to handle hash collisions
 
-**Applications**:
-- **Profit/Loss**: Based on cost price
-- **Discount**: Reduction from marked price
-- **Tax**: Addition to base amount
-- **Interest**: Earning on principal
+**Hash Function**:
+- Maps key values to bucket addresses
+- Should distribute records uniformly
+- Common functions: division, multiplication, folding
 
-**Ratio and Proportion**:
+**Collision Resolution**:
 
-**Ratio**: Comparison of two quantities
-- a : b = a/b
-- Properties: a:b = ka:kb (k ≠ 0)
+**Open Addressing**:
+- **Linear Probing**: Check next sequential location
+- **Quadratic Probing**: Check locations at quadratic intervals
+- **Double Hashing**: Use second hash function for probe sequence
 
-**Proportion**: Equality of two ratios
-- a : b :: c : d means a/b = c/d
-- Cross multiplication: ad = bc
+**Separate Chaining**:
+- Each bucket contains linked list of records
+- Handle collisions by adding to chain
+- More flexible but requires pointer overhead
 
-**Types**:
-- **Direct Proportion**: As one increases, other increases
-- **Inverse Proportion**: As one increases, other decreases
+**Operations**:
 
-**Applications**:
-- **Mixture problems**: Combining different ratios
-- **Partnership**: Profit sharing based on investment ratios
-- **Time and work**: Work rates in proportion to efficiency
+**Search**: O(1) average, O(n) worst case
+- Apply hash function to key
+- Check bucket directly
+- Handle collisions as needed
 
-**Average and Weighted Average**:
+**Insert**: O(1) average
+- Hash key to find bucket
+- Insert if space available
+- Handle collision if bucket full
 
-**Simple Average**:
-$$\text{Average} = \frac{\text{Sum of all values}}{\text{Number of values}}$$
+**Delete**: O(1) average
+- Find record using hash
+- Remove from bucket
+- May need to reorganize chain
 
-**Properties**:
-- If all values increase by k, average increases by k
-- If all values are multiplied by k, average is multiplied by k
+**Advantages**:
+- Very fast exact match queries
+- Constant time operations (average case)
+- Good for equality-based access
+- Suitable for high-volume transactions
 
-**Weighted Average**:
-$$\text{Weighted Average} = \frac{\sum (w_i \times x_i)}{\sum w_i}$$
+**Disadvantages**:
+- Poor for range queries
+- Hash function quality critical
+- Collision handling overhead
+- Difficult to maintain high load factor
 
-where $w_i$ are weights and $x_i$ are values
+**Example Hash File**:
+```
+Hash Function: h(key) = key % 7
 
-**Applications**:
-- **Academic grades**: Different subjects with different credits
-- **Speed problems**: Average speed over different segments
-- **Age problems**: Average age of groups
+Bucket 0: [ID=105][Name=Eve][Age=22]
+Bucket 1: [ID=101][Name=Alice][Age=25] → [ID=108][Name=Frank][Age=40]
+Bucket 2: [ID=205][Name=Bob][Age=30]
+Bucket 3: [ID=150][Name=Carol][Age=28]
+Bucket 4: [Empty]
+Bucket 5: [ID=301][Name=Dave][Age=35]
+Bucket 6: [Empty]
+```
 
-**Algebra (25)**:
+**Dynamic Hashing**:
+- **Extendible Hashing**: Directory-based approach, grows dynamically
+- **Linear Hashing**: Splits buckets incrementally
+- **Advantages**: Handles growing files efficiently
+- **Complexity**: More complex implementation
 
-**Linear Equations**:
+### 4. Clustered Files
 
-**One Variable**: ax + b = 0
-- Solution: x = -b/a (if a ≠ 0)
-
-**Two Variables**: 
-- ax + by = c
-- dx + ey = f
-
-**Solution Methods**:
-1. **Substitution**: Solve one equation for one variable, substitute in other
-2. **Elimination**: Add/subtract equations to eliminate one variable
-3. **Cross multiplication**: For a₁x + b₁y = c₁ and a₂x + b₂y = c₂
-   $$x = \frac{b₁c₂ - b₂c₁}{a₁b₂ - a₂b₁}, \quad y = \frac{a₂c₁ - a₁c₂}{a₁b₂ - a₂b₁}$$
-
-**Quadratic Equations**:
-
-**Standard Form**: ax² + bx + c = 0 (a ≠ 0)
-
-**Solution Methods**:
-1. **Factoring**: Express as (px + q)(rx + s) = 0
-2. **Quadratic Formula**: 
-   $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
-3. **Completing the Square**: Convert to (x + p)² = q form
-
-**Discriminant**: Δ = b² - 4ac
-- Δ > 0: Two distinct real roots
-- Δ = 0: One repeated real root  
-- Δ < 0: No real roots (complex roots)
-
-**Relationship between Roots**:
-For roots α and β:
-- Sum: α + β = -b/a
-- Product: αβ = c/a
-
-**Inequalities**:
-
-**Linear Inequalities**: ax + b > 0, ax + b < 0, etc.
-- Solution is range of values
-- Multiplication/division by negative number reverses inequality sign
-
-**Quadratic Inequalities**: ax² + bx + c > 0, etc.
-- Find roots of corresponding equation
-- Test intervals between roots
-- Consider sign of leading coefficient
-
-**Sequences and Series**:
-
-**Arithmetic Progression (AP)**:
-- General term: aₙ = a + (n-1)d
-- Sum of n terms: Sₙ = n/2[2a + (n-1)d] = n/2(first term + last term)
-
-**Geometric Progression (GP)**:
-- General term: aₙ = ar^(n-1)
-- Sum of n terms: Sₙ = a(r^n - 1)/(r - 1) for r ≠ 1
-- Sum to infinity: S∞ = a/(1-r) for |r| < 1
-
-**Special Series**:
-- Sum of first n natural numbers: 1 + 2 + ... + n = n(n+1)/2
-- Sum of squares: 1² + 2² + ... + n² = n(n+1)(2n+1)/6
-- Sum of cubes: 1³ + 2³ + ... + n³ = [n(n+1)/2]²
-
-**Logarithms**:
-
-**Definition**: If aˣ = b, then x = log_a(b)
-- a is base, b is argument, x is logarithm
-
-**Properties**:
-- log_a(xy) = log_a(x) + log_a(y)
-- log_a(x/y) = log_a(x) - log_a(y)
-- log_a(x^n) = n·log_a(x)
-- log_a(a) = 1, log_a(1) = 0
-
-**Change of Base**: log_a(x) = log_b(x)/log_b(a)
-
-**Common Logarithms**:
-- Natural logarithm: ln(x) = log_e(x)
-- Common logarithm: log(x) = log₁₀(x)
-
-**Geometry (20)**:
-
-**Basic Concepts**:
-
-**Point**: Has no dimension, represents location
-**Line**: Extends infinitely in both directions
-**Ray**: Has one endpoint, extends infinitely in one direction
-**Line Segment**: Has two endpoints
-
-**Angles**:
-- **Acute**: < 90°
-- **Right**: = 90°
-- **Obtuse**: > 90° and < 180°
-- **Straight**: = 180°
-- **Reflex**: > 180° and < 360°
-- **Complete**: = 360°
-
-**Angle Relationships**:
-- **Complementary**: Sum = 90°
-- **Supplementary**: Sum = 180°
-- **Vertically opposite**: Equal when two lines intersect
-- **Corresponding**: Equal when parallel lines cut by transversal
-- **Alternate interior**: Equal when parallel lines cut by transversal
-
-**Triangles**:
-
-**Classification by Sides**:
-- **Equilateral**: All sides equal, all angles 60°
-- **Isosceles**: Two sides equal, two angles equal
-- **Scalene**: All sides different, all angles different
-
-**Classification by Angles**:
-- **Acute**: All angles < 90°
-- **Right**: One angle = 90°
-- **Obtuse**: One angle > 90°
-
-**Properties**:
-- Sum of angles = 180°
-- Exterior angle = sum of two non-adjacent interior angles
-- Sum of any two sides > third side (triangle inequality)
-
-**Area Formulas**:
-- General: Area = (1/2) × base × height
-- Heron's formula: Area = √[s(s-a)(s-b)(s-c)] where s = (a+b+c)/2
-- Equilateral: Area = (√3/4) × side²
-
-**Special Triangles**:
-- **30-60-90**: Sides in ratio 1 : √3 : 2
-- **45-45-90**: Sides in ratio 1 : 1 : √2
-
-**Quadrilaterals**:
+**Characteristics**:
+- **Structure**: Records with related key values stored together
+- **Clustering**: Based on clustering key (may be non-unique)
+- **Access**: Efficient for queries on clustering key
+- **Organization**: Combines aspects of sorted and hash organization
 
 **Types**:
-- **Square**: All sides equal, all angles 90°
-- **Rectangle**: Opposite sides equal, all angles 90°
-- **Rhombus**: All sides equal, opposite angles equal
-- **Parallelogram**: Opposite sides parallel and equal
-- **Trapezium**: One pair of parallel sides
 
-**Properties**:
-- Sum of interior angles = 360°
-- Diagonals of rectangle are equal
-- Diagonals of rhombus bisect at right angles
-- Diagonals of square are equal and bisect at right angles
+**Index Clustering**:
+- Records with same key value stored in same block
+- Index points to first record of each key value
+- Efficient for queries with equality on clustering key
 
-**Area Formulas**:
-- Square: side²
-- Rectangle: length × width
-- Parallelogram: base × height
-- Rhombus: (1/2) × d₁ × d₂ (d₁, d₂ are diagonals)
-- Trapezium: (1/2) × (sum of parallel sides) × height
+**Hash Clustering**:
+- Use hash function on clustering key
+- Records with same hash value stored together
+- Good for equality queries, poor for range queries
 
-**Circles**:
+**Operations**:
+- **Search**: Efficient for clustering key queries
+- **Insert**: May require finding appropriate cluster
+- **Range Queries**: Efficient if clustering key used in range
+- **Updates**: Efficient if clustering key unchanged
 
-**Basic Elements**:
-- **Radius**: Distance from center to circumference
-- **Diameter**: Twice the radius, passes through center
-- **Chord**: Line segment joining two points on circle
-- **Arc**: Part of circumference
-- **Sector**: Region bounded by two radii and arc
-- **Segment**: Region bounded by chord and arc
+**Advantages**:
+- Reduces I/O for queries on clustering key
+- Good for join operations
+- Improves cache locality
+- Reduces index size
+
+**Disadvantages**:
+- Poor performance for non-clustering key queries
+- Complex maintenance
+- May waste space if clusters uneven
+- Insertion may be expensive
+
+### File Organization Comparison
+
+| Organization | Search | Insert | Delete | Range Query | Space Util | Best Use Case |
+|--------------|--------|--------|--------|-------------|------------|---------------|
+| Heap | O(n) | O(1) | O(n) | O(n) | Good | Random access, small files |
+| Sorted | O(log n) | O(n) | O(n) | O(log n + k) | Good | Read-heavy, range queries |
+| Hash | O(1) avg | O(1) avg | O(1) avg | O(n) | Fair | Exact match, high volume |
+| Clustered | Varies | Varies | Varies | Good for cluster key | Fair | Related data access |
+
+**Factors in Choosing File Organization**:
+
+1. **Access Patterns**:
+   - Random vs. sequential access
+   - Exact match vs. range queries
+   - Read vs. write frequency
+
+2. **Data Characteristics**:
+   - File size and growth rate
+   - Record size and variability
+   - Key distribution and uniqueness
+
+3. **Performance Requirements**:
+   - Response time constraints
+   - Throughput requirements
+   - Concurrent access needs
+
+4. **Storage Constraints**:
+   - Available disk space
+   - I/O bandwidth limitations
+   - Memory availability
+
+**Modern Considerations**:
+
+**SSD vs. HDD**:
+- SSDs reduce seek time penalty
+- Random access becomes more viable
+- May change optimal organization choice
+
+**Column Stores**:
+- Store columns separately instead of rows
+- Better compression and cache performance
+- Good for analytical workloads
+
+**Log-Structured Storage**:
+- Append-only writes for better performance
+- Used in modern NoSQL databases
+- Handles write-heavy workloads efficiently
+
+**GATE Tips**:
+- Heap files: unordered, O(1) insert, O(n) search
+- Sorted files: ordered, O(log n) search, O(n) insert
+- Hash files: O(1) average operations, poor for range queries
+- Clustered files: group related records, good for clustering key queries
+- Choice depends on access patterns and performance requirements
+- Trade-offs between search speed, update cost, and space utilization
+- Binary search works only on sorted files
+- Hash functions should distribute records uniformly
+- Consider workload characteristics when choosing organization
+
+## Missing Topics - Computer Organization
+
+### Ethernet Bridging
+
+**Key Concepts**: Ethernet bridging connects multiple network segments at the data link layer, creating larger collision domains while maintaining separate broadcast domains per segment.
+
+**Bridge Overview**:
+- **Function**: Connect multiple Ethernet segments
+- **Layer**: Data Link Layer (Layer 2)
+- **Purpose**: Extend network reach, reduce collisions, filter traffic
+- **Intelligence**: Learn MAC addresses, make forwarding decisions
+
+**Bridge vs. Hub vs. Switch**:
+
+| Device | Layer | Collision Domains | Broadcast Domains | Intelligence |
+|--------|-------|------------------|-------------------|--------------|
+| Hub | Physical | 1 (all ports) | 1 (all ports) | None (repeater) |
+| Bridge | Data Link | 1 per port | 1 (all ports) | MAC learning |
+| Switch | Data Link | 1 per port | 1 per VLAN | MAC learning + more |
+
+**Bridge Operation**:
+
+### Learning Process
+
+**MAC Address Learning**:
+1. **Initialize**: Bridge starts with empty MAC address table
+2. **Receive Frame**: Frame arrives on port
+3. **Learn Source**: Record source MAC address and incoming port
+4. **Age Entries**: Remove old entries after timeout (typically 300 seconds)
+5. **Update**: Refresh timestamp for known addresses
+
+**Learning Table Structure**:
+```
+MAC Address    | Port | Age | Status
+---------------|------|-----|--------
+00:1A:2B:3C:4D | 1    | 45  | Active
+00:2C:4D:5E:6F | 2    | 120 | Active
+00:3E:5F:6A:7B | 1    | 200 | Active
+```
+
+### Forwarding Process
+
+**Frame Processing Algorithm**:
+```
+BridgeForward(frame, input_port):
+    // Learn source address
+    learn(frame.source_mac, input_port)
+    
+    // Check destination
+    if frame.destination_mac == broadcast:
+        flood_except(frame, input_port)
+    else if frame.destination_mac in mac_table:
+        output_port = mac_table[frame.destination_mac]
+        if output_port != input_port:
+            forward(frame, output_port)
+        // else filter (same segment)
+    else:
+        flood_except(frame, input_port)  // Unknown destination
+```
+
+**Forwarding Decisions**:
+
+1. **Forward**: Send frame to specific port (destination known, different segment)
+2. **Filter**: Drop frame (destination on same segment as source)
+3. **Flood**: Send to all ports except incoming port (broadcast or unknown destination)
+
+**Example Network**:
+```
+Segment A ---- Bridge ---- Segment B
+   |                          |
+Host X                    Host Y
+(MAC: AA)                 (MAC: BB)
+```
+
+**Scenario 1 - Initial State**:
+- Bridge table empty
+- Host X sends frame to Host Y
+- Bridge learns X's MAC on Port A
+- Destination unknown → floods to Port B
+- Host Y receives frame
+
+**Scenario 2 - After Learning**:
+- Host Y replies to Host X
+- Bridge learns Y's MAC on Port B
+- Destination (X) known on Port A → forwards to Port A
+- No flooding needed
+
+**Scenario 3 - Same Segment**:
+- Host X sends to another host on Segment A
+- Bridge learns/refreshes X's MAC
+- Destination on same segment → filters (doesn't forward)
+
+### Spanning Tree Protocol (STP)
+
+**Problem**: Multiple bridges create loops
+- Broadcast storms
+- MAC table instability
+- Frame duplication
+
+**Solution**: Spanning Tree Protocol (IEEE 802.1D)
+- Creates loop-free topology
+- Maintains redundancy for fault tolerance
+- Automatically reconfigures on failures
+
+**STP Concepts**:
+
+**Root Bridge**:
+- Bridge with lowest Bridge ID
+- Bridge ID = Priority (2 bytes) + MAC Address (6 bytes)
+- Center of spanning tree
+
+**Port States**:
+1. **Blocking**: Receives BPDUs, doesn't forward data
+2. **Listening**: Participates in STP, doesn't learn MACs
+3. **Learning**: Learns MAC addresses, doesn't forward data
+4. **Forwarding**: Normal operation, forwards data
+5. **Disabled**: Port shut down
+
+**Port Roles**:
+- **Root Port**: Best path to root bridge
+- **Designated Port**: Best path to segment
+- **Blocked Port**: Alternate path (prevents loops)
+
+**BPDU (Bridge Protocol Data Unit)**:
+- Messages exchanged between bridges
+- Contains: Root ID, Bridge ID, Path Cost, Port ID
+- Sent every 2 seconds (Hello Time)
+
+**STP Algorithm**:
+1. **Elect Root Bridge**: Lowest Bridge ID
+2. **Calculate Root Path Cost**: Sum of link costs to root
+3. **Elect Designated Bridge**: Lowest cost to root for each segment
+4. **Block Redundant Ports**: Create loop-free topology
+
+**Example STP Topology**:
+```
+    Bridge A (Root)
+   /              \
+Bridge B        Bridge C
+   \              /
+    Bridge D ----
+```
+
+**After STP**:
+- Bridge A: All ports forwarding (root)
+- Bridge B: Port to A forwarding, port to D forwarding
+- Bridge C: Port to A forwarding, port to D blocked
+- Bridge D: Port to B forwarding, port to C blocked
+
+### Bridge Types
+
+**Transparent Bridge**:
+- **Operation**: Invisible to end stations
+- **Learning**: Automatic MAC address learning
+- **Standard**: IEEE 802.1D
+- **Most Common**: Used in Ethernet LANs
+
+**Source Routing Bridge**:
+- **Operation**: End stations specify route
+- **Learning**: Stations discover routes
+- **Usage**: Token Ring networks (legacy)
+- **Complexity**: Requires intelligent end stations
+
+**Translational Bridge**:
+- **Purpose**: Connect different LAN types
+- **Function**: Translate between protocols (Ethernet ↔ Token Ring)
+- **Challenges**: Different frame formats, addressing schemes
+- **Usage**: Legacy network integration
+
+### Bridge Performance
+
+**Forwarding Rate**:
+- **Wire Speed**: Forward at full link speed
+- **Factors**: Processing power, memory bandwidth, table lookup speed
+- **Bottlenecks**: CPU, memory, backplane capacity
+
+**Latency**:
+- **Store-and-Forward**: Receive entire frame before forwarding
+- **Cut-Through**: Start forwarding before complete reception
+- **Trade-off**: Latency vs. error detection
+
+**Filtering Rate**:
+- Rate at which bridge can make forwarding decisions
+- Important for high-traffic networks
+- Measured in frames per second or Mpps (million packets per second)
+
+### Bridge Limitations
+
+**Broadcast Domain**:
+- All connected segments form single broadcast domain
+- Broadcast traffic forwarded to all segments
+- Can cause performance issues in large networks
+
+**Spanning Tree Limitations**:
+- Blocks redundant links (wastes bandwidth)
+- Slow convergence (30-50 seconds)
+- Single point of failure (root bridge)
+
+**Scalability**:
+- MAC table size limits
+- Broadcast traffic increases with network size
+- STP convergence time increases with network complexity
+
+### Modern Developments
+
+**Rapid Spanning Tree (RSTP)**:
+- IEEE 802.1w
+- Faster convergence (2-3 seconds)
+- Backward compatible with STP
+
+**Multiple Spanning Tree (MSTP)**:
+- IEEE 802.1s
+- Multiple spanning trees for different VLANs
+- Better load balancing
+
+**VLANs (Virtual LANs)**:
+- Logical segmentation of broadcast domains
+- IEEE 802.1Q standard
+- Reduces broadcast traffic, improves security
+
+**Ethernet Switches**:
+- Evolution of bridges
+- Higher port density
+- Additional features (VLANs, QoS, management)
+- Full-duplex operation
+
+### Bridge Configuration
+
+**Basic Configuration**:
+```
+Bridge Priority: 32768 (default)
+MAC Address: 00:1A:2B:3C:4D:5E
+Hello Time: 2 seconds
+Max Age: 20 seconds
+Forward Delay: 15 seconds
+```
+
+**Port Configuration**:
+```
+Port 1: Cost 19 (100 Mbps), State Forwarding
+Port 2: Cost 4 (1 Gbps), State Forwarding  
+Port 3: Cost 19 (100 Mbps), State Blocking
+```
+
+**Monitoring**:
+- MAC address table utilization
+- Port statistics (frames forwarded, filtered, flooded)
+- STP topology changes
+- Error counters
+
+**GATE Tips**:
+- Bridges operate at Data Link Layer (Layer 2)
+- Learn MAC addresses automatically (transparent learning)
+- Three forwarding decisions: forward, filter, flood
+- Spanning Tree Protocol prevents loops in redundant topologies
+- Root bridge elected based on lowest Bridge ID
+- Port states: Blocking → Listening → Learning → Forwarding
+- Bridges create separate collision domains but single broadcast domain
+- Store-and-forward vs. cut-through forwarding trade-offs
+- Modern switches are evolved bridges with additional features
+- VLANs provide logical segmentation of broadcast domains
+
+## Missing Topics - Engineering Mathematics
+
+### LU Decomposition
+
+**Key Concepts**: LU decomposition factors a matrix into the product of a lower triangular matrix (L) and an upper triangular matrix (U). Essential for solving systems of linear equations efficiently.
+
+**LU Decomposition Overview**:
+- **Purpose**: Factor matrix A into A = LU
+- **L Matrix**: Lower triangular (elements above diagonal are 0)
+- **U Matrix**: Upper triangular (elements below diagonal are 0)
+- **Applications**: Solving linear systems, matrix inversion, determinant calculation
+- **Advantage**: Solve multiple systems with same coefficient matrix efficiently
+
+**Mathematical Foundation**:
+
+**Definition**: For an n×n matrix A, LU decomposition finds matrices L and U such that:
+$$A = LU$$
+
+where:
+- **L**: Lower triangular matrix with 1's on diagonal (unit lower triangular)
+- **U**: Upper triangular matrix
+
+**Example**:
+$$\begin{bmatrix} 2 & 1 & 1 \\ 4 & 3 & 3 \\ 8 & 7 & 9 \end{bmatrix} = \begin{bmatrix} 1 & 0 & 0 \\ 2 & 1 & 0 \\ 4 & 3 & 1 \end{bmatrix} \begin{bmatrix} 2 & 1 & 1 \\ 0 & 1 & 1 \\ 0 & 0 & 2 \end{bmatrix}$$
+
+**Existence and Uniqueness**:
+- **Existence**: LU decomposition exists if all leading principal minors are non-zero
+- **Uniqueness**: If L has unit diagonal, decomposition is unique
+- **Alternative**: Can have U with unit diagonal instead of L
+
+### Gaussian Elimination Method
+
+**Algorithm**: LU decomposition can be obtained through Gaussian elimination without pivoting.
+
+**Step-by-Step Process**:
+
+**Step 1**: Start with matrix A
+$$A = \begin{bmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33} \end{bmatrix}$$
+
+**Step 2**: Eliminate below first pivot
+- Multiply row 1 by $m_{21} = a_{21}/a_{11}$ and subtract from row 2
+- Multiply row 1 by $m_{31} = a_{31}/a_{11}$ and subtract from row 3
+
+**Step 3**: Continue elimination for remaining columns
+- Record multipliers in L matrix
+- Resulting upper triangular matrix is U
+
+**Detailed Example**:
+
+**Given Matrix**:
+$$A = \begin{bmatrix} 2 & 1 & 1 \\ 4 & 3 & 3 \\ 8 & 7 & 9 \end{bmatrix}$$
+
+**Step 1**: Eliminate column 1 below diagonal
+- $m_{21} = 4/2 = 2$: Row 2 ← Row 2 - 2×Row 1
+- $m_{31} = 8/2 = 4$: Row 3 ← Row 3 - 4×Row 1
+
+$$\begin{bmatrix} 2 & 1 & 1 \\ 0 & 1 & 1 \\ 0 & 3 & 5 \end{bmatrix}$$
+
+**Step 2**: Eliminate column 2 below diagonal
+- $m_{32} = 3/1 = 3$: Row 3 ← Row 3 - 3×Row 2
+
+$$U = \begin{bmatrix} 2 & 1 & 1 \\ 0 & 1 & 1 \\ 0 & 0 & 2 \end{bmatrix}$$
+
+**Step 3**: Construct L matrix from multipliers
+$$L = \begin{bmatrix} 1 & 0 & 0 \\ 2 & 1 & 0 \\ 4 & 3 & 1 \end{bmatrix}$$
+
+**Verification**: 
+$$LU = \begin{bmatrix} 1 & 0 & 0 \\ 2 & 1 & 0 \\ 4 & 3 & 1 \end{bmatrix} \begin{bmatrix} 2 & 1 & 1 \\ 0 & 1 & 1 \\ 0 & 0 & 2 \end{bmatrix} = \begin{bmatrix} 2 & 1 & 1 \\ 4 & 3 & 3 \\ 8 & 7 & 9 \end{bmatrix} = A$$ ✓
+
+### Doolittle's Method
+
+**Doolittle's Algorithm**: Direct method to find L and U simultaneously.
 
 **Formulas**:
-- Circumference: 2πr
-- Area: πr²
-- Arc length: (θ/360°) × 2πr (θ in degrees)
-- Sector area: (θ/360°) × πr²
 
-**Properties**:
-- Angle in semicircle = 90°
-- Angles subtended by same arc are equal
-- Tangent perpendicular to radius at point of contact
-- Two tangents from external point are equal
+**For U matrix** (row by row):
+$$u_{ij} = a_{ij} - \sum_{k=1}^{i-1} l_{ik} u_{kj} \quad \text{for } j \geq i$$
 
-**Coordinate Geometry**:
+**For L matrix** (column by column):
+$$l_{ij} = \frac{1}{u_{jj}} \left( a_{ij} - \sum_{k=1}^{j-1} l_{ik} u_{kj} \right) \quad \text{for } i > j$$
 
-**Distance Formula**: Distance between (x₁, y₁) and (x₂, y₂)
-$$d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$
+**Diagonal of L**: $l_{ii} = 1$ for all i
 
-**Section Formula**: Point dividing line segment in ratio m:n
-$$\left(\frac{mx_2 + nx_1}{m + n}, \frac{my_2 + ny_1}{m + n}\right)$$
+**Algorithm Steps**:
+1. Set $l_{ii} = 1$ for all i
+2. For each row i and column j:
+   - If i ≤ j: Calculate $u_{ij}$
+   - If i > j: Calculate $l_{ij}$
 
-**Midpoint Formula**: 
-$$\left(\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2}\right)$$
+**Example Implementation**:
+```cpp
+void doolittleLU(double A[][n], double L[][n], double U[][n]) {
+    // Initialize L as identity matrix
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            L[i][j] = (i == j) ? 1.0 : 0.0;
+            U[i][j] = 0.0;
+        }
+    }
+    
+    // Decomposition
+    for (int i = 0; i < n; i++) {
+        // Upper triangular matrix U
+        for (int j = i; j < n; j++) {
+            U[i][j] = A[i][j];
+            for (int k = 0; k < i; k++) {
+                U[i][j] -= L[i][k] * U[k][j];
+            }
+        }
+        
+        // Lower triangular matrix L
+        for (int j = i + 1; j < n; j++) {
+            L[j][i] = A[j][i];
+            for (int k = 0; k < i; k++) {
+                L[j][i] -= L[j][k] * U[k][i];
+            }
+            L[j][i] /= U[i][i];
+        }
+    }
+}
+```
 
-**Slope of Line**: 
-$$m = \frac{y_2 - y_1}{x_2 - x_1}$$
+### Crout's Method
 
-**Equation of Line**:
-- Point-slope form: y - y₁ = m(x - x₁)
-- Slope-intercept form: y = mx + c
-- Two-point form: (y - y₁)/(y₂ - y₁) = (x - x₁)/(x₂ - x₁)
+**Crout's Algorithm**: Alternative method where L has arbitrary diagonal and U has unit diagonal.
 
-**Mensuration (15)**:
+**Difference from Doolittle**:
+- **Doolittle**: L has unit diagonal, U has arbitrary diagonal
+- **Crout**: L has arbitrary diagonal, U has unit diagonal
 
-**2D Figures**:
+**Formulas for Crout's Method**:
 
-**Triangle**: Area = (1/2) × base × height
-**Rectangle**: Area = length × width, Perimeter = 2(length + width)
-**Square**: Area = side², Perimeter = 4 × side
-**Circle**: Area = πr², Circumference = 2πr
-**Parallelogram**: Area = base × height
-**Rhombus**: Area = (1/2) × d₁ × d₂
-**Trapezium**: Area = (1/2) × (a + b) × h
+**For L matrix**:
+$$l_{ij} = a_{ij} - \sum_{k=1}^{j-1} l_{ik} u_{kj} \quad \text{for } i \geq j$$
 
-**3D Figures**:
+**For U matrix**:
+$$u_{ij} = \frac{1}{l_{jj}} \left( a_{ij} - \sum_{k=1}^{j-1} l_{ik} u_{kj} \right) \quad \text{for } i < j$$
 
-**Cube**: 
-- Volume = side³
-- Surface area = 6 × side²
+**Diagonal of U**: $u_{ii} = 1$ for all i
 
-**Cuboid (Rectangular Prism)**:
-- Volume = length × width × height
-- Surface area = 2(lw + wh + lh)
+### Solving Linear Systems with LU Decomposition
 
-**Cylinder**:
-- Volume = πr²h
-- Curved surface area = 2πrh
-- Total surface area = 2πr(r + h)
+**Problem**: Solve Ax = b where A = LU
 
-**Cone**:
-- Volume = (1/3)πr²h
-- Curved surface area = πrl (l = slant height)
-- Total surface area = πr(r + l)
+**Two-Step Process**:
 
-**Sphere**:
-- Volume = (4/3)πr³
-- Surface area = 4πr²
+**Step 1**: Forward substitution to solve Ly = b
+$$\begin{cases}
+l_{11}y_1 = b_1 \\
+l_{21}y_1 + l_{22}y_2 = b_2 \\
+l_{31}y_1 + l_{32}y_2 + l_{33}y_3 = b_3 \\
+\vdots
+\end{cases}$$
 
-**Hemisphere**:
-- Volume = (2/3)πr³
-- Curved surface area = 2πr²
-- Total surface area = 3πr²
+**Step 2**: Backward substitution to solve Ux = y
+$$\begin{cases}
+u_{nn}x_n = y_n \\
+u_{n-1,n-1}x_{n-1} + u_{n-1,n}x_n = y_{n-1} \\
+\vdots
+\end{cases}$$
 
-**Data Interpretation (10)**:
+**Example**: Solve Ax = b where A = LU from previous example and b = [5, 11, 21]ᵀ
 
-**Types of Data Representation**:
+**Step 1**: Solve Ly = b
+$$\begin{bmatrix} 1 & 0 & 0 \\ 2 & 1 & 0 \\ 4 & 3 & 1 \end{bmatrix} \begin{bmatrix} y_1 \\ y_2 \\ y_3 \end{bmatrix} = \begin{bmatrix} 5 \\ 11 \\ 21 \end{bmatrix}$$
 
-**Tables**: Data arranged in rows and columns
-- Read row and column headers carefully
-- Look for totals, subtotals, percentages
-- Calculate missing values using given information
+- $y_1 = 5$
+- $2y_1 + y_2 = 11 \Rightarrow y_2 = 11 - 10 = 1$
+- $4y_1 + 3y_2 + y_3 = 21 \Rightarrow y_3 = 21 - 20 - 3 = -2$
 
-**Bar Charts**: 
-- **Vertical**: Categories on x-axis, values on y-axis
-- **Horizontal**: Categories on y-axis, values on x-axis
-- **Grouped**: Multiple bars for each category
-- **Stacked**: Parts of whole shown in single bar
+So $y = [5, 1, -2]ᵀ$
 
-**Line Graphs**: Show trends over time
-- Identify increasing/decreasing trends
-- Find maximum/minimum points
-- Calculate rate of change between points
+**Step 2**: Solve Ux = y
+$$\begin{bmatrix} 2 & 1 & 1 \\ 0 & 1 & 1 \\ 0 & 0 & 2 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 5 \\ 1 \\ -2 \end{bmatrix}$$
 
-**Pie Charts**: Show parts of whole
-- Each sector represents percentage of total
-- Central angle = (value/total) × 360°
-- Compare sectors by size
+- $2x_3 = -2 \Rightarrow x_3 = -1$
+- $x_2 + x_3 = 1 \Rightarrow x_2 = 1 - (-1) = 2$
+- $2x_1 + x_2 + x_3 = 5 \Rightarrow x_1 = (5 - 2 - (-1))/2 = 2$
 
-**Histograms**: Show frequency distribution
-- Bars touch each other (continuous data)
-- Width represents class interval
-- Height represents frequency
+**Solution**: $x = [2, 2, -1]ᵀ$
 
-**Common Calculations**:
+### Partial Pivoting
 
-**Percentage**: (Part/Whole) × 100
-**Percentage Change**: ((New - Old)/Old) × 100
-**Average**: Sum of values / Number of values
-**Ratio**: Comparison between quantities
-**Growth Rate**: ((Final - Initial)/Initial) × 100
+**Problem**: LU decomposition fails if pivot element is zero or very small.
 
-**Problem-Solving Tips**:
+**Solution**: Partial pivoting - interchange rows to get largest element as pivot.
 
-**For Arithmetic**:
-1. Learn divisibility rules and multiplication tables
-2. Practice mental calculation techniques
-3. Use approximation for complex calculations
-4. Remember common fraction-decimal-percentage conversions
-5. Break complex problems into simpler steps
+**PLU Decomposition**: PA = LU where P is permutation matrix.
 
-**For Algebra**:
-1. Identify the type of equation/inequality
-2. Use appropriate solution method
-3. Check solutions by substitution
-4. Be careful with signs when manipulating inequalities
-5. Practice word problems to improve translation skills
+**Algorithm**:
+1. At each step, find row with largest absolute value in current column
+2. Interchange rows if necessary
+3. Record row interchanges in permutation matrix P
+4. Continue with standard LU decomposition
 
-**For Geometry**:
-1. Draw diagrams for visualization
-2. Identify given information and what to find
-3. Use appropriate formulas and theorems
-4. Check if answer makes geometric sense
-5. Remember special triangle ratios
+**Example with Pivoting**:
+$$A = \begin{bmatrix} 0 & 1 & 1 \\ 2 & 1 & 3 \\ 1 & 0 & 1 \end{bmatrix}$$
 
-**For Data Interpretation**:
-1. Read titles, labels, and legends carefully
-2. Understand scale and units
-3. Look for patterns and trends
-4. Use approximation for quick calculations
-5. Double-check calculations
+**Step 1**: Pivot needed (a₁₁ = 0)
+- Largest element in column 1 is 2 (row 2)
+- Interchange rows 1 and 2
+
+$$P_1A = \begin{bmatrix} 2 & 1 & 3 \\ 0 & 1 & 1 \\ 1 & 0 & 1 \end{bmatrix}$$
+
+**Continue decomposition** with pivoted matrix.
+
+### Applications of LU Decomposition
+
+**1. Solving Multiple Systems**:
+- Same coefficient matrix A, different right-hand sides b
+- Decompose A once: A = LU
+- For each b: solve Ly = b, then Ux = y
+- **Complexity**: O(n³) for decomposition + O(n²) per system
+
+**2. Matrix Inversion**:
+- Solve AX = I where X = A⁻¹
+- Equivalent to solving n systems: Axᵢ = eᵢ
+- Each eᵢ is i-th column of identity matrix
+
+**3. Determinant Calculation**:
+- det(A) = det(L) × det(U)
+- det(L) = 1 (unit diagonal)
+- det(U) = product of diagonal elements
+- **Result**: det(A) = u₁₁ × u₂₂ × ... × uₙₙ
+
+**4. Matrix Condition Number**:
+- Estimate condition number using LU factors
+- Important for numerical stability analysis
+
+### Computational Complexity
+
+**Time Complexity**:
+- **LU Decomposition**: O(n³/3) operations
+- **Forward/Backward Substitution**: O(n²) each
+- **Total for one system**: O(n³/3 + n²) ≈ O(n³)
+- **Additional systems**: O(n²) each
+
+**Space Complexity**:
+- **In-place**: Can overwrite A with L and U
+- **Storage**: O(n²) for n×n matrix
+- **Additional**: O(n) for permutation vector (if pivoting)
+
+**Comparison with Other Methods**:
+
+| Method | Time Complexity | Space | Stability | Use Case |
+|--------|----------------|-------|-----------|----------|
+| Gaussian Elimination | O(n³) | O(n²) | Good with pivoting | Single system |
+| LU Decomposition | O(n³) + O(n²) per system | O(n²) | Good with pivoting | Multiple systems |
+| Iterative Methods | O(kn²) | O(n²) | Varies | Large sparse systems |
 
 **GATE Tips**:
-- Time management crucial: allocate time based on marks
-- Use elimination method for multiple choice questions
-- Don't spend too much time on any single question
-- Practice mental math for speed
-- Learn shortcuts and tricks for common calculations
-- Review basic formulas regularly
-- Solve previous years' questions for pattern recognition
-- Focus on accuracy over speed initially, then build speed
-
-**Common Shortcuts**:
-
-**Multiplication**:
-- (a + b)(a - b) = a² - b²
-- (a + b)² = a² + 2ab + b²
-- (a - b)² = a² - 2ab + b²
-
-**Percentage**:
-- 10% of x = x/10
-- 25% of x = x/4
-- 50% of x = x/2
-
-**Squares**:
-- (50 + a)² = 2500 + 100a + a²
-- Numbers ending in 5: 25² = 625, 35² = 1225
-
-**Division**:
-- Divisibility by 4: Last two digits divisible by 4
-- Divisibility by 8: Last three digits divisible by 8
-- Divisibility by 25: Last two digits are 00, 25, 50, or 75
-
----
-
-## Volume 2: Core Computer Science Subjects
-
-*[Note: This section would continue with comprehensive coverage of all core CS subjects including Programming, Data Structures, Algorithms, Computer Organization, Operating Systems, Databases, Computer Networks, Theory of Computation, Compiler Design, and Software Engineering, following the same detailed theoretical approach as demonstrated above.]*
-
----
-
-**Final Notes for Effective Usage**:
-
-1. **Active Recall**: Don't just read - test yourself on formulas and concepts
-2. **Spaced Repetition**: Review topics at increasing intervals
-3. **Problem Practice**: Apply concepts to actual GATE questions
-4. **Weak Area Focus**: Spend more time on challenging topics
-5. **Mock Tests**: Simulate exam conditions regularly
-6. **Time Management**: Practice solving questions within time limits
-7. **Formula Sheets**: Create concise formula references for quick review
-8. **Concept Maps**: Draw connections between related topics
-9. **Group Study**: Discuss difficult concepts with peers
-10. **Regular Revision**: Schedule weekly reviews of completed topics
-
-**Remember**: Understanding concepts deeply is more valuable than memorizing formulas. Focus on building strong fundamentals that will help you tackle any variation of problems in the GATE exam.
-
-Good luck with your GATE preparation!
+- LU decomposition factors A = LU (lower × upper triangular)
+- Doolittle: L has unit diagonal, U has arbitrary diagonal
+- Crout: L has arbitrary diagonal, U has unit diagonal
+- Solving Ax = b: First Ly = b, then Ux = y
+- Partial pivoting needed for numerical stability
+- Efficient for multiple systems with same coefficient matrix
+- Determinant = product of U's diagonal elements
+- Time complexity: O(n³) for decomposition, O(n²) per system
+- Fails if leading principal minors are zero (need pivoting)
+- Applications: linear systems, matrix inversion, determinant calculation
