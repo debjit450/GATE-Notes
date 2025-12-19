@@ -14518,3 +14518,3480 @@ L is regular ⟺ The number of equivalence classes of $\equiv_L$ is finite
 - Forgetting $|xy| \leq p$ constraint
 - Not considering all possible divisions of w
 - Showing one division fails (need to show ALL fail)
+
+### 5. Engineering Mathematics: Calculus (150 Questions)
+
+### 5.1 Limits and Continuity (25)
+
+**Key Concepts**: Limits form the foundation of calculus, formalizing the notion of "approaching" a value. Continuity describes functions without breaks or jumps.
+
+**Limit Definition**:
+
+**Informal Definition**: $\lim_{x \to a} f(x) = L$ means $f(x)$ gets arbitrarily close to $L$ as $x$ approaches $a$
+
+**Formal Definition (ε-δ)**: $\lim_{x \to a} f(x) = L$ if:
+$$\forall \varepsilon > 0, \exists \delta > 0 \text{ such that } 0 < |x - a| < \delta \Rightarrow |f(x) - L| < \varepsilon$$
+
+**Geometric Interpretation**: For any horizontal strip of width $2\varepsilon$ around $L$, there exists vertical strip of width $2\delta$ around $a$ such that graph lies within horizontal strip
+
+**One-Sided Limits**:
+
+**Right-hand limit**: $\lim_{x \to a^+} f(x) = L$ if limit exists as $x$ approaches $a$ from right
+**Left-hand limit**: $\lim_{x \to a^-} f(x) = L$ if limit exists as $x$ approaches $a$ from left
+
+**Theorem**: $\lim_{x \to a} f(x) = L$ iff $\lim_{x \to a^+} f(x) = \lim_{x \to a^-} f(x) = L$
+
+**Limit Laws** (Assuming limits exist):
+
+1. **Sum Rule**: $\lim_{x \to a} [f(x) + g(x)] = \lim_{x \to a} f(x) + \lim_{x \to a} g(x)$
+
+2. **Product Rule**: $\lim_{x \to a} [f(x) \cdot g(x)] = \lim_{x \to a} f(x) \cdot \lim_{x \to a} g(x)$
+
+3. **Quotient Rule**: $\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{\lim_{x \to a} f(x)}{\lim_{x \to a} g(x)}$ (if denominator limit ≠ 0)
+
+4. **Power Rule**: $\lim_{x \to a} [f(x)]^n = [\lim_{x \to a} f(x)]^n$
+
+5. **Root Rule**: $\lim_{x \to a} \sqrt[n]{f(x)} = \sqrt[n]{\lim_{x \to a} f(x)}$ (if root is defined)
+
+**Standard Limits**:
+
+$$\lim_{x \to 0} \frac{\sin x}{x} = 1$$
+
+**Proof**: Use squeeze theorem with $\cos x \leq \frac{\sin x}{x} \leq 1$ for $0 < |x| < \frac{\pi}{2}$
+
+$$\lim_{x \to 0} \frac{1 - \cos x}{x^2} = \frac{1}{2}$$
+
+$$\lim_{x \to 0} (1 + x)^{1/x} = e$$
+
+$$\lim_{x \to \infty} \left(1 + \frac{1}{x}\right)^x = e$$
+
+$$\lim_{x \to 0} \frac{e^x - 1}{x} = 1$$
+
+$$\lim_{x \to 0} \frac{\ln(1 + x)}{x} = 1$$
+
+**Indeterminate Forms**:
+
+Forms that require special techniques:
+- $\frac{0}{0}$, $\frac{\infty}{\infty}$, $0 \cdot \infty$, $\infty - \infty$, $0^0$, $1^\infty$, $\infty^0$
+
+**L'Hôpital's Rule**: For indeterminate forms $\frac{0}{0}$ or $\frac{\infty}{\infty}$:
+$$\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}$$
+provided the right limit exists
+
+**Conditions**:
+1. $\lim_{x \to a} f(x) = \lim_{x \to a} g(x) = 0$ or $\pm\infty$
+2. $f'(x)$ and $g'(x)$ exist in neighborhood of $a$
+3. $g'(x) \neq 0$ in neighborhood of $a$
+4. $\lim_{x \to a} \frac{f'(x)}{g'(x)}$ exists
+
+**Squeeze Theorem** (Sandwich Theorem):
+
+If $g(x) \leq f(x) \leq h(x)$ for all $x$ in neighborhood of $a$ and $\lim_{x \to a} g(x) = \lim_{x \to a} h(x) = L$, then $\lim_{x \to a} f(x) = L$
+
+**Application**: Proving $\lim_{x \to 0} x \sin(1/x) = 0$ using $-|x| \leq x \sin(1/x) \leq |x|$
+
+**Limits at Infinity**:
+
+$$\lim_{x \to \infty} f(x) = L \text{ means } \forall \varepsilon > 0, \exists M > 0 \text{ such that } x > M \Rightarrow |f(x) - L| < \varepsilon$$
+
+**Rational Functions**: For $f(x) = \frac{a_n x^n + \cdots + a_0}{b_m x^m + \cdots + b_0}$:
+
+$$\lim_{x \to \infty} f(x) = \begin{cases}
+0 & \text{if } n < m \\
+\frac{a_n}{b_m} & \text{if } n = m \\
+\pm\infty & \text{if } n > m
+\end{cases}$$
+
+**Continuity**:
+
+**Definition**: Function $f$ is **continuous at $a$** if:
+1. $f(a)$ is defined
+2. $\lim_{x \to a} f(x)$ exists
+3. $\lim_{x \to a} f(x) = f(a)$
+
+**Equivalent**: $\lim_{x \to a} f(x) = f(a)$
+
+**Types of Discontinuities**:
+
+1. **Removable**: $\lim_{x \to a} f(x)$ exists but $f(a)$ undefined or $f(a) \neq \lim_{x \to a} f(x)$
+   - Can be "fixed" by redefining $f(a)$
+
+2. **Jump**: Left and right limits exist but are unequal
+   - $\lim_{x \to a^-} f(x) \neq \lim_{x \to a^+} f(x)$
+
+3. **Infinite**: At least one one-sided limit is infinite
+
+4. **Oscillating**: Limit doesn't exist due to oscillation (e.g., $\sin(1/x)$ at $x = 0$)
+
+**Properties of Continuous Functions**:
+
+**Theorem**: If $f$ and $g$ are continuous at $a$, then:
+- $f + g$, $f - g$, $f \cdot g$ are continuous at $a$
+- $f/g$ is continuous at $a$ if $g(a) \neq 0$
+- $f \circ g$ is continuous at $a$ if $g$ continuous at $a$ and $f$ continuous at $g(a)$
+
+**Intermediate Value Theorem** (IVT):
+
+**Theorem**: If $f$ is continuous on $[a,b]$ and $k$ is between $f(a)$ and $f(b)$, then $\exists c \in (a,b)$ such that $f(c) = k$
+
+**Applications**:
+- Proving existence of roots
+- Bisection method for root finding
+- Fixed point theorems
+
+**Extreme Value Theorem**:
+
+**Theorem**: If $f$ is continuous on closed interval $[a,b]$, then $f$ attains its maximum and minimum values
+
+**Uniform Continuity**:
+
+**Definition**: $f$ is **uniformly continuous** on interval $I$ if:
+$$\forall \varepsilon > 0, \exists \delta > 0 \text{ such that } |x - y| < \delta \Rightarrow |f(x) - f(y)| < \varepsilon$$
+for all $x, y \in I$
+
+**Key Difference**: Same $\delta$ works for all points (not dependent on specific point)
+
+**Theorem**: Every continuous function on closed interval is uniformly continuous
+
+**Problem-Solving Techniques**:
+
+**For Limits**:
+1. **Direct substitution**: If function continuous at point
+2. **Factoring**: Cancel common factors for $\frac{0}{0}$ forms
+3. **Rationalization**: Multiply by conjugate for radical expressions
+4. **L'Hôpital's rule**: For indeterminate forms
+5. **Squeeze theorem**: When function bounded between two others
+6. **Standard limits**: Memorize key trigonometric and exponential limits
+
+**For Continuity**:
+1. **Check definition**: Verify $\lim_{x \to a} f(x) = f(a)$
+2. **Piecewise functions**: Check continuity at boundary points
+3. **Composition**: Use continuity of component functions
+
+**GATE Tips**:
+- L'Hôpital's rule only for $\frac{0}{0}$ or $\frac{\infty}{\infty}$ forms
+- Standard limit $\lim_{x \to 0} \frac{\sin x}{x} = 1$ is fundamental
+- IVT guarantees existence, not uniqueness
+- Continuous on closed interval ⟹ bounded and attains extrema
+- For piecewise functions, check left and right limits at boundaries
+
+**Examples**:
+
+1. **Evaluate** $\lim_{x \to 0} \frac{\sin 3x}{x}$:
+   $$\lim_{x \to 0} \frac{\sin 3x}{x} = \lim_{x \to 0} \frac{\sin 3x}{3x} \cdot 3 = 1 \cdot 3 = 3$$
+
+2. **Find** $\lim_{x \to 1} \frac{x^2 - 1}{x - 1}$:
+   $$\lim_{x \to 1} \frac{x^2 - 1}{x - 1} = \lim_{x \to 1} \frac{(x-1)(x+1)}{x-1} = \lim_{x \to 1} (x+1) = 2$$
+
+3. **Check continuity** of $f(x) = \begin{cases} x^2 & x < 1 \\ 2x & x \geq 1 \end{cases}$ at $x = 1$:
+   - $f(1) = 2(1) = 2$
+   - $\lim_{x \to 1^-} f(x) = \lim_{x \to 1^-} x^2 = 1$
+   - $\lim_{x \to 1^+} f(x) = \lim_{x \to 1^+} 2x = 2$
+   - Since $\lim_{x \to 1^-} f(x) \neq \lim_{x \to 1^+} f(x)$, function has jump discontinuity at $x = 1$
+
+### 5.2 Differentiation (40)
+
+**Key Concepts**: Differentiation measures instantaneous rate of change. The derivative is the limit of difference quotients, providing slope of tangent line and velocity interpretation.
+
+**Definition of Derivative**:
+
+**Limit Definition**:
+$$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
+
+**Alternative Form**:
+$$f'(a) = \lim_{x \to a} \frac{f(x) - f(a)}{x - a}$$
+
+**Geometric Interpretation**: Slope of tangent line to curve $y = f(x)$ at point $(a, f(a))$
+
+**Physical Interpretation**: Instantaneous rate of change (velocity if $f$ represents position)
+
+**Notation**:
+- $f'(x)$, $\frac{df}{dx}$, $\frac{d}{dx}f(x)$, $Df(x)$
+
+**Differentiability and Continuity**:
+
+**Theorem**: If $f$ is differentiable at $a$, then $f$ is continuous at $a$
+
+**Proof**: 
+$$\lim_{x \to a} [f(x) - f(a)] = \lim_{x \to a} \frac{f(x) - f(a)}{x - a} \cdot (x - a) = f'(a) \cdot 0 = 0$$
+
+**Converse is False**: Continuity doesn't imply differentiability
+- Example: $f(x) = |x|$ at $x = 0$
+
+**Non-differentiable Points**:
+1. **Corner**: Left and right derivatives exist but are unequal
+2. **Cusp**: Tangent line is vertical
+3. **Vertical tangent**: Derivative is infinite
+4. **Discontinuity**: Function not continuous
+
+**Basic Differentiation Rules**:
+
+**Constant Rule**: $\frac{d}{dx}[c] = 0$
+
+**Power Rule**: $\frac{d}{dx}[x^n] = nx^{n-1}$ (for any real $n$)
+
+**Proof for positive integer $n$** (using binomial theorem):
+$$\frac{d}{dx}[x^n] = \lim_{h \to 0} \frac{(x+h)^n - x^n}{h} = \lim_{h \to 0} \frac{\sum_{k=1}^{n} \binom{n}{k} x^{n-k} h^k}{h} = nx^{n-1}$$
+
+**Constant Multiple Rule**: $\frac{d}{dx}[cf(x)] = c \frac{d}{dx}[f(x)]$
+
+**Sum Rule**: $\frac{d}{dx}[f(x) + g(x)] = f'(x) + g'(x)$
+
+**Product Rule**: $\frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)$
+
+**Proof**:
+$$\frac{d}{dx}[f(x)g(x)] = \lim_{h \to 0} \frac{f(x+h)g(x+h) - f(x)g(x)}{h}$$
+$$= \lim_{h \to 0} \frac{f(x+h)g(x+h) - f(x)g(x+h) + f(x)g(x+h) - f(x)g(x)}{h}$$
+$$= \lim_{h \to 0} \left[g(x+h) \frac{f(x+h) - f(x)}{h} + f(x) \frac{g(x+h) - g(x)}{h}\right]$$
+$$= g(x)f'(x) + f(x)g'(x)$$
+
+**Quotient Rule**: $\frac{d}{dx}\left[\frac{f(x)}{g(x)}\right] = \frac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^2}$
+
+**Memory Aid**: "Low dee-high minus high dee-low, over low squared"
+
+**Chain Rule**: $\frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x)$
+
+**Leibniz Notation**: $\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$ where $y = f(u)$ and $u = g(x)$
+
+**Proof**: Let $y = f(u)$ and $u = g(x)$
+$$\frac{dy}{dx} = \lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \lim_{\Delta x \to 0} \frac{\Delta y}{\Delta u} \cdot \frac{\Delta u}{\Delta x}$$
+
+**Derivatives of Elementary Functions**:
+
+**Trigonometric Functions**:
+- $\frac{d}{dx}[\sin x] = \cos x$
+- $\frac{d}{dx}[\cos x] = -\sin x$
+- $\frac{d}{dx}[\tan x] = \sec^2 x$
+- $\frac{d}{dx}[\cot x] = -\csc^2 x$
+- $\frac{d}{dx}[\sec x] = \sec x \tan x$
+- $\frac{d}{dx}[\csc x] = -\csc x \cot x$
+
+**Proof of** $\frac{d}{dx}[\sin x] = \cos x$:
+$$\frac{d}{dx}[\sin x] = \lim_{h \to 0} \frac{\sin(x+h) - \sin x}{h}$$
+$$= \lim_{h \to 0} \frac{\sin x \cos h + \cos x \sin h - \sin x}{h}$$
+$$= \lim_{h \to 0} \left[\sin x \frac{\cos h - 1}{h} + \cos x \frac{\sin h}{h}\right]$$
+$$= \sin x \cdot 0 + \cos x \cdot 1 = \cos x$$
+
+**Exponential and Logarithmic Functions**:
+- $\frac{d}{dx}[e^x] = e^x$
+- $\frac{d}{dx}[a^x] = a^x \ln a$
+- $\frac{d}{dx}[\ln x] = \frac{1}{x}$
+- $\frac{d}{dx}[\log_a x] = \frac{1}{x \ln a}$
+
+**Inverse Trigonometric Functions**:
+- $\frac{d}{dx}[\sin^{-1} x] = \frac{1}{\sqrt{1-x^2}}$
+- $\frac{d}{dx}[\cos^{-1} x] = -\frac{1}{\sqrt{1-x^2}}$
+- $\frac{d}{dx}[\tan^{-1} x] = \frac{1}{1+x^2}$
+
+**Hyperbolic Functions**:
+- $\frac{d}{dx}[\sinh x] = \cosh x$
+- $\frac{d}{dx}[\cosh x] = \sinh x$
+- $\frac{d}{dx}[\tanh x] = \text{sech}^2 x$
+
+**Implicit Differentiation**:
+
+For equations not solved for $y$, differentiate both sides with respect to $x$, treating $y$ as function of $x$
+
+**Example**: Find $\frac{dy}{dx}$ for $x^2 + y^2 = 25$
+$$\frac{d}{dx}[x^2 + y^2] = \frac{d}{dx}[25]$$
+$$2x + 2y\frac{dy}{dx} = 0$$
+$$\frac{dy}{dx} = -\frac{x}{y}$$
+
+**Logarithmic Differentiation**:
+
+For functions of form $y = [f(x)]^{g(x)}$ or products/quotients of many terms:
+
+1. Take natural logarithm: $\ln y = g(x) \ln f(x)$
+2. Differentiate implicitly: $\frac{1}{y}\frac{dy}{dx} = g'(x) \ln f(x) + g(x) \frac{f'(x)}{f(x)}$
+3. Solve for $\frac{dy}{dx}$: $\frac{dy}{dx} = y[g'(x) \ln f(x) + g(x) \frac{f'(x)}{f(x)}]$
+
+**Example**: $y = x^x$
+$$\ln y = x \ln x$$
+$$\frac{1}{y}\frac{dy}{dx} = \ln x + x \cdot \frac{1}{x} = \ln x + 1$$
+$$\frac{dy}{dx} = x^x(\ln x + 1)$$
+
+**Higher-Order Derivatives**:
+
+**Notation**:
+- Second derivative: $f''(x)$, $\frac{d^2f}{dx^2}$, $\frac{d^2y}{dx^2}$
+- $n$-th derivative: $f^{(n)}(x)$, $\frac{d^nf}{dx^n}$
+
+**Leibniz Rule** (Product rule for higher derivatives):
+$$\frac{d^n}{dx^n}[f(x)g(x)] = \sum_{k=0}^{n} \binom{n}{k} f^{(k)}(x) g^{(n-k)}(x)$$
+
+**Parametric Differentiation**:
+
+For parametric equations $x = f(t)$, $y = g(t)$:
+$$\frac{dy}{dx} = \frac{dy/dt}{dx/dt} = \frac{g'(t)}{f'(t)}$$
+
+**Second derivative**:
+$$\frac{d^2y}{dx^2} = \frac{d}{dx}\left(\frac{dy}{dx}\right) = \frac{d}{dt}\left(\frac{dy}{dx}\right) \cdot \frac{dt}{dx} = \frac{\frac{d}{dt}\left(\frac{dy}{dx}\right)}{dx/dt}$$
+
+**Related Rates**:
+
+Problems involving rates of change of related quantities
+
+**Strategy**:
+1. Identify variables and given rates
+2. Find equation relating variables
+3. Differentiate with respect to time
+4. Substitute known values and solve
+
+**Example**: Balloon inflating at 10 cm³/s. Find rate of radius change when $r = 5$ cm
+- Volume: $V = \frac{4}{3}\pi r^3$
+- Given: $\frac{dV}{dt} = 10$
+- Find: $\frac{dr}{dt}$ when $r = 5$
+- Differentiate: $\frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt}$
+- Substitute: $10 = 4\pi(25)\frac{dr}{dt}$
+- Solve: $\frac{dr}{dt} = \frac{10}{100\pi} = \frac{1}{10\pi}$ cm/s
+
+**Applications of Derivatives**:
+
+**Tangent and Normal Lines**:
+- Tangent line at $(a, f(a))$: $y - f(a) = f'(a)(x - a)$
+- Normal line: $y - f(a) = -\frac{1}{f'(a)}(x - a)$ (if $f'(a) \neq 0$)
+
+**Linear Approximation**:
+$$f(x) \approx f(a) + f'(a)(x - a)$$ for $x$ near $a$
+
+**Differential**: $dy = f'(x)dx$ approximates $\Delta y = f(x + \Delta x) - f(x)$
+
+**Mean Value Theorem** (MVT):
+
+**Theorem**: If $f$ is continuous on $[a,b]$ and differentiable on $(a,b)$, then $\exists c \in (a,b)$ such that:
+$$f'(c) = \frac{f(b) - f(a)}{b - a}$$
+
+**Geometric Interpretation**: There exists point where tangent line is parallel to secant line
+
+**Rolle's Theorem** (Special case of MVT):
+If $f$ continuous on $[a,b]$, differentiable on $(a,b)$, and $f(a) = f(b)$, then $\exists c \in (a,b)$ such that $f'(c) = 0$
+
+**Problem-Solving Tips**:
+
+**For Basic Differentiation**:
+1. Identify which rules apply (product, quotient, chain)
+2. Work from outside in for composite functions
+3. Simplify before differentiating when possible
+
+**For Implicit Differentiation**:
+1. Differentiate both sides term by term
+2. Remember to multiply by $\frac{dy}{dx}$ when differentiating $y$ terms
+3. Collect all $\frac{dy}{dx}$ terms and solve
+
+**For Related Rates**:
+1. Draw diagram if geometric
+2. Identify all variables and their relationships
+3. Differentiate the constraint equation
+4. Substitute known values at specific instant
+
+**GATE Tips**:
+- Power rule works for any real exponent: $\frac{d}{dx}[x^r] = rx^{r-1}$
+- Chain rule is essential: always identify inner and outer functions
+- Product rule: $(fg)' = f'g + fg'$ (not $f'g'$!)
+- For $\frac{0}{0}$ limits, try L'Hôpital's rule after checking conditions
+- Implicit differentiation: treat $y$ as function of $x$
+- Related rates: differentiate constraint equation with respect to time
+- MVT guarantees existence of point, not uniqueness
+
+**Examples**:
+
+1. **Find** $\frac{d}{dx}[(x^2 + 1)^3 \sin x]$:
+   Using product rule and chain rule:
+   $$\frac{d}{dx}[(x^2 + 1)^3 \sin x] = 3(x^2 + 1)^2 \cdot 2x \cdot \sin x + (x^2 + 1)^3 \cos x$$
+   $$= 6x(x^2 + 1)^2 \sin x + (x^2 + 1)^3 \cos x$$
+
+2. **Find** $\frac{dy}{dx}$ for $x^3 + y^3 = 6xy$:
+   Differentiating implicitly:
+   $$3x^2 + 3y^2\frac{dy}{dx} = 6y + 6x\frac{dy}{dx}$$
+   $$3y^2\frac{dy}{dx} - 6x\frac{dy}{dx} = 6y - 3x^2$$
+   $$\frac{dy}{dx} = \frac{6y - 3x^2}{3y^2 - 6x} = \frac{2y - x^2}{y^2 - 2x}$$
+
+3. **Verify MVT** for $f(x) = x^2$ on $[1,3]$:
+   - $f'(x) = 2x$
+   - $\frac{f(3) - f(1)}{3 - 1} = \frac{9 - 1}{2} = 4$
+   - Need $f'(c) = 4$: $2c = 4 \Rightarrow c = 2$
+   - Since $2 \in (1,3)$, MVT is satisfied with $c = 2$
+
+### 5.3 Integration (50)
+
+**Key Concepts**: Integration is the reverse process of differentiation, used to find areas, volumes, and accumulated quantities. The Fundamental Theorem of Calculus connects differentiation and integration.
+
+**Antiderivative Definition**:
+
+**Definition**: Function $F(x)$ is an **antiderivative** of $f(x)$ if $F'(x) = f(x)$
+
+**General Antiderivative**: $F(x) + C$ where $C$ is arbitrary constant
+
+**Indefinite Integral**: $\int f(x) dx = F(x) + C$ where $F'(x) = f(x)$
+
+**Definite Integral**:
+
+**Riemann Sum Definition**:
+$$\int_a^b f(x) dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*) \Delta x$$
+where $\Delta x = \frac{b-a}{n}$ and $x_i^* \in [x_{i-1}, x_i]$
+
+**Geometric Interpretation**: Signed area between curve and x-axis from $x = a$ to $x = b$
+
+**Properties of Definite Integrals**:
+
+1. **Linearity**: $\int_a^b [cf(x) + dg(x)] dx = c\int_a^b f(x) dx + d\int_a^b g(x) dx$
+
+2. **Additivity**: $\int_a^b f(x) dx + \int_b^c f(x) dx = \int_a^c f(x) dx$
+
+3. **Reversal**: $\int_a^b f(x) dx = -\int_b^a f(x) dx$
+
+4. **Zero width**: $\int_a^a f(x) dx = 0$
+
+5. **Comparison**: If $f(x) \leq g(x)$ on $[a,b]$, then $\int_a^b f(x) dx \leq \int_a^b g(x) dx$
+
+**Fundamental Theorem of Calculus**:
+
+**Part I** (Evaluation Theorem):
+If $f$ is continuous on $[a,b]$ and $F$ is antiderivative of $f$, then:
+$$\int_a^b f(x) dx = F(b) - F(a) = [F(x)]_a^b$$
+
+**Part II** (Derivative of Integral):
+If $f$ is continuous on $[a,b]$, then:
+$$\frac{d}{dx} \int_a^x f(t) dt = f(x)$$
+
+**More General Form**:
+$$\frac{d}{dx} \int_{g(x)}^{h(x)} f(t) dt = f(h(x))h'(x) - f(g(x))g'(x)$$
+
+**Basic Integration Formulas**:
+
+**Power Rule**: $\int x^n dx = \frac{x^{n+1}}{n+1} + C$ (for $n \neq -1$)
+
+**Logarithmic**: $\int \frac{1}{x} dx = \ln|x| + C$
+
+**Exponential**:
+- $\int e^x dx = e^x + C$
+- $\int a^x dx = \frac{a^x}{\ln a} + C$
+
+**Trigonometric**:
+- $\int \sin x dx = -\cos x + C$
+- $\int \cos x dx = \sin x + C$
+- $\int \sec^2 x dx = \tan x + C$
+- $\int \csc^2 x dx = -\cot x + C$
+- $\int \sec x \tan x dx = \sec x + C$
+- $\int \csc x \cot x dx = -\csc x + C$
+
+**Inverse Trigonometric**:
+- $\int \frac{1}{\sqrt{1-x^2}} dx = \sin^{-1} x + C$
+- $\int \frac{1}{1+x^2} dx = \tan^{-1} x + C$
+- $\int \frac{1}{x\sqrt{x^2-1}} dx = \sec^{-1}|x| + C$
+
+**Integration Techniques**:
+
+**1. Substitution Method** (u-substitution):
+
+**Indefinite**: If $\int f(g(x))g'(x) dx$, let $u = g(x)$, $du = g'(x) dx$
+$$\int f(g(x))g'(x) dx = \int f(u) du$$
+
+**Definite**: $\int_a^b f(g(x))g'(x) dx = \int_{g(a)}^{g(b)} f(u) du$
+
+**Example**: $\int 2x(x^2 + 1)^3 dx$
+- Let $u = x^2 + 1$, $du = 2x dx$
+- $\int (x^2 + 1)^3 \cdot 2x dx = \int u^3 du = \frac{u^4}{4} + C = \frac{(x^2 + 1)^4}{4} + C$
+
+**2. Integration by Parts**:
+
+**Formula**: $\int u dv = uv - \int v du$
+
+**Choosing u and dv** (LIATE priority):
+- **L**ogarithmic functions
+- **I**nverse trigonometric functions  
+- **A**lgebraic functions (polynomials)
+- **T**rigonometric functions
+- **E**xponential functions
+
+**Example**: $\int x e^x dx$
+- Let $u = x$, $dv = e^x dx$
+- Then $du = dx$, $v = e^x$
+- $\int x e^x dx = xe^x - \int e^x dx = xe^x - e^x + C = e^x(x-1) + C$
+
+**Repeated Integration by Parts**:
+For $\int x^n e^x dx$, apply parts $n$ times
+
+**3. Trigonometric Integrals**:
+
+**Powers of sine and cosine**:
+- $\int \sin^m x \cos^n x dx$ where $m$ or $n$ is odd: substitute for the even power
+- Both even: use half-angle formulas
+
+**Half-angle formulas**:
+- $\sin^2 x = \frac{1 - \cos 2x}{2}$
+- $\cos^2 x = \frac{1 + \cos 2x}{2}$
+
+**Powers of tangent and secant**:
+- $\int \tan^m x \sec^n x dx$ where $n$ is even: substitute $u = \tan x$
+- $m$ is odd: substitute $u = \sec x$
+
+**4. Trigonometric Substitution**:
+
+For integrals involving:
+- $\sqrt{a^2 - x^2}$: use $x = a\sin\theta$
+- $\sqrt{a^2 + x^2}$: use $x = a\tan\theta$  
+- $\sqrt{x^2 - a^2}$: use $x = a\sec\theta$
+
+**Example**: $\int \frac{1}{\sqrt{4-x^2}} dx$
+- Let $x = 2\sin\theta$, $dx = 2\cos\theta d\theta$
+- $\sqrt{4-x^2} = \sqrt{4-4\sin^2\theta} = 2\cos\theta$
+- $\int \frac{2\cos\theta}{2\cos\theta} d\theta = \int d\theta = \theta + C = \sin^{-1}\frac{x}{2} + C$
+
+**5. Partial Fractions**:
+
+For rational functions $\frac{P(x)}{Q(x)}$ where degree of $P <$ degree of $Q$:
+
+**Linear factors**: $\frac{A}{x-a} + \frac{B}{x-b} + \cdots$
+
+**Repeated linear factors**: $\frac{A_1}{x-a} + \frac{A_2}{(x-a)^2} + \cdots + \frac{A_n}{(x-a)^n}$
+
+**Quadratic factors**: $\frac{Ax+B}{x^2+px+q}$ (for irreducible quadratics)
+
+**Example**: $\int \frac{x+1}{x^2-x-2} dx = \int \frac{x+1}{(x-2)(x+1)} dx$
+- $\frac{x+1}{(x-2)(x+1)} = \frac{A}{x-2} + \frac{B}{x+1}$
+- $x+1 = A(x+1) + B(x-2)$
+- Setting $x = 2$: $3 = 3A \Rightarrow A = 1$
+- Setting $x = -1$: $0 = -3B \Rightarrow B = 0$
+- $\int \frac{1}{x-2} dx = \ln|x-2| + C$
+
+**6. Numerical Integration**:
+
+**Trapezoidal Rule**:
+$$\int_a^b f(x) dx \approx \frac{h}{2}[f(x_0) + 2f(x_1) + 2f(x_2) + \cdots + 2f(x_{n-1}) + f(x_n)]$$
+where $h = \frac{b-a}{n}$
+
+**Simpson's Rule** (n even):
+$$\int_a^b f(x) dx \approx \frac{h}{3}[f(x_0) + 4f(x_1) + 2f(x_2) + 4f(x_3) + \cdots + 4f(x_{n-1}) + f(x_n)]$$
+
+**Error Analysis**:
+- Trapezoidal: Error $\leq \frac{(b-a)^3}{12n^2} \max|f''(x)|$
+- Simpson's: Error $\leq \frac{(b-a)^5}{180n^4} \max|f^{(4)}(x)|$
+
+**Improper Integrals**:
+
+**Type I** (Infinite limits):
+$$\int_a^{\infty} f(x) dx = \lim_{t \to \infty} \int_a^t f(x) dx$$
+
+**Type II** (Discontinuous integrand):
+$$\int_a^b f(x) dx = \lim_{t \to c^-} \int_a^t f(x) dx + \lim_{t \to c^+} \int_t^b f(x) dx$$
+where $f$ has discontinuity at $x = c \in (a,b)$
+
+**Convergence Tests**:
+- **Comparison Test**: If $0 \leq f(x) \leq g(x)$ and $\int g(x) dx$ converges, then $\int f(x) dx$ converges
+- **Limit Comparison Test**: If $\lim_{x \to \infty} \frac{f(x)}{g(x)} = L > 0$, then both integrals converge or both diverge
+
+**Applications of Integration**:
+
+**Area between curves**:
+$$A = \int_a^b |f(x) - g(x)| dx$$
+
+**Volume by cross-sections**:
+$$V = \int_a^b A(x) dx$$
+where $A(x)$ is area of cross-section at $x$
+
+**Volume of revolution**:
+- **Disk method**: $V = \pi \int_a^b [f(x)]^2 dx$
+- **Washer method**: $V = \pi \int_a^b ([f(x)]^2 - [g(x)]^2) dx$
+- **Shell method**: $V = 2\pi \int_a^b x f(x) dx$
+
+**Arc length**:
+$$L = \int_a^b \sqrt{1 + [f'(x)]^2} dx$$
+
+**Surface area of revolution**:
+$$S = 2\pi \int_a^b f(x) \sqrt{1 + [f'(x)]^2} dx$$
+
+**Problem-Solving Strategy**:
+
+**For Integration**:
+1. **Identify type**: Basic formula, substitution, parts, trig substitution, partial fractions
+2. **Simplify first**: Factor, expand, or rewrite if helpful
+3. **Check answer**: Differentiate result to verify
+
+**For Definite Integrals**:
+1. **Find antiderivative** using appropriate technique
+2. **Apply FTC**: Evaluate at bounds and subtract
+3. **Check reasonableness**: Consider sign and magnitude
+
+**GATE Tips**:
+- Master basic formulas and substitution method first
+- Integration by parts: choose $u$ using LIATE
+- Trig substitution: match radical form to substitution
+- Partial fractions: degree of numerator < degree of denominator
+- FTC Part II: $\frac{d}{dx} \int_a^x f(t) dt = f(x)$
+- Improper integrals: check convergence before evaluating
+- Area problems: determine which function is on top
+
+**Examples**:
+
+1. **Evaluate** $\int x^2 e^{x^3} dx$:
+   - Let $u = x^3$, $du = 3x^2 dx$, so $x^2 dx = \frac{1}{3} du$
+   - $\int x^2 e^{x^3} dx = \frac{1}{3} \int e^u du = \frac{1}{3} e^u + C = \frac{1}{3} e^{x^3} + C$
+
+2. **Evaluate** $\int_0^{\pi/2} x \sin x dx$:
+   - Using integration by parts: $u = x$, $dv = \sin x dx$
+   - $du = dx$, $v = -\cos x$
+   - $\int x \sin x dx = -x \cos x + \int \cos x dx = -x \cos x + \sin x + C$
+   - $\int_0^{\pi/2} x \sin x dx = [-x \cos x + \sin x]_0^{\pi/2} = [0 + 1] - [0 + 0] = 1$
+
+3. **Find area** between $y = x^2$ and $y = 2x$ from $x = 0$ to $x = 2$:
+   - Intersection points: $x^2 = 2x \Rightarrow x = 0, 2$
+   - For $0 \leq x \leq 2$: $2x \geq x^2$
+   - $A = \int_0^2 (2x - x^2) dx = [x^2 - \frac{x^3}{3}]_0^2 = 4 - \frac{8}{3} = \frac{4}{3}$
+
+### 5.4 Differential Equations (35)
+
+**Key Concepts**: Differential equations involve functions and their derivatives. They model rates of change in physics, engineering, biology, and economics.
+
+**Classification of Differential Equations**:
+
+**By Order**: Highest derivative present
+- **First-order**: $\frac{dy}{dx} = f(x,y)$
+- **Second-order**: $\frac{d^2y}{dx^2} = f(x, y, y')$
+- **n-th order**: Contains $\frac{d^ny}{dx^n}$
+
+**By Linearity**:
+- **Linear**: Dependent variable and derivatives appear linearly
+- **Nonlinear**: Contains products, powers, or nonlinear functions of $y$ and derivatives
+
+**By Homogeneity**:
+- **Homogeneous**: All terms involve dependent variable or its derivatives
+- **Non-homogeneous**: Contains terms independent of dependent variable
+
+**First-Order Differential Equations**:
+
+**1. Separable Equations**:
+
+**Form**: $\frac{dy}{dx} = f(x)g(y)$ or $M(x)dx + N(y)dy = 0$
+
+**Solution Method**:
+1. Separate variables: $\frac{dy}{g(y)} = f(x)dx$
+2. Integrate both sides: $\int \frac{dy}{g(y)} = \int f(x)dx$
+3. Solve for $y$ if possible
+
+**Example**: $\frac{dy}{dx} = xy$
+- Separate: $\frac{dy}{y} = x dx$
+- Integrate: $\ln|y| = \frac{x^2}{2} + C$
+- Solve: $y = Ae^{x^2/2}$ where $A = \pm e^C$
+
+**2. Linear First-Order Equations**:
+
+**Standard Form**: $\frac{dy}{dx} + P(x)y = Q(x)$
+
+**Solution Method** (Integrating Factor):
+1. Find integrating factor: $\mu(x) = e^{\int P(x)dx}$
+2. Multiply equation by $\mu(x)$: $\mu(x)\frac{dy}{dx} + \mu(x)P(x)y = \mu(x)Q(x)$
+3. Left side becomes $\frac{d}{dx}[\mu(x)y]$
+4. Integrate: $\mu(x)y = \int \mu(x)Q(x)dx$
+5. Solve for $y$: $y = \frac{1}{\mu(x)} \int \mu(x)Q(x)dx$
+
+**Example**: $\frac{dy}{dx} + 2y = e^{-x}$
+- $P(x) = 2$, $Q(x) = e^{-x}$
+- $\mu(x) = e^{\int 2dx} = e^{2x}$
+- $e^{2x}\frac{dy}{dx} + 2e^{2x}y = e^{2x} \cdot e^{-x} = e^x$
+- $\frac{d}{dx}[e^{2x}y] = e^x$
+- $e^{2x}y = \int e^x dx = e^x + C$
+- $y = e^{-x} + Ce^{-2x}$
+
+**3. Exact Equations**:
+
+**Form**: $M(x,y)dx + N(x,y)dy = 0$
+
+**Exactness Condition**: $\frac{\partial M}{\partial y} = \frac{\partial N}{\partial x}$
+
+**Solution Method**:
+1. Check exactness condition
+2. Find function $F(x,y)$ such that $\frac{\partial F}{\partial x} = M$ and $\frac{\partial F}{\partial y} = N$
+3. Solution is $F(x,y) = C$
+
+**Finding F(x,y)**:
+- $F(x,y) = \int M(x,y)dx + g(y)$
+- Determine $g(y)$ using $\frac{\partial F}{\partial y} = N$
+
+**4. Homogeneous Equations**:
+
+**Form**: $\frac{dy}{dx} = f\left(\frac{y}{x}\right)$
+
+**Solution Method**:
+1. Substitute $v = \frac{y}{x}$, so $y = vx$ and $\frac{dy}{dx} = v + x\frac{dv}{dx}$
+2. Equation becomes: $v + x\frac{dv}{dx} = f(v)$
+3. Separate: $x\frac{dv}{dx} = f(v) - v$
+4. $\frac{dv}{f(v) - v} = \frac{dx}{x}$
+5. Integrate and substitute back
+
+**Second-Order Linear Differential Equations**:
+
+**General Form**: $a(x)\frac{d^2y}{dx^2} + b(x)\frac{dy}{dx} + c(x)y = f(x)$
+
+**Constant Coefficients**: $ay'' + by' + cy = f(x)$
+
+**Homogeneous Case**: $ay'' + by' + cy = 0$
+
+**Characteristic Equation Method**:
+1. Assume solution $y = e^{rx}$
+2. Substitute: $ar^2 + br + c = 0$
+3. Solve quadratic for $r$
+
+**Cases for Roots**:
+
+**Case 1**: Two distinct real roots $r_1, r_2$
+- General solution: $y = c_1 e^{r_1 x} + c_2 e^{r_2 x}$
+
+**Case 2**: Repeated real root $r$
+- General solution: $y = (c_1 + c_2 x)e^{rx}$
+
+**Case 3**: Complex roots $r = \alpha \pm \beta i$
+- General solution: $y = e^{\alpha x}(c_1 \cos \beta x + c_2 \sin \beta x)$
+
+**Example**: $y'' - 5y' + 6y = 0$
+- Characteristic equation: $r^2 - 5r + 6 = 0$
+- Factor: $(r-2)(r-3) = 0$
+- Roots: $r_1 = 2, r_2 = 3$
+- Solution: $y = c_1 e^{2x} + c_2 e^{3x}$
+
+**Non-homogeneous Equations**: $ay'' + by' + cy = f(x)$
+
+**General Solution**: $y = y_h + y_p$
+- $y_h$: homogeneous solution
+- $y_p$: particular solution
+
+**Method of Undetermined Coefficients**:
+
+For specific forms of $f(x)$:
+
+| $f(x)$ | Trial $y_p$ |
+|--------|-------------|
+| $ae^{kx}$ | $Ae^{kx}$ |
+| $a\cos kx + b\sin kx$ | $A\cos kx + B\sin kx$ |
+| $ax^n$ | $A_n x^n + A_{n-1}x^{n-1} + \cdots + A_0$ |
+| $ae^{kx}\cos mx$ | $e^{kx}(A\cos mx + B\sin mx)$ |
+
+**Modification Rule**: If trial solution is part of homogeneous solution, multiply by $x$ (or $x^2$ if necessary)
+
+**Example**: $y'' - 3y' + 2y = e^x$
+- Homogeneous: $r^2 - 3r + 2 = 0 \Rightarrow r = 1, 2$
+- $y_h = c_1 e^x + c_2 e^{2x}$
+- Since $e^x$ is in $y_h$, try $y_p = Axe^x$
+- $y_p' = A(e^x + xe^x) = Ae^x(1 + x)$
+- $y_p'' = Ae^x(2 + x)$
+- Substitute: $Ae^x(2 + x) - 3Ae^x(1 + x) + 2Axe^x = e^x$
+- $Ae^x(2 + x - 3 - 3x + 2x) = e^x$
+- $Ae^x(-1) = e^x \Rightarrow A = -1$
+- $y_p = -xe^x$
+- General solution: $y = c_1 e^x + c_2 e^{2x} - xe^x$
+
+**Variation of Parameters**:
+
+For $y'' + p(x)y' + q(x)y = f(x)$ with known homogeneous solutions $y_1, y_2$:
+
+**Particular Solution**:
+$$y_p = -y_1 \int \frac{y_2 f(x)}{W} dx + y_2 \int \frac{y_1 f(x)}{W} dx$$
+
+where $W = y_1 y_2' - y_2 y_1'$ is the Wronskian
+
+**Applications of Differential Equations**:
+
+**1. Population Growth**:
+- **Exponential**: $\frac{dP}{dt} = kP \Rightarrow P(t) = P_0 e^{kt}$
+- **Logistic**: $\frac{dP}{dt} = kP(1 - \frac{P}{M}) \Rightarrow P(t) = \frac{M}{1 + Ae^{-kt}}$
+
+**2. Newton's Law of Cooling**:
+$$\frac{dT}{dt} = -k(T - T_{\text{ambient}})$$
+Solution: $T(t) = T_{\text{ambient}} + (T_0 - T_{\text{ambient}})e^{-kt}$
+
+**3. Simple Harmonic Motion**:
+$$m\frac{d^2x}{dt^2} + kx = 0$$
+Solution: $x(t) = A\cos(\omega t + \phi)$ where $\omega = \sqrt{\frac{k}{m}}$
+
+**4. RLC Circuits**:
+$$L\frac{d^2q}{dt^2} + R\frac{dq}{dt} + \frac{q}{C} = E(t)$$
+
+**5. Mixing Problems**:
+Rate of change = Rate in - Rate out
+$$\frac{dA}{dt} = r_{\text{in}} c_{\text{in}} - r_{\text{out}} \frac{A(t)}{V(t)}$$
+
+**Laplace Transform Method**:
+
+**Definition**: $\mathcal{L}\{f(t)\} = F(s) = \int_0^{\infty} e^{-st} f(t) dt$
+
+**Key Properties**:
+- $\mathcal{L}\{f'(t)\} = sF(s) - f(0)$
+- $\mathcal{L}\{f''(t)\} = s^2F(s) - sf(0) - f'(0)$
+- $\mathcal{L}\{e^{at}f(t)\} = F(s-a)$
+
+**Common Transforms**:
+- $\mathcal{L}\{1\} = \frac{1}{s}$
+- $\mathcal{L}\{t^n\} = \frac{n!}{s^{n+1}}$
+- $\mathcal{L}\{e^{at}\} = \frac{1}{s-a}$
+- $\mathcal{L}\{\sin at\} = \frac{a}{s^2 + a^2}$
+- $\mathcal{L}\{\cos at\} = \frac{s}{s^2 + a^2}$
+
+**Solution Process**:
+1. Take Laplace transform of DE
+2. Solve algebraic equation for $Y(s) = \mathcal{L}\{y(t)\}$
+3. Find inverse transform: $y(t) = \mathcal{L}^{-1}\{Y(s)\}$
+
+**Problem-Solving Strategy**:
+
+**For First-Order DEs**:
+1. **Identify type**: Separable, linear, exact, homogeneous
+2. **Apply appropriate method**
+3. **Include arbitrary constant**
+4. **Apply initial conditions** if given
+
+**For Second-Order DEs**:
+1. **Find homogeneous solution** using characteristic equation
+2. **Find particular solution** using undetermined coefficients or variation of parameters
+3. **Combine**: $y = y_h + y_p$
+4. **Apply initial conditions**
+
+**GATE Tips**:
+- Separable: $\frac{dy}{dx} = f(x)g(y)$ → separate and integrate
+- Linear first-order: Use integrating factor $\mu(x) = e^{\int P(x)dx}$
+- Characteristic equation: $ar^2 + br + c = 0$ for $ay'' + by' + cy = 0$
+- Complex roots $\alpha \pm \beta i$ give $e^{\alpha x}(c_1 \cos \beta x + c_2 \sin \beta x)$
+- Undetermined coefficients: Match form of non-homogeneous term
+- Initial conditions determine arbitrary constants
+- Check solutions by substitution
+
+**Examples**:
+
+1. **Solve** $\frac{dy}{dx} = \frac{x}{y}$ with $y(0) = 1$:
+   - Separate: $y dy = x dx$
+   - Integrate: $\frac{y^2}{2} = \frac{x^2}{2} + C$
+   - $y^2 = x^2 + 2C$
+   - Initial condition: $1 = 0 + 2C \Rightarrow C = \frac{1}{2}$
+   - Solution: $y^2 = x^2 + 1 \Rightarrow y = \sqrt{x^2 + 1}$ (taking positive root)
+
+2. **Solve** $y'' + 4y = 0$:
+   - Characteristic equation: $r^2 + 4 = 0$
+   - Roots: $r = \pm 2i$
+   - Solution: $y = c_1 \cos 2x + c_2 \sin 2x$
+
+3. **Solve** $y'' - y = e^x$:
+   - Homogeneous: $r^2 - 1 = 0 \Rightarrow r = \pm 1$
+   - $y_h = c_1 e^x + c_2 e^{-x}$
+   - Since $e^x$ is in $y_h$, try $y_p = Axe^x$
+   - $y_p' = A(e^x + xe^x)$, $y_p'' = A(2e^x + xe^x)$
+   - Substitute: $A(2e^x + xe^x) - Axe^x = e^x$
+   - $2Ae^x = e^x \Rightarrow A = \frac{1}{2}$
+   - Solution: $y = c_1 e^x + c_2 e^{-x} + \frac{1}{2}xe^x$
+### 6. Engineering Mathematics: Linear Algebra (120 Questions)
+
+### 6.1 Matrices and Determinants (40)
+
+**Key Concepts**: Matrices are rectangular arrays of numbers that represent linear transformations and systems of equations. Determinants measure how matrices scale areas and volumes.
+
+**Matrix Definitions**:
+
+**Matrix**: Rectangular array of numbers arranged in rows and columns
+$$A = \begin{bmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{bmatrix}$$
+
+**Notation**: $A = [a_{ij}]_{m \times n}$ where $i$ is row index, $j$ is column index
+
+**Special Matrices**:
+
+**Square Matrix**: $m = n$ (same number of rows and columns)
+
+**Zero Matrix**: All entries are zero, denoted $O$ or $0$
+
+**Identity Matrix**: Square matrix with 1's on diagonal, 0's elsewhere
+$$I_n = \begin{bmatrix} 1 & 0 & \cdots & 0 \\ 0 & 1 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & 1 \end{bmatrix}$$
+
+**Diagonal Matrix**: Square matrix with non-zero entries only on main diagonal
+$$D = \begin{bmatrix} d_1 & 0 & \cdots & 0 \\ 0 & d_2 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & d_n \end{bmatrix}$$
+
+**Upper Triangular**: $a_{ij} = 0$ for $i > j$
+**Lower Triangular**: $a_{ij} = 0$ for $i < j$
+
+**Symmetric Matrix**: $A = A^T$ (equals its transpose)
+**Skew-Symmetric**: $A = -A^T$
+
+**Matrix Operations**:
+
+**Matrix Addition**: $(A + B)_{ij} = a_{ij} + b_{ij}$
+- Only defined for matrices of same size
+- **Commutative**: $A + B = B + A$
+- **Associative**: $(A + B) + C = A + (B + C)$
+
+**Scalar Multiplication**: $(cA)_{ij} = c \cdot a_{ij}$
+- **Distributive**: $c(A + B) = cA + cB$
+- $(c + d)A = cA + dA$
+
+**Matrix Multiplication**: $(AB)_{ij} = \sum_{k=1}^{p} a_{ik} b_{kj}$
+
+For $A_{m \times p}$ and $B_{p \times n}$, result is $C_{m \times n}$
+
+**Properties**:
+- **Not commutative**: Generally $AB \neq BA$
+- **Associative**: $(AB)C = A(BC)$
+- **Distributive**: $A(B + C) = AB + AC$
+- **Identity**: $AI = IA = A$
+
+**Transpose**: $(A^T)_{ij} = a_{ji}$
+
+**Properties of Transpose**:
+- $(A^T)^T = A$
+- $(A + B)^T = A^T + B^T$
+- $(AB)^T = B^T A^T$ (order reverses!)
+- $(cA)^T = cA^T$
+
+**Determinants**:
+
+**2×2 Determinant**:
+$$\det(A) = \begin{vmatrix} a & b \\ c & d \end{vmatrix} = ad - bc$$
+
+**3×3 Determinant** (Cofactor expansion along first row):
+$$\det(A) = a_{11}\begin{vmatrix} a_{22} & a_{23} \\ a_{32} & a_{33} \end{vmatrix} - a_{12}\begin{vmatrix} a_{21} & a_{23} \\ a_{31} & a_{33} \end{vmatrix} + a_{13}\begin{vmatrix} a_{21} & a_{22} \\ a_{31} & a_{32} \end{vmatrix}$$
+
+**General Cofactor Expansion**:
+$$\det(A) = \sum_{j=1}^{n} a_{ij} C_{ij} = \sum_{i=1}^{n} a_{ij} C_{ij}$$
+
+where $C_{ij} = (-1)^{i+j} M_{ij}$ is the cofactor and $M_{ij}$ is the minor
+
+**Properties of Determinants**:
+
+1. **Row/Column Operations**:
+   - Swapping two rows/columns changes sign
+   - Multiplying row/column by scalar $k$ multiplies determinant by $k$
+   - Adding multiple of one row to another doesn't change determinant
+
+2. **Special Cases**:
+   - $\det(I) = 1$
+   - $\det(A^T) = \det(A)$
+   - $\det(AB) = \det(A) \det(B)$
+   - $\det(cA) = c^n \det(A)$ for $n \times n$ matrix
+
+3. **Triangular Matrices**: Determinant equals product of diagonal entries
+
+4. **Zero Determinant**: Matrix is singular (non-invertible) iff $\det(A) = 0$
+
+**Cramer's Rule**:
+
+For system $Ax = b$ where $A$ is $n \times n$ and $\det(A) \neq 0$:
+$$x_i = \frac{\det(A_i)}{\det(A)}$$
+
+where $A_i$ is matrix $A$ with $i$-th column replaced by $b$
+
+**Matrix Inverse**:
+
+**Definition**: $A^{-1}$ is inverse of $A$ if $AA^{-1} = A^{-1}A = I$
+
+**Existence**: $A^{-1}$ exists iff $\det(A) \neq 0$ (A is non-singular)
+
+**2×2 Inverse**:
+$$A^{-1} = \frac{1}{\det(A)} \begin{bmatrix} d & -b \\ -c & a \end{bmatrix} \text{ for } A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$$
+
+**General Formula** (Adjugate method):
+$$A^{-1} = \frac{1}{\det(A)} \text{adj}(A)$$
+
+where $\text{adj}(A) = [C_{ji}]$ (transpose of cofactor matrix)
+
+**Properties of Inverse**:
+- $(A^{-1})^{-1} = A$
+- $(AB)^{-1} = B^{-1}A^{-1}$ (order reverses!)
+- $(A^T)^{-1} = (A^{-1})^T$
+- $\det(A^{-1}) = \frac{1}{\det(A)}$
+
+**Elementary Matrices**:
+
+Matrices representing elementary row operations:
+1. **Row swap**: $E_{ij}$ (swaps rows $i$ and $j$)
+2. **Row scaling**: $E_i(c)$ (multiplies row $i$ by $c \neq 0$)
+3. **Row addition**: $E_{ij}(c)$ (adds $c$ times row $j$ to row $i$)
+
+**Theorem**: Every invertible matrix is product of elementary matrices
+
+**Gauss-Jordan Elimination**:
+
+Method to find $A^{-1}$ by row operations:
+1. Form augmented matrix $[A | I]$
+2. Use row operations to transform to $[I | A^{-1}]$
+3. If process fails, $A$ is not invertible
+
+**Rank of Matrix**:
+
+**Definition**: Rank is maximum number of linearly independent rows (or columns)
+
+**Properties**:
+- $\text{rank}(A) = \text{rank}(A^T)$
+- $\text{rank}(A) \leq \min(m,n)$ for $m \times n$ matrix
+- $A$ is invertible iff $\text{rank}(A) = n$ (full rank)
+
+**Computing Rank**:
+1. Use row operations to get row echelon form
+2. Count non-zero rows
+
+**Applications**:
+
+**System of Linear Equations**: $Ax = b$
+- **Unique solution**: $\det(A) \neq 0$ (use Cramer's rule or $x = A^{-1}b$)
+- **No solution or infinitely many**: $\det(A) = 0$
+
+**Consistency Conditions**:
+- **Consistent**: $\text{rank}(A) = \text{rank}([A|b])$
+- **Unique solution**: $\text{rank}(A) = n$ (number of variables)
+- **Infinitely many solutions**: $\text{rank}(A) < n$
+
+**Geometric Interpretations**:
+- **Determinant**: Signed volume of parallelepiped formed by column vectors
+- **Matrix multiplication**: Composition of linear transformations
+- **Inverse**: Reverse transformation
+
+**Problem-Solving Tips**:
+
+**For Determinants**:
+1. Use row operations to simplify before expanding
+2. Look for zeros to minimize calculation
+3. For large matrices, use LU decomposition
+
+**For Matrix Inverse**:
+1. Check if $\det(A) \neq 0$ first
+2. For 2×2, use direct formula
+3. For larger matrices, use Gauss-Jordan elimination
+
+**For Systems**:
+1. Check consistency using rank
+2. If unique solution exists, use appropriate method
+3. For homogeneous systems, non-trivial solution exists iff $\det(A) = 0$
+
+**GATE Tips**:
+- $(AB)^T = B^T A^T$ and $(AB)^{-1} = B^{-1} A^{-1}$ (order reverses!)
+- $\det(AB) = \det(A) \det(B)$
+- Row operations: swap changes sign, scaling multiplies by scalar
+- Cramer's rule only when $\det(A) \neq 0$
+- Rank determines solution type for linear systems
+- Elementary matrices represent row operations
+
+**Examples**:
+
+1. **Find determinant** of $A = \begin{bmatrix} 2 & 1 & 3 \\ 0 & 4 & 1 \\ 0 & 0 & 5 \end{bmatrix}$:
+   - Upper triangular matrix
+   - $\det(A) = 2 \times 4 \times 5 = 40$
+
+2. **Find inverse** of $A = \begin{bmatrix} 2 & 1 \\ 3 & 2 \end{bmatrix}$:
+   - $\det(A) = 2(2) - 1(3) = 1$
+   - $A^{-1} = \frac{1}{1} \begin{bmatrix} 2 & -1 \\ -3 & 2 \end{bmatrix} = \begin{bmatrix} 2 & -1 \\ -3 & 2 \end{bmatrix}$
+
+3. **Solve system** using Cramer's rule: $2x + y = 5$, $x + 3y = 8$:
+   - $A = \begin{bmatrix} 2 & 1 \\ 1 & 3 \end{bmatrix}$, $b = \begin{bmatrix} 5 \\ 8 \end{bmatrix}$
+   - $\det(A) = 6 - 1 = 5$
+   - $x = \frac{\begin{vmatrix} 5 & 1 \\ 8 & 3 \end{vmatrix}}{5} = \frac{15-8}{5} = \frac{7}{5}$
+   - $y = \frac{\begin{vmatrix} 2 & 5 \\ 1 & 8 \end{vmatrix}}{5} = \frac{16-5}{5} = \frac{11}{5}$
+
+### 6.2 Vector Spaces (25)
+
+**Key Concepts**: Vector spaces are algebraic structures where vectors can be added and scaled. They provide the foundation for linear algebra and functional analysis.
+
+**Vector Space Definition**:
+
+A **vector space** $V$ over field $F$ (usually $\mathbb{R}$ or $\mathbb{C}$) is set with two operations:
+- **Vector addition**: $+: V \times V \to V$
+- **Scalar multiplication**: $\cdot: F \times V \to V$
+
+satisfying these axioms for all $\mathbf{u}, \mathbf{v}, \mathbf{w} \in V$ and $a, b \in F$:
+
+**Addition Axioms**:
+1. **Closure**: $\mathbf{u} + \mathbf{v} \in V$
+2. **Commutativity**: $\mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u}$
+3. **Associativity**: $(\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + (\mathbf{v} + \mathbf{w})$
+4. **Zero vector**: $\exists \mathbf{0} \in V$ such that $\mathbf{v} + \mathbf{0} = \mathbf{v}$
+5. **Additive inverse**: $\forall \mathbf{v} \in V, \exists (-\mathbf{v}) \in V$ such that $\mathbf{v} + (-\mathbf{v}) = \mathbf{0}$
+
+**Scalar Multiplication Axioms**:
+6. **Closure**: $a\mathbf{v} \in V$
+7. **Associativity**: $a(b\mathbf{v}) = (ab)\mathbf{v}$
+8. **Identity**: $1\mathbf{v} = \mathbf{v}$
+9. **Distributivity**: $a(\mathbf{u} + \mathbf{v}) = a\mathbf{u} + a\mathbf{v}$
+10. **Distributivity**: $(a + b)\mathbf{v} = a\mathbf{v} + b\mathbf{v}$
+
+**Examples of Vector Spaces**:
+
+1. **$\mathbb{R}^n$**: n-tuples of real numbers with componentwise operations
+2. **$\mathbb{C}^n$**: n-tuples of complex numbers
+3. **$M_{m \times n}(\mathbb{R})$**: $m \times n$ real matrices
+4. **$P_n(\mathbb{R})$**: Polynomials of degree ≤ n with real coefficients
+5. **$C[a,b]$**: Continuous functions on interval $[a,b]$
+6. **$\{0\}$**: Trivial vector space containing only zero vector
+
+**Subspaces**:
+
+**Definition**: Subset $W \subseteq V$ is **subspace** if:
+1. $\mathbf{0} \in W$ (contains zero vector)
+2. **Closed under addition**: $\mathbf{u}, \mathbf{v} \in W \Rightarrow \mathbf{u} + \mathbf{v} \in W$
+3. **Closed under scalar multiplication**: $\mathbf{v} \in W, a \in F \Rightarrow a\mathbf{v} \in W$
+
+**Subspace Test**: $W$ is subspace iff $a\mathbf{u} + b\mathbf{v} \in W$ for all $\mathbf{u}, \mathbf{v} \in W$ and $a, b \in F$
+
+**Examples of Subspaces**:
+- Lines through origin in $\mathbb{R}^2$
+- Planes through origin in $\mathbb{R}^3$
+- Solution space of homogeneous system $A\mathbf{x} = \mathbf{0}$
+- Even polynomials in $P_n(\mathbb{R})$
+
+**Linear Combinations**:
+
+**Definition**: Vector $\mathbf{v}$ is **linear combination** of vectors $\mathbf{v}_1, \ldots, \mathbf{v}_k$ if:
+$$\mathbf{v} = a_1\mathbf{v}_1 + a_2\mathbf{v}_2 + \cdots + a_k\mathbf{v}_k$$
+for some scalars $a_1, \ldots, a_k$
+
+**Span**: $\text{span}\{\mathbf{v}_1, \ldots, \mathbf{v}_k\}$ is set of all linear combinations of $\mathbf{v}_1, \ldots, \mathbf{v}_k$
+
+**Properties**:
+- $\text{span}\{\mathbf{v}_1, \ldots, \mathbf{v}_k\}$ is always a subspace
+- Smallest subspace containing $\mathbf{v}_1, \ldots, \mathbf{v}_k$
+
+**Linear Independence**:
+
+**Definition**: Vectors $\mathbf{v}_1, \ldots, \mathbf{v}_k$ are **linearly independent** if:
+$$a_1\mathbf{v}_1 + a_2\mathbf{v}_2 + \cdots + a_k\mathbf{v}_k = \mathbf{0} \Rightarrow a_1 = a_2 = \cdots = a_k = 0$$
+
+**Linear Dependence**: Not linearly independent; some non-trivial linear combination equals zero
+
+**Tests for Linear Independence**:
+1. **Matrix method**: Form matrix with vectors as columns; independent iff columns are linearly independent
+2. **Determinant**: For square matrix, independent iff $\det \neq 0$
+3. **Row reduction**: Independent iff no free variables in reduced form
+
+**Properties**:
+- Any set containing zero vector is linearly dependent
+- Two vectors are dependent iff one is scalar multiple of other
+- In $\mathbb{R}^n$, at most $n$ vectors can be linearly independent
+
+**Basis and Dimension**:
+
+**Basis**: Set of vectors $\mathcal{B} = \{\mathbf{v}_1, \ldots, \mathbf{v}_n\}$ is **basis** for $V$ if:
+1. $\mathcal{B}$ is linearly independent
+2. $\text{span}(\mathcal{B}) = V$
+
+**Properties of Bases**:
+- Every vector in $V$ has unique representation as linear combination of basis vectors
+- All bases of finite-dimensional vector space have same number of elements
+
+**Dimension**: $\dim(V)$ is number of vectors in any basis of $V$
+
+**Standard Bases**:
+- $\mathbb{R}^n$: $\{\mathbf{e}_1, \mathbf{e}_2, \ldots, \mathbf{e}_n\}$ where $\mathbf{e}_i$ has 1 in $i$-th position, 0 elsewhere
+- $P_n(\mathbb{R})$: $\{1, x, x^2, \ldots, x^n\}$
+- $M_{2 \times 2}(\mathbb{R})$: $\left\{\begin{bmatrix}1&0\\0&0\end{bmatrix}, \begin{bmatrix}0&1\\0&0\end{bmatrix}, \begin{bmatrix}0&0\\1&0\end{bmatrix}, \begin{bmatrix}0&0\\0&1\end{bmatrix}\right\}$
+
+**Fundamental Theorems**:
+
+**Dimension Theorem**: If $V$ is finite-dimensional with $\dim(V) = n$, then:
+- Any linearly independent set has at most $n$ vectors
+- Any spanning set has at least $n$ vectors
+- Any linearly independent set of $n$ vectors is a basis
+- Any spanning set of $n$ vectors is a basis
+
+**Rank-Nullity Theorem**: For linear transformation $T: V \to W$:
+$$\dim(V) = \dim(\ker(T)) + \dim(\text{range}(T))$$
+
+**Coordinate Systems**:
+
+Given basis $\mathcal{B} = \{\mathbf{v}_1, \ldots, \mathbf{v}_n\}$ for $V$, every $\mathbf{v} \in V$ has unique representation:
+$$\mathbf{v} = c_1\mathbf{v}_1 + c_2\mathbf{v}_2 + \cdots + c_n\mathbf{v}_n$$
+
+**Coordinate vector**: $[\mathbf{v}]_{\mathcal{B}} = \begin{bmatrix} c_1 \\ c_2 \\ \vdots \\ c_n \end{bmatrix}$
+
+**Change of Basis**:
+
+For bases $\mathcal{B}$ and $\mathcal{C}$, **change of basis matrix** $P_{\mathcal{C} \leftarrow \mathcal{B}}$ satisfies:
+$$[\mathbf{v}]_{\mathcal{C}} = P_{\mathcal{C} \leftarrow \mathcal{B}} [\mathbf{v}]_{\mathcal{B}}$$
+
+**Construction**: Columns of $P_{\mathcal{C} \leftarrow \mathcal{B}}$ are coordinate vectors of $\mathcal{B}$-basis vectors with respect to $\mathcal{C}$
+
+**Row Space and Column Space**:
+
+For matrix $A$:
+- **Row space**: $\text{row}(A) = \text{span of row vectors}$
+- **Column space**: $\text{col}(A) = \text{span of column vectors}$
+- **Null space**: $\text{null}(A) = \{\mathbf{x} : A\mathbf{x} = \mathbf{0}\}$
+
+**Properties**:
+- $\text{rank}(A) = \dim(\text{row}(A)) = \dim(\text{col}(A))$
+- $\text{nullity}(A) = \dim(\text{null}(A))$
+- $\text{rank}(A) + \text{nullity}(A) = n$ (number of columns)
+
+**Inner Product Spaces**:
+
+**Inner Product**: Function $\langle \cdot, \cdot \rangle: V \times V \to F$ satisfying:
+1. **Linearity**: $\langle a\mathbf{u} + b\mathbf{v}, \mathbf{w} \rangle = a\langle \mathbf{u}, \mathbf{w} \rangle + b\langle \mathbf{v}, \mathbf{w} \rangle$
+2. **Conjugate symmetry**: $\langle \mathbf{u}, \mathbf{v} \rangle = \overline{\langle \mathbf{v}, \mathbf{u} \rangle}$
+3. **Positive definiteness**: $\langle \mathbf{v}, \mathbf{v} \rangle \geq 0$ with equality iff $\mathbf{v} = \mathbf{0}$
+
+**Standard Inner Products**:
+- $\mathbb{R}^n$: $\langle \mathbf{u}, \mathbf{v} \rangle = \mathbf{u} \cdot \mathbf{v} = \sum_{i=1}^n u_i v_i$
+- $\mathbb{C}^n$: $\langle \mathbf{u}, \mathbf{v} \rangle = \sum_{i=1}^n u_i \overline{v_i}$
+- $C[a,b]$: $\langle f, g \rangle = \int_a^b f(x)g(x) dx$
+
+**Norm**: $\|\mathbf{v}\| = \sqrt{\langle \mathbf{v}, \mathbf{v} \rangle}$
+
+**Orthogonality**: Vectors $\mathbf{u}, \mathbf{v}$ are **orthogonal** if $\langle \mathbf{u}, \mathbf{v} \rangle = 0$
+
+**Orthogonal and Orthonormal Sets**:
+
+**Orthogonal set**: Pairwise orthogonal vectors
+**Orthonormal set**: Orthogonal set where each vector has norm 1
+
+**Properties**:
+- Orthogonal sets are linearly independent (except for zero vector)
+- Orthonormal basis simplifies calculations
+
+**Gram-Schmidt Process**:
+
+Algorithm to convert basis $\{\mathbf{v}_1, \ldots, \mathbf{v}_n\}$ to orthonormal basis $\{\mathbf{u}_1, \ldots, \mathbf{u}_n\}$:
+
+1. $\mathbf{u}_1 = \frac{\mathbf{v}_1}{\|\mathbf{v}_1\|}$
+
+2. For $k = 2, 3, \ldots, n$:
+   - $\mathbf{w}_k = \mathbf{v}_k - \sum_{j=1}^{k-1} \langle \mathbf{v}_k, \mathbf{u}_j \rangle \mathbf{u}_j$
+   - $\mathbf{u}_k = \frac{\mathbf{w}_k}{\|\mathbf{w}_k\|}$
+
+**Problem-Solving Tips**:
+
+**For Subspaces**:
+1. Check if zero vector is included
+2. Verify closure under addition and scalar multiplication
+3. Use subspace test: $a\mathbf{u} + b\mathbf{v} \in W$
+
+**For Linear Independence**:
+1. Set up equation $a_1\mathbf{v}_1 + \cdots + a_k\mathbf{v}_k = \mathbf{0}$
+2. Solve for coefficients
+3. Independent iff only trivial solution
+
+**For Basis**:
+1. Check linear independence
+2. Check if span equals the space
+3. Count vectors (should equal dimension)
+
+**GATE Tips**:
+- Subspace must contain zero vector and be closed under operations
+- Linear independence: only trivial combination gives zero
+- Basis: linearly independent spanning set
+- Dimension: number of vectors in basis
+- Rank-nullity: $\text{rank} + \text{nullity} = \text{number of columns}$
+- Orthogonal vectors are linearly independent
+- Gram-Schmidt produces orthonormal basis
+
+**Examples**:
+
+1. **Check if subspace**: $W = \{(x, y, z) \in \mathbb{R}^3 : x + y + z = 0\}$
+   - Contains $(0,0,0)$: $0 + 0 + 0 = 0$ ✓
+   - Closed under addition: If $x_1 + y_1 + z_1 = 0$ and $x_2 + y_2 + z_2 = 0$, then $(x_1 + x_2) + (y_1 + y_2) + (z_1 + z_2) = 0$ ✓
+   - Closed under scalar multiplication: If $x + y + z = 0$, then $cx + cy + cz = c(x + y + z) = 0$ ✓
+   - Therefore $W$ is subspace
+
+2. **Test linear independence**: $\mathbf{v}_1 = (1,2,1)$, $\mathbf{v}_2 = (2,1,3)$, $\mathbf{v}_3 = (1,-1,2)$
+   - Set up: $a(1,2,1) + b(2,1,3) + c(1,-1,2) = (0,0,0)$
+   - System: $a + 2b + c = 0$, $2a + b - c = 0$, $a + 3b + 2c = 0$
+   - Solving: $a = b = c = 0$ (only solution)
+   - Therefore vectors are linearly independent
+
+3. **Find basis for null space** of $A = \begin{bmatrix} 1 & 2 & 1 & 0 \\ 2 & 4 & 1 & 1 \end{bmatrix}$:
+   - Row reduce: $\begin{bmatrix} 1 & 2 & 0 & -1 \\ 0 & 0 & 1 & 2 \end{bmatrix}$
+   - Free variables: $x_2, x_4$
+   - General solution: $x_1 = -2x_2 + x_4$, $x_3 = -2x_4$
+   - Basis: $\{(-2,1,0,0), (1,0,-2,1)\}$
+
+### 6.3 Eigenvalues and Eigenvectors (30)
+
+**Key Concepts**: Eigenvalues and eigenvectors reveal the fundamental directions and scaling factors of linear transformations. They are crucial for understanding matrix behavior and solving differential equations.
+
+**Definitions**:
+
+**Eigenvector**: Non-zero vector $\mathbf{v}$ such that $A\mathbf{v} = \lambda\mathbf{v}$ for some scalar $\lambda$
+
+**Eigenvalue**: Scalar $\lambda$ such that $A\mathbf{v} = \lambda\mathbf{v}$ for some non-zero vector $\mathbf{v}$
+
+**Geometric Interpretation**: Eigenvectors are directions that remain unchanged (only scaled) under the linear transformation represented by $A$
+
+**Characteristic Equation**:
+
+From $A\mathbf{v} = \lambda\mathbf{v}$:
+$$(A - \lambda I)\mathbf{v} = \mathbf{0}$$
+
+For non-trivial solution, $(A - \lambda I)$ must be singular:
+$$\det(A - \lambda I) = 0$$
+
+This is the **characteristic equation** or **characteristic polynomial**
+
+**Finding Eigenvalues and Eigenvectors**:
+
+**Step 1**: Find eigenvalues by solving $\det(A - \lambda I) = 0$
+
+**Step 2**: For each eigenvalue $\lambda_i$, find eigenvectors by solving $(A - \lambda_i I)\mathbf{v} = \mathbf{0}$
+
+**Example**: Find eigenvalues and eigenvectors of $A = \begin{bmatrix} 3 & 1 \\ 0 & 2 \end{bmatrix}$
+
+**Step 1**: Characteristic equation
+$$\det(A - \lambda I) = \det\begin{bmatrix} 3-\lambda & 1 \\ 0 & 2-\lambda \end{bmatrix} = (3-\lambda)(2-\lambda) = 0$$
+
+Eigenvalues: $\lambda_1 = 3, \lambda_2 = 2$
+
+**Step 2**: Find eigenvectors
+
+For $\lambda_1 = 3$:
+$$(A - 3I)\mathbf{v} = \begin{bmatrix} 0 & 1 \\ 0 & -1 \end{bmatrix}\begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}$$
+
+This gives $v_2 = 0$, so eigenvector: $\mathbf{v}_1 = \begin{bmatrix} 1 \\ 0 \end{bmatrix}$ (or any scalar multiple)
+
+For $\lambda_2 = 2$:
+$$(A - 2I)\mathbf{v} = \begin{bmatrix} 1 & 1 \\ 0 & 0 \end{bmatrix}\begin{bmatrix} v_1 \\ v_2 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}$$
+
+This gives $v_1 + v_2 = 0$, so eigenvector: $\mathbf{v}_2 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}$
+
+**Properties of Eigenvalues**:
+
+1. **Sum of eigenvalues** = trace of matrix: $\sum \lambda_i = \text{tr}(A) = \sum a_{ii}$
+
+2. **Product of eigenvalues** = determinant: $\prod \lambda_i = \det(A)$
+
+3. **Eigenvalues of special matrices**:
+   - Triangular matrix: eigenvalues are diagonal entries
+   - Symmetric matrix: all eigenvalues are real
+   - Orthogonal matrix: $|\lambda_i| = 1$
+
+4. **Powers**: If $\lambda$ is eigenvalue of $A$, then $\lambda^k$ is eigenvalue of $A^k$
+
+5. **Inverse**: If $A$ is invertible and $\lambda \neq 0$ is eigenvalue of $A$, then $1/\lambda$ is eigenvalue of $A^{-1}$
+
+**Algebraic and Geometric Multiplicity**:
+
+**Algebraic Multiplicity**: Multiplicity of eigenvalue as root of characteristic polynomial
+
+**Geometric Multiplicity**: Dimension of eigenspace (null space of $A - \lambda I$)
+
+**Relationship**: $1 \leq \text{geometric multiplicity} \leq \text{algebraic multiplicity}$
+
+**Eigenspaces**:
+
+**Eigenspace** $E_\lambda$: Set of all eigenvectors corresponding to eigenvalue $\lambda$, plus zero vector
+$$E_\lambda = \text{null}(A - \lambda I) = \{\mathbf{v} : (A - \lambda I)\mathbf{v} = \mathbf{0}\}$$
+
+**Properties**:
+- $E_\lambda$ is subspace
+- $\dim(E_\lambda)$ = geometric multiplicity of $\lambda$
+- Eigenvectors from different eigenspaces are linearly independent
+
+**Diagonalization**:
+
+**Definition**: Matrix $A$ is **diagonalizable** if there exists invertible matrix $P$ such that:
+$$P^{-1}AP = D$$
+where $D$ is diagonal matrix
+
+**Diagonalization Theorem**: $n \times n$ matrix $A$ is diagonalizable iff:
+- $A$ has $n$ linearly independent eigenvectors
+- For each eigenvalue, geometric multiplicity = algebraic multiplicity
+
+**Diagonalization Process**:
+1. Find all eigenvalues and eigenvectors
+2. Check if there are $n$ linearly independent eigenvectors
+3. Form matrix $P$ with eigenvectors as columns
+4. $D = P^{-1}AP$ has eigenvalues on diagonal
+
+**Benefits of Diagonalization**:
+- **Powers**: $A^k = PD^kP^{-1}$ where $D^k$ is easy to compute
+- **Matrix functions**: $f(A) = Pf(D)P^{-1}$
+- **Systems of differential equations**: Decouples the system
+
+**Symmetric Matrices**:
+
+**Spectral Theorem**: Every real symmetric matrix is orthogonally diagonalizable
+$$A = QDQ^T$$
+where $Q$ is orthogonal ($Q^TQ = I$) and $D$ is diagonal
+
+**Properties**:
+- All eigenvalues are real
+- Eigenvectors from different eigenvalues are orthogonal
+- Always diagonalizable
+
+**Orthogonal Diagonalization Process**:
+1. Find eigenvalues and eigenvectors
+2. Use Gram-Schmidt to orthonormalize eigenvectors within each eigenspace
+3. Form orthogonal matrix $Q$ with orthonormal eigenvectors as columns
+
+**Quadratic Forms**:
+
+**Quadratic form**: $Q(\mathbf{x}) = \mathbf{x}^T A \mathbf{x}$ where $A$ is symmetric
+
+**Classification** (based on eigenvalues of $A$):
+- **Positive definite**: All eigenvalues > 0
+- **Positive semidefinite**: All eigenvalues ≥ 0
+- **Negative definite**: All eigenvalues < 0
+- **Negative semidefinite**: All eigenvalues ≤ 0
+- **Indefinite**: Both positive and negative eigenvalues
+
+**Principal Component Analysis (PCA)**:
+
+Statistical technique using eigenvalue decomposition:
+1. Center data by subtracting mean
+2. Compute covariance matrix $C$
+3. Find eigenvalues and eigenvectors of $C$
+4. Principal components are eigenvectors with largest eigenvalues
+
+**Applications**:
+
+**1. Systems of Differential Equations**:
+For $\mathbf{x}' = A\mathbf{x}$, if $A$ is diagonalizable:
+- Solution: $\mathbf{x}(t) = c_1 e^{\lambda_1 t}\mathbf{v}_1 + \cdots + c_n e^{\lambda_n t}\mathbf{v}_n$
+
+**2. Markov Chains**:
+- Steady state corresponds to eigenvector with eigenvalue 1
+- Convergence rate determined by second-largest eigenvalue
+
+**3. Vibration Analysis**:
+- Natural frequencies are square roots of eigenvalues
+- Mode shapes are eigenvectors
+
+**4. Google PageRank**:
+- Web page importance from dominant eigenvector of link matrix
+
+**Computational Methods**:
+
+**Power Method**: Iterative method for finding dominant eigenvalue
+1. Start with initial vector $\mathbf{x}_0$
+2. Iterate: $\mathbf{x}_{k+1} = A\mathbf{x}_k$ (with normalization)
+3. Converges to eigenvector of largest eigenvalue
+
+**QR Algorithm**: Advanced method for finding all eigenvalues
+- Repeatedly applies QR decomposition
+- Converges to upper triangular form with eigenvalues on diagonal
+
+**Problem-Solving Tips**:
+
+**For Finding Eigenvalues**:
+1. Set up characteristic equation $\det(A - \lambda I) = 0$
+2. Expand determinant carefully
+3. Solve polynomial equation
+
+**For Finding Eigenvectors**:
+1. Substitute each eigenvalue into $(A - \lambda I)\mathbf{v} = \mathbf{0}$
+2. Solve homogeneous system
+3. Express solution in terms of free variables
+
+**For Diagonalization**:
+1. Check if $n$ linearly independent eigenvectors exist
+2. Form matrix $P$ with eigenvectors as columns
+3. Verify $AP = PD$
+
+**GATE Tips**:
+- Sum of eigenvalues = trace, product = determinant
+- Symmetric matrices have real eigenvalues and orthogonal eigenvectors
+- Geometric multiplicity ≤ algebraic multiplicity
+- Matrix is diagonalizable iff geometric = algebraic multiplicity for all eigenvalues
+- Eigenvectors from different eigenvalues are linearly independent
+- For triangular matrices, eigenvalues are diagonal entries
+
+**Examples**:
+
+1. **Find eigenvalues** of $A = \begin{bmatrix} 4 & -2 \\ 1 & 1 \end{bmatrix}$:
+   - $\det(A - \lambda I) = \det\begin{bmatrix} 4-\lambda & -2 \\ 1 & 1-\lambda \end{bmatrix} = (4-\lambda)(1-\lambda) + 2 = \lambda^2 - 5\lambda + 6 = (\lambda-2)(\lambda-3)$
+   - Eigenvalues: $\lambda_1 = 2, \lambda_2 = 3$
+
+2. **Check diagonalizability** of $A = \begin{bmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 0 & 0 & 1 \end{bmatrix}$:
+   - Characteristic polynomial: $(1-\lambda)^3$
+   - Only eigenvalue: $\lambda = 1$ (algebraic multiplicity 3)
+   - $(A - I) = \begin{bmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \end{bmatrix}$
+   - Null space has dimension 1 (geometric multiplicity 1)
+   - Since $1 < 3$, matrix is not diagonalizable
+
+3. **Orthogonally diagonalize** $A = \begin{bmatrix} 3 & 1 \\ 1 & 3 \end{bmatrix}$:
+   - Eigenvalues: $\lambda_1 = 4, \lambda_2 = 2$
+   - Eigenvectors: $\mathbf{v}_1 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \mathbf{v}_2 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}$
+   - Normalize: $\mathbf{u}_1 = \frac{1}{\sqrt{2}}\begin{bmatrix} 1 \\ 1 \end{bmatrix}, \mathbf{u}_2 = \frac{1}{\sqrt{2}}\begin{bmatrix} 1 \\ -1 \end{bmatrix}$
+   - $Q = \frac{1}{\sqrt{2}}\begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix}, D = \begin{bmatrix} 4 & 0 \\ 0 & 2 \end{bmatrix}$
+
+### 6.4 Linear Transformations (25)
+
+**Key Concepts**: Linear transformations are functions between vector spaces that preserve vector addition and scalar multiplication. They provide the connection between abstract linear algebra and concrete matrix operations.
+
+**Definition**:
+
+**Linear Transformation**: Function $T: V \to W$ between vector spaces satisfying:
+1. **Additivity**: $T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v})$
+2. **Homogeneity**: $T(c\mathbf{v}) = cT(\mathbf{v})$
+
+**Equivalent condition**: $T(c\mathbf{u} + d\mathbf{v}) = cT(\mathbf{u}) + dT(\mathbf{v})$
+
+**Properties**:
+- $T(\mathbf{0}) = \mathbf{0}$ (zero vector maps to zero vector)
+- $T(-\mathbf{v}) = -T(\mathbf{v})$
+- $T$ preserves linear combinations
+
+**Matrix Representation**:
+
+For finite-dimensional spaces with bases $\mathcal{B} = \{\mathbf{v}_1, \ldots, \mathbf{v}_n\}$ for $V$ and $\mathcal{C} = \{\mathbf{w}_1, \ldots, \mathbf{w}_m\}$ for $W$:
+
+**Matrix of transformation**: $[T]_{\mathcal{C}}^{\mathcal{B}}$ is $m \times n$ matrix where column $j$ is $[T(\mathbf{v}_j)]_{\mathcal{C}}$
+
+**Coordinate relationship**: $[T(\mathbf{v})]_{\mathcal{C}} = [T]_{\mathcal{C}}^{\mathcal{B}} [\mathbf{v}]_{\mathcal{B}}$
+
+**Standard Matrix**: For $T: \mathbb{R}^n \to \mathbb{R}^m$ with standard bases:
+$$[T] = [T(\mathbf{e}_1) | T(\mathbf{e}_2) | \cdots | T(\mathbf{e}_n)]$$
+
+**Examples of Linear Transformations**:
+
+**1. Geometric Transformations in $\mathbb{R}^2$**:
+
+**Rotation by angle $\theta$**:
+$$R_\theta = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix}$$
+
+**Reflection across x-axis**:
+$$\text{Ref}_x = \begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}$$
+
+**Scaling by factors $s_x, s_y$**:
+$$S = \begin{bmatrix} s_x & 0 \\ 0 & s_y \end{bmatrix}$$
+
+**Shear parallel to x-axis**:
+$$\text{Shear}_x = \begin{bmatrix} 1 & k \\ 0 & 1 \end{bmatrix}$$
+
+**Projection onto x-axis**:
+$$P_x = \begin{bmatrix} 1 & 0 \\ 0 & 0 \end{bmatrix}$$
+
+**2. Differentiation**: $D: P_n(\mathbb{R}) \to P_{n-1}(\mathbb{R})$ where $D(p(x)) = p'(x)$
+
+**3. Integration**: $I: C[a,b] \to \mathbb{R}$ where $I(f) = \int_a^b f(x) dx$
+
+**4. Matrix Multiplication**: $T_A: \mathbb{R}^n \to \mathbb{R}^m$ where $T_A(\mathbf{x}) = A\mathbf{x}$
+
+**Kernel and Range**:
+
+**Kernel (Null Space)**: $\ker(T) = \{\mathbf{v} \in V : T(\mathbf{v}) = \mathbf{0}\}$
+- Always a subspace of $V$
+- $T$ is injective iff $\ker(T) = \{\mathbf{0}\}$
+
+**Range (Image)**: $\text{range}(T) = \{T(\mathbf{v}) : \mathbf{v} \in V\}$
+- Always a subspace of $W$
+- $T$ is surjective iff $\text{range}(T) = W$
+
+**Rank-Nullity Theorem**:
+$$\dim(V) = \dim(\ker(T)) + \dim(\text{range}(T))$$
+$$\text{nullity}(T) + \text{rank}(T) = \dim(V)$$
+
+**Proof Idea**: Choose basis for $\ker(T)$, extend to basis for $V$, show images of extension vectors form basis for $\text{range}(T)$
+
+**Isomorphisms**:
+
+**Isomorphism**: Bijective linear transformation
+- $T$ is isomorphism iff $T$ is both injective and surjective
+- Equivalent: $\ker(T) = \{\mathbf{0}\}$ and $\text{range}(T) = W$
+
+**Properties**:
+- If $T: V \to W$ is isomorphism, then $\dim(V) = \dim(W)$
+- Inverse $T^{-1}: W \to V$ is also linear transformation
+- Composition of isomorphisms is isomorphism
+
+**Fundamental Theorem**: Two finite-dimensional vector spaces over same field are isomorphic iff they have same dimension
+
+**Change of Basis for Linear Transformations**:
+
+If $T: V \to V$ with bases $\mathcal{B}$ and $\mathcal{C}$:
+$$[T]_{\mathcal{C}} = P^{-1}[T]_{\mathcal{B}}P$$
+where $P$ is change of basis matrix from $\mathcal{B}$ to $\mathcal{C}$
+
+**Similar Matrices**: Matrices $A$ and $B$ are **similar** if $B = P^{-1}AP$ for some invertible $P$
+
+**Properties of Similar Matrices**:
+- Same eigenvalues (with same multiplicities)
+- Same determinant and trace
+- Same rank
+- Represent same linear transformation in different bases
+
+**Composition of Linear Transformations**:
+
+For $T: U \to V$ and $S: V \to W$:
+**Composition**: $(S \circ T): U \to W$ where $(S \circ T)(\mathbf{u}) = S(T(\mathbf{u}))$
+
+**Matrix representation**: $[S \circ T] = [S][T]$
+
+**Properties**:
+- Composition is associative: $(R \circ S) \circ T = R \circ (S \circ T)$
+- Generally not commutative: $S \circ T \neq T \circ S$
+
+**Inverse Transformations**:
+
+If $T: V \to W$ is isomorphism, then $T^{-1}: W \to V$ exists and:
+- $T^{-1}$ is linear
+- $T \circ T^{-1} = I_W$ and $T^{-1} \circ T = I_V$
+- $[T^{-1}] = [T]^{-1}$
+
+**Orthogonal Transformations**:
+
+**Definition**: Linear transformation $T: \mathbb{R}^n \to \mathbb{R}^n$ is **orthogonal** if it preserves inner products:
+$$\langle T(\mathbf{u}), T(\mathbf{v}) \rangle = \langle \mathbf{u}, \mathbf{v} \rangle$$
+
+**Equivalent conditions**:
+- $T$ preserves lengths: $\|T(\mathbf{v})\| = \|\mathbf{v}\|$
+- Matrix representation is orthogonal: $A^TA = I$
+- Columns (and rows) form orthonormal set
+
+**Examples**: Rotations, reflections
+
+**Projections**:
+
+**Orthogonal Projection** onto subspace $W$:
+For $\mathbf{v} \in V$, $\text{proj}_W(\mathbf{v})$ is closest point in $W$ to $\mathbf{v}$
+
+**Formula**: If $\{\mathbf{u}_1, \ldots, \mathbf{u}_k\}$ is orthonormal basis for $W$:
+$$\text{proj}_W(\mathbf{v}) = \sum_{i=1}^k \langle \mathbf{v}, \mathbf{u}_i \rangle \mathbf{u}_i$$
+
+**Matrix form**: $P = UU^T$ where $U$ has orthonormal basis vectors as columns
+
+**Properties**:
+- $P^2 = P$ (idempotent)
+- $P^T = P$ (symmetric)
+- $\text{range}(P) = W$, $\ker(P) = W^\perp$
+
+**Least Squares Solutions**:
+
+For inconsistent system $A\mathbf{x} = \mathbf{b}$, **least squares solution** minimizes $\|A\mathbf{x} - \mathbf{b}\|^2$
+
+**Normal equation**: $A^TA\mathbf{x} = A^T\mathbf{b}$
+
+**Solution**: $\mathbf{x} = (A^TA)^{-1}A^T\mathbf{b}$ (if $A^TA$ is invertible)
+
+**Geometric interpretation**: Project $\mathbf{b}$ onto column space of $A$
+
+**Applications**:
+
+**1. Computer Graphics**:
+- Transformations for 2D/3D graphics
+- Homogeneous coordinates for translations
+- Perspective projections
+
+**2. Data Analysis**:
+- Principal Component Analysis (PCA)
+- Linear regression
+- Dimensionality reduction
+
+**3. Differential Equations**:
+- Systems of linear ODEs
+- Stability analysis using eigenvalues
+
+**4. Signal Processing**:
+- Fourier transforms
+- Filter design
+- Image processing
+
+**5. Quantum Mechanics**:
+- State transformations
+- Measurement operators
+- Unitary evolution
+
+**Problem-Solving Tips**:
+
+**To verify linearity**:
+1. Check $T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v})$
+2. Check $T(c\mathbf{v}) = cT(\mathbf{v})$
+3. Or verify combined condition
+
+**To find matrix representation**:
+1. Apply $T$ to each basis vector
+2. Express results in terms of target basis
+3. Use coefficients as matrix columns
+
+**To find kernel and range**:
+1. Kernel: Solve $T(\mathbf{v}) = \mathbf{0}$ or $A\mathbf{x} = \mathbf{0}$
+2. Range: Find span of $T$ applied to basis vectors
+
+**GATE Tips**:
+- Linear transformation preserves linear combinations
+- Matrix columns are images of standard basis vectors
+- Rank-nullity: $\dim(V) = \text{nullity} + \text{rank}$
+- Isomorphism iff bijective iff $\ker(T) = \{\mathbf{0}\}$ and onto
+- Similar matrices have same eigenvalues
+- Orthogonal transformations preserve lengths and angles
+- Projection matrices are idempotent and symmetric
+
+**Examples**:
+
+1. **Find matrix** of rotation by $90°$ in $\mathbb{R}^2$:
+   - $T(\mathbf{e}_1) = T\begin{bmatrix}1\\0\end{bmatrix} = \begin{bmatrix}0\\1\end{bmatrix}$
+   - $T(\mathbf{e}_2) = T\begin{bmatrix}0\\1\end{bmatrix} = \begin{bmatrix}-1\\0\end{bmatrix}$
+   - Matrix: $\begin{bmatrix}0 & -1\\1 & 0\end{bmatrix}$
+
+2. **Find kernel** of $T: \mathbb{R}^3 \to \mathbb{R}^2$ where $T\begin{bmatrix}x\\y\\z\end{bmatrix} = \begin{bmatrix}x+y\\y+z\end{bmatrix}$:
+   - Matrix: $A = \begin{bmatrix}1 & 1 & 0\\0 & 1 & 1\end{bmatrix}$
+   - Solve $A\mathbf{x} = \mathbf{0}$: $x + y = 0$, $y + z = 0$
+   - Solution: $x = -y$, $z = -y$
+   - Kernel: $\text{span}\left\{\begin{bmatrix}-1\\1\\-1\end{bmatrix}\right\}$
+
+3. **Verify rank-nullity** for above transformation:
+   - $\dim(\mathbb{R}^3) = 3$
+   - $\text{nullity}(T) = 1$ (dimension of kernel)
+   - $\text{rank}(T) = 2$ (dimension of range)
+   - Check: $3 = 1 + 2$ ✓
+### 7. Engineering Mathematics: Probability and Statistics (100 Questions)
+
+### 7.1 Probability Theory (40)
+
+**Key Concepts**: Probability theory provides mathematical framework for analyzing uncertainty and randomness. It forms the foundation for statistics, machine learning, and decision theory.
+
+**Sample Space and Events**:
+
+**Sample Space** $\Omega$: Set of all possible outcomes of an experiment
+- **Discrete**: Finite or countably infinite (coin flips, dice rolls)
+- **Continuous**: Uncountably infinite (measurements, time intervals)
+
+**Event**: Subset of sample space
+- **Elementary event**: Single outcome
+- **Compound event**: Union of elementary events
+- **Certain event**: $\Omega$ (always occurs)
+- **Impossible event**: $\emptyset$ (never occurs)
+
+**Event Operations**:
+- **Union**: $A \cup B$ (A or B occurs)
+- **Intersection**: $A \cap B$ (both A and B occur)
+- **Complement**: $A^c$ (A does not occur)
+- **Difference**: $A - B = A \cap B^c$
+
+**De Morgan's Laws**:
+- $(A \cup B)^c = A^c \cap B^c$
+- $(A \cap B)^c = A^c \cup B^c$
+
+**Probability Axioms** (Kolmogorov):
+
+For probability function $P: \mathcal{F} \to [0,1]$ where $\mathcal{F}$ is $\sigma$-algebra of events:
+
+1. **Non-negativity**: $P(A) \geq 0$ for all events $A$
+2. **Normalization**: $P(\Omega) = 1$
+3. **Countable additivity**: For disjoint events $A_1, A_2, \ldots$:
+   $$P\left(\bigcup_{i=1}^{\infty} A_i\right) = \sum_{i=1}^{\infty} P(A_i)$$
+
+**Basic Properties**:
+- $P(\emptyset) = 0$
+- $P(A^c) = 1 - P(A)$
+- If $A \subseteq B$, then $P(A) \leq P(B)$
+- $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+
+**Inclusion-Exclusion Principle**:
+$$P(A_1 \cup A_2 \cup A_3) = \sum P(A_i) - \sum P(A_i \cap A_j) + P(A_1 \cap A_2 \cap A_3)$$
+
+**Classical Probability**:
+
+For finite sample space with equally likely outcomes:
+$$P(A) = \frac{|A|}{|\Omega|} = \frac{\text{number of favorable outcomes}}{\text{total number of outcomes}}$$
+
+**Examples**:
+- Fair coin: $P(\text{Heads}) = \frac{1}{2}$
+- Fair die: $P(\text{even number}) = \frac{3}{6} = \frac{1}{2}$
+- Card from deck: $P(\text{Ace}) = \frac{4}{52} = \frac{1}{13}$
+
+**Conditional Probability**:
+
+**Definition**: Probability of event $A$ given that event $B$ has occurred:
+$$P(A|B) = \frac{P(A \cap B)}{P(B)} \quad \text{provided } P(B) > 0$$
+
+**Interpretation**: Restricts sample space to outcomes where $B$ occurs
+
+**Properties**:
+- $P(A|B) \geq 0$
+- $P(\Omega|B) = 1$
+- $P(A_1 \cup A_2|B) = P(A_1|B) + P(A_2|B) - P(A_1 \cap A_2|B)$
+
+**Multiplication Rule**:
+$$P(A \cap B) = P(A|B) \cdot P(B) = P(B|A) \cdot P(A)$$
+
+**Chain Rule**: For events $A_1, A_2, \ldots, A_n$:
+$$P(A_1 \cap A_2 \cap \cdots \cap A_n) = P(A_1) \cdot P(A_2|A_1) \cdot P(A_3|A_1 \cap A_2) \cdots P(A_n|A_1 \cap \cdots \cap A_{n-1})$$
+
+**Independence**:
+
+**Definition**: Events $A$ and $B$ are **independent** if:
+$$P(A \cap B) = P(A) \cdot P(B)$$
+
+**Equivalent conditions** (when $P(B) > 0$):
+- $P(A|B) = P(A)$
+- $P(B|A) = P(B)$
+
+**Mutual Independence**: Events $A_1, \ldots, A_n$ are mutually independent if for every subset $\{i_1, \ldots, i_k\}$:
+$$P(A_{i_1} \cap \cdots \cap A_{i_k}) = P(A_{i_1}) \cdots P(A_{i_k})$$
+
+**Pairwise vs Mutual Independence**: Pairwise independence doesn't imply mutual independence
+
+**Law of Total Probability**:
+
+If $\{B_1, B_2, \ldots, B_n\}$ is partition of $\Omega$ (disjoint and exhaustive), then:
+$$P(A) = \sum_{i=1}^{n} P(A|B_i) \cdot P(B_i)$$
+
+**Continuous version**: $P(A) = \int P(A|B_x) \cdot f_B(x) dx$
+
+**Bayes' Theorem**:
+
+**Statement**: For partition $\{B_1, \ldots, B_n\}$ and event $A$ with $P(A) > 0$:
+$$P(B_j|A) = \frac{P(A|B_j) \cdot P(B_j)}{\sum_{i=1}^{n} P(A|B_i) \cdot P(B_i)}$$
+
+**Interpretation**:
+- $P(B_j)$: **Prior probability** (before observing $A$)
+- $P(A|B_j)$: **Likelihood** (probability of evidence given hypothesis)
+- $P(B_j|A)$: **Posterior probability** (after observing $A$)
+
+**Applications**:
+- Medical diagnosis
+- Spam filtering
+- Machine learning classification
+
+**Random Variables**:
+
+**Definition**: Function $X: \Omega \to \mathbb{R}$ that assigns real number to each outcome
+
+**Types**:
+- **Discrete**: Takes countable values
+- **Continuous**: Takes uncountable values
+
+**Probability Mass Function (PMF)** (discrete):
+$$p_X(x) = P(X = x)$$
+
+**Properties**:
+- $p_X(x) \geq 0$ for all $x$
+- $\sum_x p_X(x) = 1$
+
+**Probability Density Function (PDF)** (continuous):
+$$P(a \leq X \leq b) = \int_a^b f_X(x) dx$$
+
+**Properties**:
+- $f_X(x) \geq 0$ for all $x$
+- $\int_{-\infty}^{\infty} f_X(x) dx = 1$
+- $P(X = x) = 0$ for any specific $x$
+
+**Cumulative Distribution Function (CDF)**:
+$$F_X(x) = P(X \leq x)$$
+
+**Properties**:
+- $0 \leq F_X(x) \leq 1$
+- $F_X$ is non-decreasing
+- $\lim_{x \to -\infty} F_X(x) = 0$, $\lim_{x \to \infty} F_X(x) = 1$
+- Right-continuous
+
+**Relationship to PDF**: $f_X(x) = \frac{d}{dx} F_X(x)$ (where derivative exists)
+
+**Common Discrete Distributions**:
+
+**1. Bernoulli Distribution** $\text{Ber}(p)$:
+- Single trial with success probability $p$
+- PMF: $P(X = 1) = p$, $P(X = 0) = 1-p$
+- Mean: $p$, Variance: $p(1-p)$
+
+**2. Binomial Distribution** $\text{Bin}(n,p)$:
+- Number of successes in $n$ independent Bernoulli trials
+- PMF: $P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$
+- Mean: $np$, Variance: $np(1-p)$
+
+**3. Geometric Distribution** $\text{Geom}(p)$:
+- Number of trials until first success
+- PMF: $P(X = k) = (1-p)^{k-1} p$ for $k = 1, 2, 3, \ldots$
+- Mean: $\frac{1}{p}$, Variance: $\frac{1-p}{p^2}$
+- **Memoryless property**: $P(X > m+n | X > m) = P(X > n)$
+
+**4. Poisson Distribution** $\text{Pois}(\lambda)$:
+- Number of events in fixed interval
+- PMF: $P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}$ for $k = 0, 1, 2, \ldots$
+- Mean: $\lambda$, Variance: $\lambda$
+- **Poisson approximation**: $\text{Bin}(n,p) \approx \text{Pois}(np)$ when $n$ large, $p$ small
+
+**Common Continuous Distributions**:
+
+**1. Uniform Distribution** $\text{Unif}(a,b)$:
+- Constant density over interval $[a,b]$
+- PDF: $f(x) = \frac{1}{b-a}$ for $a \leq x \leq b$, 0 otherwise
+- Mean: $\frac{a+b}{2}$, Variance: $\frac{(b-a)^2}{12}$
+
+**2. Exponential Distribution** $\text{Exp}(\lambda)$:
+- Time between events in Poisson process
+- PDF: $f(x) = \lambda e^{-\lambda x}$ for $x \geq 0$
+- CDF: $F(x) = 1 - e^{-\lambda x}$ for $x \geq 0$
+- Mean: $\frac{1}{\lambda}$, Variance: $\frac{1}{\lambda^2}$
+- **Memoryless property**: $P(X > s+t | X > s) = P(X > t)$
+
+**3. Normal Distribution** $\mathcal{N}(\mu, \sigma^2)$:
+- Bell-shaped curve, most important distribution
+- PDF: $f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$
+- Mean: $\mu$, Variance: $\sigma^2$
+
+**Standard Normal** $\mathcal{N}(0,1)$:
+- PDF: $\phi(z) = \frac{1}{\sqrt{2\pi}} e^{-z^2/2}$
+- CDF: $\Phi(z) = \int_{-\infty}^z \phi(t) dt$
+
+**Standardization**: If $X \sim \mathcal{N}(\mu, \sigma^2)$, then $Z = \frac{X-\mu}{\sigma} \sim \mathcal{N}(0,1)$
+
+**Expectation and Variance**:
+
+**Expected Value** (Mean):
+
+**Discrete**: $E[X] = \sum_x x \cdot P(X = x)$
+
+**Continuous**: $E[X] = \int_{-\infty}^{\infty} x \cdot f_X(x) dx$
+
+**Properties**:
+- **Linearity**: $E[aX + bY] = aE[X] + bE[Y]$
+- **Law of Total Expectation**: $E[X] = E[E[X|Y]]$
+
+**Variance**:
+$$\text{Var}(X) = E[(X - E[X])^2] = E[X^2] - (E[X])^2$$
+
+**Properties**:
+- $\text{Var}(aX + b) = a^2 \text{Var}(X)$
+- If $X$ and $Y$ independent: $\text{Var}(X + Y) = \text{Var}(X) + \text{Var}(Y)$
+
+**Standard Deviation**: $\sigma_X = \sqrt{\text{Var}(X)}$
+
+**Moment Generating Function**:
+$$M_X(t) = E[e^{tX}]$$
+
+**Properties**:
+- Uniquely determines distribution
+- $M_{aX+b}(t) = e^{bt} M_X(at)$
+- If $X$ and $Y$ independent: $M_{X+Y}(t) = M_X(t) M_Y(t)$
+
+**Joint Distributions**:
+
+**Joint PMF** (discrete): $p_{X,Y}(x,y) = P(X = x, Y = y)$
+
+**Joint PDF** (continuous): $P((X,Y) \in A) = \iint_A f_{X,Y}(x,y) dx dy$
+
+**Marginal Distributions**:
+- **Discrete**: $p_X(x) = \sum_y p_{X,Y}(x,y)$
+- **Continuous**: $f_X(x) = \int_{-\infty}^{\infty} f_{X,Y}(x,y) dy$
+
+**Independence**: $X$ and $Y$ are independent if:
+- **Discrete**: $p_{X,Y}(x,y) = p_X(x) \cdot p_Y(y)$ for all $x,y$
+- **Continuous**: $f_{X,Y}(x,y) = f_X(x) \cdot f_Y(y)$ for all $x,y$
+
+**Covariance**:
+$$\text{Cov}(X,Y) = E[(X - E[X])(Y - E[Y])] = E[XY] - E[X]E[Y]$$
+
+**Properties**:
+- $\text{Cov}(X,X) = \text{Var}(X)$
+- $\text{Cov}(X,Y) = \text{Cov}(Y,X)$
+- If $X$ and $Y$ independent, then $\text{Cov}(X,Y) = 0$ (converse not true)
+
+**Correlation Coefficient**:
+$$\rho_{X,Y} = \frac{\text{Cov}(X,Y)}{\sqrt{\text{Var}(X)\text{Var}(Y)}}$$
+
+**Properties**:
+- $-1 \leq \rho_{X,Y} \leq 1$
+- $|\rho_{X,Y}| = 1$ iff $Y = aX + b$ for some constants $a \neq 0, b$
+- $\rho_{X,Y} = 0$ means uncorrelated (weaker than independence)
+
+**Limit Theorems**:
+
+**Law of Large Numbers** (LLN):
+If $X_1, X_2, \ldots$ are i.i.d. with finite mean $\mu$, then:
+$$\frac{X_1 + X_2 + \cdots + X_n}{n} \to \mu \text{ as } n \to \infty$$
+
+**Central Limit Theorem** (CLT):
+If $X_1, X_2, \ldots$ are i.i.d. with mean $\mu$ and variance $\sigma^2$, then:
+$$\frac{\bar{X}_n - \mu}{\sigma/\sqrt{n}} \to \mathcal{N}(0,1) \text{ as } n \to \infty$$
+
+where $\bar{X}_n = \frac{X_1 + \cdots + X_n}{n}$
+
+**Applications**:
+- Approximating binomial with normal when $n$ large
+- Confidence intervals
+- Hypothesis testing
+
+**Problem-Solving Tips**:
+
+**For Basic Probability**:
+1. Identify sample space and events clearly
+2. Check if events are disjoint for addition rule
+3. Use complement when "at least one" appears
+4. Draw tree diagrams for sequential experiments
+
+**For Conditional Probability**:
+1. Identify given information (condition)
+2. Use definition: $P(A|B) = \frac{P(A \cap B)}{P(B)}$
+3. For Bayes: identify prior, likelihood, and evidence
+
+**For Random Variables**:
+1. Identify distribution type from problem context
+2. Use appropriate formulas for mean and variance
+3. For normal distribution, standardize to use tables
+
+**GATE Tips**:
+- $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ (inclusion-exclusion)
+- Independence: $P(A \cap B) = P(A) \cdot P(B)$
+- Bayes: $P(B|A) = \frac{P(A|B) \cdot P(B)}{P(A)}$
+- Binomial: $n$ trials, constant $p$, count successes
+- Poisson: rare events, $\lambda$ = rate parameter
+- Normal: symmetric, bell-shaped, use standardization
+- CLT: sample mean approximately normal for large $n$
+
+**Examples**:
+
+1. **Probability with cards**: Draw 2 cards without replacement. Find $P(\text{both aces})$.
+   - $P(\text{1st ace}) = \frac{4}{52}$
+   - $P(\text{2nd ace | 1st ace}) = \frac{3}{51}$
+   - $P(\text{both aces}) = \frac{4}{52} \times \frac{3}{51} = \frac{1}{221}$
+
+2. **Bayes' theorem**: Disease affects 1% of population. Test is 95% accurate (both sensitivity and specificity). If test positive, what's probability of having disease?
+   - Let $D$ = disease, $T$ = positive test
+   - $P(D) = 0.01$, $P(T|D) = 0.95$, $P(T|D^c) = 0.05$
+   - $P(T) = P(T|D)P(D) + P(T|D^c)P(D^c) = 0.95(0.01) + 0.05(0.99) = 0.0590$
+   - $P(D|T) = \frac{P(T|D)P(D)}{P(T)} = \frac{0.95 \times 0.01}{0.0590} = \frac{0.0095}{0.0590} \approx 0.161$
+
+3. **Normal distribution**: $X \sim \mathcal{N}(100, 15^2)$. Find $P(85 < X < 115)$.
+   - Standardize: $Z_1 = \frac{85-100}{15} = -1$, $Z_2 = \frac{115-100}{15} = 1$
+   - $P(85 < X < 115) = P(-1 < Z < 1) = \Phi(1) - \Phi(-1) = 0.8413 - 0.1587 = 0.6826$
+
+### 7.2 Statistics and Hypothesis Testing (35)
+
+**Key Concepts**: Statistics involves collecting, analyzing, and interpreting data. Hypothesis testing provides framework for making decisions under uncertainty using sample data.
+
+**Descriptive Statistics**:
+
+**Measures of Central Tendency**:
+
+**Sample Mean**: $\bar{x} = \frac{1}{n} \sum_{i=1}^n x_i$
+
+**Sample Median**: Middle value when data ordered
+- If $n$ odd: median = $x_{(n+1)/2}$
+- If $n$ even: median = $\frac{x_{n/2} + x_{n/2+1}}{2}$
+
+**Sample Mode**: Most frequently occurring value
+
+**Properties**:
+- Mean affected by outliers, median robust
+- For symmetric distributions: mean ≈ median
+- For right-skewed: mean > median
+- For left-skewed: mean < median
+
+**Measures of Variability**:
+
+**Sample Variance**: $s^2 = \frac{1}{n-1} \sum_{i=1}^n (x_i - \bar{x})^2$
+
+**Sample Standard Deviation**: $s = \sqrt{s^2}$
+
+**Range**: $\max(x_i) - \min(x_i)$
+
+**Interquartile Range (IQR)**: $Q_3 - Q_1$
+- $Q_1$: 25th percentile, $Q_3$: 75th percentile
+- Robust to outliers
+
+**Coefficient of Variation**: $CV = \frac{s}{\bar{x}}$ (relative variability)
+
+**Sampling Distributions**:
+
+**Population vs Sample**:
+- **Population**: Entire group of interest
+- **Sample**: Subset of population
+- **Parameter**: Population characteristic (μ, σ, p)
+- **Statistic**: Sample characteristic ($\bar{x}$, s, $\hat{p}$)
+
+**Sampling Distribution**: Distribution of sample statistic across all possible samples
+
+**Central Limit Theorem for Sample Mean**:
+If $X_1, \ldots, X_n$ are i.i.d. with mean $\mu$ and variance $\sigma^2$, then:
+$$\bar{X} \sim \mathcal{N}\left(\mu, \frac{\sigma^2}{n}\right) \text{ approximately for large } n$$
+
+**Standard Error**: $SE(\bar{X}) = \frac{\sigma}{\sqrt{n}}$
+
+**Key Distributions for Inference**:
+
+**1. Standard Normal Distribution** $\mathcal{N}(0,1)$:
+- Used when $\sigma$ known or $n$ large
+- $Z = \frac{\bar{X} - \mu}{\sigma/\sqrt{n}}$
+
+**2. t-Distribution** $t_{\nu}$:
+- Used when $\sigma$ unknown and $n$ small
+- Parameter: degrees of freedom $\nu = n-1$
+- $T = \frac{\bar{X} - \mu}{S/\sqrt{n}}$ where $S$ is sample standard deviation
+- Approaches standard normal as $\nu \to \infty$
+- Heavier tails than normal
+
+**3. Chi-Square Distribution** $\chi^2_{\nu}$:
+- Used for variance testing and goodness-of-fit
+- $\chi^2 = \frac{(n-1)S^2}{\sigma^2}$ has $\chi^2_{n-1}$ distribution
+- Right-skewed, non-negative
+
+**4. F-Distribution** $F_{\nu_1, \nu_2}$:
+- Used for comparing variances, ANOVA
+- Ratio of two chi-square random variables
+- Parameters: numerator df $\nu_1$, denominator df $\nu_2$
+
+**Point Estimation**:
+
+**Estimator**: Function of sample data used to estimate parameter
+- $\hat{\theta} = g(X_1, \ldots, X_n)$
+
+**Properties of Estimators**:
+
+**1. Unbiasedness**: $E[\hat{\theta}] = \theta$
+- Sample mean is unbiased for population mean
+- Sample variance $s^2$ is unbiased for $\sigma^2$ (uses $n-1$ denominator)
+
+**2. Consistency**: $\hat{\theta}_n \to \theta$ as $n \to \infty$
+
+**3. Efficiency**: Among unbiased estimators, one with smallest variance
+
+**Method of Moments**: Set sample moments equal to population moments
+- For normal distribution: $\hat{\mu} = \bar{X}$, $\hat{\sigma}^2 = S^2$
+
+**Maximum Likelihood Estimation (MLE)**:
+- Choose parameter value that maximizes likelihood of observed data
+- Often involves solving $\frac{d}{d\theta} \ln L(\theta) = 0$
+
+**Interval Estimation**:
+
+**Confidence Interval**: Range of plausible values for parameter
+
+**Interpretation**: If we construct 95% confidence intervals repeatedly, 95% will contain true parameter
+
+**Confidence Interval for Mean**:
+
+**Case 1**: $\sigma$ known or $n \geq 30$
+$$\bar{x} \pm z_{\alpha/2} \frac{\sigma}{\sqrt{n}}$$
+
+**Case 2**: $\sigma$ unknown and $n < 30$ (assume normal population)
+$$\bar{x} \pm t_{\alpha/2, n-1} \frac{s}{\sqrt{n}}$$
+
+**Confidence Interval for Proportion**:
+$$\hat{p} \pm z_{\alpha/2} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$$
+
+where $\hat{p} = \frac{x}{n}$ (sample proportion)
+
+**Confidence Interval for Variance**:
+$$\frac{(n-1)s^2}{\chi^2_{\alpha/2, n-1}} \leq \sigma^2 \leq \frac{(n-1)s^2}{\chi^2_{1-\alpha/2, n-1}}$$
+
+**Factors Affecting Interval Width**:
+- **Confidence level**: Higher confidence → wider interval
+- **Sample size**: Larger $n$ → narrower interval
+- **Population variability**: Larger $\sigma$ → wider interval
+
+**Hypothesis Testing**:
+
+**Components**:
+- **Null hypothesis** $H_0$: Status quo, no effect
+- **Alternative hypothesis** $H_1$ (or $H_a$): What we want to prove
+- **Test statistic**: Function of sample data
+- **Critical region**: Values leading to rejection of $H_0$
+- **Significance level** $\alpha$: Probability of Type I error
+
+**Types of Tests**:
+- **Two-tailed**: $H_1: \theta \neq \theta_0$
+- **Right-tailed**: $H_1: \theta > \theta_0$
+- **Left-tailed**: $H_1: \theta < \theta_0$
+
+**Types of Errors**:
+- **Type I Error**: Reject true $H_0$ (probability = $\alpha$)
+- **Type II Error**: Fail to reject false $H_0$ (probability = $\beta$)
+- **Power**: $1 - \beta$ (probability of correctly rejecting false $H_0$)
+
+**Testing Procedure**:
+1. State hypotheses
+2. Choose significance level $\alpha$
+3. Calculate test statistic
+4. Find p-value or critical value
+5. Make decision and interpret
+
+**Tests for One Sample**:
+
+**1. Test for Mean** ($\sigma$ known):
+- Test statistic: $Z = \frac{\bar{X} - \mu_0}{\sigma/\sqrt{n}}$
+- Reject $H_0$ if $|Z| > z_{\alpha/2}$ (two-tailed)
+
+**2. Test for Mean** ($\sigma$ unknown):
+- Test statistic: $T = \frac{\bar{X} - \mu_0}{S/\sqrt{n}}$
+- Reject $H_0$ if $|T| > t_{\alpha/2, n-1}$ (two-tailed)
+
+**3. Test for Proportion**:
+- Test statistic: $Z = \frac{\hat{p} - p_0}{\sqrt{p_0(1-p_0)/n}}$
+- Reject $H_0$ if $|Z| > z_{\alpha/2}$ (two-tailed)
+
+**4. Test for Variance**:
+- Test statistic: $\chi^2 = \frac{(n-1)S^2}{\sigma_0^2}$
+- Reject $H_0$ if $\chi^2 > \chi^2_{\alpha/2, n-1}$ or $\chi^2 < \chi^2_{1-\alpha/2, n-1}$ (two-tailed)
+
+**Tests for Two Samples**:
+
+**1. Comparison of Two Means** (independent samples):
+
+**Case 1**: $\sigma_1, \sigma_2$ known
+- Test statistic: $Z = \frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)}{\sqrt{\sigma_1^2/n_1 + \sigma_2^2/n_2}}$
+
+**Case 2**: $\sigma_1 = \sigma_2 = \sigma$ (unknown)
+- Pooled variance: $s_p^2 = \frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1 + n_2 - 2}$
+- Test statistic: $T = \frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)}{s_p\sqrt{1/n_1 + 1/n_2}}$
+- df = $n_1 + n_2 - 2$
+
+**Case 3**: $\sigma_1 \neq \sigma_2$ (Welch's t-test)
+- Test statistic: $T = \frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)}{\sqrt{s_1^2/n_1 + s_2^2/n_2}}$
+- df = $\frac{(s_1^2/n_1 + s_2^2/n_2)^2}{(s_1^2/n_1)^2/(n_1-1) + (s_2^2/n_2)^2/(n_2-1)}$
+
+**2. Paired t-test**:
+- For dependent samples (before/after, matched pairs)
+- Test statistic: $T = \frac{\bar{D} - \mu_D}{S_D/\sqrt{n}}$
+- where $D_i = X_i - Y_i$ are differences
+
+**3. Comparison of Two Proportions**:
+- Pooled proportion: $\hat{p} = \frac{x_1 + x_2}{n_1 + n_2}$
+- Test statistic: $Z = \frac{\hat{p}_1 - \hat{p}_2}{\sqrt{\hat{p}(1-\hat{p})(1/n_1 + 1/n_2)}}$
+
+**4. F-test for Equality of Variances**:
+- Test statistic: $F = \frac{S_1^2}{S_2^2}$ (larger variance in numerator)
+- df = $(n_1-1, n_2-1)$
+
+**Chi-Square Tests**:
+
+**1. Goodness of Fit Test**:
+- Tests if sample follows specified distribution
+- Test statistic: $\chi^2 = \sum_{i=1}^k \frac{(O_i - E_i)^2}{E_i}$
+- where $O_i$ = observed frequency, $E_i$ = expected frequency
+- df = $k - 1 - \text{number of estimated parameters}$
+
+**2. Test of Independence**:
+- Tests if two categorical variables are independent
+- Test statistic: $\chi^2 = \sum_{i=1}^r \sum_{j=1}^c \frac{(O_{ij} - E_{ij})^2}{E_{ij}}$
+- where $E_{ij} = \frac{\text{row}_i \text{ total} \times \text{column}_j \text{ total}}{\text{grand total}}$
+- df = $(r-1)(c-1)$
+
+**Analysis of Variance (ANOVA)**:
+
+**One-Way ANOVA**: Compare means of $k$ groups
+- $H_0: \mu_1 = \mu_2 = \cdots = \mu_k$
+- $H_1$: At least one mean differs
+
+**Test Statistic**: $F = \frac{MST}{MSE} = \frac{SST/(k-1)}{SSE/(n-k)}$
+
+where:
+- $SST = \sum_{i=1}^k n_i(\bar{x}_i - \bar{x})^2$ (between groups)
+- $SSE = \sum_{i=1}^k \sum_{j=1}^{n_i} (x_{ij} - \bar{x}_i)^2$ (within groups)
+- $MST = SST/(k-1)$, $MSE = SSE/(n-k)$
+
+**Assumptions**:
+- Normality within each group
+- Equal variances (homoscedasticity)
+- Independence of observations
+
+**Regression Analysis**:
+
+**Simple Linear Regression**: $Y = \beta_0 + \beta_1 X + \epsilon$
+
+**Least Squares Estimates**:
+- $\hat{\beta}_1 = \frac{\sum(x_i - \bar{x})(y_i - \bar{y})}{\sum(x_i - \bar{x})^2}$
+- $\hat{\beta}_0 = \bar{y} - \hat{\beta}_1\bar{x}$
+
+**Coefficient of Determination**: $R^2 = \frac{SSR}{SST} = 1 - \frac{SSE}{SST}$
+- Proportion of variance explained by regression
+
+**Testing Significance of Regression**:
+- $H_0: \beta_1 = 0$ vs $H_1: \beta_1 \neq 0$
+- Test statistic: $T = \frac{\hat{\beta}_1}{SE(\hat{\beta}_1)}$
+
+**Non-parametric Tests**:
+
+**1. Sign Test**: Tests median of population
+- Uses only signs of differences from hypothesized median
+- Distribution-free
+
+**2. Wilcoxon Signed-Rank Test**: Tests median (uses ranks)
+- More powerful than sign test
+- Assumes symmetric distribution
+
+**3. Mann-Whitney U Test**: Compares two independent samples
+- Non-parametric alternative to two-sample t-test
+- Tests if populations have same distribution
+
+**4. Kruskal-Wallis Test**: Compares multiple groups
+- Non-parametric alternative to one-way ANOVA
+
+**Problem-Solving Tips**:
+
+**For Confidence Intervals**:
+1. Identify parameter of interest
+2. Check conditions (normality, sample size)
+3. Choose appropriate distribution (z, t, χ²)
+4. Calculate margin of error
+5. Interpret in context
+
+**For Hypothesis Testing**:
+1. State hypotheses clearly
+2. Check assumptions
+3. Calculate test statistic
+4. Find p-value or compare to critical value
+5. Make decision and interpret in context
+
+**GATE Tips**:
+- Use t-distribution when σ unknown and n < 30
+- Chi-square for variance tests and categorical data
+- F-distribution for comparing variances and ANOVA
+- p-value < α ⟹ reject H₀
+- Type I error = α, Type II error = β, Power = 1-β
+- Larger sample size ⟹ narrower confidence interval
+- ANOVA tests equality of means across groups
+- R² measures proportion of variance explained
+
+**Examples**:
+
+1. **Confidence interval for mean**: Sample of 25 students has mean score 78 with standard deviation 12. Find 95% CI for population mean.
+   - Use t-distribution: $n = 25 < 30$, $\sigma$ unknown
+   - $t_{0.025,24} = 2.064$
+   - CI: $78 \pm 2.064 \times \frac{12}{\sqrt{25}} = 78 \pm 4.95 = (73.05, 82.95)$
+
+2. **Hypothesis test for proportion**: Company claims 90% customer satisfaction. Sample of 200 shows 170 satisfied. Test at α = 0.05.
+   - $H_0: p = 0.9$ vs $H_1: p \neq 0.9$
+   - $\hat{p} = 170/200 = 0.85$
+   - $Z = \frac{0.85 - 0.9}{\sqrt{0.9 \times 0.1 / 200}} = \frac{-0.05}{0.0212} = -2.36$
+   - p-value = $2 \times P(Z < -2.36) = 2 \times 0.0091 = 0.0182$
+   - Since p-value < 0.05, reject $H_0$
+
+3. **Chi-square goodness of fit**: Test if die is fair. Observed frequencies: 1:8, 2:12, 3:10, 4:15, 5:9, 6:6 (total 60 rolls).
+   - Expected frequency for each face: 60/6 = 10
+   - $\chi^2 = \frac{(8-10)^2}{10} + \frac{(12-10)^2}{10} + \cdots + \frac{(6-10)^2}{10} = 0.4 + 0.4 + 0 + 2.5 + 0.1 + 1.6 = 5.0$
+   - df = 6 - 1 = 5
+   - Critical value at α = 0.05: $\chi^2_{0.05,5} = 11.07$
+   - Since 5.0 < 11.07, fail to reject $H_0$ (die appears fair)
+
+### 7.3 Regression Analysis (25)
+
+**Key Concepts**: Regression analysis studies relationships between variables, allowing prediction and understanding of how one variable affects another. It's fundamental in data science, economics, and engineering.
+
+**Simple Linear Regression**:
+
+**Model**: $Y = \beta_0 + \beta_1 X + \epsilon$
+
+where:
+- $Y$: dependent (response) variable
+- $X$: independent (predictor) variable  
+- $\beta_0$: y-intercept (value of Y when X = 0)
+- $\beta_1$: slope (change in Y per unit change in X)
+- $\epsilon$: random error term
+
+**Assumptions**:
+1. **Linearity**: Relationship between X and Y is linear
+2. **Independence**: Observations are independent
+3. **Homoscedasticity**: Constant variance of errors
+4. **Normality**: Errors are normally distributed
+5. **No measurement error** in X
+
+**Least Squares Estimation**:
+
+**Objective**: Minimize sum of squared residuals
+$$\text{SSE} = \sum_{i=1}^n (y_i - \hat{y}_i)^2 = \sum_{i=1}^n (y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i)^2$$
+
+**Normal Equations**:
+$$\frac{\partial \text{SSE}}{\partial \beta_0} = 0, \quad \frac{\partial \text{SSE}}{\partial \beta_1} = 0$$
+
+**Solutions**:
+$$\hat{\beta}_1 = \frac{\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^n (x_i - \bar{x})^2} = \frac{S_{xy}}{S_{xx}}$$
+
+$$\hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x}$$
+
+where:
+- $S_{xy} = \sum(x_i - \bar{x})(y_i - \bar{y})$ (sum of cross-products)
+- $S_{xx} = \sum(x_i - \bar{x})^2$ (sum of squares for X)
+- $S_{yy} = \sum(y_i - \bar{y})^2$ (sum of squares for Y)
+
+**Alternative Formulas**:
+$$\hat{\beta}_1 = \frac{n\sum x_i y_i - \sum x_i \sum y_i}{n\sum x_i^2 - (\sum x_i)^2}$$
+
+$$\hat{\beta}_0 = \frac{\sum y_i - \hat{\beta}_1 \sum x_i}{n}$$
+
+**Fitted Values and Residuals**:
+
+**Fitted value**: $\hat{y}_i = \hat{\beta}_0 + \hat{\beta}_1 x_i$
+
+**Residual**: $e_i = y_i - \hat{y}_i$ (observed - predicted)
+
+**Properties of Residuals**:
+- $\sum e_i = 0$ (sum to zero)
+- $\sum x_i e_i = 0$ (uncorrelated with X)
+- $\sum \hat{y}_i e_i = 0$ (uncorrelated with fitted values)
+
+**Analysis of Variance (ANOVA) for Regression**:
+
+**Total Sum of Squares**: $\text{SST} = \sum(y_i - \bar{y})^2$ (total variation)
+
+**Regression Sum of Squares**: $\text{SSR} = \sum(\hat{y}_i - \bar{y})^2$ (explained variation)
+
+**Error Sum of Squares**: $\text{SSE} = \sum(y_i - \hat{y}_i)^2$ (unexplained variation)
+
+**Fundamental Identity**: $\text{SST} = \text{SSR} + \text{SSE}$
+
+**Degrees of Freedom**:
+- SST: $n - 1$
+- SSR: $1$ (one predictor)
+- SSE: $n - 2$
+
+**Mean Squares**:
+- $\text{MSR} = \text{SSR}/1$
+- $\text{MSE} = \text{SSE}/(n-2)$
+
+**Coefficient of Determination**:
+$$R^2 = \frac{\text{SSR}}{\text{SST}} = 1 - \frac{\text{SSE}}{\text{SST}}$$
+
+**Interpretation**: Proportion of total variation in Y explained by X
+- $0 \leq R^2 \leq 1$
+- $R^2 = 1$: Perfect fit
+- $R^2 = 0$: No linear relationship
+
+**Relationship to Correlation**: $R^2 = r_{xy}^2$ where $r_{xy}$ is sample correlation coefficient
+
+**Statistical Inference**:
+
+**Standard Error of Regression**: $s = \sqrt{\text{MSE}} = \sqrt{\frac{\text{SSE}}{n-2}}$
+
+**Standard Errors of Coefficients**:
+$$SE(\hat{\beta}_1) = \frac{s}{\sqrt{S_{xx}}}, \quad SE(\hat{\beta}_0) = s\sqrt{\frac{1}{n} + \frac{\bar{x}^2}{S_{xx}}}$$
+
+**Confidence Intervals**:
+- For $\beta_1$: $\hat{\beta}_1 \pm t_{\alpha/2, n-2} \cdot SE(\hat{\beta}_1)$
+- For $\beta_0$: $\hat{\beta}_0 \pm t_{\alpha/2, n-2} \cdot SE(\hat{\beta}_0)$
+
+**Hypothesis Tests**:
+
+**Test for Slope**:
+- $H_0: \beta_1 = 0$ vs $H_1: \beta_1 \neq 0$
+- Test statistic: $t = \frac{\hat{\beta}_1}{SE(\hat{\beta}_1)}$
+- Reject if $|t| > t_{\alpha/2, n-2}$
+
+**F-test for Overall Regression**:
+- $H_0: \beta_1 = 0$ vs $H_1: \beta_1 \neq 0$
+- Test statistic: $F = \frac{\text{MSR}}{\text{MSE}}$
+- Reject if $F > F_{\alpha, 1, n-2}$
+- Note: $F = t^2$ for simple linear regression
+
+**Prediction**:
+
+**Point Prediction**: $\hat{y}_0 = \hat{\beta}_0 + \hat{\beta}_1 x_0$
+
+**Prediction Interval** (for new observation):
+$$\hat{y}_0 \pm t_{\alpha/2, n-2} \cdot s \sqrt{1 + \frac{1}{n} + \frac{(x_0 - \bar{x})^2}{S_{xx}}}$$
+
+**Confidence Interval for Mean Response**:
+$$\hat{y}_0 \pm t_{\alpha/2, n-2} \cdot s \sqrt{\frac{1}{n} + \frac{(x_0 - \bar{x})^2}{S_{xx}}}$$
+
+**Note**: Prediction interval is wider than confidence interval
+
+**Multiple Linear Regression**:
+
+**Model**: $Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_k X_k + \epsilon$
+
+**Matrix Form**: $\mathbf{Y} = \mathbf{X}\boldsymbol{\beta} + \boldsymbol{\epsilon}$
+
+where:
+- $\mathbf{Y}$: $n \times 1$ response vector
+- $\mathbf{X}$: $n \times (k+1)$ design matrix
+- $\boldsymbol{\beta}$: $(k+1) \times 1$ parameter vector
+- $\boldsymbol{\epsilon}$: $n \times 1$ error vector
+
+**Least Squares Solution**:
+$$\hat{\boldsymbol{\beta}} = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{Y}$$
+
+**Properties**:
+- Unbiased: $E[\hat{\boldsymbol{\beta}}] = \boldsymbol{\beta}$
+- Covariance: $\text{Cov}(\hat{\boldsymbol{\beta}}) = \sigma^2(\mathbf{X}^T\mathbf{X})^{-1}$
+
+**ANOVA for Multiple Regression**:
+
+**Degrees of Freedom**:
+- SSR: $k$ (number of predictors)
+- SSE: $n - k - 1$
+- SST: $n - 1$
+
+**F-test for Overall Model**:
+- $H_0: \beta_1 = \beta_2 = \cdots = \beta_k = 0$
+- Test statistic: $F = \frac{\text{MSR}}{\text{MSE}} = \frac{\text{SSR}/k}{\text{SSE}/(n-k-1)}$
+
+**Adjusted R-squared**:
+$$R_{adj}^2 = 1 - \frac{\text{SSE}/(n-k-1)}{\text{SST}/(n-1)} = 1 - (1-R^2)\frac{n-1}{n-k-1}$$
+
+**Purpose**: Penalizes for adding variables that don't improve fit significantly
+
+**Individual t-tests**:
+- $H_0: \beta_j = 0$ vs $H_1: \beta_j \neq 0$
+- Test statistic: $t = \frac{\hat{\beta}_j}{SE(\hat{\beta}_j)}$
+
+**Multicollinearity**:
+
+**Problem**: High correlation among predictor variables
+- Makes coefficient estimates unstable
+- Inflates standard errors
+- Doesn't affect prediction accuracy
+
+**Detection**:
+- **Correlation matrix**: High pairwise correlations (|r| > 0.8)
+- **Variance Inflation Factor (VIF)**: $\text{VIF}_j = \frac{1}{1-R_j^2}$
+  where $R_j^2$ is R² from regressing $X_j$ on other predictors
+- VIF > 10 indicates serious multicollinearity
+
+**Solutions**:
+- Remove highly correlated variables
+- Principal component regression
+- Ridge regression
+
+**Model Selection**:
+
+**Forward Selection**: Start with no variables, add significant ones
+
+**Backward Elimination**: Start with all variables, remove non-significant ones
+
+**Stepwise Regression**: Combination of forward and backward
+
+**Information Criteria**:
+- **AIC**: $\text{AIC} = n \ln(\text{SSE}/n) + 2(k+1)$
+- **BIC**: $\text{BIC} = n \ln(\text{SSE}/n) + (k+1) \ln(n)$
+- Lower values indicate better models
+
+**Cross-Validation**: Split data into training and validation sets
+
+**Residual Analysis**:
+
+**Purposes**:
+- Check model assumptions
+- Identify outliers and influential points
+- Suggest model improvements
+
+**Diagnostic Plots**:
+
+1. **Residuals vs Fitted Values**:
+   - Check linearity and homoscedasticity
+   - Should show random scatter around zero
+
+2. **Normal Q-Q Plot**:
+   - Check normality of residuals
+   - Points should lie approximately on straight line
+
+3. **Residuals vs Predictor Variables**:
+   - Check for non-linear relationships
+   - May suggest transformations
+
+4. **Residuals vs Order**:
+   - Check independence assumption
+   - Look for patterns or trends
+
+**Standardized Residuals**:
+$$r_i = \frac{e_i}{s\sqrt{1-h_{ii}}}$$
+
+where $h_{ii}$ is leverage (diagonal element of hat matrix)
+
+**Outliers and Influential Points**:
+
+**Outlier**: Observation with large residual
+- Standardized residual $|r_i| > 2$ or $3$
+
+**High Leverage Point**: Observation with unusual X values
+- Leverage $h_{ii} > 2(k+1)/n$
+
+**Influential Point**: Observation that greatly affects fitted model
+- **Cook's Distance**: $D_i = \frac{r_i^2}{k+1} \cdot \frac{h_{ii}}{1-h_{ii}}$
+- $D_i > 1$ indicates influential point
+
+**Transformations**:
+
+**Box-Cox Transformation**: $Y^{(\lambda)} = \frac{Y^\lambda - 1}{\lambda}$ (λ ≠ 0)
+- λ = 1: No transformation
+- λ = 0: Log transformation
+- λ = 0.5: Square root transformation
+- λ = -1: Reciprocal transformation
+
+**Polynomial Regression**:
+
+**Model**: $Y = \beta_0 + \beta_1 X + \beta_2 X^2 + \cdots + \beta_k X^k + \epsilon$
+
+**Considerations**:
+- Higher-order terms can cause overfitting
+- Extrapolation beyond data range dangerous
+- Orthogonal polynomials reduce multicollinearity
+
+**Logistic Regression**:
+
+**Model**: For binary response (0/1)
+$$\ln\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1 X_1 + \cdots + \beta_k X_k$$
+
+where $p = P(Y = 1)$
+
+**Logistic Function**: $p = \frac{e^{\beta_0 + \beta_1 X_1 + \cdots + \beta_k X_k}}{1 + e^{\beta_0 + \beta_1 X_1 + \cdots + \beta_k X_k}}$
+
+**Estimation**: Maximum likelihood (not least squares)
+
+**Problem-Solving Tips**:
+
+**For Simple Linear Regression**:
+1. Plot data to check linearity
+2. Calculate slope and intercept using formulas
+3. Compute R² to assess fit quality
+4. Check residual plots for assumption violations
+
+**For Multiple Regression**:
+1. Check for multicollinearity (VIF)
+2. Use F-test for overall model significance
+3. Use t-tests for individual coefficients
+4. Consider model selection techniques
+
+**For Model Diagnostics**:
+1. Always plot residuals vs fitted values
+2. Check normal Q-Q plot of residuals
+3. Look for outliers and influential points
+4. Consider transformations if assumptions violated
+
+**GATE Tips**:
+- Least squares minimizes sum of squared residuals
+- R² = proportion of variance explained (0 to 1)
+- Higher R² doesn't always mean better model
+- Check assumptions through residual analysis
+- Multicollinearity affects coefficient stability, not predictions
+- F-test for overall model, t-tests for individual coefficients
+- Prediction intervals wider than confidence intervals
+- Adjusted R² penalizes for additional variables
+
+**Examples**:
+
+1. **Simple linear regression**: Data points (1,2), (2,4), (3,5), (4,7), (5,8)
+   - $\bar{x} = 3, \bar{y} = 5.2$
+   - $S_{xx} = \sum(x_i - \bar{x})^2 = 10$
+   - $S_{xy} = \sum(x_i - \bar{x})(y_i - \bar{y}) = 11.2$
+   - $\hat{\beta}_1 = 11.2/10 = 1.12$
+   - $\hat{\beta}_0 = 5.2 - 1.12(3) = 1.84$
+   - Equation: $\hat{y} = 1.84 + 1.12x$
+
+2. **R² calculation**: 
+   - $\text{SST} = \sum(y_i - \bar{y})^2 = 16.8$
+   - $\text{SSR} = \hat{\beta}_1^2 S_{xx} = (1.12)^2(10) = 12.544$
+   - $R^2 = 12.544/16.8 = 0.747$
+   - 74.7% of variation in Y explained by X
+
+3. **Hypothesis test for slope**:
+   - $\text{SSE} = \text{SST} - \text{SSR} = 16.8 - 12.544 = 4.256$
+   - $s = \sqrt{4.256/3} = 1.191$
+   - $SE(\hat{\beta}_1) = 1.191/\sqrt{10} = 0.377$
+   - $t = 1.12/0.377 = 2.97$
+   - With df = 3, critical value $t_{0.025,3} = 3.182$
+   - Since $|2.97| < 3.182$, fail to reject $H_0: \beta_1 = 0$ at α = 0.05
+### 8. General Aptitude (200 Questions)
+
+### 8.1 Verbal Ability (100)
+
+**Key Concepts**: Verbal ability tests comprehension, vocabulary, grammar, and communication skills essential for technical professionals.
+
+**Reading Comprehension (25)**:
+
+**Types of Passages**:
+- **Factual**: Presents information, data, or research findings
+- **Analytical**: Examines cause-effect relationships, comparisons
+- **Argumentative**: Presents viewpoint with supporting evidence
+- **Narrative**: Tells story or describes sequence of events
+
+**Question Types**:
+
+**1. Main Idea Questions**:
+- "The primary purpose of the passage is..."
+- "The passage is primarily concerned with..."
+- **Strategy**: Look for thesis statement, topic sentences, concluding remarks
+
+**2. Detail Questions**:
+- "According to the passage..."
+- "The author mentions X in order to..."
+- **Strategy**: Locate specific information, avoid inferences
+
+**3. Inference Questions**:
+- "It can be inferred that..."
+- "The passage suggests that..."
+- **Strategy**: Draw logical conclusions from stated information
+
+**4. Tone/Attitude Questions**:
+- "The author's attitude toward X is..."
+- "The tone of the passage is..."
+- **Options**: Critical, supportive, neutral, skeptical, optimistic, pessimistic
+
+**5. Vocabulary in Context**:
+- "In line X, 'word' most nearly means..."
+- **Strategy**: Consider surrounding context, not just dictionary meaning
+
+**6. Structure Questions**:
+- "The organization of the passage is..."
+- "The author develops the argument by..."
+
+**Reading Strategies**:
+
+**Active Reading**:
+1. **Preview**: Scan title, first/last paragraphs, topic sentences
+2. **Purpose**: Identify why you're reading (main idea, specific detail)
+3. **Predict**: Anticipate content based on preview
+4. **Read**: Focus on key ideas, not every detail
+5. **Review**: Summarize main points
+
+**Time Management**:
+- Spend 2-3 minutes reading passage
+- 1-2 minutes per question
+- Don't get stuck on difficult questions
+
+**Common Traps**:
+- **Extreme language**: "always," "never," "all," "none"
+- **Out of scope**: Information not in passage
+- **Opposite answers**: Contradicts passage information
+- **Distortion**: Twists passage information
+
+**Grammar and Usage (25)**:
+
+**Subject-Verb Agreement**:
+
+**Basic Rule**: Singular subjects take singular verbs; plural subjects take plural verbs
+
+**Tricky Cases**:
+- **Collective nouns**: "The team is/are playing" (depends on context)
+- **Compound subjects**: "John and Mary are..." (plural)
+- **Either/or, neither/nor**: Verb agrees with nearest subject
+- **Indefinite pronouns**: 
+  - Singular: each, every, either, neither, one, someone, anyone, everyone
+  - Plural: both, few, many, several
+  - Variable: all, some, most, none (depends on object)
+
+**Examples**:
+- "Each of the students has submitted their assignment." (Incorrect - pronoun disagreement)
+- "Each of the students has submitted his or her assignment." (Correct)
+- "Neither the teacher nor the students were ready." (Correct - agrees with "students")
+
+**Pronoun Usage**:
+
+**Pronoun-Antecedent Agreement**:
+- Pronoun must agree with antecedent in number, gender, person
+- "Every student must bring their book." (Incorrect)
+- "Every student must bring his or her book." (Correct)
+
+**Pronoun Case**:
+- **Subjective**: I, you, he, she, it, we, they
+- **Objective**: me, you, him, her, it, us, them
+- **Possessive**: my, your, his, her, its, our, their
+
+**Common Errors**:
+- "Between you and I" (Incorrect - should be "me")
+- "Who/Whom": Who = subject, Whom = object
+- "Its/It's": Its = possessive, It's = it is
+
+**Verb Tenses**:
+
+**Simple Tenses**:
+- **Present**: "I write"
+- **Past**: "I wrote"
+- **Future**: "I will write"
+
+**Perfect Tenses**:
+- **Present Perfect**: "I have written" (completed action with present relevance)
+- **Past Perfect**: "I had written" (completed before another past action)
+- **Future Perfect**: "I will have written" (will be completed by future time)
+
+**Progressive Tenses**:
+- **Present Progressive**: "I am writing" (ongoing now)
+- **Past Progressive**: "I was writing" (ongoing in past)
+- **Future Progressive**: "I will be writing" (ongoing in future)
+
+**Sequence of Tenses**:
+- Main clause past → subordinate clause past
+- "He said that he was tired." (Not "He said that he is tired.")
+
+**Modifiers**:
+
+**Misplaced Modifiers**:
+- "I saw a man with binoculars walking down the street." (Ambiguous)
+- "Walking down the street, I saw a man with binoculars." (Clear)
+
+**Dangling Modifiers**:
+- "Having finished the assignment, the TV was turned on." (Incorrect)
+- "Having finished the assignment, I turned on the TV." (Correct)
+
+**Parallel Structure**:
+
+**Lists**: Items in series should have same grammatical form
+- "I like reading, writing, and to swim." (Incorrect)
+- "I like reading, writing, and swimming." (Correct)
+
+**Correlative Conjunctions**: Both...and, either...or, neither...nor, not only...but also
+- "She is not only intelligent but also has creativity." (Incorrect)
+- "She is not only intelligent but also creative." (Correct)
+
+**Sentence Structure**:
+
+**Fragments**: Incomplete sentences missing subject or verb
+- "Because I was tired." (Fragment)
+- "I went home because I was tired." (Complete)
+
+**Run-on Sentences**: Two or more independent clauses incorrectly joined
+- "I was tired I went home." (Run-on)
+- "I was tired, so I went home." (Correct)
+
+**Comma Splices**: Two independent clauses joined only by comma
+- "I was tired, I went home." (Comma splice)
+- "I was tired; I went home." (Correct)
+
+**Vocabulary (25)**:
+
+**Word Roots, Prefixes, Suffixes**:
+
+**Common Prefixes**:
+- **Anti-**: against (antibiotic, antisocial)
+- **Pre-**: before (preview, prehistoric)
+- **Post-**: after (postwar, postpone)
+- **Sub-**: under (submarine, substandard)
+- **Super-**: above (superhuman, supervisor)
+- **Inter-**: between (international, interact)
+- **Intra-**: within (intramural, intravenous)
+- **Extra-**: beyond (extraordinary, extraterrestrial)
+
+**Common Suffixes**:
+- **-tion/-sion**: action/state (creation, decision)
+- **-ment**: result/state (development, agreement)
+- **-ness**: quality (happiness, darkness)
+- **-ful**: full of (helpful, beautiful)
+- **-less**: without (hopeless, careless)
+- **-able/-ible**: capable of (readable, visible)
+
+**Common Roots**:
+- **Bene-**: good (benefit, benevolent)
+- **Mal-**: bad (malfunction, malicious)
+- **Chron-**: time (chronology, chronic)
+- **Graph-**: write (biography, telegraph)
+- **Phon-**: sound (telephone, phonics)
+- **Geo-**: earth (geography, geology)
+
+**Context Clues**:
+
+**Definition**: Word meaning explained in sentence
+- "The edifice, a large imposing building, dominated the skyline."
+
+**Example**: Specific instances given
+- "Citrus fruits, such as oranges and lemons, are rich in vitamin C."
+
+**Contrast**: Opposite meaning indicated
+- "Unlike his gregarious brother, Tom was quite introverted."
+
+**Cause and Effect**: Relationship shows meaning
+- "The drought caused the crops to desiccate and wither away."
+
+**Synonyms and Antonyms**:
+
+**High-Frequency GATE Words**:
+
+**Positive Connotation**:
+- Acclaim, commend, extol, laud, praise
+- Abundant, copious, plentiful, profuse
+- Astute, discerning, perceptive, shrewd
+- Benevolent, charitable, magnanimous, philanthropic
+
+**Negative Connotation**:
+- Censure, condemn, denounce, reproach
+- Meager, paltry, scanty, sparse
+- Gullible, naive, credulous
+- Malevolent, vindictive, spiteful
+
+**Neutral/Technical**:
+- Analyze, scrutinize, examine, investigate
+- Hypothesis, theory, conjecture, postulate
+- Implement, execute, accomplish, achieve
+- Significant, substantial, considerable, notable
+
+**Analogies**:
+
+**Common Relationship Types**:
+
+**1. Synonyms**: HAPPY : JOYFUL
+**2. Antonyms**: HOT : COLD
+**3. Part to Whole**: WHEEL : CAR
+**4. Cause to Effect**: RAIN : FLOOD
+**5. Function**: SCISSORS : CUT
+**6. Category**: ROSE : FLOWER
+**7. Degree**: WARM : HOT
+**8. Location**: BOOK : LIBRARY
+**9. Worker to Tool**: PAINTER : BRUSH
+**10. Characteristic**: ICE : COLD
+
+**Strategy**:
+1. Identify relationship between first pair
+2. Look for same relationship in answer choices
+3. Make sentence: "A is to B as C is to D"
+4. Check if sentence makes sense
+
+**Sentence Completion (25)**:
+
+**Types of Clues**:
+
+**1. Definition/Restatement**:
+- Signal words: that is, in other words, namely
+- "The professor's lecture was so _____ that students fell asleep; in other words, it was extremely boring."
+
+**2. Contrast/Opposition**:
+- Signal words: but, however, although, despite, nevertheless
+- "Although she appeared confident, she was actually quite _____."
+
+**3. Cause and Effect**:
+- Signal words: because, since, therefore, consequently, as a result
+- "Because of the severe drought, the harvest was _____."
+
+**4. Examples**:
+- Signal words: such as, for example, including
+- "The museum displayed various artifacts, including _____ pottery and ancient tools."
+
+**5. Comparison**:
+- Signal words: like, similar to, just as
+- "Like his mentor, the young scientist was _____ in his research methods."
+
+**Strategy**:
+1. Read entire sentence for context
+2. Identify signal words and clue types
+3. Predict word before looking at choices
+4. Eliminate obviously wrong answers
+5. Check answer in context
+
+**Common Patterns**:
+- **Positive/Negative**: Look for words that indicate tone
+- **Degree**: Mild vs. extreme words
+- **Time sequence**: Before/after relationships
+- **Logic flow**: Cause leads to logical effect
+
+**Problem-Solving Tips**:
+
+**For Reading Comprehension**:
+1. Read questions first to know what to look for
+2. Focus on first and last paragraphs for main ideas
+3. Pay attention to transition words (however, therefore, moreover)
+4. Eliminate extreme or absolute answer choices
+5. Stay within scope of passage
+
+**For Grammar**:
+1. Read sentence aloud to catch errors
+2. Identify subject and verb first
+3. Check for parallel structure in lists
+4. Watch for pronoun-antecedent agreement
+5. Be careful with modifier placement
+
+**For Vocabulary**:
+1. Use word roots to deduce meanings
+2. Consider context clues carefully
+3. Eliminate choices that don't fit context
+4. Don't choose words just because they sound sophisticated
+5. Practice with high-frequency GATE vocabulary
+
+**GATE Tips**:
+- Time management crucial: don't spend too long on any question
+- Process of elimination often more effective than direct selection
+- Read all answer choices before selecting
+- Trust first instinct if unsure
+- Practice regularly with previous years' questions
+- Focus on commonly tested grammar rules
+- Build vocabulary through reading and word lists
+- Pay attention to question types and develop specific strategies
+
+**Common Mistakes to Avoid**:
+- Overthinking simple questions
+- Choosing answers based on partial information
+- Ignoring context clues in vocabulary questions
+- Misreading question stems
+- Not checking answers in context
+- Spending too much time on difficult passages
+- Confusing similar-looking answer choices
+
+### 8.2 Quantitative Aptitude (100)
+
+**Key Concepts**: Quantitative aptitude tests mathematical reasoning, numerical ability, and problem-solving skills using basic mathematical concepts.
+
+**Arithmetic (30)**:
+
+**Number Systems**:
+
+**Natural Numbers**: 1, 2, 3, 4, ... (counting numbers)
+**Whole Numbers**: 0, 1, 2, 3, 4, ... (natural numbers + 0)
+**Integers**: ..., -2, -1, 0, 1, 2, ... (positive and negative whole numbers)
+**Rational Numbers**: Numbers that can be expressed as p/q where p, q are integers, q ≠ 0
+**Irrational Numbers**: Cannot be expressed as fraction (√2, π, e)
+**Real Numbers**: All rational and irrational numbers
+
+**Properties of Numbers**:
+
+**Even Numbers**: Divisible by 2 (2, 4, 6, 8, ...)
+**Odd Numbers**: Not divisible by 2 (1, 3, 5, 7, ...)
+
+**Operations**:
+- Even ± Even = Even
+- Odd ± Odd = Even  
+- Even ± Odd = Odd
+- Even × Even = Even
+- Odd × Odd = Odd
+- Even × Odd = Even
+
+**Prime Numbers**: Natural numbers > 1 with exactly two factors (1 and itself)
+- First few primes: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47...
+- 2 is only even prime number
+- All primes > 2 are odd
+
+**Composite Numbers**: Natural numbers > 1 that are not prime
+- Have more than two factors
+- Can be expressed as product of primes (fundamental theorem of arithmetic)
+
+**Divisibility Rules**:
+- **2**: Last digit is even (0, 2, 4, 6, 8)
+- **3**: Sum of digits divisible by 3
+- **4**: Last two digits divisible by 4
+- **5**: Last digit is 0 or 5
+- **6**: Divisible by both 2 and 3
+- **8**: Last three digits divisible by 8
+- **9**: Sum of digits divisible by 9
+- **10**: Last digit is 0
+- **11**: Alternating sum of digits divisible by 11
+
+**HCF and LCM**:
+
+**Highest Common Factor (HCF)**: Largest number that divides all given numbers
+**Least Common Multiple (LCM)**: Smallest number divisible by all given numbers
+
+**Methods**:
+1. **Prime Factorization**:
+   - HCF = Product of lowest powers of common prime factors
+   - LCM = Product of highest powers of all prime factors
+
+2. **Euclidean Algorithm** (for HCF):
+   - HCF(a,b) = HCF(b, a mod b)
+   - Continue until remainder is 0
+
+**Relationship**: For two numbers a and b:
+$$a \times b = \text{HCF}(a,b) \times \text{LCM}(a,b)$$
+
+**Fractions**:
+
+**Types**:
+- **Proper fraction**: Numerator < Denominator (3/5)
+- **Improper fraction**: Numerator ≥ Denominator (7/5)
+- **Mixed number**: Whole number + proper fraction (1 2/5)
+
+**Operations**:
+- **Addition/Subtraction**: Find common denominator
+  $$\frac{a}{b} \pm \frac{c}{d} = \frac{ad \pm bc}{bd}$$
+
+- **Multiplication**: Multiply numerators and denominators
+  $$\frac{a}{b} \times \frac{c}{d} = \frac{ac}{bd}$$
+
+- **Division**: Multiply by reciprocal
+  $$\frac{a}{b} \div \frac{c}{d} = \frac{a}{b} \times \frac{d}{c} = \frac{ad}{bc}$$
+
+**Decimals**:
+
+**Types**:
+- **Terminating**: Finite decimal places (0.25, 0.125)
+- **Non-terminating recurring**: Infinite decimal places with repeating pattern (0.333..., 0.142857142857...)
+- **Non-terminating non-recurring**: Infinite non-repeating (π, √2)
+
+**Conversion**:
+- **Fraction to Decimal**: Divide numerator by denominator
+- **Decimal to Fraction**: 
+  - 0.25 = 25/100 = 1/4
+  - 0.333... = 1/3
+  - 0.142857... = 1/7
+
+**Percentages**:
+
+**Basic Concepts**:
+- Percent means "per hundred"
+- 25% = 25/100 = 0.25 = 1/4
+
+**Important Conversions**:
+- 1/2 = 50%, 1/3 = 33.33%, 1/4 = 25%, 1/5 = 20%
+- 1/6 = 16.67%, 1/8 = 12.5%, 1/10 = 10%
+
+**Percentage Change**:
+$$\text{Percentage Change} = \frac{\text{New Value - Old Value}}{\text{Old Value}} \times 100\%$$
+
+**Successive Percentage Changes**:
+If quantity changes by a% then b%:
+$$\text{Net Change} = a + b + \frac{ab}{100}$$
+
+**Applications**:
+- **Profit/Loss**: Based on cost price
+- **Discount**: Reduction from marked price
+- **Tax**: Addition to base amount
+- **Interest**: Earning on principal
+
+**Ratio and Proportion**:
+
+**Ratio**: Comparison of two quantities
+- a : b = a/b
+- Properties: a:b = ka:kb (k ≠ 0)
+
+**Proportion**: Equality of two ratios
+- a : b :: c : d means a/b = c/d
+- Cross multiplication: ad = bc
+
+**Types**:
+- **Direct Proportion**: As one increases, other increases
+- **Inverse Proportion**: As one increases, other decreases
+
+**Applications**:
+- **Mixture problems**: Combining different ratios
+- **Partnership**: Profit sharing based on investment ratios
+- **Time and work**: Work rates in proportion to efficiency
+
+**Average and Weighted Average**:
+
+**Simple Average**:
+$$\text{Average} = \frac{\text{Sum of all values}}{\text{Number of values}}$$
+
+**Properties**:
+- If all values increase by k, average increases by k
+- If all values are multiplied by k, average is multiplied by k
+
+**Weighted Average**:
+$$\text{Weighted Average} = \frac{\sum (w_i \times x_i)}{\sum w_i}$$
+
+where $w_i$ are weights and $x_i$ are values
+
+**Applications**:
+- **Academic grades**: Different subjects with different credits
+- **Speed problems**: Average speed over different segments
+- **Age problems**: Average age of groups
+
+**Algebra (25)**:
+
+**Linear Equations**:
+
+**One Variable**: ax + b = 0
+- Solution: x = -b/a (if a ≠ 0)
+
+**Two Variables**: 
+- ax + by = c
+- dx + ey = f
+
+**Solution Methods**:
+1. **Substitution**: Solve one equation for one variable, substitute in other
+2. **Elimination**: Add/subtract equations to eliminate one variable
+3. **Cross multiplication**: For a₁x + b₁y = c₁ and a₂x + b₂y = c₂
+   $$x = \frac{b₁c₂ - b₂c₁}{a₁b₂ - a₂b₁}, \quad y = \frac{a₂c₁ - a₁c₂}{a₁b₂ - a₂b₁}$$
+
+**Quadratic Equations**:
+
+**Standard Form**: ax² + bx + c = 0 (a ≠ 0)
+
+**Solution Methods**:
+1. **Factoring**: Express as (px + q)(rx + s) = 0
+2. **Quadratic Formula**: 
+   $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+3. **Completing the Square**: Convert to (x + p)² = q form
+
+**Discriminant**: Δ = b² - 4ac
+- Δ > 0: Two distinct real roots
+- Δ = 0: One repeated real root  
+- Δ < 0: No real roots (complex roots)
+
+**Relationship between Roots**:
+For roots α and β:
+- Sum: α + β = -b/a
+- Product: αβ = c/a
+
+**Inequalities**:
+
+**Linear Inequalities**: ax + b > 0, ax + b < 0, etc.
+- Solution is range of values
+- Multiplication/division by negative number reverses inequality sign
+
+**Quadratic Inequalities**: ax² + bx + c > 0, etc.
+- Find roots of corresponding equation
+- Test intervals between roots
+- Consider sign of leading coefficient
+
+**Sequences and Series**:
+
+**Arithmetic Progression (AP)**:
+- General term: aₙ = a + (n-1)d
+- Sum of n terms: Sₙ = n/2[2a + (n-1)d] = n/2(first term + last term)
+
+**Geometric Progression (GP)**:
+- General term: aₙ = ar^(n-1)
+- Sum of n terms: Sₙ = a(r^n - 1)/(r - 1) for r ≠ 1
+- Sum to infinity: S∞ = a/(1-r) for |r| < 1
+
+**Special Series**:
+- Sum of first n natural numbers: 1 + 2 + ... + n = n(n+1)/2
+- Sum of squares: 1² + 2² + ... + n² = n(n+1)(2n+1)/6
+- Sum of cubes: 1³ + 2³ + ... + n³ = [n(n+1)/2]²
+
+**Logarithms**:
+
+**Definition**: If aˣ = b, then x = log_a(b)
+- a is base, b is argument, x is logarithm
+
+**Properties**:
+- log_a(xy) = log_a(x) + log_a(y)
+- log_a(x/y) = log_a(x) - log_a(y)
+- log_a(x^n) = n·log_a(x)
+- log_a(a) = 1, log_a(1) = 0
+
+**Change of Base**: log_a(x) = log_b(x)/log_b(a)
+
+**Common Logarithms**:
+- Natural logarithm: ln(x) = log_e(x)
+- Common logarithm: log(x) = log₁₀(x)
+
+**Geometry (20)**:
+
+**Basic Concepts**:
+
+**Point**: Has no dimension, represents location
+**Line**: Extends infinitely in both directions
+**Ray**: Has one endpoint, extends infinitely in one direction
+**Line Segment**: Has two endpoints
+
+**Angles**:
+- **Acute**: < 90°
+- **Right**: = 90°
+- **Obtuse**: > 90° and < 180°
+- **Straight**: = 180°
+- **Reflex**: > 180° and < 360°
+- **Complete**: = 360°
+
+**Angle Relationships**:
+- **Complementary**: Sum = 90°
+- **Supplementary**: Sum = 180°
+- **Vertically opposite**: Equal when two lines intersect
+- **Corresponding**: Equal when parallel lines cut by transversal
+- **Alternate interior**: Equal when parallel lines cut by transversal
+
+**Triangles**:
+
+**Classification by Sides**:
+- **Equilateral**: All sides equal, all angles 60°
+- **Isosceles**: Two sides equal, two angles equal
+- **Scalene**: All sides different, all angles different
+
+**Classification by Angles**:
+- **Acute**: All angles < 90°
+- **Right**: One angle = 90°
+- **Obtuse**: One angle > 90°
+
+**Properties**:
+- Sum of angles = 180°
+- Exterior angle = sum of two non-adjacent interior angles
+- Sum of any two sides > third side (triangle inequality)
+
+**Area Formulas**:
+- General: Area = (1/2) × base × height
+- Heron's formula: Area = √[s(s-a)(s-b)(s-c)] where s = (a+b+c)/2
+- Equilateral: Area = (√3/4) × side²
+
+**Special Triangles**:
+- **30-60-90**: Sides in ratio 1 : √3 : 2
+- **45-45-90**: Sides in ratio 1 : 1 : √2
+
+**Quadrilaterals**:
+
+**Types**:
+- **Square**: All sides equal, all angles 90°
+- **Rectangle**: Opposite sides equal, all angles 90°
+- **Rhombus**: All sides equal, opposite angles equal
+- **Parallelogram**: Opposite sides parallel and equal
+- **Trapezium**: One pair of parallel sides
+
+**Properties**:
+- Sum of interior angles = 360°
+- Diagonals of rectangle are equal
+- Diagonals of rhombus bisect at right angles
+- Diagonals of square are equal and bisect at right angles
+
+**Area Formulas**:
+- Square: side²
+- Rectangle: length × width
+- Parallelogram: base × height
+- Rhombus: (1/2) × d₁ × d₂ (d₁, d₂ are diagonals)
+- Trapezium: (1/2) × (sum of parallel sides) × height
+
+**Circles**:
+
+**Basic Elements**:
+- **Radius**: Distance from center to circumference
+- **Diameter**: Twice the radius, passes through center
+- **Chord**: Line segment joining two points on circle
+- **Arc**: Part of circumference
+- **Sector**: Region bounded by two radii and arc
+- **Segment**: Region bounded by chord and arc
+
+**Formulas**:
+- Circumference: 2πr
+- Area: πr²
+- Arc length: (θ/360°) × 2πr (θ in degrees)
+- Sector area: (θ/360°) × πr²
+
+**Properties**:
+- Angle in semicircle = 90°
+- Angles subtended by same arc are equal
+- Tangent perpendicular to radius at point of contact
+- Two tangents from external point are equal
+
+**Coordinate Geometry**:
+
+**Distance Formula**: Distance between (x₁, y₁) and (x₂, y₂)
+$$d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$
+
+**Section Formula**: Point dividing line segment in ratio m:n
+$$\left(\frac{mx_2 + nx_1}{m + n}, \frac{my_2 + ny_1}{m + n}\right)$$
+
+**Midpoint Formula**: 
+$$\left(\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2}\right)$$
+
+**Slope of Line**: 
+$$m = \frac{y_2 - y_1}{x_2 - x_1}$$
+
+**Equation of Line**:
+- Point-slope form: y - y₁ = m(x - x₁)
+- Slope-intercept form: y = mx + c
+- Two-point form: (y - y₁)/(y₂ - y₁) = (x - x₁)/(x₂ - x₁)
+
+**Mensuration (15)**:
+
+**2D Figures**:
+
+**Triangle**: Area = (1/2) × base × height
+**Rectangle**: Area = length × width, Perimeter = 2(length + width)
+**Square**: Area = side², Perimeter = 4 × side
+**Circle**: Area = πr², Circumference = 2πr
+**Parallelogram**: Area = base × height
+**Rhombus**: Area = (1/2) × d₁ × d₂
+**Trapezium**: Area = (1/2) × (a + b) × h
+
+**3D Figures**:
+
+**Cube**: 
+- Volume = side³
+- Surface area = 6 × side²
+
+**Cuboid (Rectangular Prism)**:
+- Volume = length × width × height
+- Surface area = 2(lw + wh + lh)
+
+**Cylinder**:
+- Volume = πr²h
+- Curved surface area = 2πrh
+- Total surface area = 2πr(r + h)
+
+**Cone**:
+- Volume = (1/3)πr²h
+- Curved surface area = πrl (l = slant height)
+- Total surface area = πr(r + l)
+
+**Sphere**:
+- Volume = (4/3)πr³
+- Surface area = 4πr²
+
+**Hemisphere**:
+- Volume = (2/3)πr³
+- Curved surface area = 2πr²
+- Total surface area = 3πr²
+
+**Data Interpretation (10)**:
+
+**Types of Data Representation**:
+
+**Tables**: Data arranged in rows and columns
+- Read row and column headers carefully
+- Look for totals, subtotals, percentages
+- Calculate missing values using given information
+
+**Bar Charts**: 
+- **Vertical**: Categories on x-axis, values on y-axis
+- **Horizontal**: Categories on y-axis, values on x-axis
+- **Grouped**: Multiple bars for each category
+- **Stacked**: Parts of whole shown in single bar
+
+**Line Graphs**: Show trends over time
+- Identify increasing/decreasing trends
+- Find maximum/minimum points
+- Calculate rate of change between points
+
+**Pie Charts**: Show parts of whole
+- Each sector represents percentage of total
+- Central angle = (value/total) × 360°
+- Compare sectors by size
+
+**Histograms**: Show frequency distribution
+- Bars touch each other (continuous data)
+- Width represents class interval
+- Height represents frequency
+
+**Common Calculations**:
+
+**Percentage**: (Part/Whole) × 100
+**Percentage Change**: ((New - Old)/Old) × 100
+**Average**: Sum of values / Number of values
+**Ratio**: Comparison between quantities
+**Growth Rate**: ((Final - Initial)/Initial) × 100
+
+**Problem-Solving Tips**:
+
+**For Arithmetic**:
+1. Learn divisibility rules and multiplication tables
+2. Practice mental calculation techniques
+3. Use approximation for complex calculations
+4. Remember common fraction-decimal-percentage conversions
+5. Break complex problems into simpler steps
+
+**For Algebra**:
+1. Identify the type of equation/inequality
+2. Use appropriate solution method
+3. Check solutions by substitution
+4. Be careful with signs when manipulating inequalities
+5. Practice word problems to improve translation skills
+
+**For Geometry**:
+1. Draw diagrams for visualization
+2. Identify given information and what to find
+3. Use appropriate formulas and theorems
+4. Check if answer makes geometric sense
+5. Remember special triangle ratios
+
+**For Data Interpretation**:
+1. Read titles, labels, and legends carefully
+2. Understand scale and units
+3. Look for patterns and trends
+4. Use approximation for quick calculations
+5. Double-check calculations
+
+**GATE Tips**:
+- Time management crucial: allocate time based on marks
+- Use elimination method for multiple choice questions
+- Don't spend too much time on any single question
+- Practice mental math for speed
+- Learn shortcuts and tricks for common calculations
+- Review basic formulas regularly
+- Solve previous years' questions for pattern recognition
+- Focus on accuracy over speed initially, then build speed
+
+**Common Shortcuts**:
+
+**Multiplication**:
+- (a + b)(a - b) = a² - b²
+- (a + b)² = a² + 2ab + b²
+- (a - b)² = a² - 2ab + b²
+
+**Percentage**:
+- 10% of x = x/10
+- 25% of x = x/4
+- 50% of x = x/2
+
+**Squares**:
+- (50 + a)² = 2500 + 100a + a²
+- Numbers ending in 5: 25² = 625, 35² = 1225
+
+**Division**:
+- Divisibility by 4: Last two digits divisible by 4
+- Divisibility by 8: Last three digits divisible by 8
+- Divisibility by 25: Last two digits are 00, 25, 50, or 75
+
+---
+
+## Volume 2: Core Computer Science Subjects
+
+*[Note: This section would continue with comprehensive coverage of all core CS subjects including Programming, Data Structures, Algorithms, Computer Organization, Operating Systems, Databases, Computer Networks, Theory of Computation, Compiler Design, and Software Engineering, following the same detailed theoretical approach as demonstrated above.]*
+
+---
+
+**Final Notes for Effective Usage**:
+
+1. **Active Recall**: Don't just read - test yourself on formulas and concepts
+2. **Spaced Repetition**: Review topics at increasing intervals
+3. **Problem Practice**: Apply concepts to actual GATE questions
+4. **Weak Area Focus**: Spend more time on challenging topics
+5. **Mock Tests**: Simulate exam conditions regularly
+6. **Time Management**: Practice solving questions within time limits
+7. **Formula Sheets**: Create concise formula references for quick review
+8. **Concept Maps**: Draw connections between related topics
+9. **Group Study**: Discuss difficult concepts with peers
+10. **Regular Revision**: Schedule weekly reviews of completed topics
+
+**Remember**: Understanding concepts deeply is more valuable than memorizing formulas. Focus on building strong fundamentals that will help you tackle any variation of problems in the GATE exam.
+
+Good luck with your GATE preparation!
