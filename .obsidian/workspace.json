@@ -201,6 +201,8 @@
   },
   "active": "772bd86f5774f471",
   "lastOpenFiles": [
+    "notes_refactored.md",
+    "notes.pdf",
     "notes.md",
     "textgenerator/templates/smartConnections/summarize.md",
     "textgenerator/templates/Experimental/conceptLinker.md",
@@ -227,7 +229,6 @@
     "textgenerator/templates/awesomePrompts/regexgeneratorAwesome.md",
     "textgenerator/templates/awesomePrompts/tictactoegameAwesome.md",
     "textgenerator/templates/awesomePrompts/recruiterAwesome.md",
-    "textgenerator/templates/awesomePrompts/rprogramminginterpreterAwesome.md",
     "textgenerator/templates/awesomePrompts",
     "textgenerator/templates/huggingface",
     "textgenerator/templates/smartConnections",

@@ -4,57 +4,57 @@
 
 ### **Volume 1: Engineering Mathematics, Discrete Mathematics, and General Aptitude**
 
-#### **1. Discrete Mathematics: Combinatory (50 Questions)**
-- [1.1 Balls In Bins (4)](#11-balls-in-bins-4)
-- [1.2 Combinatory (22)](#12-combinatory-22)
-- [1.3 Counting (4)](#13-counting-4)
-- [1.4 Generating Functions (6)](#14-generating-functions-6)
-- [1.5 Modular Arithmetic (2)](#15-modular-arithmetic-2)
-- [1.6 Pigeonhole Principle (2)](#16-pigeonhole-principle-2)
-- [1.7 Recurrence Relation (7)](#17-recurrence-relation-7)
-- [1.8 Summation (3)](#18-summation-3)
+#### **1. Discrete Mathematics: Set Theory & Algebra (171 Questions)**
+- [1.1 Set Theory (27)](#11-set-theory-27)
+- [1.2 Relations (37)](#12-relations-37)
+- [1.3 Countable Uncountable Set (2)](#13-countable-uncountable-set-2)
+- [1.4 Partial Order (10)](#14-partial-order-10)
+- [1.5 Lattice (10)](#15-lattice-10)
+- [1.6 Identity Function (1)](#16-identity-function-1)
+- [1.7 Mathematical Induction (2)](#17-mathematical-induction-2)
+- [1.8 Number Theory (7)](#18-number-theory-7)
+- [1.9 Onto (1)](#19-onto-1)
+- [1.10 Polynomials (4)](#110-polynomials-4)
+- [1.11 Functions (29)](#111-functions-29)
+- [1.12 Binary Operation (8)](#112-binary-operation-8)
+- [1.13 Group Theory (33)](#113-group-theory-33)
 
-#### **2. Discrete Mathematics: Graph Theory (83 Questions)**
-- [2.1 Counting (3)](#21-counting-3)
-- [2.2 Degree of Graph (12)](#22-degree-of-graph-12)
-- [2.3 Graph Coloring (11)](#23-graph-coloring-11)
-- [2.4 Graph Connectivity (40)](#24-graph-connectivity-40)
-- [2.5 Graph Isomorphism (3)](#25-graph-isomorphism-3)
-- [2.6 Graph Matching (1)](#26-graph-matching-1)
-- [2.7 Graph Planarity (13)](#27-graph-planarity-13)
+#### **2. Discrete Mathematics: Mathematical Logic (77 Questions)**
+- [2.1 First Order Logic (34)](#21-first-order-logic-34)
+- [2.2 Logical Reasoning (3)](#22-logical-reasoning-3)
+- [2.3 Propositional Logic (40)](#23-propositional-logic-40)
 
-#### **3. Discrete Mathematics: Mathematical Logic (77 Questions)**
-- [3.1 First Order Logic (34)](#31-first-order-logic-34)
-- [3.2 Logical Reasoning (3)](#32-logical-reasoning-3)
-- [3.3 Propositional Logic (40)](#33-propositional-logic-40)
+#### **3. Discrete Mathematics: Graph Theory (83 Questions)**
+- [3.1 Counting (3)](#31-counting-3)
+- [3.2 Degree of Graph (12)](#32-degree-of-graph-12)
+- [3.3 Graph Coloring (11)](#33-graph-coloring-11)
+- [3.4 Graph Connectivity (40)](#34-graph-connectivity-40)
+- [3.5 Graph Isomorphism (3)](#35-graph-isomorphism-3)
+- [3.6 Graph Matching (1)](#36-graph-matching-1)
+- [3.7 Graph Planarity (13)](#37-graph-planarity-13)
 
-#### **4. Discrete Mathematics: Set Theory & Algebra (171 Questions)**
-- [4.1 Binary Operation (8)](#41-binary-operation-8)
-- [4.2 Countable Uncountable Set (2)](#42-countable-uncountable-set-2)
-- [4.3 Functions (29)](#43-functions-29)
-- [4.4 Group Theory (33)](#44-group-theory-33)
-- [4.5 Identity Function (1)](#45-identity-function-1)
-- [4.6 Lattice (10)](#46-lattice-10)
-- [4.7 Mathematical Induction (2)](#47-mathematical-induction-2)
-- [4.8 Number Theory (7)](#48-number-theory-7)
-- [4.9 Onto (1)](#49-onto-1)
-- [4.10 Partial Order (10)](#410-partial-order-10)
-- [4.11 Polynomials (4)](#411-polynomials-4)
-- [4.12 Relations (37)](#412-relations-37)
-- [4.13 Set Theory (27)](#413-set-theory-27)
+#### **4. Discrete Mathematics: Combinatory (50 Questions)**
+- [4.1 Balls In Bins (4)](#41-balls-in-bins-4)
+- [4.2 Combinatory (22)](#42-combinatory-22)
+- [4.3 Counting (4)](#43-counting-4)
+- [4.4 Generating Functions (6)](#44-generating-functions-6)
+- [4.5 Modular Arithmetic (2)](#45-modular-arithmetic-2)
+- [4.6 Pigeonhole Principle (2)](#46-pigeonhole-principle-2)
+- [4.7 Recurrence Relation (7)](#47-recurrence-relation-7)
+- [4.8 Summation (3)](#48-summation-3)
 
 #### **5. Engineering Mathematics: Calculus (150 Questions)**
 - [5.1 Limits and Continuity (25)](#51-limits-and-continuity-25)
 - [5.2 Differentiation](#52-differentiation)
 - [5.3 Integration](#53-integration)
 - [5.4 Differential Equations](#54-differential-equations)
-- [5.5 Multivariable Calculus](#55-multivariable-calculus)
 
 #### **6. Engineering Mathematics: Linear Algebra**
 - [6.1 Matrices and Determinants](#61-matrices-and-determinants)
 - [6.2 Eigenvalues and Eigenvectors](#62-eigenvalues-and-eigenvectors)
 - [6.3 Vector Spaces](#63-vector-spaces)
 - [6.4 Linear Transformations](#64-linear-transformations)
+- [6.5 LU Decomposition](#65-lu-decomposition)
 
 #### **7. Engineering Mathematics: Probability and Statistics**
 - [7.1 Probability Theory](#71-probability-theory)
@@ -69,60 +69,66 @@
 
 ### **Volume 2: Core Computer Science Subjects**
 
-#### **9. Theory of Computation**
-- [9.1 Finite Automata](#91-finite-automata)
-- [9.2 Regular Languages](#92-regular-languages)
-- [9.3 Context-Free Languages](#93-context-free-languages)
-- [9.4 Turing Machines](#94-turing-machines)
-- [9.5 Computability](#95-computability)
-- [9.6 Complexity Theory](#96-complexity-theory)
+#### **1. Theory of Computation**
+- [1.1 Finite Automata](#11-finite-automata)
+- [1.2 Regular Languages](#12-regular-languages)
+- [1.3 Context-Free Languages](#13-context-free-languages)
+- [1.4 Turing Machines](#14-turing-machines)
+- [1.5 Computability](#15-computability)
+- [1.6 Complexity Theory](#16-complexity-theory)
 
-#### **10. Algorithms and Data Structures**
-- [10.1 Algorithm Analysis](#101-algorithm-analysis)
-- [10.2 Sorting and Searching](#102-sorting-and-searching)
-- [10.3 Graph Algorithms](#103-graph-algorithms)
-- [10.4 Dynamic Programming](#104-dynamic-programming)
-- [10.5 Data Structures](#105-data-structures)
+#### **2. Algorithms and Data Structures**
+- [2.1 Algorithm Analysis](#21-algorithm-analysis)
+- [2.2 Sorting and Searching](#22-sorting-and-searching)
+- [2.3 Graph Algorithms](#23-graph-algorithms)
+- [2.4 Dynamic Programming](#24-dynamic-programming)
+- [2.5 Data Structures](#25-data-structures)
 
-#### **11. Computer Organization and Architecture**
-- [11.1 Number Systems](#111-number-systems)
-- [11.2 Boolean Algebra](#112-boolean-algebra)
-- [11.3 Processor Design](#113-processor-design)
-- [11.4 Memory Hierarchy](#114-memory-hierarchy)
-- [11.5 I/O Systems](#115-io-systems)
+#### **3. Computer Organization and Architecture**
+- [3.1 Number Systems](#31-number-systems)
+- [3.2 Boolean Algebra](#32-boolean-algebra)
+- [3.3 Processor Design](#33-processor-design)
+- [3.4 Memory Hierarchy](#34-memory-hierarchy)
+- [3.5 I/O Systems](#35-io-systems)
+- [3.6 Ethernet Bridging](#36-ethernet-bridging)
 
-#### **12. Operating Systems**
-- [12.1 Process Management](#121-process-management)
-- [12.2 Memory Management](#122-memory-management)
-- [12.3 File Systems](#123-file-systems)
-- [12.4 Synchronization](#124-synchronization)
-- [12.5 CPU Scheduling](#125-cpu-scheduling)
+#### **4. Operating Systems**
+- [4.1 Process Management](#41-process-management)
+- [4.2 Memory Management](#42-memory-management)
+- [4.3 File Systems](#43-file-systems)
+- [4.4 Synchronization](#44-synchronization)
+- [4.5 CPU Scheduling](#45-cpu-scheduling)
 
-#### **13. Database Management Systems**
-- [13.1 ER Model](#131-er-model)
-- [13.2 Relational Model](#132-relational-model)
-- [13.3 SQL](#133-sql)
-- [13.4 Normalization](#134-normalization)
-- [13.5 Transactions](#135-transactions)
+#### **5. Database Management Systems**
+- [5.1 ER Model](#51-er-model)
+- [5.2 Relational Model](#52-relational-model)
+- [5.3 SQL](#53-sql)
+- [5.4 Normalization](#54-normalization)
+- [5.5 Transactions](#55-transactions)
+- [5.6 File Organization](#56-file-organization)
 
-#### **14. Computer Networks**
-- [14.1 Network Models](#141-network-models)
-- [14.2 Physical Layer](#142-physical-layer)
-- [14.3 Data Link Layer](#143-data-link-layer)
-- [14.4 Network Layer](#144-network-layer)
-- [14.5 Transport Layer](#145-transport-layer)
+#### **6. Computer Networks**
+- [6.1 Network Models](#61-network-models)
+- [6.2 Physical Layer](#62-physical-layer)
+- [6.3 Data Link Layer](#63-data-link-layer)
+- [6.4 Network Layer](#64-network-layer)
+- [6.5 Transport Layer](#65-transport-layer)
+- [6.6 DHCP](#66-dhcp)
+- [6.7 ICMP](#67-icmp)
+- [6.8 NAT](#68-nat)
 
-#### **15. Software Engineering**
-- [15.1 SDLC Models](#151-sdlc-models)
-- [15.2 Requirements Engineering](#152-requirements-engineering)
-- [15.3 Software Design](#153-software-design)
-- [15.4 Testing](#154-testing)
+#### **7. Software Engineering**
+- [7.1 SDLC Models](#71-sdlc-models)
+- [7.2 Requirements Engineering](#72-requirements-engineering)
+- [7.3 Software Design](#73-software-design)
+- [7.4 Testing](#74-testing)
 
-#### **16. Compiler Design**
-- [16.1 Lexical Analysis](#161-lexical-analysis)
-- [16.2 Syntax Analysis](#162-syntax-analysis)
-- [16.3 Semantic Analysis](#163-semantic-analysis)
-- [16.4 Code Generation](#164-code-generation)
+#### **8. Compiler Design**
+- [8.1 Lexical Analysis](#81-lexical-analysis)
+- [8.2 Syntax Analysis](#82-syntax-analysis)
+- [8.3 Semantic Analysis](#83-semantic-analysis)
+- [8.4 Code Generation](#84-code-generation)
+- [8.5 Constant Propagation](#85-constant-propagation)
 
 ---
 
@@ -3637,9 +3643,9 @@ Resolution:
 
 Proved ✓ (This is called "proof by cases" in natural deduction)
 
-### 4. Discrete Mathematics: Set Theory & Algebra (171)
+### 1. Discrete Mathematics: Set Theory & Algebra (171)
 
-### 4.1 Binary Operation (8) {#41-binary-operation-8}
+### 1.1 Binary Operation (8) {#11-binary-operation-8}
 
 **Key Concepts**: A binary operation on a set is a function that combines two elements to produce another element in the same set. Foundation for algebraic structures like groups, rings, and fields.
 
@@ -3725,7 +3731,7 @@ This represents the cyclic group $C_3 = \{e, a, b\}$ where $a^2 = b$, $a^3 = e$
 - Order of group = number of elements
 - Lagrange's theorem: Order of subgroup divides order of group
 
-### 4.2 Countable Uncountable Set (2) {#42-countable-uncountable-set-2}
+### 1.2 Countable Uncountable Set (2) {#12-countable-uncountable-set-2}
 
 **Key Concepts**: Cardinality measures the "size" of sets, even infinite ones. Fundamental distinction between countable and uncountable infinities with profound implications for computability theory.
 
