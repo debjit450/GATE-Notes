@@ -3731,6 +3731,608 @@ This represents the cyclic group $C_3 = \{e, a, b\}$ where $a^2 = b$, $a^3 = e$
 - Order of group = number of elements
 - Lagrange's theorem: Order of subgroup divides order of group
 
+### 1.13 Group Theory (33) {#113-group-theory-33}
+
+**Key Concepts**: Group theory studies algebraic structures with a single associative binary operation, identity element, and inverses. Foundation for abstract algebra, cryptography, coding theory, and symmetry analysis in physics and computer science.
+
+---
+
+## Group Definition and Axioms
+
+**Definition**: A **group** $(G, *)$ is a set $G$ together with a binary operation $*: G \times G \to G$ satisfying:
+
+| Axiom | Statement | Meaning |
+|-------|-----------|---------|
+| **G1: Closure** | $\forall a, b \in G: a * b \in G$ | Operation stays within set |
+| **G2: Associativity** | $\forall a, b, c \in G: (a * b) * c = a * (b * c)$ | Grouping doesn't matter |
+| **G3: Identity** | $\exists e \in G: \forall a \in G, a * e = e * a = a$ | Neutral element exists |
+| **G4: Inverse** | $\forall a \in G, \exists a^{-1} \in G: a * a^{-1} = a^{-1} * a = e$ | Every element reversible |
+
+**Abelian (Commutative) Groups**: Group where $\forall a, b \in G: a * b = b * a$
+- Named after Norwegian mathematician Niels Henrik Abel
+- Examples: $(\mathbb{Z}, +)$, $(\mathbb{Q}^*, \times)$, $(\mathbb{Z}_n, +_n)$
+
+**Non-Abelian Groups**: Groups where commutativity fails
+- Examples: $S_n$ for $n \geq 3$, $GL_n(\mathbb{R})$ for $n \geq 2$, Dihedral groups $D_n$ for $n \geq 3$
+
+**Order of a Group**: $|G|$ = cardinality (number of elements) of $G$
+- **Finite group**: $|G| < \infty$
+- **Infinite group**: $|G| = \infty$
+
+**Order of an Element**: For $a \in G$, the order $|a|$ (or $\text{ord}(a)$) is:
+$$|a| = \min\{n \in \mathbb{Z}^+ : a^n = e\}$$
+- If no such $n$ exists, $|a| = \infty$
+- $a^n = \underbrace{a * a * \cdots * a}_{n \text{ times}}$, $a^0 = e$, $a^{-n} = (a^{-1})^n$
+
+**Fundamental Properties**:
+
+**Theorem (Uniqueness of Identity)**: Identity element is unique.
+- **Proof**: If $e_1, e_2$ are identities, then $e_1 = e_1 * e_2 = e_2$ ✓
+
+**Theorem (Uniqueness of Inverse)**: Each element has unique inverse.
+- **Proof**: If $b, c$ are inverses of $a$: $b = b * e = b * (a * c) = (b * a) * c = e * c = c$ ✓
+
+**Cancellation Laws**:
+- **Left**: $a * b = a * c \Rightarrow b = c$
+- **Right**: $b * a = c * a \Rightarrow b = c$
+
+**Shoes-Socks Property**: $(a * b)^{-1} = b^{-1} * a^{-1}$
+- **Proof**: $(a * b) * (b^{-1} * a^{-1}) = a * (b * b^{-1}) * a^{-1} = a * e * a^{-1} = a * a^{-1} = e$ ✓
+
+**Power Rules**: For all $m, n \in \mathbb{Z}$:
+- $a^m * a^n = a^{m+n}$
+- $(a^m)^n = a^{mn}$
+- $(a^n)^{-1} = a^{-n}$
+
+---
+
+## Examples of Groups
+
+### Standard Number Groups
+
+| Group | Operation | Identity | Inverse of $a$ | Abelian? |
+|-------|-----------|----------|----------------|----------|
+| $(\mathbb{Z}, +)$ | Addition | $0$ | $-a$ | Yes |
+| $(\mathbb{Q}, +)$ | Addition | $0$ | $-a$ | Yes |
+| $(\mathbb{R}, +)$ | Addition | $0$ | $-a$ | Yes |
+| $(\mathbb{C}, +)$ | Addition | $0$ | $-a$ | Yes |
+| $(\mathbb{Q}^*, \times)$ | Multiplication | $1$ | $1/a$ | Yes |
+| $(\mathbb{R}^*, \times)$ | Multiplication | $1$ | $1/a$ | Yes |
+| $(\mathbb{C}^*, \times)$ | Multiplication | $1$ | $1/a$ | Yes |
+| $(\mathbb{Z}_n, +_n)$ | Addition mod $n$ | $0$ | $n - a$ | Yes |
+| $(\mathbb{Z}_p^*, \times_p)$ | Mult. mod prime $p$ | $1$ | $a^{p-2}$ mod $p$ | Yes |
+
+**Note**: $\mathbb{Q}^* = \mathbb{Q} \setminus \{0\}$, $\mathbb{R}^* = \mathbb{R} \setminus \{0\}$, etc.
+
+### Symmetric Group $S_n$
+
+**Definition**: $S_n$ = set of all bijections (permutations) from $\{1, 2, \ldots, n\}$ to itself
+
+**Properties**:
+- $|S_n| = n!$
+- Operation: Function composition
+- Identity: Identity permutation $\text{id}$
+- Non-abelian for $n \geq 3$
+
+**Cycle Notation**: $(1 \ 2 \ 3)$ means $1 \to 2 \to 3 \to 1$
+- Disjoint cycles commute
+- Every permutation = product of disjoint cycles (unique up to order)
+
+**Example - $S_3$**:
+$$S_3 = \{e, (1\ 2), (1\ 3), (2\ 3), (1\ 2\ 3), (1\ 3\ 2)\}$$
+
+| Element | Cycle Type | Order |
+|---------|------------|-------|
+| $e$ | Identity | 1 |
+| $(1\ 2)$ | Transposition | 2 |
+| $(1\ 3)$ | Transposition | 2 |
+| $(2\ 3)$ | Transposition | 2 |
+| $(1\ 2\ 3)$ | 3-cycle | 3 |
+| $(1\ 3\ 2)$ | 3-cycle | 3 |
+
+**Order of Permutation**: LCM of cycle lengths
+- Example: $(1\ 2)(3\ 4\ 5)$ has order $\text{lcm}(2, 3) = 6$
+
+### Cyclic Groups
+
+**Definition**: $G$ is **cyclic** if $\exists a \in G$ such that $G = \langle a \rangle = \{a^n : n \in \mathbb{Z}\}$
+- Element $a$ is called a **generator**
+
+**Notation**: $C_n$ or $\mathbb{Z}_n$ for cyclic group of order $n$
+
+**Key Properties**:
+- Every cyclic group is abelian
+- $C_n \cong \mathbb{Z}_n$ (finite case)
+- $C_\infty \cong \mathbb{Z}$ (infinite case)
+
+**Generators of $\mathbb{Z}_n$**: $a$ generates $\mathbb{Z}_n$ iff $\gcd(a, n) = 1$
+- Number of generators = $\phi(n)$ (Euler's totient function)
+
+**Example**: $\mathbb{Z}_8 = \{0, 1, 2, 3, 4, 5, 6, 7\}$
+- Generators: $\{1, 3, 5, 7\}$ (since $\gcd$ with 8 is 1)
+- $\phi(8) = 8 \cdot (1 - 1/2) = 4$ generators ✓
+
+### Dihedral Groups $D_n$
+
+**Definition**: Symmetries of regular $n$-gon (rotations + reflections)
+
+**Elements**:
+- $n$ rotations: $r^0 = e, r^1, r^2, \ldots, r^{n-1}$ where $r$ = rotation by $360°/n$
+- $n$ reflections: $s, sr, sr^2, \ldots, sr^{n-1}$
+
+**Properties**:
+- $|D_n| = 2n$
+- $r^n = e$, $s^2 = e$, $srs = r^{-1}$
+- Non-abelian for $n \geq 3$
+- $D_3 \cong S_3$
+
+**Presentation**: $D_n = \langle r, s \mid r^n = s^2 = e, srs = r^{-1} \rangle$
+
+### Matrix Groups
+
+**General Linear Group $GL_n(\mathbb{F})$**:
+- Set of all $n \times n$ invertible matrices over field $\mathbb{F}$
+- Operation: Matrix multiplication
+- Identity: $I_n$ (identity matrix)
+- Inverse: Matrix inverse $A^{-1}$
+- Non-abelian for $n \geq 2$
+
+**Special Linear Group $SL_n(\mathbb{F})$**:
+- Matrices with $\det(A) = 1$
+- $SL_n(\mathbb{F}) \leq GL_n(\mathbb{F})$
+
+**Orthogonal Group $O_n(\mathbb{R})$**:
+- Matrices with $A^T A = I$
+- Preserves lengths and angles
+
+**Over $\mathbb{Z}_p$ (finite fields)**:
+- $|GL_n(\mathbb{Z}_p)| = (p^n - 1)(p^n - p)(p^n - p^2) \cdots (p^n - p^{n-1})$
+- $|GL_2(\mathbb{Z}_p)| = (p^2 - 1)(p^2 - p) = p(p-1)^2(p+1)$
+
+---
+
+## Subgroups
+
+**Definition**: $H \subseteq G$ is a **subgroup** of $G$ (written $H \leq G$) if $H$ forms a group under the same operation.
+
+### Subgroup Tests
+
+**Two-Step Subgroup Test**: $H \leq G$ iff:
+1. $H \neq \emptyset$
+2. $\forall a, b \in H: a * b \in H$ (closure)
+3. $\forall a \in H: a^{-1} \in H$ (closed under inverses)
+
+**One-Step Subgroup Test**: $H \leq G$ iff:
+1. $H \neq \emptyset$
+2. $\forall a, b \in H: a * b^{-1} \in H$
+
+**Finite Subgroup Test**: For finite $H \subseteq G$:
+$H \leq G$ iff $H \neq \emptyset$ and $H$ is closed under operation
+
+### Types of Subgroups
+
+**Trivial Subgroups**: 
+- $\{e\} \leq G$ (trivial subgroup)
+- $G \leq G$ (improper subgroup)
+
+**Proper Subgroups**: $H \leq G$ where $H \neq \{e\}$ and $H \neq G$
+
+### Special Subgroups
+
+**Center of a Group**: 
+$$Z(G) = \{z \in G : \forall g \in G, zg = gz\}$$
+- Elements that commute with everything
+- $Z(G) \triangleleft G$ (always normal)
+- $G$ is abelian iff $Z(G) = G$
+
+**Centralizer of an Element**:
+$$C_G(a) = \{g \in G : ga = ag\}$$
+- Elements that commute with $a$
+- $C_G(a) \leq G$
+- $Z(G) = \bigcap_{a \in G} C_G(a)$
+
+**Centralizer of a Subset**:
+$$C_G(S) = \{g \in G : \forall s \in S, gs = sg\}$$
+
+**Normalizer of a Subgroup**:
+$$N_G(H) = \{g \in G : gHg^{-1} = H\}$$
+- Largest subgroup in which $H$ is normal
+- $H \triangleleft N_G(H) \leq G$
+
+### Examples of Subgroups
+
+| Group | Subgroup | Description |
+|-------|----------|-------------|
+| $(\mathbb{Z}, +)$ | $n\mathbb{Z} = \{nk : k \in \mathbb{Z}\}$ | Multiples of $n$ |
+| $S_n$ | $A_n$ | Even permutations (alternating group) |
+| $GL_n(\mathbb{R})$ | $SL_n(\mathbb{R})$ | Determinant 1 matrices |
+| $D_n$ | $\langle r \rangle$ | Rotation subgroup |
+| $\mathbb{Z}_{12}$ | $\{0, 4, 8\}$ | Subgroup of order 3 |
+
+---
+
+## Cyclic Groups (Detailed)
+
+### Properties of Cyclic Groups
+
+**Theorem**: Every cyclic group is abelian.
+- **Proof**: $a^m \cdot a^n = a^{m+n} = a^{n+m} = a^n \cdot a^m$ ✓
+
+**Theorem**: Every subgroup of a cyclic group is cyclic.
+- **Proof**: Let $H \leq \langle a \rangle$. If $H = \{e\}$, done. Otherwise, let $m$ = smallest positive integer with $a^m \in H$. Then $H = \langle a^m \rangle$.
+
+### Order of Elements in $\mathbb{Z}_n$
+
+**Theorem**: In $\mathbb{Z}_n$, element $k$ has order:
+$$|k| = \frac{n}{\gcd(k, n)}$$
+
+**Example**: In $\mathbb{Z}_{12}$:
+| Element $k$ | $\gcd(k, 12)$ | Order $= 12/\gcd$ |
+|-------------|---------------|-------------------|
+| 0 | 12 | 1 |
+| 1 | 1 | 12 |
+| 2 | 2 | 6 |
+| 3 | 3 | 4 |
+| 4 | 4 | 3 |
+| 6 | 6 | 2 |
+
+### Subgroups of Cyclic Groups
+
+**Fundamental Theorem**: The subgroups of $\mathbb{Z}_n$ are in one-to-one correspondence with divisors of $n$.
+
+For each divisor $d$ of $n$:
+- Unique subgroup of order $d$: $\langle n/d \rangle$
+- Unique subgroup of index $d$: $\langle d \rangle$
+
+**Example - Subgroups of $\mathbb{Z}_{12}$**:
+
+| Divisor $d$ | Subgroup $\langle 12/d \rangle$ | Elements | Order |
+|-------------|--------------------------------|----------|-------|
+| 1 | $\langle 12 \rangle = \langle 0 \rangle$ | $\{0\}$ | 1 |
+| 2 | $\langle 6 \rangle$ | $\{0, 6\}$ | 2 |
+| 3 | $\langle 4 \rangle$ | $\{0, 4, 8\}$ | 3 |
+| 4 | $\langle 3 \rangle$ | $\{0, 3, 6, 9\}$ | 4 |
+| 6 | $\langle 2 \rangle$ | $\{0, 2, 4, 6, 8, 10\}$ | 6 |
+| 12 | $\langle 1 \rangle$ | $\mathbb{Z}_{12}$ | 12 |
+
+**Subgroup Lattice of $\mathbb{Z}_{12}$**:
+```
+                    Z₁₂
+                   / | \
+                  /  |  \
+               ⟨2⟩ ⟨3⟩  ⟨4⟩
+                |\ / \ /|
+                | X   X |
+                |/ \ / \|
+               ⟨4⟩ ⟨6⟩  
+                 \ | /
+                  \|/
+                  {0}
+```
+
+### Classification of Cyclic Groups
+
+**Theorem**: 
+- Every infinite cyclic group is isomorphic to $(\mathbb{Z}, +)$
+- Every finite cyclic group of order $n$ is isomorphic to $(\mathbb{Z}_n, +_n)$
+
+---
+
+## Cosets and Lagrange's Theorem
+
+### Cosets
+
+**Left Coset**: For $H \leq G$ and $a \in G$:
+$$aH = \{a * h : h \in H\}$$
+
+**Right Coset**:
+$$Ha = \{h * a : h \in H\}$$
+
+**Properties of Cosets**:
+1. $|aH| = |H| = |Ha|$ (all cosets have same size)
+2. $a \in aH$ (since $e \in H$)
+3. $aH = bH$ iff $a^{-1}b \in H$ iff $b \in aH$
+4. Cosets partition $G$: any two cosets are either equal or disjoint
+5. $aH = H$ iff $a \in H$
+
+**Index**: $[G : H]$ = number of distinct left (or right) cosets of $H$ in $G$
+
+### Lagrange's Theorem
+
+**Theorem (Lagrange)**: If $G$ is finite and $H \leq G$, then $|H|$ divides $|G|$.
+
+$$|G| = |H| \cdot [G : H]$$
+
+**Proof**:
+1. Left cosets of $H$ partition $G$
+2. Each coset has exactly $|H|$ elements
+3. If there are $k = [G:H]$ distinct cosets, then $|G| = k \cdot |H|$
+4. Therefore $|H|$ divides $|G|$ ✓
+
+**Corollaries**:
+
+**Corollary 1 (Order of element divides order of group)**:
+For $a \in G$ (finite): $|a|$ divides $|G|$
+- **Proof**: $|a| = |\langle a \rangle|$ and $\langle a \rangle \leq G$
+
+**Corollary 2**: For finite group $G$: $a^{|G|} = e$ for all $a \in G$
+
+**Corollary 3 (Groups of prime order are cyclic)**:
+If $|G| = p$ (prime), then $G \cong \mathbb{Z}_p$
+- **Proof**: Any $a \neq e$ has $|a| > 1$ and $|a|$ divides $p$, so $|a| = p$
+
+**Corollary 4**: If $|G| = p$ (prime), then $G$ has no proper non-trivial subgroups.
+
+### Fermat's Little Theorem and Euler's Theorem
+
+**Fermat's Little Theorem**: If $p$ is prime and $\gcd(a, p) = 1$:
+$$a^{p-1} \equiv 1 \pmod{p}$$
+
+**Proof via Lagrange**: $a \in \mathbb{Z}_p^*$, $|\mathbb{Z}_p^*| = p - 1$, so $a^{p-1} = e = 1$
+
+**Euler's Theorem**: If $\gcd(a, n) = 1$:
+$$a^{\phi(n)} \equiv 1 \pmod{n}$$
+
+**Proof via Lagrange**: $a \in \mathbb{Z}_n^*$, $|\mathbb{Z}_n^*| = \phi(n)$
+
+---
+
+## Normal Subgroups and Quotient Groups
+
+### Normal Subgroups
+
+**Definition**: $N \leq G$ is **normal** (written $N \triangleleft G$) if:
+$$\forall g \in G: gNg^{-1} = N$$
+
+**Equivalent Definitions**:
+1. $\forall g \in G, n \in N: gng^{-1} \in N$
+2. $gN = Ng$ for all $g \in G$ (left cosets = right cosets)
+3. $N$ is the kernel of some homomorphism
+
+### Tests for Normality
+
+| Test | Condition | When to Use |
+|------|-----------|-------------|
+| Definition | $gNg^{-1} = N$ for all $g$ | General case |
+| Coset equality | $gN = Ng$ for all $g$ | When cosets known |
+| Index 2 | $[G:N] = 2$ | Always normal |
+| Abelian | $G$ abelian | All subgroups normal |
+| Kernel | $N = \ker(\phi)$ for some $\phi$ | Homomorphism available |
+
+**Examples of Normal Subgroups**:
+- $\{e\} \triangleleft G$ and $G \triangleleft G$ (trivial normal subgroups)
+- $A_n \triangleleft S_n$ (alternating group in symmetric group)
+- $SL_n(\mathbb{F}) \triangleleft GL_n(\mathbb{F})$
+- $Z(G) \triangleleft G$ (center is always normal)
+- Every subgroup of an abelian group is normal
+
+### Quotient (Factor) Groups
+
+**Definition**: If $N \triangleleft G$, the **quotient group** $G/N$ consists of:
+- Set: $\{gN : g \in G\}$ (all cosets of $N$)
+- Operation: $(aN)(bN) = (ab)N$
+
+**Well-definedness**: Need normality to ensure $(aN)(bN) = (ab)N$ is independent of representatives.
+
+**Properties**:
+- $|G/N| = [G : N] = |G|/|N|$ (for finite groups)
+- Identity of $G/N$ is $eN = N$
+- Inverse of $aN$ is $a^{-1}N$
+
+**Examples**:
+1. $\mathbb{Z}/n\mathbb{Z} \cong \mathbb{Z}_n$
+2. $S_n/A_n \cong \mathbb{Z}_2$
+3. $\mathbb{R}/\mathbb{Z}$ = circle group (unit circle in complex plane)
+
+---
+
+## Homomorphisms and Isomorphisms
+
+### Group Homomorphism
+
+**Definition**: $\phi: G \to H$ is a **homomorphism** if:
+$$\forall a, b \in G: \phi(a * b) = \phi(a) \cdot \phi(b)$$
+
+**Properties of Homomorphisms**:
+| Property | Statement |
+|----------|-----------|
+| Identity preservation | $\phi(e_G) = e_H$ |
+| Inverse preservation | $\phi(a^{-1}) = \phi(a)^{-1}$ |
+| Power preservation | $\phi(a^n) = \phi(a)^n$ |
+| Order divisibility | $|\phi(a)|$ divides $|a|$ |
+
+### Kernel and Image
+
+**Kernel**: $\ker(\phi) = \{g \in G : \phi(g) = e_H\}$
+
+**Image**: $\text{Im}(\phi) = \phi(G) = \{\phi(g) : g \in G\}$
+
+**Properties**:
+- $\ker(\phi) \triangleleft G$ (kernel is always normal)
+- $\text{Im}(\phi) \leq H$
+- $\phi$ injective iff $\ker(\phi) = \{e_G\}$
+- $\phi$ surjective iff $\text{Im}(\phi) = H$
+
+### Types of Homomorphisms
+
+| Type | Definition | Also Called |
+|------|------------|-------------|
+| Monomorphism | Injective homomorphism | Embedding |
+| Epimorphism | Surjective homomorphism | Onto homomorphism |
+| Isomorphism | Bijective homomorphism | $G \cong H$ |
+| Endomorphism | $\phi: G \to G$ | Self-map |
+| Automorphism | Bijective endomorphism | Symmetry of $G$ |
+
+### First Isomorphism Theorem
+
+**Theorem**: If $\phi: G \to H$ is a homomorphism, then:
+$$G/\ker(\phi) \cong \text{Im}(\phi)$$
+
+**Proof Outline**:
+1. Define $\bar{\phi}: G/\ker(\phi) \to \text{Im}(\phi)$ by $\bar{\phi}(a\ker(\phi)) = \phi(a)$
+2. Show well-defined (if $a\ker(\phi) = b\ker(\phi)$, then $\phi(a) = \phi(b)$)
+3. Show homomorphism, injective, surjective ✓
+
+**Applications**:
+- Determines structure of quotient from homomorphism
+- $|\text{Im}(\phi)| = |G|/|\ker(\phi)|$
+
+### Cayley's Theorem
+
+**Theorem**: Every group $G$ is isomorphic to a subgroup of some symmetric group.
+
+Specifically: $G \hookrightarrow S_G$ (symmetric group on set $G$)
+
+**Corollary**: Every finite group of order $n$ is isomorphic to a subgroup of $S_n$.
+
+**Construction**: For each $g \in G$, define $\lambda_g: G \to G$ by $\lambda_g(x) = gx$ (left multiplication). Then $g \mapsto \lambda_g$ is the embedding.
+
+---
+
+## Important Theorems
+
+### Lagrange's Theorem (Recap)
+If $H \leq G$ and $G$ finite, then $|H|$ divides $|G|$.
+
+**Converse is FALSE**: $A_4$ has order 12, but no subgroup of order 6.
+
+### Cauchy's Theorem
+
+**Theorem**: If $G$ is finite and prime $p$ divides $|G|$, then $G$ has an element of order $p$.
+
+**Corollary**: $G$ has a subgroup of order $p$ (namely $\langle a \rangle$ where $|a| = p$)
+
+**Example**: $|S_4| = 24 = 2^3 \cdot 3$
+- By Cauchy: $S_4$ has elements of order 2 and order 3
+- Elements of order 2: transpositions like $(1\ 2)$
+- Elements of order 3: 3-cycles like $(1\ 2\ 3)$
+
+### Fundamental Theorem of Finite Abelian Groups
+
+**Theorem**: Every finite abelian group $G$ is isomorphic to a direct product of cyclic groups of prime power order:
+$$G \cong \mathbb{Z}_{p_1^{a_1}} \times \mathbb{Z}_{p_2^{a_2}} \times \cdots \times \mathbb{Z}_{p_k^{a_k}}$$
+
+**Invariant Factor Form**: 
+$$G \cong \mathbb{Z}_{n_1} \times \mathbb{Z}_{n_2} \times \cdots \times \mathbb{Z}_{n_r}$$
+where $n_1 | n_2 | \cdots | n_r$
+
+**Example**: Abelian groups of order 36 = $2^2 \cdot 3^2$:
+1. $\mathbb{Z}_{36} \cong \mathbb{Z}_4 \times \mathbb{Z}_9$
+2. $\mathbb{Z}_2 \times \mathbb{Z}_{18} \cong \mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_9$
+3. $\mathbb{Z}_6 \times \mathbb{Z}_6 \cong \mathbb{Z}_2 \times \mathbb{Z}_3 \times \mathbb{Z}_2 \times \mathbb{Z}_3 \cong \mathbb{Z}_4 \times \mathbb{Z}_3 \times \mathbb{Z}_3$
+4. $\mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_3 \times \mathbb{Z}_3$
+
+(4 non-isomorphic abelian groups of order 36)
+
+---
+
+## GATE-Specific Problem-Solving Strategies
+
+### Quick Verification Checks
+
+**To verify $(G, *)$ is a group**:
+1. ✓ Closure: Check $a * b \in G$ for all combinations
+2. ✓ Associativity: Use known associative operations (addition, multiplication, composition)
+3. ✓ Identity: Find $e$ such that $a * e = e * a = a$
+4. ✓ Inverse: For each $a$, find $a^{-1}$ with $a * a^{-1} = e$
+
+**To find order of element in $\mathbb{Z}_n$**:
+$$|k| = \frac{n}{\gcd(k, n)}$$
+
+**To find number of generators of $\mathbb{Z}_n$**: $\phi(n)$
+
+**To count subgroups of $\mathbb{Z}_n$**: Count divisors of $n$
+
+### Common Traps and Mistakes
+
+| Trap | Reality |
+|------|---------|
+| Lagrange converse works | **FALSE**: Order dividing $|G|$ doesn't guarantee subgroup |
+| All subgroups are normal | **FALSE**: Only true in abelian groups |
+| Homomorphism preserves order | **FALSE**: Only $|\phi(a)|$ divides $|a|$ |
+| $|G| = p$ implies cyclic | **TRUE**: Groups of prime order are cyclic |
+| $|ab| = |a| \cdot |b|$ | **FALSE**: Only if $\gcd(|a|, |b|) = 1$ and $ab = ba$ |
+| $G$ abelian iff $Z(G) \neq \{e\}$ | **FALSE**: $G$ abelian iff $Z(G) = G$ |
+
+### Standard GATE Questions
+
+**Type 1: Order Calculations**
+- Find order of $5$ in $(\mathbb{Z}_{12}, +)$: $|5| = 12/\gcd(5,12) = 12/1 = 12$
+- Find order of $\bar{3}$ in $(\mathbb{Z}_{15}^*, \times)$: Compute $3^k \mod 15$ until $= 1$
+
+**Type 2: Subgroup Counting**
+- How many subgroups does $\mathbb{Z}_{24}$ have? Count divisors of 24: $\{1,2,3,4,6,8,12,24\}$ = 8
+
+**Type 3: Generator Counting**  
+- How many generators does $\mathbb{Z}_{20}$ have? $\phi(20) = 20 \cdot (1-1/2)(1-1/5) = 8$
+
+**Type 4: Homomorphism Questions**
+- $\phi: \mathbb{Z}_{12} \to \mathbb{Z}_6$. If $\phi(1) = 2$, find $\ker(\phi)$.
+  - $\phi(k) = 2k \mod 6$
+  - $\ker(\phi) = \{k : 2k \equiv 0 \pmod 6\} = \{0, 3, 6, 9\}$
+
+**Type 5: Lagrange Applications**
+- Can $S_4$ have a subgroup of order 7? No, since $7 \nmid 24 = |S_4|$
+
+### Quick Reference Formulas
+
+| Formula | Description |
+|---------|-------------|
+| $|G| = |H| \cdot [G:H]$ | Lagrange's theorem |
+| $|aH| = |H|$ | All cosets same size |
+| $\|a\| = n/\gcd(k,n)$ in $\mathbb{Z}_n$ | Order of element $k$ |
+| $\|S_n\| = n!$ | Order of symmetric group |
+| $\|D_n\| = 2n$ | Order of dihedral group |
+| $\|A_n\| = n!/2$ | Order of alternating group |
+| $\|GL_2(\mathbb{Z}_p)\| = (p^2-1)(p^2-p)$ | Order of general linear group |
+| $\|\phi(a)\|$ divides $\|a\|$ | Homomorphism property |
+| $\|G/N\| = \|G\|/\|N\|$ | Quotient group order |
+| Generators of $\mathbb{Z}_n$ | $\phi(n)$ in count |
+
+---
+
+## Worked GATE Examples
+
+**Example 1**: Let $G$ be a group of order 35. Prove $G$ is cyclic.
+
+**Solution**:
+- $|G| = 35 = 5 \times 7$ (product of two distinct primes)
+- By Cauchy's theorem: $\exists a$ with $|a| = 5$ and $\exists b$ with $|b| = 7$
+- Since $\gcd(5, 7) = 1$ and $G$ abelian (can be proven), $|ab| = 35$
+- Therefore $G = \langle ab \rangle$ is cyclic ✓
+
+**Example 2**: Find all homomorphisms $\phi: \mathbb{Z}_{12} \to \mathbb{Z}_{18}$.
+
+**Solution**:
+- Homomorphism determined by $\phi(1)$
+- Need $|\phi(1)|$ divides $|1| = 12$
+- Also $|\phi(1)|$ divides $18$ (since $\phi(1) \in \mathbb{Z}_{18}$)
+- So $|\phi(1)|$ divides $\gcd(12, 18) = 6$
+- Elements of $\mathbb{Z}_{18}$ with order dividing 6: those in subgroup of order 6
+- Subgroup: $\langle 3 \rangle = \{0, 3, 6, 9, 12, 15\}$
+- So 6 possible homomorphisms: $\phi(1) \in \{0, 3, 6, 9, 12, 15\}$
+
+**Example 3**: If $|G| = p^2$ ($p$ prime), prove $G$ is abelian.
+
+**Solution**:
+- $Z(G) \triangleleft G$, so $|Z(G)|$ divides $p^2$
+- Possible orders: $1, p, p^2$
+- If $|Z(G)| = p^2$, then $Z(G) = G$, so $G$ abelian ✓
+- If $|Z(G)| = p$, then $|G/Z(G)| = p$, so $G/Z(G)$ is cyclic
+- But if $G/Z(G)$ cyclic, then $G$ is abelian (theorem)
+- If $|Z(G)| = 1$, can show this is impossible for $p$-groups
+- Therefore $G$ is abelian ✓
+
+**Example 4**: How many elements of order 4 in $\mathbb{Z}_4 \times \mathbb{Z}_4$?
+
+**Solution**:
+- Element $(a, b)$ has order $\text{lcm}(|a|, |b|)$
+- Need $\text{lcm}(|a|, |b|) = 4$
+- Cases: (1) $|a| = 4$, or (2) $|b| = 4$, or (3) both
+- Elements of order 4 in $\mathbb{Z}_4$: $\{1, 3\}$ (2 elements)
+- Elements of order dividing 4 in $\mathbb{Z}_4$: $\{0, 1, 2, 3\}$ (4 elements)
+- Count: $2 \times 4 + 4 \times 2 - 2 \times 2 = 8 + 8 - 4 = 12$ ✓
+
 ### 1.2 Countable Uncountable Set (2) {#12-countable-uncountable-set-2}
 
 **Key Concepts**: Cardinality measures the "size" of sets, even infinite ones. Fundamental distinction between countable and uncountable infinities with profound implications for computability theory.
@@ -4314,7 +4916,118 @@ $(aN)(bN) = (ab)N$
 
 ### 4.5 Identity Function (1) {#45-identity-function-1}
 
-**Key Concepts**: $text{id}(x)=x$, bijective. **Formulas/Theorems**: Always automorphism. **Problem-Solving Tips**: Trivial in compositions.
+**Key Concepts**: The identity function is the simplest yet most fundamental function in mathematics. It maps every element to itself and serves as the neutral element for function composition.
+
+**Definition**:
+
+**Identity Function on Set A**: The function $\text{id}_A: A \to A$ defined by:
+$$\text{id}_A(x) = x \quad \text{for all } x \in A$$
+
+Alternative notations: $I_A$, $1_A$, $\iota_A$
+
+**Formal Properties**:
+
+**1. Always Bijective**:
+
+- **Injective (One-to-one)**: If $\text{id}_A(x) = \text{id}_A(y)$, then $x = y$ ✓
+- **Surjective (Onto)**: For any $y \in A$, $\text{id}_A(y) = y$ ✓
+- **Bijective**: Identity function is always a bijection from $A$ to $A$
+
+**2. Self-Inverse**:
+
+$$\text{id}_A^{-1} = \text{id}_A$$
+
+**Proof**: $\text{id}_A(\text{id}_A(x)) = \text{id}_A(x) = x$, so $\text{id}_A \circ \text{id}_A = \text{id}_A$
+
+**3. Identity Element for Function Composition**:
+
+For any function $f: A \to B$:
+- **Right identity**: $f \circ \text{id}_A = f$
+- **Left identity**: $\text{id}_B \circ f = f$
+
+**Proof**:
+- $(f \circ \text{id}_A)(x) = f(\text{id}_A(x)) = f(x)$
+- $(\text{id}_B \circ f)(x) = \text{id}_B(f(x)) = f(x)$
+
+**4. Unique Two-Sided Identity**:
+
+The identity function is the **only** function that is both a left and right identity for composition.
+
+**Relationship to Inverse Functions**:
+
+**Theorem**: Function $f: A \to B$ has inverse $g: B \to A$ if and only if:
+- $g \circ f = \text{id}_A$ (left inverse)
+- $f \circ g = \text{id}_B$ (right inverse)
+
+**Characterization of Bijections**:
+
+$f: A \to B$ is bijective $\Leftrightarrow$ $\exists g: B \to A$ such that $f \circ g = \text{id}_B$ and $g \circ f = \text{id}_A$
+
+**Group Theory Connection**:
+
+- **Automorphism**: Identity function is an automorphism (bijection from set to itself)
+- **Symmetric Group**: In symmetric group $S_n$, identity is the trivial permutation $e = (1)(2)\cdots(n)$
+- **Identity Element**: In any function composition structure, $\text{id}$ serves as the identity element
+
+**Matrix Representation**:
+
+For $A = \{1, 2, \ldots, n\}$, identity function corresponds to:
+$$I_n = \begin{bmatrix} 1 & 0 & \cdots & 0 \\ 0 & 1 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & 1 \end{bmatrix}$$
+
+**Properties of Identity Matrix**:
+- $AI_n = A$ and $I_nA = A$ for conformable matrices
+- $\det(I_n) = 1$
+- $I_n^{-1} = I_n$
+- Eigenvalues: all equal to 1
+
+**Graph Representation**:
+
+In directed graph representation of functions:
+- Identity function: Every vertex has a self-loop
+- Exactly one outgoing edge per vertex (to itself)
+
+**GATE Applications**:
+
+**1. Counting Functions**:
+- Only 1 identity function exists on any set
+- Identity is the unique permutation with no fixed points that aren't all points
+
+**2. Composition Problems**:
+- If $f \circ g = \text{id}$ and $g \circ f = \text{id}$, then $g = f^{-1}$
+- Simplification: $f \circ \text{id} = f$ (remove identity from compositions)
+
+**3. Inverse Verification**:
+- To check if $g$ is inverse of $f$: verify $f(g(x)) = x$ and $g(f(x)) = x$
+
+**Problem-Solving Tips**:
+
+1. **Identity in compositions**: Can be inserted/removed freely
+2. **Inverse checking**: Compose with claimed inverse; result should be identity
+3. **Bijection proof**: Show function has two-sided inverse
+4. **Matrix problems**: Identity matrix has trace = n, determinant = 1
+
+**GATE Tips**:
+- Identity function is always bijective
+- $f \circ \text{id} = \text{id} \circ f = f$ (simplify compositions)
+- Number of identity functions on set of n elements = 1
+- Identity is the only function that is its own inverse AND identity for composition
+
+**Examples**:
+
+**Example 1**: Verify identity is bijective on $A = \{1, 2, 3\}$
+- $\text{id}_A = \{(1,1), (2,2), (3,3)\}$
+- Injective: Each first element appears once
+- Surjective: Each element in $A$ appears as second element
+- Bijective ✓
+
+**Example 2**: If $f(x) = 2x + 3$ and $g(x) = \frac{x-3}{2}$, verify they are inverses
+- $(f \circ g)(x) = f(\frac{x-3}{2}) = 2 \cdot \frac{x-3}{2} + 3 = x - 3 + 3 = x$ ✓
+- $(g \circ f)(x) = g(2x+3) = \frac{(2x+3)-3}{2} = \frac{2x}{2} = x$ ✓
+- Therefore $g = f^{-1}$
+
+**Example 3**: In group $(\mathbb{Z}_n, +)$, what is identity element?
+- Element $e$ such that $a + e = e + a = a$ for all $a$
+- Answer: $e = 0$ (identity element, analogous to identity function)
 
 ### 4.6 Lattice (10) {#46-lattice-10}
 
@@ -5089,7 +5802,163 @@ So $3^{100} = (3^6)^{16} \times 3^4 \equiv 1^{16} \times 81 \equiv 81 \equiv 4 \
 
 ### 4.9 Onto (1) {#49-onto-1}
 
-**Key Concepts**: Surjective: Every codomain hit. **Formulas/Theorems**: $|text{im } f| = |text{codomain}|$. **Problem-Solving Tips**: Count preimages.
+**Key Concepts**: Surjective (onto) functions are mappings where every element in the codomain is "hit" by at least one element from the domain. Essential for understanding function invertibility and counting.
+
+**Definition**:
+
+**Surjective (Onto) Function**: A function $f: A \to B$ is **surjective** (or **onto**) if:
+$$\forall b \in B, \exists a \in A \text{ such that } f(a) = b$$
+
+Equivalently: Every element in the codomain has at least one preimage.
+
+**Formal Notation**:
+- $f: A \twoheadrightarrow B$ (two-headed arrow indicates surjection)
+- $\text{range}(f) = \text{codomain}(f) = B$
+- $|\text{im}(f)| = |B|$
+
+**Equivalent Conditions for Surjectivity**:
+
+For $f: A \to B$:
+1. $\forall b \in B, \exists a \in A: f(a) = b$
+2. $\text{range}(f) = B$
+3. $f^{-1}(\{b\}) \neq \emptyset$ for all $b \in B$ (every preimage set is non-empty)
+4. $f$ has a right inverse: $\exists g: B \to A$ such that $f \circ g = \text{id}_B$
+
+**Testing if a Function is Onto**:
+
+**Method 1: Direct Verification**
+- For each $b \in B$, find $a \in A$ such that $f(a) = b$
+- If successful for all $b$, function is onto
+
+**Method 2: Solve for Preimage**
+- Given arbitrary $b$ in codomain
+- Solve $f(a) = b$ for $a$
+- If solution exists in domain for every $b$, function is onto
+
+**Method 3: Range Comparison**
+- Compute $\text{range}(f) = \{f(a) : a \in A\}$
+- Check if $\text{range}(f) = B$
+
+**Relationship with Injective and Bijective**:
+
+| Property | Definition | For finite sets $|A|=m$, $|B|=n$ |
+|----------|------------|----------------------------------|
+| Injective | Different inputs → different outputs | Requires $m \leq n$ |
+| Surjective | Every output is hit | Requires $m \geq n$ |
+| Bijective | Both injective and surjective | Requires $m = n$ |
+
+**Theorem**: $f: A \to B$ is bijective $\Leftrightarrow$ $f$ is both injective and surjective
+
+**For Finite Sets**:
+- If $|A| < |B|$: No surjection possible (Pigeonhole Principle)
+- If $|A| = |B|$: Surjective $\Leftrightarrow$ Injective $\Leftrightarrow$ Bijective
+- If $|A| > |B|$: Surjections exist, but no injections exist
+
+**Counting Onto Functions**:
+
+**Number of Surjections from $A$ to $B$** where $|A| = n$ and $|B| = k$:
+
+Using Inclusion-Exclusion Principle:
+$$\text{Sur}(n, k) = \sum_{j=0}^{k} (-1)^j \binom{k}{j} (k-j)^n = k! \cdot S(n, k)$$
+
+where $S(n, k)$ is the **Stirling number of the second kind**
+
+**Derivation**:
+- Total functions from $A$ to $B$: $k^n$
+- Let $A_i$ = functions missing element $i$ from range
+- Want: $k^n - |A_1 \cup A_2 \cup \cdots \cup A_k|$
+- By PIE: Number of surjections = $\sum_{j=0}^{k} (-1)^j \binom{k}{j} (k-j)^n$
+
+**Stirling Numbers of Second Kind**: $S(n, k)$ counts ways to partition set of $n$ elements into $k$ non-empty subsets
+- Surjections = partitions × ways to assign partitions to outputs
+- $\text{Sur}(n, k) = k! \cdot S(n, k)$
+
+**Important Values**:
+
+| n | k | $\text{Sur}(n,k)$ |
+|---|---|-------------------|
+| 3 | 2 | $2^3 - 2 = 6$ |
+| 4 | 2 | $2^4 - 2 = 14$ |
+| 4 | 3 | $3^4 - 3 \cdot 2^4 + 3 = 36$ |
+| 5 | 3 | $3^5 - 3 \cdot 2^5 + 3 = 150$ |
+
+**Recurrence for Stirling Numbers**:
+$$S(n, k) = k \cdot S(n-1, k) + S(n-1, k-1)$$
+
+with base cases: $S(n, 0) = 0$ for $n > 0$, $S(0, 0) = 1$, $S(n, n) = 1$
+
+**Composition of Surjections**:
+
+**Theorem**: If $f: A \to B$ and $g: B \to C$ are both surjective, then $g \circ f: A \to C$ is surjective.
+
+**Proof**: For any $c \in C$, since $g$ is surjective, $\exists b \in B$ with $g(b) = c$. Since $f$ is surjective, $\exists a \in A$ with $f(a) = b$. Therefore $(g \circ f)(a) = g(f(a)) = g(b) = c$.
+
+**Theorem**: If $g \circ f$ is surjective, then $g$ is surjective (but $f$ need not be).
+
+**Inverses and Surjections**:
+
+**Right Inverse**: $f: A \to B$ has right inverse $g: B \to A$ if $f \circ g = \text{id}_B$
+
+**Theorem**: $f: A \to B$ is surjective $\Leftrightarrow$ $f$ has a right inverse
+
+**Note**: Right inverse requires Axiom of Choice for infinite sets
+
+**Preimage (Fiber) Analysis**:
+
+For surjective $f: A \to B$:
+- Each element $b \in B$ has non-empty **fiber**: $f^{-1}(\{b\}) = \{a \in A : f(a) = b\}$
+- Fibers partition the domain: $A = \bigsqcup_{b \in B} f^{-1}(\{b\})$
+- $\sum_{b \in B} |f^{-1}(\{b\})| = |A|$
+
+**GATE Problem Patterns**:
+
+**Pattern 1**: "How many onto functions from $A$ to $B$?"
+- Use formula: $\sum_{j=0}^{k} (-1)^j \binom{k}{j} (k-j)^n$
+
+**Pattern 2**: "Is $f(x) = ...$ onto?"
+- Solve $f(x) = y$ for arbitrary $y$ in codomain
+- Check if solution exists in domain
+
+**Pattern 3**: "Composition properties"
+- $g \circ f$ surjective $\Rightarrow$ $g$ surjective
+- Both $f, g$ surjective $\Rightarrow$ $g \circ f$ surjective
+
+**Problem-Solving Tips**:
+
+1. **Quick surjectivity test**: Check if $|\text{range}| = |\text{codomain}|$
+2. **For finite sets**: Count and compare
+3. **For real functions**: Check if equation $f(x) = y$ has solution for all $y$
+4. **Counting**: Use inclusion-exclusion or Stirling numbers
+5. **Composition**: Surjectivity of $g \circ f$ tells you about $g$, not $f$
+
+**GATE Tips**:
+- Surjective means $\text{range} = \text{codomain}$
+- For finite sets: surjection requires $|A| \geq |B|$
+- Number of surjections: $\sum_{j=0}^{k} (-1)^j \binom{k}{j} (k-j)^n$
+- If $|A| = |B|$: surjective $\Leftrightarrow$ injective $\Leftrightarrow$ bijective
+- $g \circ f$ surjective only guarantees $g$ is surjective
+
+**Examples**:
+
+**Example 1**: Is $f: \mathbb{R} \to \mathbb{R}$ defined by $f(x) = x^2$ surjective?
+- For $y = -1$: Need $x^2 = -1$, no real solution
+- Therefore **not surjective**
+- Note: Same function $f: \mathbb{R} \to [0, \infty)$ IS surjective
+
+**Example 2**: Is $f: \mathbb{R} \to \mathbb{R}$ defined by $f(x) = 2x + 1$ surjective?
+- For any $y \in \mathbb{R}$: Solve $2x + 1 = y \Rightarrow x = \frac{y-1}{2} \in \mathbb{R}$
+- Solution exists for all $y$, so **surjective** ✓
+
+**Example 3**: Count onto functions from $\{1, 2, 3, 4\}$ to $\{a, b\}$
+- Formula: $\sum_{j=0}^{2} (-1)^j \binom{2}{j} (2-j)^4$
+- $= \binom{2}{0}(2)^4 - \binom{2}{1}(1)^4 + \binom{2}{2}(0)^4$
+- $= 1 \cdot 16 - 2 \cdot 1 + 1 \cdot 0 = 14$
+- Alternatively: Total - (all to a) - (all to b) = $2^4 - 1 - 1 = 14$
+
+**Example 4**: If $f: A \to B$ is surjective and $|A| = 5$, $|B| = 3$, what are possible fiber sizes?
+- Fibers partition $A$, so sizes sum to 5
+- Three non-empty fibers with sum 5
+- Possible: $(3,1,1), (2,2,1)$ and permutations
 
 ### 4.10 Partial Order (10) {#410-partial-order-10}
 
@@ -7812,6 +8681,317 @@ For inconsistent system $A\mathbf{x} = \mathbf{b}$, **least squares solution** m
    - $\text{nullity}(T) = 1$ (dimension of kernel)
    - $\text{rank}(T) = 2$ (dimension of range)
    - Check: $3 = 1 + 2$ ✓
+
+### 6.5 LU Decomposition
+
+**Key Concepts**: LU decomposition factors a matrix into the product of a lower triangular matrix and an upper triangular matrix. This is one of the most important matrix factorizations in numerical linear algebra.
+
+**Definition**: For a square matrix $A$, the LU decomposition is:
+$$A = LU$$
+
+where:
+- $L$ = Lower triangular matrix (all entries above diagonal are zero)
+- $U$ = Upper triangular matrix (all entries below diagonal are zero)
+
+**Structure of L and U**:
+$$L = \begin{bmatrix} l_{11} & 0 & 0 & \cdots & 0 \\ l_{21} & l_{22} & 0 & \cdots & 0 \\ l_{31} & l_{32} & l_{33} & \cdots & 0 \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ l_{n1} & l_{n2} & l_{n3} & \cdots & l_{nn} \end{bmatrix}, \quad U = \begin{bmatrix} u_{11} & u_{12} & u_{13} & \cdots & u_{1n} \\ 0 & u_{22} & u_{23} & \cdots & u_{2n} \\ 0 & 0 & u_{33} & \cdots & u_{3n} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & 0 & \cdots & u_{nn} \end{bmatrix}$$
+
+**Existence Conditions**:
+- LU decomposition exists if all leading principal minors are non-zero
+- Leading principal minor of order $k$ = determinant of top-left $k \times k$ submatrix
+- If any leading principal minor is zero, pivoting may be required
+- For positive definite matrices, LU always exists
+
+**Relationship to Gaussian Elimination**:
+- The matrix $U$ is the result of forward elimination on $A$
+- The matrix $L$ stores the multipliers used during elimination
+- Each step of Gaussian elimination corresponds to multiplying by an elementary lower triangular matrix
+
+**Algorithms**:
+
+**1. Doolittle Method** (L has 1s on diagonal):
+$$L = \begin{bmatrix} 1 & 0 & 0 \\ l_{21} & 1 & 0 \\ l_{31} & l_{32} & 1 \end{bmatrix}, \quad U = \begin{bmatrix} u_{11} & u_{12} & u_{13} \\ 0 & u_{22} & u_{23} \\ 0 & 0 & u_{33} \end{bmatrix}$$
+
+**Formulas**:
+- For row $i$, column $j$ where $i \leq j$ (U elements):
+  $$u_{ij} = a_{ij} - \sum_{k=1}^{i-1} l_{ik} u_{kj}$$
+- For row $i$, column $j$ where $i > j$ (L elements):
+  $$l_{ij} = \frac{1}{u_{jj}} \left( a_{ij} - \sum_{k=1}^{j-1} l_{ik} u_{kj} \right)$$
+
+**2. Crout Method** (U has 1s on diagonal):
+$$L = \begin{bmatrix} l_{11} & 0 & 0 \\ l_{21} & l_{22} & 0 \\ l_{31} & l_{32} & l_{33} \end{bmatrix}, \quad U = \begin{bmatrix} 1 & u_{12} & u_{13} \\ 0 & 1 & u_{23} \\ 0 & 0 & 1 \end{bmatrix}$$
+
+**Formulas**:
+- For column $j$, row $i$ where $i \geq j$ (L elements):
+  $$l_{ij} = a_{ij} - \sum_{k=1}^{j-1} l_{ik} u_{kj}$$
+- For row $i$, column $j$ where $i < j$ (U elements):
+  $$u_{ij} = \frac{1}{l_{ii}} \left( a_{ij} - \sum_{k=1}^{i-1} l_{ik} u_{kj} \right)$$
+
+**Step-by-Step Computation Process (Doolittle)**:
+
+For a $3 \times 3$ matrix $A$:
+
+**Step 1**: Compute first row of $U$
+- $u_{11} = a_{11}$, $u_{12} = a_{12}$, $u_{13} = a_{13}$
+
+**Step 2**: Compute first column of $L$
+- $l_{11} = 1$
+- $l_{21} = a_{21}/u_{11}$
+- $l_{31} = a_{31}/u_{11}$
+
+**Step 3**: Compute second row of $U$
+- $u_{22} = a_{22} - l_{21}u_{12}$
+- $u_{23} = a_{23} - l_{21}u_{13}$
+
+**Step 4**: Compute second column of $L$
+- $l_{22} = 1$
+- $l_{32} = (a_{32} - l_{31}u_{12})/u_{22}$
+
+**Step 5**: Compute remaining element of $U$
+- $u_{33} = a_{33} - l_{31}u_{13} - l_{32}u_{23}$
+
+**LU Decomposition with Pivoting**:
+
+**Why Pivoting is Necessary**:
+- When a pivot element (diagonal) is zero or very small
+- Improves numerical stability
+- Reduces rounding errors in floating-point arithmetic
+
+**PA = LU Decomposition**:
+$$PA = LU$$
+
+where $P$ is a permutation matrix that reorders rows of $A$.
+
+**Permutation Matrix Properties**:
+- Contains exactly one 1 in each row and column, zeros elsewhere
+- $P^{-1} = P^T$
+- $\det(P) = \pm 1$
+- Multiplying $PA$ swaps rows of $A$
+
+**Partial Pivoting Strategy**:
+1. At each step, find the largest absolute value in the current column (at or below diagonal)
+2. Swap rows to bring the largest element to the pivot position
+3. Continue with elimination
+4. Record swaps in permutation matrix $P$
+
+**When Pivoting is Necessary**:
+- Zero pivot element: Absolutely required
+- Small pivot element: Recommended for numerical stability
+- Always use for general matrices unless structure guarantees stability
+
+**Applications**:
+
+**1. Solving Linear Systems** $Ax = b$:
+
+Given $A = LU$, solve $Ax = b$ in two steps:
+
+**Forward Substitution**: Solve $Ly = b$ for $y$
+$$y_i = b_i - \sum_{j=1}^{i-1} l_{ij} y_j \quad \text{for } i = 1, 2, \ldots, n$$
+
+**Back Substitution**: Solve $Ux = y$ for $x$
+$$x_i = \frac{1}{u_{ii}} \left( y_i - \sum_{j=i+1}^{n} u_{ij} x_j \right) \quad \text{for } i = n, n-1, \ldots, 1$$
+
+**Computational Cost**:
+- LU factorization: $O(n^3/3)$ operations
+- Forward/back substitution: $O(n^2)$ operations each
+- Total: $O(n^3/3 + 2n^2)$
+
+**2. Computing Determinant**:
+$$\det(A) = \det(L) \cdot \det(U) = \left(\prod_{i=1}^n l_{ii}\right) \cdot \left(\prod_{i=1}^n u_{ii}\right)$$
+
+**For Doolittle** (diagonal of L is all 1s):
+$$\det(A) = \prod_{i=1}^n u_{ii} = u_{11} \cdot u_{22} \cdot u_{33} \cdots u_{nn}$$
+
+**With pivoting** ($PA = LU$):
+$$\det(A) = \det(P)^{-1} \cdot \det(L) \cdot \det(U) = (-1)^s \prod_{i=1}^n u_{ii}$$
+where $s$ = number of row swaps
+
+**3. Matrix Inversion**:
+
+To find $A^{-1}$, solve $AX = I$ column by column:
+- Let $x_i$ = $i$-th column of $A^{-1}$
+- Let $e_i$ = $i$-th column of identity matrix
+- Solve $Ax_i = e_i$ for each $i$ using LU decomposition
+
+**Efficiency**: Factorize once, then solve $n$ systems
+
+**4. Multiple Right-Hand Sides**:
+
+For solving $Ax_1 = b_1$, $Ax_2 = b_2$, ..., $Ax_m = b_m$:
+- Factorize $A = LU$ once: $O(n^3/3)$
+- Solve each system: $O(n^2)$ per system
+- Total: $O(n^3/3 + mn^2)$ vs $O(mn^3/3)$ using Gaussian elimination each time
+
+**Cholesky Decomposition**:
+
+**For Positive Definite Symmetric Matrices**:
+
+A matrix $A$ is **positive definite** if:
+- $A$ is symmetric: $A = A^T$
+- $x^T A x > 0$ for all non-zero vectors $x$
+- All eigenvalues are positive
+- All leading principal minors are positive
+
+**Cholesky Factorization**:
+$$A = LL^T$$
+
+where $L$ is lower triangular with **positive diagonal entries**.
+
+**Alternatively**: $A = R^T R$ where $R$ is upper triangular
+
+**Cholesky Algorithm**:
+
+For $j = 1, 2, \ldots, n$:
+$$l_{jj} = \sqrt{a_{jj} - \sum_{k=1}^{j-1} l_{jk}^2}$$
+
+For $i = j+1, j+2, \ldots, n$:
+$$l_{ij} = \frac{1}{l_{jj}} \left( a_{ij} - \sum_{k=1}^{j-1} l_{ik} l_{jk} \right)$$
+
+**Advantages of Cholesky over LU**:
+| Aspect | LU Decomposition | Cholesky Decomposition |
+|--------|------------------|------------------------|
+| Storage | Requires L and U | Only L (or U) needed |
+| Operations | $\frac{2n^3}{3}$ | $\frac{n^3}{3}$ (half of LU) |
+| Stability | May need pivoting | Inherently stable |
+| Applicability | Any invertible matrix | Positive definite symmetric only |
+
+**When to Use Cholesky vs LU**:
+- **Use Cholesky**: Positive definite symmetric matrices (covariance matrices, normal equations)
+- **Use LU**: General non-singular matrices
+- **Use LU with pivoting**: When numerical stability is crucial
+
+**Worked Examples**:
+
+**Example 1: LU Decomposition using Doolittle Method**
+
+Find the LU decomposition of $A = \begin{bmatrix} 2 & 1 & 1 \\ 4 & 3 & 3 \\ 8 & 7 & 9 \end{bmatrix}$
+
+**Solution**:
+
+**Step 1**: First row of U (copy from A)
+- $u_{11} = 2$, $u_{12} = 1$, $u_{13} = 1$
+
+**Step 2**: First column of L
+- $l_{21} = a_{21}/u_{11} = 4/2 = 2$
+- $l_{31} = a_{31}/u_{11} = 8/2 = 4$
+
+**Step 3**: Second row of U
+- $u_{22} = a_{22} - l_{21}u_{12} = 3 - 2(1) = 1$
+- $u_{23} = a_{23} - l_{21}u_{13} = 3 - 2(1) = 1$
+
+**Step 4**: Second column of L
+- $l_{32} = (a_{32} - l_{31}u_{12})/u_{22} = (7 - 4(1))/1 = 3$
+
+**Step 5**: Third row of U
+- $u_{33} = a_{33} - l_{31}u_{13} - l_{32}u_{23} = 9 - 4(1) - 3(1) = 2$
+
+**Result**:
+$$L = \begin{bmatrix} 1 & 0 & 0 \\ 2 & 1 & 0 \\ 4 & 3 & 1 \end{bmatrix}, \quad U = \begin{bmatrix} 2 & 1 & 1 \\ 0 & 1 & 1 \\ 0 & 0 & 2 \end{bmatrix}$$
+
+**Verification**: $LU = \begin{bmatrix} 2 & 1 & 1 \\ 4 & 3 & 3 \\ 8 & 7 & 9 \end{bmatrix} = A$ ✓
+
+**Example 2: Solving a System using LU**
+
+Solve $\begin{bmatrix} 2 & 1 & 1 \\ 4 & 3 & 3 \\ 8 & 7 & 9 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 4 \\ 10 \\ 24 \end{bmatrix}$
+
+**Solution**: Using L and U from Example 1.
+
+**Forward Substitution** ($Ly = b$):
+$$\begin{bmatrix} 1 & 0 & 0 \\ 2 & 1 & 0 \\ 4 & 3 & 1 \end{bmatrix} \begin{bmatrix} y_1 \\ y_2 \\ y_3 \end{bmatrix} = \begin{bmatrix} 4 \\ 10 \\ 24 \end{bmatrix}$$
+
+- $y_1 = 4$
+- $y_2 = 10 - 2(4) = 2$
+- $y_3 = 24 - 4(4) - 3(2) = 24 - 16 - 6 = 2$
+
+So $y = \begin{bmatrix} 4 \\ 2 \\ 2 \end{bmatrix}$
+
+**Back Substitution** ($Ux = y$):
+$$\begin{bmatrix} 2 & 1 & 1 \\ 0 & 1 & 1 \\ 0 & 0 & 2 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\ x_3 \end{bmatrix} = \begin{bmatrix} 4 \\ 2 \\ 2 \end{bmatrix}$$
+
+- $x_3 = 2/2 = 1$
+- $x_2 = 2 - 1(1) = 1$
+- $x_1 = (4 - 1(1) - 1(1))/2 = 2/2 = 1$
+
+**Answer**: $x = \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}$
+
+**Example 3: Computing Determinant using LU**
+
+Find $\det(A)$ where $A = \begin{bmatrix} 2 & 1 & 1 \\ 4 & 3 & 3 \\ 8 & 7 & 9 \end{bmatrix}$
+
+**Solution**: From Example 1, $U = \begin{bmatrix} 2 & 1 & 1 \\ 0 & 1 & 1 \\ 0 & 0 & 2 \end{bmatrix}$
+
+Using Doolittle (L has 1s on diagonal):
+$$\det(A) = u_{11} \cdot u_{22} \cdot u_{33} = 2 \times 1 \times 2 = 4$$
+
+**Example 4: LU with Pivoting**
+
+Find PA = LU for $A = \begin{bmatrix} 0 & 1 \\ 2 & 3 \end{bmatrix}$
+
+**Solution**: 
+- First pivot is 0, so pivoting is required
+- Swap rows: $P = \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$
+- $PA = \begin{bmatrix} 2 & 3 \\ 0 & 1 \end{bmatrix}$
+
+This is already upper triangular, so:
+$$L = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}, \quad U = \begin{bmatrix} 2 & 3 \\ 0 & 1 \end{bmatrix}$$
+
+**Verification**: $PA = LU$ ✓
+
+**Example 5: Cholesky Decomposition**
+
+Find the Cholesky decomposition of $A = \begin{bmatrix} 4 & 2 \\ 2 & 5 \end{bmatrix}$
+
+**Solution**: First verify $A$ is positive definite:
+- Symmetric: Yes
+- Leading principal minors: $4 > 0$, $\det(A) = 20 - 4 = 16 > 0$ ✓
+
+**Compute L**:
+- $l_{11} = \sqrt{a_{11}} = \sqrt{4} = 2$
+- $l_{21} = a_{21}/l_{11} = 2/2 = 1$
+- $l_{22} = \sqrt{a_{22} - l_{21}^2} = \sqrt{5 - 1} = 2$
+
+$$L = \begin{bmatrix} 2 & 0 \\ 1 & 2 \end{bmatrix}$$
+
+**Verification**: $LL^T = \begin{bmatrix} 2 & 0 \\ 1 & 2 \end{bmatrix} \begin{bmatrix} 2 & 1 \\ 0 & 2 \end{bmatrix} = \begin{bmatrix} 4 & 2 \\ 2 & 5 \end{bmatrix} = A$ ✓
+
+**GATE Tips**:
+
+1. **Quick LU Check**: Multiply $L \times U$ to verify your answer matches $A$
+
+2. **Determinant Shortcut**: For Doolittle method, $\det(A) = $ product of diagonal entries of $U$
+
+3. **When LU Fails**: If you get a zero pivot during computation, pivoting is required
+
+4. **Cholesky Indicator**: If asked about positive definite symmetric matrix, think Cholesky
+
+5. **Efficiency Question**: LU is efficient for multiple right-hand sides - factorize once, solve many
+
+6. **Common Exam Pattern**: Given L and U, solve $Ax = b$ or find $\det(A)$
+
+7. **Memory Aid for Doolittle**: "L has 1s on diagonal" - think "L for Lazy diagonal"
+
+**Common Mistakes to Avoid**:
+
+1. **Wrong order of operations**: In Doolittle, compute row of U first, then column of L for that index
+
+2. **Forgetting diagonal convention**: 
+   - Doolittle: $l_{ii} = 1$ (don't compute, just set to 1)
+   - Crout: $u_{ii} = 1$
+
+3. **Sign errors in subtraction**: Double-check $a_{ij} - \sum l_{ik}u_{kj}$
+
+4. **Dividing by zero**: Always check if pivot is zero before dividing
+
+5. **Cholesky on non-positive-definite**: Only works for positive definite symmetric matrices
+
+6. **Forgetting pivoting sign in determinant**: Each row swap multiplies determinant by $-1$
+
+7. **Incorrect forward/back substitution order**:
+   - Forward: Start from $i = 1$ going down
+   - Back: Start from $i = n$ going up
+
+8. **Mixing up L and U roles**: Remember $Ly = b$ (forward), then $Ux = y$ (back)
+
 ### 7. Engineering Mathematics: Probability and Statistics (100 Questions)
 
 ### 7.1 Probability Theory (40)
